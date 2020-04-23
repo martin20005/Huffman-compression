@@ -1,0 +1,427 @@
+\section{gtest\+\_\+lite.\+h File Reference}
+\label{gtest__lite_8h}\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include \char`\"{}memtrace.\+h\char`\"{}}\newline
+Include dependency graph for gtest\+\_\+lite.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gtest__lite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{gtest__lite_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ \+\_\+\+Is\+\_\+\+Types$<$ F, T $>$}
+\begin{DoxyCompactList}\small\item\em Segédsablon típuskonverzió futás közbeni ellenőrzésere. \end{DoxyCompactList}\item 
+struct \textbf{ gtest\+\_\+lite\+::\+Test}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \textbf{ gtest\+\_\+lite}
+\begin{DoxyCompactList}\small\item\em \doxyref{gtest\+\_\+lite}{p.}{namespacegtest__lite}\+: a keretrendszer függvényinek és objektumainak névtere \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ T\+E\+ST}(C,  N)~\{ gtest\+\_\+lite\+::test.\+begin(\#C\char`\"{}/\char`\"{}\#N);
+\item 
+\#define \textbf{ E\+ND}~gtest\+\_\+lite\+::test.\+end(); \}
+\begin{DoxyCompactList}\small\item\em Teszteset vége. \end{DoxyCompactList}\item 
+\#define \textbf{ E\+N\+DM}~gtest\+\_\+lite\+::test.\+end(true); \}
+\item 
+\#define \textbf{ E\+N\+D\+Msg}(t)~gtest\+\_\+lite\+::test.\+end(true) $<$$<$ t $<$$<$ std\+::endl; \}
+\item 
+\#define \textbf{ S\+U\+C\+C\+E\+ED}()~gtest\+\_\+lite\+::test.\+expect(true, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}S\+U\+C\+C\+E\+ED()\char`\"{}, true)
+\begin{DoxyCompactList}\small\item\em Sikeres teszt makrója. \end{DoxyCompactList}\item 
+\#define \textbf{ F\+A\+IL}()~gtest\+\_\+lite\+::test.\+expect(false, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}F\+A\+IL()\char`\"{}, true)
+\begin{DoxyCompactList}\small\item\em Sikertelen teszt makrója. \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+EQ}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Azonosságot elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+NE}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::ne}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Eltérést elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+LE}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::le}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Kisebb, vagy egyenlő relációt elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+LT}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::lt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Kisebb, mint relációt elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+GE}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::ge}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Nagyobb, vagy egyenlő relációt elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+GT}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::gt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Nagyobb, mint relációt elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}(actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(true, actual,  \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Igaz értéket elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}(actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(false, actual, \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Hamis értéket elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Valós számok azonosságát elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em Valós számok azonosságát elváró makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \textbf{ gtest\+\_\+lite\+::eqstr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
+\begin{DoxyCompactList}\small\item\em C stringek (const char $\ast$) azonosságát tesztelő makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}(expected,  actual)~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \textbf{ gtest\+\_\+lite\+::nestr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\begin{DoxyCompactList}\small\item\em C stringek (const char $\ast$) eltéréset tesztelő makró \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}(statement,  exception\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Kivételt várunk. \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW}(statement)
+\begin{DoxyCompactList}\small\item\em Kivételt várunk. \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}(statement)
+\begin{DoxyCompactList}\small\item\em Nem várunk kivételt. \end{DoxyCompactList}\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW}(statement,  exception\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Kivételt várunk és továbbdobjuk -- ilyen nincs a gtest-\/ben. \end{DoxyCompactList}\item 
+\#define \textbf{ C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+}(X)
+\item 
+\#define \textbf{ E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}(statement,  exp,  act)
+\begin{DoxyCompactList}\small\item\em E\+X\+P\+E\+C\+T\+T\+H\+R\+OW\+: kivételkezelés. \end{DoxyCompactList}\item 
+\#define \textbf{ G\+T\+I\+N\+IT}(IS)
+\item 
+\#define \textbf{ G\+T\+E\+ND}(os)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+} (T exp, T act, bool($\ast$pred)(T, T), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
+\begin{DoxyCompactList}\small\item\em általános sablon a várt értékhez. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+} (T $\ast$exp, T $\ast$act, bool($\ast$pred)(T $\ast$, T $\ast$), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
+\begin{DoxyCompactList}\small\item\em pointerre specializált sablon a várt értékhez. \end{DoxyCompactList}\item 
+std\+::ostream \& \textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR} (const char $\ast$exp, const char $\ast$act, bool($\ast$pred)(const char $\ast$, const char $\ast$), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::eq} (T a, T b)
+\item 
+bool \textbf{ gtest\+\_\+lite\+::eqstr} (const char $\ast$a, const char $\ast$b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::ne} (T a, T b)
+\item 
+bool \textbf{ gtest\+\_\+lite\+::nestr} (const char $\ast$a, const char $\ast$b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::le} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::lt} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::ge} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::gt} (T a, T b)
+\item 
+{\footnotesize template$<$typename T $>$ }\\bool \textbf{ gtest\+\_\+lite\+::almost\+EQ} (T a, T b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+(v2)
+
+Google gtest keretrendszerhez hasonló rendszer. Sz.\+I. 2015., 2016., 2017. (\+\_\+\+Has\+\_\+X) Sz.\+I. 2018 (template), E\+N\+DM, E\+N\+D\+Msg
+
+A tesztelés legalapvetőbb funkcióit támogató függvények és makrók. Nem szálbiztos megvalósítás.
+
+Egyetlen fájlban kell megvalósítani minden tesztesetet! Csak ebből include-\/olható a \doxyref{gtest\+\_\+lite.\+h}{p.}{gtest__lite_8h} Ezen korlátozás kiküszöböléséhez sigletonnal kellene rednesen megvalósítani. a test osztályt!
+
+Szabadon felhasználható, bővíthető.
+
+Használati példa\+: Teszteljük az f(x)=2$\ast$x függvényt\+: int f(int x) \{ return 2$\ast$x; \}
+
+int \doxyref{main()}{p.}{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} \{ \doxyref{T\+E\+S\+T(\+Tesz\+Eset\+Neve, Teszt\+Neve)}{p.}{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72} \doxyref{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(0, f(0))}{p.}{gtest__lite_8h_aff8385840165a184edc29446aa51936f}; \doxyref{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(4, f(2))}{p.}{gtest__lite_8h_aff8385840165a184edc29446aa51936f} $<$$<$ \char`\"{}\+A függvény hibás eredményt adott\char`\"{} $<$$<$ std\+::endl; ... E\+ND ...
+
+A működés részleteinek megértése szorgalmi feladat. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\label{gtest__lite_8h_a34bf9a881eb6b2800b0e6cb0abdbd319}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+@{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+}}
+\index{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+@{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+}
+{\footnotesize\ttfamily \#define C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+(\begin{DoxyParamCaption}\item[{}]{X }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{template}<\textcolor{keyword}{typename} T> \textcolor{keyword}{struct }\_Has\_##X \{  \(\backslash\)
+    struct Fallback \{ \textcolor{keywordtype}{int} X; \};         \(\backslash\)
+    struct Derived : T, Fallback \{\};    \(\backslash\)
+    template<typename C, C> \textcolor{keyword}{struct }ChT; \(\backslash\)
+    template<typename D> \textcolor{keyword}{static} char (&f(ChT<int Fallback::*, &D::X>*))[1]; \(\backslash\)
+    template<typename D> \textcolor{keyword}{static} char (&f(...))[2]; \(\backslash\)
+    static \textcolor{keywordtype}{bool} \textcolor{keyword}{const} member = \textcolor{keyword}{sizeof}(f<Derived>(0)) == 2; \(\backslash\)
+\};
+\end{DoxyCode}
+Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet\+: {\tt https\+://cpptalk.\+wordpress.\+com/2009/09/12/substitution-\/failure-\/is-\/not-\/an-\/error-\/2} Használat\+: \doxyref{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+(size)}{p.}{gtest__lite_8h_a34bf9a881eb6b2800b0e6cb0abdbd319} ... if (Has\+\_\+size$<$std\+::string$>$\+::member)... \mbox{\label{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+ND@{E\+ND}}
+\index{E\+ND@{E\+ND}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+ND}
+{\footnotesize\ttfamily \#define E\+ND~gtest\+\_\+lite\+::test.\+end(); \}}
+
+
+
+Teszteset vége. 
+
+\mbox{\label{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+N\+DM@{E\+N\+DM}}
+\index{E\+N\+DM@{E\+N\+DM}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+N\+DM}
+{\footnotesize\ttfamily \#define E\+N\+DM~gtest\+\_\+lite\+::test.\+end(true); \}}
+
+Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos. \mbox{\label{gtest__lite_8h_ad2e2f10cb2a494ff7ae23938dfdfc41a}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+N\+D\+Msg@{E\+N\+D\+Msg}}
+\index{E\+N\+D\+Msg@{E\+N\+D\+Msg}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+N\+D\+Msg}
+{\footnotesize\ttfamily \#define E\+N\+D\+Msg(\begin{DoxyParamCaption}\item[{}]{t }\end{DoxyParamCaption})~gtest\+\_\+lite\+::test.\+end(true) $<$$<$ t $<$$<$ std\+::endl; \}}
+
+Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos. Ha hiba van kiírja az üzenetet. \mbox{\label{gtest__lite_8h_a9be43f44d148e8a8d6a89c864bf4e461}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+A\+N\+Y\+\_\+\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{statement }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try} \{ gtest\_lite::test.tmp = \textcolor{keyword}{false}; statement; \} \(\backslash\)
+    catch (...) \{ gtest\_lite::test.tmp = \textcolor{keyword}{true}; \} \(\backslash\)
+    EXPECTTHROW(statement, \textcolor{stringliteral}{"kivetelt dob."}, \textcolor{stringliteral}{"nem dobott kivetelt."})
+\end{DoxyCode}
+
+
+Kivételt várunk. 
+
+\mbox{\label{gtest__lite_8h_a6e6277442d96cd18300619c321614397}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+Valós számok azonosságát elváró makró 
+
+\mbox{\label{gtest__lite_8h_aff8385840165a184edc29446aa51936f}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+EQ}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+EQ}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+Azonosságot elváró makró 
+
+\mbox{\label{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE@{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE@{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\begin{DoxyParamCaption}\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(false, actual, \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+Hamis értéket elváró makró 
+
+\mbox{\label{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+Valós számok azonosságát elváró makró 
+
+\mbox{\label{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+GE@{E\+X\+P\+E\+C\+T\+\_\+\+GE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+GE@{E\+X\+P\+E\+C\+T\+\_\+\+GE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+GE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+GE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::ge}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+Nagyobb, vagy egyenlő relációt elváró makró 
+
+\mbox{\label{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+GT@{E\+X\+P\+E\+C\+T\+\_\+\+GT}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+GT@{E\+X\+P\+E\+C\+T\+\_\+\+GT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+GT}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+GT(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::gt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+Nagyobb, mint relációt elváró makró 
+
+\mbox{\label{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+LE@{E\+X\+P\+E\+C\+T\+\_\+\+LE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+LE@{E\+X\+P\+E\+C\+T\+\_\+\+LE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+LE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+LE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::le}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+Kisebb, vagy egyenlő relációt elváró makró 
+
+\mbox{\label{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+LT@{E\+X\+P\+E\+C\+T\+\_\+\+LT}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+LT@{E\+X\+P\+E\+C\+T\+\_\+\+LT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+LT}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+LT(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::lt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+Kisebb, mint relációt elváró makró 
+
+\mbox{\label{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+NE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+NE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+NE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+NE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \textbf{ gtest\+\_\+lite\+::ne}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+Eltérést elváró makró 
+
+\mbox{\label{gtest__lite_8h_a2743a1438137ad857aa3f9fec3ff67ec}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{statement }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try} \{ gtest\_lite::test.tmp = \textcolor{keyword}{true}; statement; \} \(\backslash\)
+    catch (...) \{ gtest\_lite::test.tmp = \textcolor{keyword}{false}; \}\(\backslash\)
+    EXPECTTHROW(statement, \textcolor{stringliteral}{"nem dob kivetelt."}, \textcolor{stringliteral}{"kivetelt dobott."})
+\end{DoxyCode}
+
+
+Nem várunk kivételt. 
+
+\mbox{\label{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \textbf{ gtest\+\_\+lite\+::eqstr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+C stringek (const char $\ast$) azonosságát tesztelő makró 
+
+\mbox{\label{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \textbf{ gtest\+\_\+lite\+::nestr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
+
+
+
+C stringek (const char $\ast$) eltéréset tesztelő makró 
+
+\mbox{\label{gtest__lite_8h_a4b4fe697f312ef7d2618905a9bc12f04}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{exception\+\_\+type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try} \{ gtest\_lite::test.tmp = \textcolor{keyword}{false}; statement; \} \(\backslash\)
+    catch (exception\_type) \{ gtest\_lite::test.tmp = \textcolor{keyword}{true}; \} \(\backslash\)
+    catch (...) \{ \} \(\backslash\)
+    EXPECTTHROW(statement, \textcolor{stringliteral}{"kivetelt dob."}, \textcolor{stringliteral}{"nem dobott '"}#exception\_type\textcolor{stringliteral}{"' kivetelt."})
+\end{DoxyCode}
+
+
+Kivételt várunk. 
+
+\mbox{\label{gtest__lite_8h_a5129ea3a961fbd7fe71e6621452047bf}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+O\+W\+\_\+\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{exception\+\_\+type }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{try} \{ gtest\_lite::test.tmp = \textcolor{keyword}{false}; statement; \} \(\backslash\)
+    catch (exception\_type) \{ gtest\_lite::test.tmp = \textcolor{keyword}{true}; \textcolor{keywordflow}{throw}; \} \(\backslash\)
+    EXPECTTHROW(statement, \textcolor{stringliteral}{"kivetelt dob."}, \textcolor{stringliteral}{"nem dobott '"}#exception\_type\textcolor{stringliteral}{"' kivetelt."})
+\end{DoxyCode}
+
+
+Kivételt várunk és továbbdobjuk -- ilyen nincs a gtest-\/ben. 
+
+\mbox{\label{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE@{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}}
+\index{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE@{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\begin{DoxyParamCaption}\item[{}]{actual }\end{DoxyParamCaption})~\textbf{ gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(true, actual,  \textbf{ gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\char`\"{} \#actual \char`\"{})\char`\"{} )}
+
+
+
+Igaz értéket elváró makró 
+
+\mbox{\label{gtest__lite_8h_a59f6c1f1654aa9d5adf5c143efd1a454}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}}
+\index{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}
+{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+T\+H\+R\+OW(\begin{DoxyParamCaption}\item[{}]{statement,  }\item[{}]{exp,  }\item[{}]{act }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+gtest\_lite::test.expect(gtest\_lite::test.tmp, \_\_FILE\_\_, \_\_LINE\_\_, #statement) \(\backslash\)
+    << \textcolor{stringliteral}{"** Az utasitas "} << (act) \(\backslash\)
+    << \textcolor{stringliteral}{"\(\backslash\)n** Azt vartuk, hogy "} << (exp) << std::endl
+\end{DoxyCode}
+
+
+E\+X\+P\+E\+C\+T\+T\+H\+R\+OW\+: kivételkezelés. 
+
+
+
+ Belső megvalósításhoz tartozó makrók, és osztályok. \subsubsection*{Nem célszerű közvetlenül használni, vagy módosítani }\mbox{\label{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!F\+A\+IL@{F\+A\+IL}}
+\index{F\+A\+IL@{F\+A\+IL}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{F\+A\+IL}
+{\footnotesize\ttfamily \#define F\+A\+IL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~gtest\+\_\+lite\+::test.\+expect(false, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}F\+A\+IL()\char`\"{}, true)}
+
+
+
+Sikertelen teszt makrója. 
+
+\mbox{\label{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!G\+T\+E\+ND@{G\+T\+E\+ND}}
+\index{G\+T\+E\+ND@{G\+T\+E\+ND}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{G\+T\+E\+ND}
+{\footnotesize\ttfamily \#define G\+T\+E\+ND(\begin{DoxyParamCaption}\item[{}]{os }\end{DoxyParamCaption})}
+
+\mbox{\label{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!G\+T\+I\+N\+IT@{G\+T\+I\+N\+IT}}
+\index{G\+T\+I\+N\+IT@{G\+T\+I\+N\+IT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{G\+T\+I\+N\+IT}
+{\footnotesize\ttfamily \#define G\+T\+I\+N\+IT(\begin{DoxyParamCaption}\item[{}]{IS }\end{DoxyParamCaption})}
+
+\mbox{\label{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!S\+U\+C\+C\+E\+ED@{S\+U\+C\+C\+E\+ED}}
+\index{S\+U\+C\+C\+E\+ED@{S\+U\+C\+C\+E\+ED}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{S\+U\+C\+C\+E\+ED}
+{\footnotesize\ttfamily \#define S\+U\+C\+C\+E\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~gtest\+\_\+lite\+::test.\+expect(true, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}S\+U\+C\+C\+E\+ED()\char`\"{}, true)}
+
+
+
+Sikeres teszt makrója. 
+
+\mbox{\label{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}} 
+\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!T\+E\+ST@{T\+E\+ST}}
+\index{T\+E\+ST@{T\+E\+ST}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\subsubsection{T\+E\+ST}
+{\footnotesize\ttfamily \#define T\+E\+ST(\begin{DoxyParamCaption}\item[{}]{C,  }\item[{}]{N }\end{DoxyParamCaption})~\{ gtest\+\_\+lite\+::test.\+begin(\#C\char`\"{}/\char`\"{}\#N);}
+
+Teszt kezdete. A makró paraméterezése hasonlít a gtest paraméterezéséhez. Így az itt elkészített testek könnyen átemelhetők a gtest keretrendszerbe. 
+\begin{DoxyParams}{Parameters}
+{\em C} & -\/ teszteset neve (csak a gtest kompatibilitás miatt van külön neve az eseteknek) \\
+\hline
+{\em N} & -\/ teszt neve \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structcall__t" kind="struct" language="C++" prot="public">
+    <compoundname>call_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int call_t::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="105" column="1" bodyfile="memtrace.cpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int call_t::line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="106" column="1" bodyfile="memtrace.cpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcall__t_1a24e185188a17e272396e118640672aba" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* call_t::par_txt</definition>
+        <argsstring></argsstring>
+        <name>par_txt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="107" column="1" bodyfile="memtrace.cpp" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcall__t_1a97629ec51d024396221fe7d48c84859a" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* call_t::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="108" column="1" bodyfile="memtrace.cpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="memtrace.cpp" line="104" column="1" bodyfile="memtrace.cpp" bodystart="104" bodyend="109"/>
+    <listofallmembers>
+      <member refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" prot="public" virt="non-virtual"><scope>call_t</scope><name>f</name></member>
+      <member refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" prot="public" virt="non-virtual"><scope>call_t</scope><name>file</name></member>
+      <member refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" prot="public" virt="non-virtual"><scope>call_t</scope><name>line</name></member>
+      <member refid="structcall__t_1a24e185188a17e272396e118640672aba" prot="public" virt="non-virtual"><scope>call_t</scope><name>par_txt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

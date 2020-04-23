@@ -1,0 +1,185 @@
+.TH "memtrace.cpp" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+memtrace.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <ctype\&.h>\fP
+.br
+\fC#include 'memtrace\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBcall_t\fP"
+.br
+.ti -1c
+.RI "struct \fB_registry_item\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMEMTRACE\fP"
+.br
+.ti -1c
+.RI "#define \fBFROM_MEMTRACE_CPP\fP"
+.br
+.ti -1c
+.RI "#define \fBFMALLOC\fP   0"
+.br
+.ti -1c
+.RI "#define \fBFCALLOC\fP   1"
+.br
+.ti -1c
+.RI "#define \fBFREALLOC\fP   2"
+.br
+.ti -1c
+.RI "#define \fBFFREE\fP   3"
+.br
+.ti -1c
+.RI "#define \fBFNEW\fP   4"
+.br
+.ti -1c
+.RI "#define \fBFDELETE\fP   5"
+.br
+.ti -1c
+.RI "#define \fBFNEWARR\fP   6"
+.br
+.ti -1c
+.RI "#define \fBFDELETEARR\fP   7"
+.br
+.ti -1c
+.RI "#define \fBCOMP\fP(a,  d)   (((a)<=3 && (d)<=3) || ((d)==(a)+1))"
+.br
+.ti -1c
+.RI "#define \fBPU\fP(p)   ((char*)p+CANARY_LEN)"
+.br
+.ti -1c
+.RI "#define \fBP\fP(pu)   ((char*)pu\-CANARY_LEN)"
+.br
+.ti -1c
+.RI "#define \fBXSTR\fP(s)   \fBSTR\fP(s)"
+.br
+.ti -1c
+.RI "#define \fBSTR\fP(s)   #s"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef \fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP struct \fB_registry_item\fP \fBregistry_item\fP"
+.br
+.in -1c
+.SS "Enumerations"
+
+.in +1c
+.ti -1c
+.RI "enum \fBBOOL\fP { \fBFALSE\fP, \fBTRUE\fP }"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBmem_dump\fP (void const *mem, size_t size, FILE *fp)"
+.br
+.ti -1c
+.RI "int \fBmem_check\fP (void)"
+.br
+.ti -1c
+.RI "int \fBallocated_blocks\fP ()"
+.br
+.ti -1c
+.RI "\fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP void * \fBtraced_malloc\fP (size_t size, const char *par_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void * \fBtraced_calloc\fP (size_t count, size_t size, const char *par_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void \fBtraced_free\fP (void *pu, const char *par_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void * \fBtraced_realloc\fP (void *old, size_t size, const char *par_txt, int line, const char *file)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define COMP(a, d)   (((a)<=3 && (d)<=3) || ((d)==(a)+1))"
+
+.SS "#define FCALLOC   1"
+
+.SS "#define FDELETE   5"
+
+.SS "#define FDELETEARR   7"
+
+.SS "#define FFREE   3"
+
+.SS "#define FMALLOC   0"
+
+.SS "#define FNEW   4"
+
+.SS "#define FNEWARR   6"
+
+.SS "#define FREALLOC   2"
+
+.SS "#define FROM_MEMTRACE_CPP"
+
+.SS "#define MEMTRACE"
+
+.SS "#define P(pu)   ((char*)pu\-CANARY_LEN)"
+
+.SS "#define PU(p)   ((char*)p+CANARY_LEN)"
+
+.SS "#define STR(s)   #s"
+
+.SS "#define XSTR(s)   \fBSTR\fP(s)"
+
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef \fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP struct \fB_registry_item\fP  \fBregistry_item\fP"
+
+.SH "Enumeration Type Documentation"
+.PP 
+.SS "enum \fBBOOL\fP"
+
+.PP
+\fBEnumerator\fP
+.in +1c
+.TP
+\fB\fIFALSE \fP\fP
+.TP
+\fB\fITRUE \fP\fP
+.SH "Function Documentation"
+.PP 
+.SS "int allocated_blocks ()"
+
+.SS "int mem_check (void)"
+
+.SS "void mem_dump (void const * mem, size_t size, FILE * fp)"
+
+.SS "void* traced_calloc (size_t count, size_t size, const char * par_txt, int line, const char * file)"
+
+.SS "void traced_free (void * pu, const char * par_txt, int line, const char * file)"
+
+.SS "\fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP void* traced_malloc (size_t size, const char * par_txt, int line, const char * file)"
+
+.SS "void* traced_realloc (void * old, size_t size, const char * par_txt, int line, const char * file)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

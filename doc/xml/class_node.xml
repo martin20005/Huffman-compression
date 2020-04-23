@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_node" kind="class" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <derivedcompoundref refid="class_end" prot="public" virt="non-virtual">End</derivedcompoundref>
+    <derivedcompoundref refid="class_path" prot="public" virt="non-virtual">Path</derivedcompoundref>
+    <includes refid="node_8h" local="no">node.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_node_1ab8c667ac8fdb120ed4c031682a9cdaee" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Node::left_child_</definition>
+        <argsstring></argsstring>
+        <name>left_child_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="9" column="1" bodyfile="node.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a7328862eaa6dea28018326549b3294d3" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Node::right_child_</definition>
+        <argsstring></argsstring>
+        <name>right_child_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="10" column="1" bodyfile="node.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1a3536573131e96ed591637abe7b532673" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long Node::len_of_curr_chunk_b_</definition>
+        <argsstring></argsstring>
+        <name>len_of_curr_chunk_b_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="11" column="1" bodyfile="node.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>()</argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="13" column="1" bodyfile="node.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a942858d25ccdfaf7e1d1f4ddbdf13831" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node::Node</definition>
+        <argsstring>(Node *l, Node *r, long count=0)</argsstring>
+        <name>Node</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>count</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="14" column="1" bodyfile="node.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a4b0ea9be15925bfa877cdac6923c275a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *&amp;</type>
+        <definition>Node*&amp; Node::left</definition>
+        <argsstring>()</argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="15" column="1" bodyfile="node.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1af62ccd86ec2c1967b571faf948a964c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Node::left</definition>
+        <argsstring>(Node *l)</argsstring>
+        <name>left</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="16" column="1" bodyfile="node.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a73fffe3df2c9e7ac4ebf52d7c65e8e38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *&amp;</type>
+        <definition>Node*&amp; Node::right</definition>
+        <argsstring>()</argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="17" column="1" bodyfile="node.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a2b9e785c9b94b7bb0e4617403542207b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Node::right</definition>
+        <argsstring>(Node *r)</argsstring>
+        <name>right</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="18" column="1" bodyfile="node.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a2c339e14824c1960e65c21b19eaad9a0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long Node::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="19" column="1" bodyfile="node.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_node_1a7a2fced8d12d4f75acb8a24fbd0467e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::count</definition>
+        <argsstring>(long val)</argsstring>
+        <name>count</name>
+        <param>
+          <type>long</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="20" column="1" bodyfile="node.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>Path</label>
+        <link refid="class_path"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>End</label>
+        <link refid="class_end"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>Node</label>
+        <link refid="class_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>Node</label>
+        <link refid="class_node"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>right_child_</edgelabel>
+          <edgelabel>left_child_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="node.h" line="7" column="1" bodyfile="node.h" bodystart="7" bodyend="22"/>
+    <listofallmembers>
+      <member refid="class_node_1a3536573131e96ed591637abe7b532673" prot="protected" virt="non-virtual"><scope>Node</scope><name>len_of_curr_chunk_b_</name></member>
+      <member refid="class_node_1a2c339e14824c1960e65c21b19eaad9a0" prot="public" virt="non-virtual"><scope>Node</scope><name>count</name></member>
+      <member refid="class_node_1a7a2fced8d12d4f75acb8a24fbd0467e2" prot="public" virt="non-virtual"><scope>Node</scope><name>count</name></member>
+      <member refid="class_node_1a4b0ea9be15925bfa877cdac6923c275a" prot="public" virt="non-virtual"><scope>Node</scope><name>left</name></member>
+      <member refid="class_node_1af62ccd86ec2c1967b571faf948a964c4" prot="public" virt="non-virtual"><scope>Node</scope><name>left</name></member>
+      <member refid="class_node_1ab8c667ac8fdb120ed4c031682a9cdaee" prot="protected" virt="non-virtual"><scope>Node</scope><name>left_child_</name></member>
+      <member refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a942858d25ccdfaf7e1d1f4ddbdf13831" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a73fffe3df2c9e7ac4ebf52d7c65e8e38" prot="public" virt="non-virtual"><scope>Node</scope><name>right</name></member>
+      <member refid="class_node_1a2b9e785c9b94b7bb0e4617403542207b" prot="public" virt="non-virtual"><scope>Node</scope><name>right</name></member>
+      <member refid="class_node_1a7328862eaa6dea28018326549b3294d3" prot="protected" virt="non-virtual"><scope>Node</scope><name>right_child_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

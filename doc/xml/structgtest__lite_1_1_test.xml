@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgtest__lite_1_1_test" kind="struct" language="C++" prot="public">
+    <compoundname>gtest_lite::Test</compoundname>
+    <includes refid="gtest__lite_8h" local="no">gtest_lite.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gtest_lite::Test::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+<para>tesztek számlálója </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="193" column="1" bodyfile="gtest_lite.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gtest_lite::Test::failed</definition>
+        <argsstring></argsstring>
+        <name>failed</name>
+        <briefdescription>
+<para>hibás tesztek </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="194" column="1" bodyfile="gtest_lite.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gtest_lite::Test::ablocks</definition>
+        <argsstring></argsstring>
+        <name>ablocks</name>
+        <briefdescription>
+<para>allokált blokkok száma </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="195" column="1" bodyfile="gtest_lite.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gtest_lite::Test::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+<para>éppen futó teszt státusza. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="196" column="1" bodyfile="gtest_lite.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gtest_lite::Test::tmp</definition>
+        <argsstring></argsstring>
+        <name>tmp</name>
+        <briefdescription>
+<para>temp a kivételkezeléshez; </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="197" column="1" bodyfile="gtest_lite.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gtest_lite::Test::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>éppen futó teszt neve. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="198" column="1" bodyfile="gtest_lite.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" prot="public" static="no" mutable="no">
+        <type>std::fstream</type>
+        <definition>std::fstream gtest_lite::Test::null</definition>
+        <argsstring></argsstring>
+        <name>null</name>
+        <briefdescription>
+<para>nyelő, ha nem kell kiírni semmit </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="199" column="1" bodyfile="gtest_lite.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gtest_lite::Test::Test</definition>
+        <argsstring>()</argsstring>
+        <name>Test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="201" column="1" bodyfile="gtest_lite.h" bodystart="201" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gtest_lite::Test::begin</definition>
+        <argsstring>(const char *n)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>const char *</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Teszt kezdete. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="203" column="1" bodyfile="gtest_lite.h" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gtest_lite::Test::end</definition>
+        <argsstring>(bool memchk=false)</argsstring>
+        <name>end</name>
+        <param>
+          <type>bool</type>
+          <declname>memchk</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Teszt vége. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="214" column="1" bodyfile="gtest_lite.h" bodystart="214" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gtest_lite::Test::fail</definition>
+        <argsstring>()</argsstring>
+        <name>fail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="231" column="1" bodyfile="gtest_lite.h" bodystart="231" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gtest_lite::Test::expect</definition>
+        <argsstring>(bool st, const char *file, int line, const char *expr, bool pr=false)</argsstring>
+        <name>expect</name>
+        <param>
+          <type>bool</type>
+          <declname>st</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>pr</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Eredményt adminisztráló tagfüggvény True a jó eset. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="234" column="1" bodyfile="gtest_lite.h" bodystart="234" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gtest_lite::Test::~Test</definition>
+        <argsstring>()</argsstring>
+        <name>~Test</name>
+        <briefdescription>
+<para>Destruktor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="250" column="1" bodyfile="gtest_lite.h" bodystart="250" bodyend="255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Tesztek állapotát tároló osztály. Egyetlen egy statikus példány keletkezik, aminek a destruktora a futás végén hívódik meg. </para>    </detaileddescription>
+    <location file="gtest_lite.h" line="192" column="1" bodyfile="gtest_lite.h" bodystart="192" bodyend="256"/>
+    <listofallmembers>
+      <member refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>ablocks</name></member>
+      <member refid="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>begin</name></member>
+      <member refid="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>end</name></member>
+      <member refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>expect</name></member>
+      <member refid="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>fail</name></member>
+      <member refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>failed</name></member>
+      <member refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>name</name></member>
+      <member refid="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>null</name></member>
+      <member refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>status</name></member>
+      <member refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>sum</name></member>
+      <member refid="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>Test</name></member>
+      <member refid="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>tmp</name></member>
+      <member refid="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" prot="public" virt="non-virtual"><scope>gtest_lite::Test</scope><name>~Test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

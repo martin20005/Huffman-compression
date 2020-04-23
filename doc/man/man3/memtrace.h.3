@@ -1,0 +1,131 @@
+.TH "memtrace.h" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+memtrace.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBMEMTRACE\fP"
+.br
+.ti -1c
+.RI "#define \fBMEMTRACE_TO_MEMORY\fP"
+.br
+.ti -1c
+.RI "#define \fBMEMTRACE_AUTO\fP"
+.br
+.ti -1c
+.RI "#define \fBMEMTRACE_C\fP"
+.br
+.ti -1c
+.RI "#define \fBALLOW_FREE_NULL\fP"
+.br
+.ti -1c
+.RI "#define \fBSTART_NAMESPACE\fP"
+.br
+.ti -1c
+.RI "#define \fBEND_NAMESPACE\fP"
+.br
+.ti -1c
+.RI "#define \fBTRACEC\fP(func)   func"
+.br
+.ti -1c
+.RI "#define \fBTHROW_BADALLOC\fP   throw (std::bad_alloc)"
+.br
+.ti -1c
+.RI "#define \fBTHROW_NOTHING\fP   throw ()"
+.br
+.ti -1c
+.RI "#define \fBmalloc\fP(size)   \fBTRACEC\fP(\fBtraced_malloc\fP)(size,#size,__LINE__,__FILE__)"
+.br
+.ti -1c
+.RI "#define \fBcalloc\fP(count,  size)   \fBTRACEC\fP(\fBtraced_calloc\fP)(count, size, #count','#size,__LINE__,__FILE__)"
+.br
+.ti -1c
+.RI "#define \fBfree\fP(p)   \fBTRACEC\fP(\fBtraced_free\fP)(p, #p,__LINE__,__FILE__)"
+.br
+.ti -1c
+.RI "#define \fBrealloc\fP(old,  size)   \fBTRACEC\fP(\fBtraced_realloc\fP)(old,size,#size,__LINE__,__FILE__)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBSTART_NAMESPACE\fP int \fBallocated_blocks\fP ()"
+.br
+.ti -1c
+.RI "\fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP int \fBmem_check\fP (void)"
+.br
+.ti -1c
+.RI "void * \fBtraced_malloc\fP (size_t size, const char *size_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void * \fBtraced_calloc\fP (size_t count, size_t size, const char *size_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void \fBtraced_free\fP (void *p, const char *size_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void * \fBtraced_realloc\fP (void *old, size_t size, const char *size_txt, int line, const char *file)"
+.br
+.ti -1c
+.RI "void \fBmem_dump\fP (void const *mem, size_t size, FILE *fp)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ALLOW_FREE_NULL"
+
+.SS "#define calloc(count, size)   \fBTRACEC\fP(\fBtraced_calloc\fP)(count, size, #count','#size,__LINE__,__FILE__)"
+
+.SS "#define END_NAMESPACE"
+
+.SS "#define free(p)   \fBTRACEC\fP(\fBtraced_free\fP)(p, #p,__LINE__,__FILE__)"
+
+.SS "#define malloc(size)   \fBTRACEC\fP(\fBtraced_malloc\fP)(size,#size,__LINE__,__FILE__)"
+
+.SS "#define MEMTRACE"
+
+.SS "#define MEMTRACE_AUTO"
+
+.SS "#define MEMTRACE_C"
+
+.SS "#define MEMTRACE_TO_MEMORY"
+
+.SS "#define realloc(old, size)   \fBTRACEC\fP(\fBtraced_realloc\fP)(old,size,#size,__LINE__,__FILE__)"
+
+.SS "#define START_NAMESPACE"
+
+.SS "#define THROW_BADALLOC   throw (std::bad_alloc)"
+
+.SS "#define THROW_NOTHING   throw ()"
+
+.SS "#define TRACEC(func)   func"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBSTART_NAMESPACE\fP int allocated_blocks ()"
+
+.SS "\fBEND_NAMESPACE\fP \fBSTART_NAMESPACE\fP int mem_check (void)"
+
+.SS "void mem_dump (void const * mem, size_t size, FILE * fp)"
+
+.SS "void* traced_calloc (size_t count, size_t size, const char * size_txt, int line, const char * file)"
+
+.SS "void traced_free (void * p, const char * size_txt, int line, const char * file)"
+
+.SS "void* traced_malloc (size_t size, const char * size_txt, int line, const char * file)"
+
+.SS "void* traced_realloc (void * old, size_t size, const char * size_txt, int line, const char * file)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

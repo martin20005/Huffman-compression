@@ -1,0 +1,129 @@
+.TH "gtest_lite::Test" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gtest_lite::Test
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest_lite\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTest\fP ()"
+.br
+.ti -1c
+.RI "void \fBbegin\fP (const char *n)"
+.br
+.RI "Teszt kezdete\&. "
+.ti -1c
+.RI "std::ostream & \fBend\fP (bool memchk=false)"
+.br
+.RI "Teszt vége\&. "
+.ti -1c
+.RI "bool \fBfail\fP ()"
+.br
+.ti -1c
+.RI "std::ostream & \fBexpect\fP (bool st, const char *file, int line, const char *expr, bool pr=false)"
+.br
+.RI "Eredményt adminisztráló tagfüggvény True a jó eset\&. "
+.ti -1c
+.RI "\fB~Test\fP ()"
+.br
+.RI "Destruktor\&. "
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBsum\fP"
+.br
+.RI "tesztek számlálója "
+.ti -1c
+.RI "int \fBfailed\fP"
+.br
+.RI "hibás tesztek "
+.ti -1c
+.RI "int \fBablocks\fP"
+.br
+.RI "allokált blokkok száma "
+.ti -1c
+.RI "bool \fBstatus\fP"
+.br
+.RI "éppen futó teszt státusza\&. "
+.ti -1c
+.RI "bool \fBtmp\fP"
+.br
+.RI "temp a kivételkezeléshez; "
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.RI "éppen futó teszt neve\&. "
+.ti -1c
+.RI "std::fstream \fBnull\fP"
+.br
+.RI "nyelő, ha nem kell kiírni semmit "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Tesztek állapotát tároló osztály\&. Egyetlen egy statikus példány keletkezik, aminek a destruktora a futás végén hívódik meg\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "gtest_lite::Test::Test ()\fC [inline]\fP"
+
+.SS "gtest_lite::Test::~Test ()\fC [inline]\fP"
+
+.PP
+Destruktor\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "void gtest_lite::Test::begin (const char * n)\fC [inline]\fP"
+
+.PP
+Teszt kezdete\&. 
+.SS "std::ostream& gtest_lite::Test::end (bool memchk = \fCfalse\fP)\fC [inline]\fP"
+
+.PP
+Teszt vége\&. 
+.SS "std::ostream& gtest_lite::Test::expect (bool st, const char * file, int line, const char * expr, bool pr = \fCfalse\fP)\fC [inline]\fP"
+
+.PP
+Eredményt adminisztráló tagfüggvény True a jó eset\&. 
+.SS "bool gtest_lite::Test::fail ()\fC [inline]\fP"
+
+.SH "Member data_ Documentation"
+.PP 
+.SS "int gtest_lite::Test::ablocks"
+
+.PP
+allokált blokkok száma 
+.SS "int gtest_lite::Test::failed"
+
+.PP
+hibás tesztek 
+.SS "std::string gtest_lite::Test::name"
+
+.PP
+éppen futó teszt neve\&. 
+.SS "std::fstream gtest_lite::Test::null"
+
+.PP
+nyelő, ha nem kell kiírni semmit 
+.SS "bool gtest_lite::Test::status"
+
+.PP
+éppen futó teszt státusza\&. 
+.SS "int gtest_lite::Test::sum"
+
+.PP
+tesztek számlálója 
+.SS "bool gtest_lite::Test::tmp"
+
+.PP
+temp a kivételkezeléshez; 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

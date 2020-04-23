@@ -1,0 +1,98 @@
+.TH "Huffman" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Huffman
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <huffman\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBHuffman\fP (const string &In)"
+.br
+.ti -1c
+.RI "\fBHuffman\fP (string In, string Out)"
+.br
+.ti -1c
+.RI "void \fBcompress\fP ()"
+.br
+.ti -1c
+.RI "void \fBextract\fP ()"
+.br
+.ti -1c
+.RI "void \fBsource\fP (const string &s)"
+.br
+.ti -1c
+.RI "string \fBsource\fP () const"
+.br
+.ti -1c
+.RI "void \fBdestiny\fP (const string &d)"
+.br
+.ti -1c
+.RI "string \fBdestiny\fP () const"
+.br
+.ti -1c
+.RI "void \fBdelRoot\fP (\fBNode\fP *r)"
+.br
+.ti -1c
+.RI "\fB~Huffman\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Class able to execute Huffman-compression or extraction 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Huffman::Huffman (const string & In)\fC [explicit]\fP"
+Constructor Resulting filepath is not given, it will have the same name with '\&.huffman_code_' extension
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIn\fP Source file's path 
+.RE
+.PP
+
+.SS "Huffman::Huffman (string In, string Out)"
+Constructor 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIIn\fP Source file's path 
+.br
+\fIOut\fP Resulting filepath 
+.RE
+.PP
+
+.SS "Huffman::~Huffman ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void Huffman::compress ()"
+Compression of file When called, the resulting file is created 
+.SS "void Huffman::delRoot (\fBNode\fP * r)"
+Deleting binary tree (Huffman-tree) 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIr\fP Root of tree 
+.RE
+.PP
+
+.SS "void Huffman::destiny (const string & d)\fC [inline]\fP"
+Set resulting file's path 
+.SS "string Huffman::destiny () const\fC [inline]\fP"
+Get resulting file's path 
+.SS "void Huffman::extract ()"
+Extraction of \&.huffman_code_ file
+.SS "void Huffman::source (const string & s)\fC [inline]\fP"
+Set source file's path 
+.SS "string Huffman::source () const\fC [inline]\fP"
+Get source file's path 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

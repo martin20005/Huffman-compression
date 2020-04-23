@@ -1,0 +1,85 @@
+.TH "Node" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Node
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <node\&.h>\fP
+.PP
+Inherited by \fBEnd\fP, and \fBPath\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP (\fBNode\fP *l, \fBNode\fP *r, long count=0)"
+.br
+.ti -1c
+.RI "\fBNode\fP *& \fBLeft\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP * \fBLeft\fP (\fBNode\fP *l)"
+.br
+.ti -1c
+.RI "\fBNode\fP *& \fBRight\fP ()"
+.br
+.ti -1c
+.RI "\fBNode\fP * \fBRight\fP (\fBNode\fP *r)"
+.br
+.ti -1c
+.RI "long \fBCnt\fP () const"
+.br
+.ti -1c
+.RI "void \fBCnt\fP (long val)"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP * \fBleft\fP"
+.br
+.ti -1c
+.RI "\fBNode\fP * \fBright\fP"
+.br
+.ti -1c
+.RI "long \fBcnt\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Node::Node ()\fC [inline]\fP"
+
+.SS "Node::Node (\fBNode\fP * l, \fBNode\fP * r, long count = \fC0\fP)\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "long Node::count () const\fC [inline]\fP"
+
+.SS "void Node::count (long val)\fC [inline]\fP"
+
+.SS "\fBNode\fP*& Node::left ()\fC [inline]\fP"
+
+.SS "\fBNode\fP* Node::left (\fBNode\fP * l)\fC [inline]\fP"
+
+.SS "\fBNode\fP*& Node::right ()\fC [inline]\fP"
+
+.SS "\fBNode\fP* Node::right (\fBNode\fP * r)\fC [inline]\fP"
+
+.SH "Member data_ Documentation"
+.PP 
+.SS "long Node::len_of_curr_chunk_b_\fC [protected]\fP"
+
+.SS "\fBNode\fP* Node::left_child_\fC [protected]\fP"
+
+.SS "\fBNode\fP* Node::right_child_\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

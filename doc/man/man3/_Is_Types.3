@@ -1,0 +1,49 @@
+.TH "_Is_Types< F, T >" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+_Is_Types< F, T > \- Segédsablon típuskonverzió futás közbeni ellenőrzésere\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <gtest_lite\&.h>\fP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename D > static char(& \fBf\fP (D))[1]"
+.br
+.ti -1c
+.RI "template<typename D > static char(& \fBf\fP (\&.\&.\&.))[2]"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static bool const \fBconvertable\fP = sizeof(\fBf\fP<T>(F())) == 1"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SS "template<typename F, typename T>
+.br
+struct _Is_Types< F, T >"
+Segédsablon típuskonverzió futás közbeni ellenőrzésere\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "template<typename F , typename T > template<typename D > static char(& \fB_Is_Types\fP< F, T >::f (D))[1]\fC [static]\fP"
+
+.SS "template<typename F , typename T > template<typename D > static char(& \fB_Is_Types\fP< F, T >::f ( \&.\&.\&.))[2]\fC [static]\fP"
+
+.SH "Member data_ Documentation"
+.PP 
+.SS "template<typename F , typename T > bool const \fB_Is_Types\fP< F, T >::convertable = sizeof(\fBf\fP<T>(F())) == 1\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

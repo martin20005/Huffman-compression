@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="node_8cpp" kind="file" language="C++">
+    <compoundname>node.cpp</compoundname>
+    <includes refid="node_8h" local="yes">node.h</includes>
+    <incdepgraph>
+      <node id="112">
+        <label>node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+      </node>
+      <node id="111">
+        <label>node.cpp</label>
+        <link refid="node_8cpp"/>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>letter.h</label>
+        <link refid="letter_8h"/>
+      </node>
+      <node id="114">
+        <label>cstdlib</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="node_8h" kindref="compound">node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="node.cpp"/>
+  </compounddef>
+</doxygen>

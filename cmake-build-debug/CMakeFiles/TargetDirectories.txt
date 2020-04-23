@@ -1,0 +1,3 @@
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/cmake-build-debug/CMakeFiles/huffman_1_2.dir

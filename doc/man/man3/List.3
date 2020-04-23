@@ -1,0 +1,72 @@
+.TH "List< T >" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+List< T >
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <list\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBList\fP (int Cap=10, int Incr=10)"
+.br
+.ti -1c
+.RI "\fBList\fP (const \fBList\fP &l)"
+.br
+.ti -1c
+.RI "\fB~List\fP ()"
+.br
+.ti -1c
+.RI "int \fBcount\fP () const"
+.br
+.ti -1c
+.RI "void \fBadd\fP (T &element)"
+.br
+.ti -1c
+.RI "void \fBremoveAt\fP (int idx)"
+.br
+.ti -1c
+.RI "void \fBremove\fP (T &element)"
+.br
+.ti -1c
+.RI "int \fBfind\fP (T &element)"
+.br
+.ti -1c
+.RI "T & \fBoperator[]\fP (int i) const"
+.br
+.ti -1c
+.RI "\fBList\fP & \fBoperator+=\fP (T element)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "template<class T> \fBList\fP< T >::\fBList\fP (int Cap = \fC10\fP, int Incr = \fC10\fP)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SS "template<class T> \fBList\fP< T >::\fBList\fP (const \fBList\fP< T > & l)\fC [inline]\fP"
+
+.SS "template<class T> \fBList\fP< T >::~\fBList\fP ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "template<class T> void \fBList\fP< T >::add (T & element)\fC [inline]\fP"
+
+.SS "template<class T> int \fBList\fP< T >::count () const\fC [inline]\fP"
+
+.SS "template<class T> int \fBList\fP< T >::findFirst (T & element)\fC [inline]\fP"
+
+.SS "template<class T> \fBList\fP& \fBList\fP< T >::operator+= (T element)\fC [inline]\fP"
+Bővítés 
+.SS "template<class T> T& \fBList\fP< T >::operator[] (int i) const\fC [inline]\fP"
+Indexelő operátor 
+.SS "template<class T> void \fBList\fP< T >::remove (T & element)\fC [inline]\fP"
+
+.SS "template<class T> void \fBList\fP< T >::removeAt (int idx)\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

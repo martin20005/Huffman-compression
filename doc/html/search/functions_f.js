@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['test',['Test',['../structgtest__lite_1_1_test.html#a99fb3f2338e4e0512beb6e19c5409078',1,'gtest_lite::Test']]],
+  ['traced_5fcalloc',['traced_calloc',['../memtrace_8cpp.html#a68998093ee624349c5cab1aab7bc915f',1,'traced_calloc(size_t count, size_t size, const char *par_txt, int line, const char *file):&#160;memtrace.cpp'],['../memtrace_8h.html#a8d30ad82fb5ab2f070bb8552d5f71575',1,'traced_calloc(size_t count, size_t size, const char *size_txt, int line, const char *file):&#160;memtrace.cpp']]],
+  ['traced_5ffree',['traced_free',['../memtrace_8cpp.html#a1f2006cf357ea01179f18a5c965ff105',1,'traced_free(void *pu, const char *par_txt, int line, const char *file):&#160;memtrace.cpp'],['../memtrace_8h.html#a324b3ee7c799b67c4bae9dcdfa144dd3',1,'traced_free(void *p, const char *size_txt, int line, const char *file):&#160;memtrace.cpp']]],
+  ['traced_5fmalloc',['traced_malloc',['../memtrace_8cpp.html#a30b6aa180e3214beb1f48c5a9381e5ac',1,'traced_malloc(size_t size, const char *par_txt, int line, const char *file):&#160;memtrace.cpp'],['../memtrace_8h.html#a878d95f35f94bc40ca0f41d5630c10a0',1,'traced_malloc(size_t size, const char *size_txt, int line, const char *file):&#160;memtrace.cpp']]],
+  ['traced_5frealloc',['traced_realloc',['../memtrace_8cpp.html#aa9656d71bfbb848ef518892eb0e3909b',1,'traced_realloc(void *old, size_t size, const char *par_txt, int line, const char *file):&#160;memtrace.cpp'],['../memtrace_8h.html#ad9b9f054074d56c2952702d341aba982',1,'traced_realloc(void *old, size_t size, const char *size_txt, int line, const char *file):&#160;memtrace.cpp']]]
+];

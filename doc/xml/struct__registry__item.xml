@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct__registry__item" kind="struct" language="C++" prot="public">
+    <compoundname>_registry_item</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _registry_item::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="193" column="1" bodyfile="memtrace.cpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _registry_item::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="194" column="1" bodyfile="memtrace.cpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" prot="public" static="no" mutable="no">
+        <type><ref refid="structcall__t" kindref="compound">call_t</ref></type>
+        <definition>call_t _registry_item::call</definition>
+        <argsstring></argsstring>
+        <name>call</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="195" column="1" bodyfile="memtrace.cpp" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__registry__item_1aa659ff3f2fa74b37e31b0bd3948bbf7f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__registry__item" kindref="compound">_registry_item</ref> *</type>
+        <definition>struct _registry_item* _registry_item::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="196" column="1" bodyfile="memtrace.cpp" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>call_t</label>
+        <link refid="structcall__t"/>
+      </node>
+      <node id="3">
+        <label>_registry_item</label>
+        <link refid="struct__registry__item"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>call</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="memtrace.cpp" line="192" column="1" bodyfile="memtrace.cpp" bodystart="192" bodyend="197"/>
+    <listofallmembers>
+      <member refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" prot="public" virt="non-virtual"><scope>_registry_item</scope><name>call</name></member>
+      <member refid="struct__registry__item_1aa659ff3f2fa74b37e31b0bd3948bbf7f" prot="public" virt="non-virtual"><scope>_registry_item</scope><name>next</name></member>
+      <member refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" prot="public" virt="non-virtual"><scope>_registry_item</scope><name>p</name></member>
+      <member refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" prot="public" virt="non-virtual"><scope>_registry_item</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,358 @@
+.TH "gtest_lite.h" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gtest_lite.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <iostream>\fP
+.br
+\fC#include <cassert>\fP
+.br
+\fC#include <cmath>\fP
+.br
+\fC#include <cstring>\fP
+.br
+\fC#include <limits>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <fstream>\fP
+.br
+\fC#include 'memtrace\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fB_Is_Types< F, T >\fP"
+.br
+.RI "Segédsablon típuskonverzió futás közbeni ellenőrzésere\&. "
+.ti -1c
+.RI "struct \fBgtest_lite::Test\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBgtest_lite\fP"
+.br
+.RI "\fBgtest_lite\fP: a keretrendszer függvényinek és objektumainak névtere "
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTEST\fP(C,  N)   { gtest_lite::test\&.begin(#C'/'#N);"
+.br
+.ti -1c
+.RI "#define \fBEND\fP   gtest_lite::test\&.end(); }"
+.br
+.RI "Teszteset vége\&. "
+.ti -1c
+.RI "#define \fBENDM\fP   gtest_lite::test\&.end(true); }"
+.br
+.ti -1c
+.RI "#define \fBENDMsg\fP(t)   gtest_lite::test\&.end(true) << t << std::endl; }"
+.br
+.ti -1c
+.RI "#define \fBSUCCEED\fP()   gtest_lite::test\&.expect(true, __FILE__, __LINE__, 'SUCCEED()', true)"
+.br
+.RI "Sikeres teszt makrója\&. "
+.ti -1c
+.RI "#define \fBFAIL\fP()   gtest_lite::test\&.expect(false, __FILE__, __LINE__, 'FAIL()', true)"
+.br
+.RI "Sikertelen teszt makrója\&. "
+.ti -1c
+.RI "#define \fBEXPECT_EQ\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_EQ(' #expected ', ' #actual ')' )"
+.br
+.RI "Azonosságot elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_NE\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::ne\fP, __FILE__, __LINE__, 'EXPECT_NE(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "Eltérést elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_LE\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::le\fP, __FILE__, __LINE__, 'EXPECT_LE(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "Kisebb, vagy egyenlő relációt elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_LT\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::lt\fP, __FILE__, __LINE__, 'EXPECT_LT(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "Kisebb, mint relációt elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_GE\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::ge\fP, __FILE__, __LINE__, 'EXPECT_GE(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "Nagyobb, vagy egyenlő relációt elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_GT\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::gt\fP, __FILE__, __LINE__, 'EXPECT_GT(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "Nagyobb, mint relációt elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_TRUE\fP(actual)   \fBgtest_lite::EXPECT_\fP(true, actual,  \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_TRUE(' #actual ')' )"
+.br
+.RI "Igaz értéket elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_FALSE\fP(actual)   \fBgtest_lite::EXPECT_\fP(false, actual, \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_FALSE(' #actual ')' )"
+.br
+.RI "Hamis értéket elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_FLOAT_EQ\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::almostEQ\fP, __FILE__, __LINE__, 'EXPECT_FLOAT_EQ(' #expected ', ' #actual ')' )"
+.br
+.RI "Valós számok azonosságát elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_DOUBLE_EQ\fP(expected,  actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::almostEQ\fP, __FILE__, __LINE__, 'EXPECT_DOUBLE_EQ(' #expected ', ' #actual ')' )"
+.br
+.RI "Valós számok azonosságát elváró makró "
+.ti -1c
+.RI "#define \fBEXPECT_STREQ\fP(expected,  actual)   \fBgtest_lite::EXPECTSTR\fP(expected, actual, \fBgtest_lite::eqstr\fP, __FILE__, __LINE__, 'EXPECT_STREQ(' #expected ', ' #actual ')' )"
+.br
+.RI "C stringek (const char *) azonosságát tesztelő makró "
+.ti -1c
+.RI "#define \fBEXPECT_STRNE\fP(expected,  actual)   \fBgtest_lite::EXPECTSTR\fP(expected, actual, \fBgtest_lite::nestr\fP, __FILE__, __LINE__, 'EXPECT_STRNE(' #expected ', ' #actual ')', 'etalon' )"
+.br
+.RI "C stringek (const char *) eltéréset tesztelő makró "
+.ti -1c
+.RI "#define \fBEXPECT_THROW\fP(statement,  exception_type)"
+.br
+.RI "Kivételt várunk\&. "
+.ti -1c
+.RI "#define \fBEXPECT_ANY_THROW\fP(statement)"
+.br
+.RI "Kivételt várunk\&. "
+.ti -1c
+.RI "#define \fBEXPECT_NO_THROW\fP(statement)"
+.br
+.RI "Nem várunk kivételt\&. "
+.ti -1c
+.RI "#define \fBEXPECT_THROW_THROW\fP(statement,  exception_type)"
+.br
+.RI "Kivételt várunk és továbbdobjuk -- ilyen nincs a gtest-ben\&. "
+.ti -1c
+.RI "#define \fBCREATE_Has_\fP(X)"
+.br
+.ti -1c
+.RI "#define \fBEXPECTTHROW\fP(statement,  exp,  act)"
+.br
+.RI "EXPECTTHROW: kivételkezelés\&. "
+.ti -1c
+.RI "#define \fBGTINIT\fP(IS)"
+.br
+.ti -1c
+.RI "#define \fBGTEND\fP(os)"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > std::ostream & \fBgtest_lite::EXPECT_\fP (T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.RI "általános sablon a várt értékhez\&. "
+.ti -1c
+.RI "template<typename T > std::ostream & \fBgtest_lite::EXPECT_\fP (T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.RI "pointerre specializált sablon a várt értékhez\&. "
+.ti -1c
+.RI "std::ostream & \fBgtest_lite::EXPECTSTR\fP (const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::eq\fP (T a, T b)"
+.br
+.ti -1c
+.RI "bool \fBgtest_lite::eqstr\fP (const char *a, const char *b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::ne\fP (T a, T b)"
+.br
+.ti -1c
+.RI "bool \fBgtest_lite::nestr\fP (const char *a, const char *b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::le\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::lt\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::ge\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::gt\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgtest_lite::almostEQ\fP (T a, T b)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+(v2)
+.PP
+Google gtest keretrendszerhez hasonló rendszer\&. Sz\&.I\&. 2015\&., 2016\&., 2017\&. (_Has_X) Sz\&.I\&. 2018 (template), ENDM, ENDMsg
+.PP
+A tesztelés legalapvetőbb funkcióit támogató függvények és makrók\&. Nem szálbiztos megvalósítás\&.
+.PP
+Egyetlen fájlban kell megvalósítani minden tesztesetet! Csak ebből include-olható a \fBgtest_lite\&.h\fP Ezen korlátozás kiküszöböléséhez sigletonnal kellene rednesen megvalósítani\&. a test osztályt!
+.PP
+Szabadon felhasználható, bővíthető\&.
+.PP
+Használati példa: Teszteljük az f(x)=2*x függvényt: int f(int x) { return 2*x; }
+.PP
+int \fBmain()\fP { \fBTEST(TeszEsetNeve, TesztNeve)\fP \fBEXPECT_EQ(0, f(0))\fP; \fBEXPECT_EQ(4, f(2))\fP << 'A függvény hibás eredményt adott' << std::endl; \&.\&.\&. END \&.\&.\&.
+.PP
+A működés részleteinek megértése szorgalmi feladat\&. 
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define CREATE_Has_(X)"
+\fBValue:\fP
+.PP
+.nf
+template<typename T> struct _Has_##X {  \
+    struct Fallback { int X; };         \
+    struct Derived : T, Fallback {};    \
+    template<typename C, C> struct ChT; \
+    template<typename D> static char (&f(ChT<int Fallback::*, &D::X>*))[1]; \
+    template<typename D> static char (&f(\&.\&.\&.))[2]; \
+    static bool const member = sizeof(f<Derived>(0)) == 2; \
+};
+.fi
+Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet: https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2 Használat: \fBCREATE_Has_(size)\fP \&.\&.\&. if (Has_size<std::string>::member)\&.\&.\&. 
+.SS "#define END   gtest_lite::test\&.end(); }"
+
+.PP
+Teszteset vége\&. 
+.SS "#define ENDM   gtest_lite::test\&.end(true); }"
+Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos\&. 
+.SS "#define ENDMsg(t)   gtest_lite::test\&.end(true) << t << std::endl; }"
+Teszteset vége allokált blokkok számának összehasonlításával Ez az ellenőrzés nem bomba biztos\&. Ha hiba van kiírja az üzenetet\&. 
+.SS "#define EXPECT_ANY_THROW(statement)"
+\fBValue:\fP
+.PP
+.nf
+try { gtest_lite::test\&.tmp = false; statement; } \
+    catch (\&.\&.\&.) { gtest_lite::test\&.tmp = true; } \
+    EXPECTTHROW(statement, "kivetelt dob\&.", "nem dobott kivetelt\&.")
+.fi
+.PP
+Kivételt várunk\&. 
+.SS "#define EXPECT_DOUBLE_EQ(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::almostEQ\fP, __FILE__, __LINE__, 'EXPECT_DOUBLE_EQ(' #expected ', ' #actual ')' )"
+
+.PP
+Valós számok azonosságát elváró makró 
+.SS "#define EXPECT_EQ(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_EQ(' #expected ', ' #actual ')' )"
+
+.PP
+Azonosságot elváró makró 
+.SS "#define EXPECT_FALSE(actual)   \fBgtest_lite::EXPECT_\fP(false, actual, \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_FALSE(' #actual ')' )"
+
+.PP
+Hamis értéket elváró makró 
+.SS "#define EXPECT_FLOAT_EQ(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::almostEQ\fP, __FILE__, __LINE__, 'EXPECT_FLOAT_EQ(' #expected ', ' #actual ')' )"
+
+.PP
+Valós számok azonosságát elváró makró 
+.SS "#define EXPECT_GE(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::ge\fP, __FILE__, __LINE__, 'EXPECT_GE(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+Nagyobb, vagy egyenlő relációt elváró makró 
+.SS "#define EXPECT_GT(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::gt\fP, __FILE__, __LINE__, 'EXPECT_GT(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+Nagyobb, mint relációt elváró makró 
+.SS "#define EXPECT_LE(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::le\fP, __FILE__, __LINE__, 'EXPECT_LE(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+Kisebb, vagy egyenlő relációt elváró makró 
+.SS "#define EXPECT_LT(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::lt\fP, __FILE__, __LINE__, 'EXPECT_LT(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+Kisebb, mint relációt elváró makró 
+.SS "#define EXPECT_NE(expected, actual)   \fBgtest_lite::EXPECT_\fP(expected, actual, \fBgtest_lite::ne\fP, __FILE__, __LINE__, 'EXPECT_NE(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+Eltérést elváró makró 
+.SS "#define EXPECT_NO_THROW(statement)"
+\fBValue:\fP
+.PP
+.nf
+try { gtest_lite::test\&.tmp = true; statement; } \
+    catch (\&.\&.\&.) { gtest_lite::test\&.tmp = false; }\
+    EXPECTTHROW(statement, "nem dob kivetelt\&.", "kivetelt dobott\&.")
+.fi
+.PP
+Nem várunk kivételt\&. 
+.SS "#define EXPECT_STREQ(expected, actual)   \fBgtest_lite::EXPECTSTR\fP(expected, actual, \fBgtest_lite::eqstr\fP, __FILE__, __LINE__, 'EXPECT_STREQ(' #expected ', ' #actual ')' )"
+
+.PP
+C stringek (const char *) azonosságát tesztelő makró 
+.SS "#define EXPECT_STRNE(expected, actual)   \fBgtest_lite::EXPECTSTR\fP(expected, actual, \fBgtest_lite::nestr\fP, __FILE__, __LINE__, 'EXPECT_STRNE(' #expected ', ' #actual ')', 'etalon' )"
+
+.PP
+C stringek (const char *) eltéréset tesztelő makró 
+.SS "#define EXPECT_THROW(statement, exception_type)"
+\fBValue:\fP
+.PP
+.nf
+try { gtest_lite::test\&.tmp = false; statement; } \
+    catch (exception_type) { gtest_lite::test\&.tmp = true; } \
+    catch (\&.\&.\&.) { } \
+    EXPECTTHROW(statement, "kivetelt dob\&.", "nem dobott '"#exception_type"' kivetelt\&.")
+.fi
+.PP
+Kivételt várunk\&. 
+.SS "#define EXPECT_THROW_THROW(statement, exception_type)"
+\fBValue:\fP
+.PP
+.nf
+try { gtest_lite::test\&.tmp = false; statement; } \
+    catch (exception_type) { gtest_lite::test\&.tmp = true; throw; } \
+    EXPECTTHROW(statement, "kivetelt dob\&.", "nem dobott '"#exception_type"' kivetelt\&.")
+.fi
+.PP
+Kivételt várunk és továbbdobjuk -- ilyen nincs a gtest-ben\&. 
+.SS "#define EXPECT_TRUE(actual)   \fBgtest_lite::EXPECT_\fP(true, actual,  \fBgtest_lite::eq\fP, __FILE__, __LINE__, 'EXPECT_TRUE(' #actual ')' )"
+
+.PP
+Igaz értéket elváró makró 
+.SS "#define EXPECTTHROW(statement, exp, act)"
+\fBValue:\fP
+.PP
+.nf
+gtest_lite::test\&.expect(gtest_lite::test\&.tmp, __FILE__, __LINE__, #statement) \
+    << "** Az utasitas " << (act) \
+    << "\n** Azt vartuk, hogy " << (exp) << std::endl
+.fi
+.PP
+EXPECTTHROW: kivételkezelés\&. 
+.PP
+ Belső megvalósításhoz tartozó makrók, és osztályok\&. 
+.SS "Nem célszerű közvetlenül használni, vagy módosítani "
+
+.SS "#define FAIL()   gtest_lite::test\&.expect(false, __FILE__, __LINE__, 'FAIL()', true)"
+
+.PP
+Sikertelen teszt makrója\&. 
+.SS "#define GTEND(os)"
+
+.SS "#define GTINIT(IS)"
+
+.SS "#define SUCCEED()   gtest_lite::test\&.expect(true, __FILE__, __LINE__, 'SUCCEED()', true)"
+
+.PP
+Sikeres teszt makrója\&. 
+.SS "#define TEST(C, N)   { gtest_lite::test\&.begin(#C'/'#N);"
+Teszt kezdete\&. A makró paraméterezése hasonlít a gtest paraméterezéséhez\&. Így az itt elkészített testek könnyen átemelhetők a gtest keretrendszerbe\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIC\fP - teszteset neve (csak a gtest kompatibilitás miatt van külön neve az eseteknek) 
+.br
+\fIN\fP - teszt neve 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

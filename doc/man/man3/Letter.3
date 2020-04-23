@@ -1,0 +1,72 @@
+.TH "Letter" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Letter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <letter\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBLetter\fP (char c)"
+.br
+.ti -1c
+.RI "\fBLetter\fP (const \fBLetter\fP &l)"
+.br
+.ti -1c
+.RI "\fBLetter\fP ()"
+.br
+.ti -1c
+.RI "char \fBoriginal\fP () const"
+.br
+.ti -1c
+.RI "void \fBoriginal\fP (char ch)"
+.br
+.ti -1c
+.RI "long long int \fBhuffman\fP () const"
+.br
+.ti -1c
+.RI "void \fBhuffman\fP (long long int h, unsigned char l)"
+.br
+.ti -1c
+.RI "unsigned char \fBlength\fP () const"
+.br
+.ti -1c
+.RI "\fBLetter\fP & \fBoperator=\fP (const \fBLetter\fP &l)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const \fBLetter\fP &l)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Letter::Letter (char c)\fC [inline]\fP, \fC [explicit]\fP"
+
+.SS "Letter::Letter (const \fBLetter\fP & l)\fC [inline]\fP"
+
+.SS "Letter::Letter ()\fC [inline]\fP"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "long long int Letter::huffman () const\fC [inline]\fP"
+
+.SS "void Letter::huffman (long long int h, unsigned char l)\fC [inline]\fP"
+
+.SS "unsigned char Letter::length () const\fC [inline]\fP"
+
+.SS "\fBLetter\fP& Letter::operator= (const \fBLetter\fP & l)\fC [inline]\fP"
+
+.SS "bool Letter::operator== (const \fBLetter\fP & l)\fC [inline]\fP"
+
+.SS "char Letter::original () const\fC [inline]\fP"
+
+.SS "void Letter::original (char ch)\fC [inline]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_end" kind="class" language="C++" prot="public">
+    <compoundname>End</compoundname>
+    <basecompoundref refid="class_node" prot="public" virt="non-virtual">Node</basecompoundref>
+    <includes refid="node_8h" local="no">node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_end_1a4243d6ed0711bbf64948454df0fb02a7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_letter" kindref="compound">Letter</ref></type>
+        <definition>Letter End::letter_</definition>
+        <argsstring></argsstring>
+        <name>letter_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="25" column="1" bodyfile="node.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_end_1aec010332b2484030781dff4ab47156ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>End::End</definition>
+        <argsstring>(Letter &amp;letter, long frequency)</argsstring>
+        <name>End</name>
+        <param>
+          <type><ref refid="class_letter" kindref="compound">Letter</ref> &amp;</type>
+          <declname>letter</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="27" column="1" bodyfile="node.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1a9cdb20f0a78b188e13de7c4afc1a0bf4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>End::End</definition>
+        <argsstring>(const End &amp;end)</argsstring>
+        <name>End</name>
+        <param>
+          <type>const <ref refid="class_end" kindref="compound">End</ref> &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="28" column="1" bodyfile="node.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1acd25fa8f481c50f5b8eaff4af1159942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>End::End</definition>
+        <argsstring>()</argsstring>
+        <name>End</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="29" column="1" bodyfile="node.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1a965fceb8e50a82e43bafe25b46fff325" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_letter" kindref="compound">Letter</ref> &amp;</type>
+        <definition>Letter&amp; End::letter</definition>
+        <argsstring>()</argsstring>
+        <name>letter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="30" column="1" bodyfile="node.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1a4c27e829f73c99b0022b88c2c1730867" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* End::left</definition>
+        <argsstring>() const</argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="31" column="1" bodyfile="node.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1a1e28f698b8995a75d14803b2db8466c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* End::right</definition>
+        <argsstring>() const</argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="33" column="1" bodyfile="node.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1aacfada9eb004efb4d454b8357f3f8e1e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool End::operator==</definition>
+        <argsstring>(End &amp;e)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_end" kindref="compound">End</ref> &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="35" column="1" bodyfile="node.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_end_1aa1acae6e027fc01427b07afe58f44f09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void End::operator++</definition>
+        <argsstring>(int)</argsstring>
+        <name>operator++</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="38" column="1" bodyfile="node.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="9">
+        <label>End</label>
+        <link refid="class_end"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Node</label>
+        <link refid="class_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="11">
+        <label>End</label>
+        <link refid="class_end"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Node</label>
+        <link refid="class_node"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>right_child_</edgelabel>
+          <edgelabel>left_child_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="node.h" line="24" column="1" bodyfile="node.h" bodystart="24" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_node_1a3536573131e96ed591637abe7b532673" prot="protected" virt="non-virtual"><scope>End</scope><name>len_of_curr_chunk_b_</name></member>
+      <member refid="class_node_1a2c339e14824c1960e65c21b19eaad9a0" prot="public" virt="non-virtual"><scope>End</scope><name>count</name></member>
+      <member refid="class_node_1a7a2fced8d12d4f75acb8a24fbd0467e2" prot="public" virt="non-virtual"><scope>End</scope><name>count</name></member>
+      <member refid="class_end_1aec010332b2484030781dff4ab47156ce" prot="public" virt="non-virtual"><scope>End</scope><name>End</name></member>
+      <member refid="class_end_1a9cdb20f0a78b188e13de7c4afc1a0bf4" prot="public" virt="non-virtual"><scope>End</scope><name>End</name></member>
+      <member refid="class_end_1acd25fa8f481c50f5b8eaff4af1159942" prot="public" virt="non-virtual"><scope>End</scope><name>End</name></member>
+      <member refid="class_node_1ab8c667ac8fdb120ed4c031682a9cdaee" prot="protected" virt="non-virtual"><scope>End</scope><name>left_child_</name></member>
+      <member refid="class_end_1a4c27e829f73c99b0022b88c2c1730867" prot="public" virt="non-virtual"><scope>End</scope><name>left</name></member>
+      <member refid="class_node_1a4b0ea9be15925bfa877cdac6923c275a" prot="public" virt="non-virtual" ambiguityscope="Node::"><scope>End</scope><name>left</name></member>
+      <member refid="class_node_1af62ccd86ec2c1967b571faf948a964c4" prot="public" virt="non-virtual" ambiguityscope="Node::"><scope>End</scope><name>left</name></member>
+      <member refid="class_end_1a4243d6ed0711bbf64948454df0fb02a7" prot="private" virt="non-virtual"><scope>End</scope><name>letter_</name></member>
+      <member refid="class_end_1a965fceb8e50a82e43bafe25b46fff325" prot="public" virt="non-virtual"><scope>End</scope><name>letter</name></member>
+      <member refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" virt="non-virtual"><scope>End</scope><name>Node</name></member>
+      <member refid="class_node_1a942858d25ccdfaf7e1d1f4ddbdf13831" prot="public" virt="non-virtual"><scope>End</scope><name>Node</name></member>
+      <member refid="class_end_1aa1acae6e027fc01427b07afe58f44f09" prot="public" virt="non-virtual"><scope>End</scope><name>operator++</name></member>
+      <member refid="class_end_1aacfada9eb004efb4d454b8357f3f8e1e" prot="public" virt="non-virtual"><scope>End</scope><name>operator==</name></member>
+      <member refid="class_end_1a1e28f698b8995a75d14803b2db8466c1" prot="public" virt="non-virtual"><scope>End</scope><name>right</name></member>
+      <member refid="class_node_1a73fffe3df2c9e7ac4ebf52d7c65e8e38" prot="public" virt="non-virtual" ambiguityscope="Node::"><scope>End</scope><name>right</name></member>
+      <member refid="class_node_1a2b9e785c9b94b7bb0e4617403542207b" prot="public" virt="non-virtual" ambiguityscope="Node::"><scope>End</scope><name>right</name></member>
+      <member refid="class_node_1a7328862eaa6dea28018326549b3294d3" prot="protected" virt="non-virtual"><scope>End</scope><name>right_child_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

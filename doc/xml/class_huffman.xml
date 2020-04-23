@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_huffman" kind="class" language="C++" prot="public">
+    <compoundname>Huffman</compoundname>
+    <includes refid="huffman_8h" local="no">huffman.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_huffman_1af42de739fa07937ad46f07bfa5a757da" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Huffman::in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <briefdescription>
+<para>Source file&apos;s path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="17" column="1" bodyfile="huffman.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_huffman_1a0edc8fd8aa149cb823ffd6fb4205fc9a" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Huffman::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <briefdescription>
+<para>Resulting file&apos;s path. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="18" column="1" bodyfile="huffman.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_huffman_1ac29ca2db3c0fdfef8919e5938bc77625" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* Huffman::root_h_tree_</definition>
+        <argsstring></argsstring>
+        <name>root_h_tree_</name>
+        <briefdescription>
+<para>Root of Huffman-tree. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="19" column="1" bodyfile="huffman.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_huffman_1a58af969e1cd59bd981f1461e8a51822c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Huffman::Huffman</definition>
+        <argsstring>()</argsstring>
+        <name>Huffman</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="20" column="1" bodyfile="huffman.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_huffman_1a381daf47396ec56b139f5a80db01371a" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Huffman::Huffman</definition>
+        <argsstring>(const string &amp;In)</argsstring>
+        <name>Huffman</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>In</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor Resulting filepath is not given, it will have the same name with &quot;.huffman_code_&quot; extension <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>In</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file&apos;s path </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="26" column="1" bodyfile="huffman.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a340d5fe63ee0b2e66319cfa2b3adf07e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Huffman::Huffman</definition>
+        <argsstring>(string In, string Out)</argsstring>
+        <name>Huffman</name>
+        <param>
+          <type>string</type>
+          <declname>In</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>Out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>In</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file&apos;s path </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Out</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Resulting filepath </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="30" column="1" bodyfile="huffman.cpp" bodystart="12" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a29b0ed4581235dae876fca58dd9bf06f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::compress</definition>
+        <argsstring>()</argsstring>
+        <name>compress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Compression of file When called, the resulting file is created </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="35" column="1" bodyfile="huffman.cpp" bodystart="14" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a7c0595055bea8a499d7750cbbd86e12d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::extract</definition>
+        <argsstring>()</argsstring>
+        <name>extract</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Extraction of .huffman_code_ file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="52" column="1" bodyfile="huffman.cpp" bodystart="116" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a8ffa876d6b52ef4a06198dc4800bf2f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::source</definition>
+        <argsstring>(const string &amp;s)</argsstring>
+        <name>source</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set source file&apos;s path </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="64" column="1" bodyfile="huffman.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a155055b704bd1c800a23a3a19820e357" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Huffman::source</definition>
+        <argsstring>() const</argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get source file&apos;s path </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="67" column="1" bodyfile="huffman.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a5daa104bd2cefb4be9befd6140428ba7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::destiny</definition>
+        <argsstring>(const string &amp;d)</argsstring>
+        <name>destiny</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set resulting file&apos;s path </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="70" column="1" bodyfile="huffman.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1ab6edbf4822379aaf27834c21b706405f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Huffman::destiny</definition>
+        <argsstring>() const</argsstring>
+        <name>destiny</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get resulting file&apos;s path </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="73" column="1" bodyfile="huffman.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1ae994bcb0f59826793e2065b0fd9bd7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::delRoot</definition>
+        <argsstring>(Node *r)</argsstring>
+        <name>delRoot</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deleting binary tree (Huffman-tree) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root of tree </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="77" column="1" bodyfile="huffman.cpp" bodystart="188" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a641376a7cb5871a6a2c7b51afb05bfcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Huffman::~Huffman</definition>
+        <argsstring>()</argsstring>
+        <name>~Huffman</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="78" column="1" bodyfile="huffman.cpp" bodystart="194" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_huffman_1af87ec9554e4a062bb93439a539aa06da" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+        <definition>Node * Huffman::genTree</definition>
+        <argsstring>(List&lt; End &gt; &amp;leafes)</argsstring>
+        <name>genTree</name>
+        <param>
+          <type><ref refid="class_list" kindref="compound">List</ref>&lt; <ref refid="class_end" kindref="compound">End</ref> &gt; &amp;</type>
+          <declname>leafes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generating the Huffman-tree <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>leafes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_list" kindref="compound">List</ref> of end-nodes (which contain Letters and frequencies) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Count frequencies of letters in file, create a List&lt;End&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="41" column="1" bodyfile="huffman.cpp" bodystart="75" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1af6bfd15ef1b3ed6d9a8ebe29b05b9fd2" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::genCodes</definition>
+        <argsstring>(Node *r, unsigned char hlen=0, long long int hcode=0)</argsstring>
+        <name>genCodes</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>hlen</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>long long int</type>
+          <declname>hcode</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generating the Huffman-codes by H-tree <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Root of Huffman-tree </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hlen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of Huffman-code (count of bits) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hcode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Huffman-code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="pre"><para>Call genTree </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="47" column="1" bodyfile="huffman.cpp" bodystart="105" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_huffman_1a594f0eab9fc8a1f8e21f596ccc968956" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Huffman::rebuildTree</definition>
+        <argsstring>(Node *&amp;r, End *e, int bitid)</argsstring>
+        <name>rebuildTree</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *&amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="class_end" kindref="compound">End</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Rebuilding the H-tree This rebuilds the whole H-tree if all the leafes are correct, and it is called for each and every one of them <simplesect kind="pre"><para>Read metadata from file, create List&lt;end&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="huffman.h" line="59" column="1" bodyfile="huffman.cpp" bodystart="169" bodyend="186"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class able to execute Huffman-compression or extraction </para>    </detaileddescription>
+    <location file="huffman.h" line="16" column="1" bodyfile="huffman.h" bodystart="16" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_huffman_1a29b0ed4581235dae876fca58dd9bf06f" prot="public" virt="non-virtual"><scope>Huffman</scope><name>compress</name></member>
+      <member refid="class_huffman_1ae994bcb0f59826793e2065b0fd9bd7fb" prot="public" virt="non-virtual"><scope>Huffman</scope><name>delRoot</name></member>
+      <member refid="class_huffman_1a5daa104bd2cefb4be9befd6140428ba7" prot="public" virt="non-virtual"><scope>Huffman</scope><name>destiny</name></member>
+      <member refid="class_huffman_1ab6edbf4822379aaf27834c21b706405f" prot="public" virt="non-virtual"><scope>Huffman</scope><name>destiny</name></member>
+      <member refid="class_huffman_1af6bfd15ef1b3ed6d9a8ebe29b05b9fd2" prot="private" virt="non-virtual"><scope>Huffman</scope><name>genCodes</name></member>
+      <member refid="class_huffman_1a7c0595055bea8a499d7750cbbd86e12d" prot="public" virt="non-virtual"><scope>Huffman</scope><name>extract</name></member>
+      <member refid="class_huffman_1af87ec9554e4a062bb93439a539aa06da" prot="private" virt="non-virtual"><scope>Huffman</scope><name>genTree</name></member>
+      <member refid="class_huffman_1a58af969e1cd59bd981f1461e8a51822c" prot="private" virt="non-virtual"><scope>Huffman</scope><name>Huffman</name></member>
+      <member refid="class_huffman_1a381daf47396ec56b139f5a80db01371a" prot="public" virt="non-virtual"><scope>Huffman</scope><name>Huffman</name></member>
+      <member refid="class_huffman_1a340d5fe63ee0b2e66319cfa2b3adf07e" prot="public" virt="non-virtual"><scope>Huffman</scope><name>Huffman</name></member>
+      <member refid="class_huffman_1af42de739fa07937ad46f07bfa5a757da" prot="private" virt="non-virtual"><scope>Huffman</scope><name>in</name></member>
+      <member refid="class_huffman_1a0edc8fd8aa149cb823ffd6fb4205fc9a" prot="private" virt="non-virtual"><scope>Huffman</scope><name>out</name></member>
+      <member refid="class_huffman_1a594f0eab9fc8a1f8e21f596ccc968956" prot="private" virt="non-virtual"><scope>Huffman</scope><name>rebuildTree</name></member>
+      <member refid="class_huffman_1ac29ca2db3c0fdfef8919e5938bc77625" prot="private" virt="non-virtual"><scope>Huffman</scope><name>root_h_tree_</name></member>
+      <member refid="class_huffman_1a8ffa876d6b52ef4a06198dc4800bf2f3" prot="public" virt="non-virtual"><scope>Huffman</scope><name>source</name></member>
+      <member refid="class_huffman_1a155055b704bd1c800a23a3a19820e357" prot="public" virt="non-virtual"><scope>Huffman</scope><name>source</name></member>
+      <member refid="class_huffman_1a641376a7cb5871a6a2c7b51afb05bfcc" prot="public" virt="non-virtual"><scope>Huffman</scope><name>~Huffman</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

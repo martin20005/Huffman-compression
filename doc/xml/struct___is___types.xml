@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="struct___is___types" kind="struct" language="C++" prot="public">
+    <compoundname>_Is_Types</compoundname>
+    <includes refid="gtest__lite_8h" local="no">gtest_lite.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename F</type>
+      </param>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" prot="public" static="yes" mutable="no">
+        <type>bool const</type>
+        <definition>bool const _Is_Types&lt; F, T &gt;::convertable</definition>
+        <argsstring></argsstring>
+        <name>convertable</name>
+        <initializer>= sizeof(<ref refid="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" kindref="member">f</ref>&lt;T&gt;(F())) == 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="158" column="1" bodyfile="gtest_lite.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename D</type>
+          </param>
+        </templateparamlist>
+        <type>char(&amp;</type>
+        <definition>static char(&amp; _Is_Types&lt; F, T &gt;::f</definition>
+        <argsstring>(D))[1]</argsstring>
+        <name>f</name>
+        <param>
+          <type>D</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename D</type>
+          </param>
+        </templateparamlist>
+        <type>char(&amp;</type>
+        <definition>static char(&amp; _Is_Types&lt; F, T &gt;::f</definition>
+        <argsstring>(...))[2]</argsstring>
+        <name>f</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="157" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Segédsablon típuskonverzió futás közbeni ellenőrzésere. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="gtest_lite.h" line="155" column="1" bodyfile="gtest_lite.h" bodystart="155" bodyend="159"/>
+    <listofallmembers>
+      <member refid="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" prot="public" virt="non-virtual"><scope>_Is_Types</scope><name>convertable</name></member>
+      <member refid="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" prot="public" virt="non-virtual"><scope>_Is_Types</scope><name>f</name></member>
+      <member refid="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" prot="public" virt="non-virtual"><scope>_Is_Types</scope><name>f</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

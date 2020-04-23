@@ -1,0 +1,94 @@
+.TH "gtest_lite" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+gtest_lite \- \fBgtest_lite\fP: a keretrendszer függvényinek és objektumainak névtere  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "struct \fBTest\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename T > std::ostream & \fBEXPECT_\fP (T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.RI "általános sablon a várt értékhez\&. "
+.ti -1c
+.RI "template<typename T > std::ostream & \fBEXPECT_\fP (T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.RI "pointerre specializált sablon a várt értékhez\&. "
+.ti -1c
+.RI "std::ostream & \fBEXPECTSTR\fP (const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs='elvart', const char *rhs='aktual')"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBeq\fP (T a, T b)"
+.br
+.ti -1c
+.RI "bool \fBeqstr\fP (const char *a, const char *b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBne\fP (T a, T b)"
+.br
+.ti -1c
+.RI "bool \fBnestr\fP (const char *a, const char *b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBle\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBlt\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBge\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBgt\fP (T a, T b)"
+.br
+.ti -1c
+.RI "template<typename T > bool \fBalmostEQ\fP (T a, T b)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+\fBgtest_lite\fP: a keretrendszer függvényinek és objektumainak névtere 
+.SH "Function Documentation"
+.PP 
+.SS "template<typename T > bool gtest_lite::almostEQ (T a, T b)"
+Segédsablon valós számok összehasonlításához Nem bombabiztos, de nekünk most jó lesz Elméleti hátér: http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm 
+.SS "template<typename T > bool gtest_lite::eq (T a, T b)"
+segéd sablonok a relációkhoz\&. azért nem STL (algorithm), mert csak a függvény lehet, hogy menjen a deduckció 
+.SS "bool gtest_lite::eqstr (const char * a, const char * b)\fC [inline]\fP"
+
+.SS "template<typename T > std::ostream& gtest_lite::EXPECT_ (T exp, T act, bool(*)(T, T) pred, const char * file, int line, const char * expr, const char * lhs = \fC'elvart'\fP, const char * rhs = \fC'aktual'\fP)"
+
+.PP
+általános sablon a várt értékhez\&. 
+.SS "template<typename T > std::ostream& gtest_lite::EXPECT_ (T * exp, T * act, bool(*)(T *, T *) pred, const char * file, int line, const char * expr, const char * lhs = \fC'elvart'\fP, const char * rhs = \fC'aktual'\fP)"
+
+.PP
+pointerre specializált sablon a várt értékhez\&. 
+.SS "std::ostream& gtest_lite::EXPECTSTR (const char * exp, const char * act, bool(*)(const char *, const char *) pred, const char * file, int line, const char * expr, const char * lhs = \fC'elvart'\fP, const char * rhs = \fC'aktual'\fP)\fC [inline]\fP"
+stringek összehasonlításához\&. azért nem spec\&. mert a sima EQ-ra másként kell működnie\&. 
+.SS "template<typename T > bool gtest_lite::ge (T a, T b)"
+
+.SS "template<typename T > bool gtest_lite::gt (T a, T b)"
+
+.SS "template<typename T > bool gtest_lite::le (T a, T b)"
+
+.SS "template<typename T > bool gtest_lite::lt (T a, T b)"
+
+.SS "template<typename T > bool gtest_lite::ne (T a, T b)"
+
+.SS "bool gtest_lite::nestr (const char * a, const char * b)\fC [inline]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

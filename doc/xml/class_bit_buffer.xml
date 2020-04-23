@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_bit_buffer" kind="class" language="C++" prot="public">
+    <compoundname>BitBuffer</compoundname>
+    <includes refid="bitbuffer_8h" local="no">bitbuffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bit_buffer_1afe57f16d5f136b53999e4d39ca46183d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BitBuffer::is_open_</definition>
+        <argsstring></argsstring>
+        <name>is_open_</name>
+        <briefdescription>
+<para>Editing is allowed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="9" column="1" bodyfile="bitbuffer.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1a07254851abc3d4567fd6b373ceb7dedd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_list" kindref="compound">List</ref>&lt; char &gt;</type>
+        <definition>List&lt;char&gt; BitBuffer::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+<para>All the chunks (if &apos;is_open_&apos; is true, it doesn&apos;t contain the last chunk) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="10" column="1" bodyfile="bitbuffer.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1aec6b6f4c300ad354851d52f91a1e4e86" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char BitBuffer::current_chunk_</definition>
+        <argsstring></argsstring>
+        <name>current_chunk_</name>
+        <briefdescription>
+<para>The last chunk (maybe not full) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="11" column="1" bodyfile="bitbuffer.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1a20996e3146c64966ace69e3cdfda240f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BitBuffer::len_of_curr_chunk_b_</definition>
+        <argsstring></argsstring>
+        <name>len_of_curr_chunk_b_</name>
+        <briefdescription>
+<para>Count of value-bits in &apos;current_chunk_&apos;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="12" column="1" bodyfile="bitbuffer.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1ad8287d3f212569cbb24c41ff1fa177d9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BitBuffer::size_of_chunk_b_</definition>
+        <argsstring></argsstring>
+        <name>size_of_chunk_b_</name>
+        <briefdescription>
+<para>countOfFullChunks of a single chunk (unit: bits) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="13" column="1" bodyfile="bitbuffer.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1ac3d8bea3b1dd5ff369eb83753de9a563" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BitBuffer::max_chunks_</definition>
+        <argsstring></argsstring>
+        <name>max_chunks_</name>
+        <briefdescription>
+<para>If set, data_&apos;s maximum length. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="14" column="1" bodyfile="bitbuffer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bit_buffer_1abc097cb23960eb60b5c94133e30b3cd0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BitBuffer::first_unpopped_bit_</definition>
+        <argsstring></argsstring>
+        <name>first_unpopped_bit_</name>
+        <briefdescription>
+<para>Shows which is the first not-yet-popped bit. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="15" column="1" bodyfile="bitbuffer.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BitBuffer::BitBuffer</definition>
+        <argsstring>(int sizeOfChunk=sizeof(char))</argsstring>
+        <name>BitBuffer</name>
+        <param>
+          <type>int</type>
+          <declname>sizeOfChunk</declname>
+          <defval>sizeof(char)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ChunSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bits each chunk can store (character&apos;s size by default) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="20" column="1" bodyfile="bitbuffer.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a9b24bd6c8a69edc84a4a6c405df6f77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BitBuffer::BitBuffer</definition>
+        <argsstring>(const BitBuffer &amp;bb)</argsstring>
+        <name>BitBuffer</name>
+        <param>
+          <type>const <ref refid="class_bit_buffer" kindref="compound">BitBuffer</ref> &amp;</type>
+          <declname>bb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer to be copied (resulting Buffer is editable) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="23" column="1" bodyfile="bitbuffer.cpp" bodystart="6" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a2ef8ca85ce6f7a9d0523faf2e1f5873d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_list" kindref="compound">List</ref>&lt; char &gt; &amp;</type>
+        <definition>const List&lt;char&gt;&amp; BitBuffer::data_</definition>
+        <argsstring>() const</argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>data_ stored so far </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="26" column="1" bodyfile="bitbuffer.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1ab8e00ba668ad600686550eaa5b51ae97" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char BitBuffer::currentChunk</definition>
+        <argsstring>() const</argsstring>
+        <name>currentChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Last (not yet full) chunk of data_. The last <ref refid="class_bit_buffer_1ac5c3ff64e4c53cdd093bafd016b60804" kindref="member">count()</ref> bits are values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="28" column="1" bodyfile="bitbuffer.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1ac5c3ff64e4c53cdd093bafd016b60804" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BitBuffer::count</definition>
+        <argsstring>() const</argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Count of valuable bits in <ref refid="class_bit_buffer_1ab8e00ba668ad600686550eaa5b51ae97" kindref="member">currentChunk()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="30" column="1" bodyfile="bitbuffer.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1ad161009c775d28495a6563202e4662c4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BitBuffer::sizeOfChunk</definition>
+        <argsstring>() const</argsstring>
+        <name>sizeOfChunk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of valuable bits in each chunk. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="32" column="1" bodyfile="bitbuffer.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a6986fb3db8ebb8c0c1c88b3a9aecc295" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BitBuffer::countOfFullChunks</definition>
+        <argsstring>() const</argsstring>
+        <name>countOfFullChunks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Number of full chunks. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="34" column="1" bodyfile="bitbuffer.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a660b36bf12303b2cbab0ba70b5967b86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BitBuffer::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, if there is no <ref refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" kindref="member">pop()</ref>-able data_ in the buffer </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="36" column="1" bodyfile="bitbuffer.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a36ec4987fe9b4927bba7b63fab2971f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BitBuffer::push</definition>
+        <argsstring>(T bits, int count)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Adding bits to the buffer Pushes the given bits into the buffer (current_chunk_). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>It contains the value-bits (fitted to the right_child_=LSB). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of significant bits. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="43" column="1" bodyfile="bitbuffer.h" bodystart="43" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char BitBuffer::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returning the first chunk The returned chunk will be removed from buffer. <simplesect kind="return"><para>The first chunk </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="60" column="1" bodyfile="bitbuffer.cpp" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitBuffer::close</definition>
+        <argsstring>()</argsstring>
+        <name>close</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Closing the buffer This makes sure that all data_ is stored properly; using <ref refid="class_bit_buffer_1a36ec4987fe9b4927bba7b63fab2971f8" kindref="member">push()</ref> will not be allowed anymore. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="65" column="1" bodyfile="bitbuffer.cpp" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a80afe4897d0c6094251aa0a0ac08f188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitBuffer::leakAfter</definition>
+        <argsstring>(int ls)</argsstring>
+        <name>leakAfter</name>
+        <param>
+          <type>int</type>
+          <declname>ls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setting the leak-size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="68" column="1" bodyfile="bitbuffer.cpp" bodystart="34" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BitBuffer::leakAfter</definition>
+        <argsstring>() const</argsstring>
+        <name>leakAfter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get leak-size </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="70" column="1" bodyfile="bitbuffer.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a9d330ed50862c915abb89eec7e8a3f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitBuffer::leak</definition>
+        <argsstring>(std::ofstream &amp;out)</argsstring>
+        <name>leak</name>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Leaking data_ to a file When there&apos;are more chunks than the leak-size, those all go to the file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="74" column="1" bodyfile="bitbuffer.cpp" bodystart="24" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1ac5a8a3888797e97f131bf3a38a35c7a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BitBuffer::fill</definition>
+        <argsstring>(std::ifstream &amp;in)</argsstring>
+        <name>fill</name>
+        <param>
+          <type>std::ifstream &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getting some data_ from file After call, at least 1 full character will be in the buffer. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="77" column="1" bodyfile="bitbuffer.cpp" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bit_buffer_1a50d13861a778aff828e42e4f32371726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BitBuffer::bit</definition>
+        <argsstring>()</argsstring>
+        <name>bit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returning the first (not yet returned) bit from buffer <simplesect kind="return"><para>True = 1, False = 0 bit </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bitbuffer.h" line="80" column="1" bodyfile="bitbuffer.cpp" bodystart="45" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class can hold bits. Useful when size of values to be stored is not constant. </para>    </detaileddescription>
+    <location file="bitbuffer.h" line="8" column="1" bodyfile="bitbuffer.h" bodystart="8" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_bit_buffer_1a50d13861a778aff828e42e4f32371726" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>bit</name></member>
+      <member refid="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>BitBuffer</name></member>
+      <member refid="class_bit_buffer_1a9b24bd6c8a69edc84a4a6c405df6f77d" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>BitBuffer</name></member>
+      <member refid="class_bit_buffer_1ad8287d3f212569cbb24c41ff1fa177d9" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>size_of_chunk_b_</name></member>
+      <member refid="class_bit_buffer_1ad161009c775d28495a6563202e4662c4" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>sizeOfChunk</name></member>
+      <member refid="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>close</name></member>
+      <member refid="class_bit_buffer_1a20996e3146c64966ace69e3cdfda240f" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>len_of_curr_chunk_b_</name></member>
+      <member refid="class_bit_buffer_1ac5c3ff64e4c53cdd093bafd016b60804" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>count</name></member>
+      <member refid="class_bit_buffer_1a2ef8ca85ce6f7a9d0523faf2e1f5873d" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>data_</name></member>
+      <member refid="class_bit_buffer_1a07254851abc3d4567fd6b373ceb7dedd" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>data_</name></member>
+      <member refid="class_bit_buffer_1afe57f16d5f136b53999e4d39ca46183d" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>is_open_</name></member>
+      <member refid="class_bit_buffer_1a660b36bf12303b2cbab0ba70b5967b86" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>isEmpty</name></member>
+      <member refid="class_bit_buffer_1ac5a8a3888797e97f131bf3a38a35c7a2" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>fill</name></member>
+      <member refid="class_bit_buffer_1abc097cb23960eb60b5c94133e30b3cd0" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>first_unpopped_bit_</name></member>
+      <member refid="class_bit_buffer_1ab8e00ba668ad600686550eaa5b51ae97" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>currentChunk</name></member>
+      <member refid="class_bit_buffer_1aec6b6f4c300ad354851d52f91a1e4e86" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>current_chunk_</name></member>
+      <member refid="class_bit_buffer_1a9d330ed50862c915abb89eec7e8a3f18" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>leak</name></member>
+      <member refid="class_bit_buffer_1a80afe4897d0c6094251aa0a0ac08f188" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>leakAfter</name></member>
+      <member refid="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>leakAfter</name></member>
+      <member refid="class_bit_buffer_1ac3d8bea3b1dd5ff369eb83753de9a563" prot="private" virt="non-virtual"><scope>BitBuffer</scope><name>max_chunks_</name></member>
+      <member refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>pop</name></member>
+      <member refid="class_bit_buffer_1a36ec4987fe9b4927bba7b63fab2971f8" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>push</name></member>
+      <member refid="class_bit_buffer_1a6986fb3db8ebb8c0c1c88b3a9aecc295" prot="public" virt="non-virtual"><scope>BitBuffer</scope><name>countOfFullChunks</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

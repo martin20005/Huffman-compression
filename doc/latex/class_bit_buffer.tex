@@ -1,0 +1,194 @@
+\section{Bit\+Buffer Class Reference}
+\label{class_bit_buffer}\index{Bit\+Buffer@{Bit\+Buffer}}
+
+
+{\ttfamily \#include $<$bitbuffer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Bit\+Buffer} (int \textbf{ Chunk\+Size}=sizeof(char))
+\item 
+\textbf{ Bit\+Buffer} (const \textbf{ Bit\+Buffer} \&bb)
+\item 
+const \textbf{ List}$<$ char $>$ \& \textbf{ Data} () const
+\item 
+char \textbf{ Last\+Chunk} () const
+\item 
+int \textbf{ Cnt} () const
+\item 
+int \textbf{ Chunk\+Size} () const
+\item 
+int \textbf{ Size} () const
+\item 
+bool \textbf{ Empty} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \textbf{ push} (T bits, int count)
+\item 
+char \textbf{ pop} ()
+\item 
+void \textbf{ close} ()
+\item 
+void \textbf{ Leak\+Size} (int ls)
+\item 
+int \textbf{ Leak\+Size} () const
+\item 
+void \textbf{ leak} (std\+::ofstream \&out)
+\item 
+void \textbf{ fill} (std\+::ifstream \&in)
+\item 
+bool \textbf{ bit} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class can hold bits. Useful when size of values to be stored is not constant. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_bit_buffer_ab446b3a2063adb3bb7ba1b8c9c471b6e}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
+\index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Bit\+Buffer()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{Chunk\+Size = {\ttfamily sizeof(char)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Buffer 
+\begin{DoxyParams}{Parameters}
+{\em Chun\+Size} & Number of bits each chunk can store (character\textquotesingle{}s size by default) \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_bit_buffer_a9b24bd6c8a69edc84a4a6c405df6f77d}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
+\index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Bit\+Buffer()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{const \textbf{ Bit\+Buffer} \&}]{bb }\end{DoxyParamCaption})}
+
+Buffer 
+\begin{DoxyParams}{Parameters}
+{\em bb} & A buffer to be copied (resulting Buffer is editable) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_bit_buffer_a50d13861a778aff828e42e4f32371726}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!bit@{bit}}
+\index{bit@{bit}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{bit()}
+{\footnotesize\ttfamily bool Bit\+Buffer\+::bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returning the first (not yet returned) bit from buffer \begin{DoxyReturn}{Returns}
+True = 1, False = 0 bit 
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_ad161009c775d28495a6563202e4662c4}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Chunk\+Size@{Chunk\+Size}}
+\index{Chunk\+Size@{Chunk\+Size}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Chunk\+Size()}
+{\footnotesize\ttfamily int Bit\+Buffer\+::\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Number of valuable bits in each chunk. 
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_a1075aee0daeee83dbe4908c325b6969f}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!close@{close}}
+\index{close@{close}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{close()}
+{\footnotesize\ttfamily void Bit\+Buffer\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Closing the buffer This makes sure that all data_ is stored properly; using \doxyref{push()}{p.}{class_bit_buffer_a36ec4987fe9b4927bba7b63fab2971f8} will not be allowed anymore. \mbox{\label{class_bit_buffer_ac5c3ff64e4c53cdd093bafd016b60804}}
+\index{Bit\+Buffer@{Bit\+Buffer}!Cnt@{Cnt}}
+\index{Cnt@{Cnt}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{count()}
+{\footnotesize\ttfamily int Bit\+Buffer\+::\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Count of valuable bits in \doxyref{Last\+Chunk()}{p.}{class_bit_buffer_ab8e00ba668ad600686550eaa5b51ae97} 
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_a2ef8ca85ce6f7a9d0523faf2e1f5873d}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Data@{Data}}
+\index{Data@{Data}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Data()}
+{\footnotesize\ttfamily const \textbf{ List}$<$char$>$\& Bit\+Buffer\+::\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+data_ stored so far
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_a660b36bf12303b2cbab0ba70b5967b86}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Empty@{Empty}}
+\index{Empty@{Empty}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Empty()}
+{\footnotesize\ttfamily bool Bit\+Buffer\+::\+isEmpty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+true, if there is no \doxyref{pop()}{p.}{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}-\/able data_ in the buffer
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_ac5a8a3888797e97f131bf3a38a35c7a2}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!fill@{fill}}
+\index{fill@{fill}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{fill()}
+{\footnotesize\ttfamily void Bit\+Buffer\+::fill (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in }\end{DoxyParamCaption})}
+
+Getting some data_ from file After call, at least 1 full character will be in the buffer. \mbox{\label{class_bit_buffer_ab8e00ba668ad600686550eaa5b51ae97}}
+\index{Bit\+Buffer@{Bit\+Buffer}!Last\+Chunk@{Last\+Chunk}}
+\index{Last\+Chunk@{Last\+Chunk}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Last\+Chunk()}
+{\footnotesize\ttfamily char Bit\+Buffer\+::\+Last\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Last (not yet full) chunk of data_. The last \doxyref{count()}{p.}{class_bit_buffer_ac5c3ff64e4c53cdd093bafd016b60804} bits are values.
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_a9d330ed50862c915abb89eec7e8a3f18}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!leak@{leak}}
+\index{leak@{leak}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{leak()}
+{\footnotesize\ttfamily void Bit\+Buffer\+::leak (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{out }\end{DoxyParamCaption})}
+
+Leaking data_ to a file When there\textquotesingle{}are more chunks than the leak-\/size, those all go to the file \mbox{\label{class_bit_buffer_a80afe4897d0c6094251aa0a0ac08f188}}
+\index{Bit\+Buffer@{Bit\+Buffer}!Leak\+Size@{Leak\+Size}}
+\index{Leak\+Size@{Leak\+Size}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Leak\+Size()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bit\+Buffer\+::\+Leak\+countOfFullChunks (\begin{DoxyParamCaption}\item[{int}]{ls }\end{DoxyParamCaption})}
+
+Setting the leak-\/size \mbox{\label{class_bit_buffer_a024c5f60315eaf677c16c0e273271034}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Leak\+Size@{Leak\+Size}}
+\index{Leak\+Size@{Leak\+Size}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Leak\+Size()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Bit\+Buffer\+::\+Leak\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get leak-\/size \mbox{\label{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!pop@{pop}}
+\index{pop@{pop}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{pop()}
+{\footnotesize\ttfamily char Bit\+Buffer\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returning the first chunk The returned chunk will be removed from buffer. \begin{DoxyReturn}{Returns}
+The first chunk 
+\end{DoxyReturn}
+\mbox{\label{class_bit_buffer_a36ec4987fe9b4927bba7b63fab2971f8}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!push@{push}}
+\index{push@{push}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{push()}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Bit\+Buffer\+::push (\begin{DoxyParamCaption}\item[{T}]{bits,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adding bits to the buffer Pushes the given bits into the buffer (current_chunk_).
+\begin{DoxyParams}{Parameters}
+{\em bits} & It contains the value-\/bits (fitted to the right_child_=L\+SB). \\
+\hline
+{\em count} & Number of significant bits. \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_bit_buffer_a6986fb3db8ebb8c0c1c88b3a9aecc295}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!Size@{Size}}
+\index{Size@{Size}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{Size()}
+{\footnotesize\ttfamily int Bit\+Buffer\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Number of full chunks. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ bitbuffer.\+h}\item 
+\textbf{ bitbuffer.\+cpp}\end{DoxyCompactItemize}

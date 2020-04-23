@@ -1,0 +1,1395 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="memtrace_8cpp" kind="file" language="C++">
+    <compoundname>memtrace.cpp</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">time.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes refid="memtrace_8h" local="yes">memtrace.h</includes>
+    <incdepgraph>
+      <node id="98">
+        <label>stdlib.h</label>
+      </node>
+      <node id="96">
+        <label>memtrace.cpp</label>
+        <link refid="memtrace_8cpp"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>string.h</label>
+      </node>
+      <node id="102">
+        <label>memtrace.h</label>
+        <link refid="memtrace_8h"/>
+        <childnode refid="98" relation="include">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>time.h</label>
+      </node>
+      <node id="101">
+        <label>ctype.h</label>
+      </node>
+      <node id="97">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structcall__t" prot="public">call_t</innerclass>
+    <innerclass refid="struct__registry__item" prot="public">_registry_item</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="memtrace_8cpp_1aa90f3e89fc3fe477370afb9f81975081" prot="public" static="no">
+        <name>MEMTRACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="25" column="14" bodyfile="memtrace.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1ab4e504c96e3c59936ff0a9f31573b1b0" prot="public" static="no">
+        <name>FROM_MEMTRACE_CPP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="27" column="9" bodyfile="memtrace.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a8817d7ba90cf2e1ddd83f35dbb862542" prot="public" static="no">
+        <name>FMALLOC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="30" column="9" bodyfile="memtrace.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1af6fff8cbc37157865d4b383dacfd947b" prot="public" static="no">
+        <name>FCALLOC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="31" column="9" bodyfile="memtrace.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1afcc2cb9c3434359e629fdd446aab6175" prot="public" static="no">
+        <name>FREALLOC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="32" column="9" bodyfile="memtrace.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1aa6b915326a446c2a67f05f5504d9bc30" prot="public" static="no">
+        <name>FFREE</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="33" column="9" bodyfile="memtrace.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a9f98c384938a2ff256aa6a0a6f8992dc" prot="public" static="no">
+        <name>FNEW</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="34" column="9" bodyfile="memtrace.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" prot="public" static="no">
+        <name>FDELETE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="35" column="9" bodyfile="memtrace.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1afc0db05fd089296f53cc7e8441ebc565" prot="public" static="no">
+        <name>FNEWARR</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="36" column="9" bodyfile="memtrace.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1acd2bfc6563a2ac0ae741ee31dfbf1c92" prot="public" static="no">
+        <name>FDELETEARR</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="37" column="9" bodyfile="memtrace.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1aaed1b7df4f99525f21eda754cf7fae05" prot="public" static="no">
+        <name>COMP</name>
+        <param><defname>a</defname></param>
+        <param><defname>d</defname></param>
+        <initializer>(((a)&lt;=3 &amp;&amp; (d)&lt;=3) || ((d)==(a)+1))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="38" column="9" bodyfile="memtrace.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" prot="public" static="no">
+        <name>PU</name>
+        <param><defname>p</defname></param>
+        <initializer>((char*)p+CANARY_LEN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="39" column="9" bodyfile="memtrace.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" prot="public" static="no">
+        <name>P</name>
+        <param><defname>pu</defname></param>
+        <initializer>((char*)pu-CANARY_LEN)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="40" column="9" bodyfile="memtrace.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a03943706e48069237cd57f2d35ca987e" prot="public" static="no">
+        <name>XSTR</name>
+        <param><defname>s</defname></param>
+        <initializer><ref refid="memtrace_8cpp_1a6388870e639eee9c0a69446876f1f8cc" kindref="member">STR</ref>(s)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="41" column="9" bodyfile="memtrace.cpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="memtrace_8cpp_1a6388870e639eee9c0a69446876f1f8cc" prot="public" static="no">
+        <name>STR</name>
+        <param><defname>s</defname></param>
+        <initializer>#s</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="42" column="9" bodyfile="memtrace.cpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" prot="public" static="no">
+        <name>BOOL</name>
+        <enumvalue id="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" prot="public">
+          <name>FALSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" prot="public">
+          <name>TRUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="57" column="1" bodyfile="memtrace.cpp" bodystart="57" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" prot="public" static="no">
+        <type><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref> <ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref> struct <ref refid="struct__registry__item" kindref="compound">_registry_item</ref></type>
+        <definition>typedef END_NAMESPACE START_NAMESPACE struct _registry_item  registry_item</definition>
+        <argsstring></argsstring>
+        <name>registry_item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="memtrace_8cpp_1added011af203dbbb6273331eb3c2a7d1" prot="public" static="yes" mutable="no">
+        <type><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref> FILE *</type>
+        <definition>START_NAMESPACE FILE* fperror</definition>
+        <argsstring></argsstring>
+        <name>fperror</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="47" column="1" bodyfile="memtrace.cpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1ae8c91ba6f418493cfe57a86ca3106050" prot="public" static="yes" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int CANARY_LEN</definition>
+        <argsstring></argsstring>
+        <name>CANARY_LEN</name>
+        <initializer>= 64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="49" column="1" bodyfile="memtrace.cpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a5a40aa3d57ab0dabf2c7001874292943" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char canary_byte1</definition>
+        <argsstring></argsstring>
+        <name>canary_byte1</name>
+        <initializer>= &apos;k&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="53" column="1" bodyfile="memtrace.cpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a37403608e891f634c9bd1b151d99b025" prot="public" static="yes" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char canary_byte2</definition>
+        <argsstring></argsstring>
+        <name>canary_byte2</name>
+        <initializer>= &apos;K&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="54" column="1" bodyfile="memtrace.cpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a527aaddadd0126673c18433bbea109f8" prot="public" static="yes" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char random_byte</definition>
+        <argsstring></argsstring>
+        <name>random_byte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="55" column="1" bodyfile="memtrace.cpp" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1aa2629093703d69f89233595a8aa3d187" prot="public" static="yes" mutable="no">
+        <type>const char *</type>
+        <definition>const char* pretty[]</definition>
+        <argsstring>[]</argsstring>
+        <name>pretty</name>
+        <initializer>= {&quot;malloc(&quot;, &quot;<ref refid="memtrace_8h_1ab98a612296b79e3e44d41727977b07a5" kindref="member">calloc</ref>(&quot;, &quot;<ref refid="memtrace_8h_1a2d566601d9a416502dd2fd2816678fed" kindref="member">realloc</ref>(&quot;, &quot;<ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(&quot;,
+                                        &quot;new&quot;, &quot;delete&quot;, &quot;new[]&quot;, &quot;delete[]&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="59" column="1" bodyfile="memtrace.cpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a5c45de1ada7ae7260818ba753a49a346" prot="public" static="yes" mutable="no">
+        <type><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref></type>
+        <definition>BOOL dying</definition>
+        <argsstring></argsstring>
+        <name>dying</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="163" column="1" bodyfile="memtrace.cpp" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a8be42d2479a943983c9256a546edfd5c" prot="public" static="yes" mutable="no">
+        <type><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref></type>
+        <definition>registry_item registry</definition>
+        <argsstring></argsstring>
+        <name>registry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="199" column="1" bodyfile="memtrace.cpp" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="memtrace_8cpp_1a72500e85e8772dbe52531aea101ba6a0" prot="public" static="yes" mutable="no">
+        <type><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref> static <ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref> int</type>
+        <definition>END_NAMESPACE static START_NAMESPACE int allocated_blks</definition>
+        <argsstring></argsstring>
+        <name>allocated_blks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="247" column="1" bodyfile="memtrace.cpp" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="memtrace_8cpp_1ac4203c1cc02a8333e6395db74a48bbd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>static const char* basename</definition>
+        <argsstring>(const char *s)</argsstring>
+        <name>basename</name>
+        <param>
+          <type>const char *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="62" column="1" bodyfile="memtrace.cpp" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1af511b5c66e2190536be4ed0ec68b837b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* StrCpy</definition>
+        <argsstring>(char **to, const char *from)</argsstring>
+        <name>StrCpy</name>
+        <param>
+          <type>char **</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>from</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="71" column="1" bodyfile="memtrace.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1aefa8e6d5eefd74e917d7c0b8a717c563" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* canary_malloc</definition>
+        <argsstring>(size_t size, unsigned char data_)</argsstring>
+        <name>canary_malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>data_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="81" column="1" bodyfile="memtrace.cpp" bodystart="81" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a99c0a51a6e9eea3bfcac84d2bf8529d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int chk_canary</definition>
+        <argsstring>(void *p, size_t size)</argsstring>
+        <name>chk_canary</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="91" column="1" bodyfile="memtrace.cpp" bodystart="91" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a1430c5f6b303ddcfd9739cd798671c0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structcall__t" kindref="compound">call_t</ref></type>
+        <definition>static call_t pack</definition>
+        <argsstring>(int f, const char *par_txt, int line, const char *file)</argsstring>
+        <name>pack</name>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>par_txt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="111" column="1" bodyfile="memtrace.cpp" bodystart="111" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a0a75acd3b2f91b0cf0d6d974d3f5c0d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_call</definition>
+        <argsstring>(const char *msg, call_t call)</argsstring>
+        <name>print_call</name>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type><ref refid="structcall__t" kindref="compound">call_t</ref></type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="120" column="1" bodyfile="memtrace.cpp" bodystart="120" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a70add82f6430d0f82f393952422b8616" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void dump_memory</definition>
+        <argsstring>(void const *mem, size_t size, size_t can_len, FILE *fp)</argsstring>
+        <name>dump_memory</name>
+        <param>
+          <type>void const *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>can_len</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="130" column="1" bodyfile="memtrace.cpp" bodystart="130" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a031b528c007e2e8ba5d814be13d3860c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mem_dump</definition>
+        <argsstring>(void const *mem, size_t size, FILE *fp)</argsstring>
+        <name>mem_dump</name>
+        <param>
+          <type>void const *</type>
+          <declname>mem</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>fp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="159" column="1" bodyfile="memtrace.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a18d75228d07b1a8bf622bd0f5d04f905" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void die</definition>
+        <argsstring>(const char *msg, void *p, size_t size, call_t *a, call_t *d)</argsstring>
+        <name>die</name>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="structcall__t" kindref="compound">call_t</ref> *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type><ref refid="structcall__t" kindref="compound">call_t</ref> *</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="165" column="1" bodyfile="memtrace.cpp" bodystart="165" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a630e6bdcb520ffa9d889aea637ba8a05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>END_NAMESPACE static START_NAMESPACE void initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="183" column="1" bodyfile="memtrace.cpp" bodystart="509" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a6b70e798954c482ff1c903fa014ac591" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void print_registry_item</definition>
+        <argsstring>(registry_item *p)</argsstring>
+        <name>print_registry_item</name>
+        <param>
+          <type><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="201" column="1" bodyfile="memtrace.cpp" bodystart="201" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1ac6308f8e862dbc52b364a505483191a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mem_check</definition>
+        <argsstring>(void)</argsstring>
+        <name>mem_check</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="213" column="1" bodyfile="memtrace.cpp" bodystart="213" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a4ec27aa588e69e834e293374f5c14e67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int allocated_blocks</definition>
+        <argsstring>()</argsstring>
+        <name>allocated_blocks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="249" column="1" bodyfile="memtrace.cpp" bodystart="249" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a8896c1f0fc93e9e156b8a2b98397d8cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref></type>
+        <definition>static BOOL register_memory</definition>
+        <argsstring>(void *p, size_t size, call_t call)</argsstring>
+        <name>register_memory</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="structcall__t" kindref="compound">call_t</ref></type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="251" column="1" bodyfile="memtrace.cpp" bodystart="251" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a7b1f30a1548ac36e83d3f4eb23753600" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref> *</type>
+        <definition>static registry_item* find_registry_item</definition>
+        <argsstring>(void *p)</argsstring>
+        <name>find_registry_item</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="276" column="1" bodyfile="memtrace.cpp" bodystart="276" bodyend="280"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a20f094ab711311204ae338632d0c323a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void unregister_memory</definition>
+        <argsstring>(void *p, call_t call)</argsstring>
+        <name>unregister_memory</name>
+        <param>
+          <type>void *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type><ref refid="structcall__t" kindref="compound">call_t</ref></type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="283" column="1" bodyfile="memtrace.cpp" bodystart="283" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a30b6aa180e3214beb1f48c5a9381e5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref> <ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref> void *</type>
+        <definition>END_NAMESPACE START_NAMESPACE void* traced_malloc</definition>
+        <argsstring>(size_t size, const char *par_txt, int line, const char *file)</argsstring>
+        <name>traced_malloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>par_txt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="330" column="1" bodyfile="memtrace.cpp" bodystart="330" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a68998093ee624349c5cab1aab7bc915f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* traced_calloc</definition>
+        <argsstring>(size_t count, size_t size, const char *par_txt, int line, const char *file)</argsstring>
+        <name>traced_calloc</name>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>par_txt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="344" column="1" bodyfile="memtrace.cpp" bodystart="344" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1a1f2006cf357ea01179f18a5c965ff105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void traced_free</definition>
+        <argsstring>(void *pu, const char *par_txt, int line, const char *file)</argsstring>
+        <name>traced_free</name>
+        <param>
+          <type>void *</type>
+          <declname>pu</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>par_txt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="359" column="1" bodyfile="memtrace.cpp" bodystart="359" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="memtrace_8cpp_1aa9656d71bfbb848ef518892eb0e3909b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* traced_realloc</definition>
+        <argsstring>(void *old, size_t size, const char *par_txt, int line, const char *file)</argsstring>
+        <name>traced_realloc</name>
+        <param>
+          <type>void *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>par_txt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="memtrace.cpp" line="381" column="1" bodyfile="memtrace.cpp" bodystart="381" bodyend="413"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*********************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Memoriaszivargas-detektor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Keszitette:<sp/>Peregi<sp/>Tamas,<sp/>BME<sp/>IIT,<sp/>2011</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>petamas@iit.bme.hu</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Kanari:<sp/><sp/><sp/><sp/><sp/>Szeberenyi<sp/>Imre,<sp/>2013.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">VS<sp/>2012:<sp/><sp/><sp/><sp/>Szeberényi<sp/>Imre,<sp/>2015.,</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">mem_dump:<sp/><sp/><sp/>2016.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">meset<sp/>felszabaditaskor:<sp/>2018.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">typo:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2019.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">singleton:<sp/><sp/>2019.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">*********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*definialni<sp/>kell,<sp/>ha<sp/>nem<sp/>paracssorbol<sp/>allitjuk<sp/>be<sp/>(-DMEMTRACE)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*#define<sp/>MEMTRACE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_MSC_VER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_CRT_SECURE_NO_WARNINGS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="memtrace_8cpp_1aa90f3e89fc3fe477370afb9f81975081" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEMTRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="memtrace_8cpp_1ab4e504c96e3c59936ff0a9f31573b1b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FROM_MEMTRACE_CPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="memtrace_8h" kindref="compound">memtrace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="memtrace_8cpp_1a8817d7ba90cf2e1ddd83f35dbb862542" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FMALLOC<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="memtrace_8cpp_1af6fff8cbc37157865d4b383dacfd947b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FCALLOC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="memtrace_8cpp_1afcc2cb9c3434359e629fdd446aab6175" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FREALLOC<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="memtrace_8cpp_1aa6b915326a446c2a67f05f5504d9bc30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FFREE<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="memtrace_8cpp_1a9f98c384938a2ff256aa6a0a6f8992dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FNEW<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FDELETE<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="memtrace_8cpp_1afc0db05fd089296f53cc7e8441ebc565" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FNEWARR<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="memtrace_8cpp_1acd2bfc6563a2ac0ae741ee31dfbf1c92" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FDELETEARR<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="memtrace_8cpp_1aaed1b7df4f99525f21eda754cf7fae05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COMP(a,d)<sp/>(((a)&lt;=3<sp/>&amp;&amp;<sp/>(d)&lt;=3)<sp/>||<sp/>((d)==(a)+1))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PU(p)<sp/><sp/><sp/>((char*)p+CANARY_LEN)<sp/><sp/><sp/>//<sp/>mem<sp/>pointerbol<sp/>user<sp/>poi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P(pu)<sp/><sp/><sp/>((char*)pu-CANARY_LEN)<sp/><sp/>//<sp/>user<sp/>pointerbol<sp/>mem<sp/>poi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="memtrace_8cpp_1a03943706e48069237cd57f2d35ca987e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XSTR(s)<sp/>STR(s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="memtrace_8cpp_1a6388870e639eee9c0a69446876f1f8cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STR(s)<sp/><sp/>#s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Segedfuggvenyek<sp/>es<sp/>egyebek<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FILE<sp/>*fperror;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CANARY_LEN<sp/>=<sp/>64;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>CANARY_LEN<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>canary_byte1<sp/>=<sp/></highlight><highlight class="charliteral">&apos;k&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>canary_byte2<sp/>=<sp/></highlight><highlight class="charliteral">&apos;K&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>random_byte;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>,<ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>}<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>pretty[]<sp/>=<sp/>{</highlight><highlight class="stringliteral">&quot;malloc(&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;calloc(&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;realloc(&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;free(&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;new&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;delete&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;new[]&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;delete[]&quot;</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>basename(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1,*s2;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s1<sp/>=<sp/>strrchr(s,</highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(s1==NULL)<sp/>s1<sp/>=<sp/>s;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>s1++;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s2<sp/>=<sp/>strrchr(s1,<sp/></highlight><highlight class="charliteral">&apos;\\&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(s2==NULL)<sp/>s2<sp/>=<sp/>s1;<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>s2++;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s2;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*StrCpy(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>to,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>from)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(from<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*to<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*to<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)<ref refid="memtrace_8h_1a2eb0b03d1a9de9615a291b1205969069" kindref="member">malloc</ref>(strlen(from)+1);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*to)<sp/>strcpy(*to,<sp/>from);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*to;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*canary_malloc(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>data_)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*p<sp/>=<sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<ref refid="memtrace_8h_1a2eb0b03d1a9de9615a291b1205969069" kindref="member">malloc</ref>(size+2*CANARY_LEN);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(p,<sp/>canary_byte1,<sp/>CANARY_LEN);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(p+CANARY_LEN,<sp/>data_,<sp/>size);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(p+CANARY_LEN+size,<sp/>canary_byte2,<sp/>CANARY_LEN);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>chk_canary(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pc<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*)p;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CANARY_LEN;<sp/>i++)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pc[i]<sp/>!=<sp/>canary_byte1)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pc<sp/>+=<sp/>CANARY_LEN+size;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>CANARY_LEN;<sp/>i++)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pc[i]<sp/>!=<sp/>canary_byte2)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="structcall__t" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105" refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>allocator<sp/>func<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structcall__t_1a24e185188a17e272396e118640672aba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref>;</highlight></codeline>
+<codeline lineno="108" refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="structcall__t" kindref="compound">call_t</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>pack(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>par_txt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>ret;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref><sp/>=<sp/>f;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret.<ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref><sp/>=<sp/>line;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StrCpy(&amp;ret.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref>,<sp/>par_txt);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>StrCpy(&amp;ret.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref>,<sp/>file);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_call(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>msg,<sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>call)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(msg)<sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>msg);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>pretty[call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>]);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>?<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref><sp/>&lt;=<sp/>3)<sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,</highlight><highlight class="stringliteral">&quot;<sp/>@<sp/>%s:&quot;</highlight><highlight class="normal">,<sp/>call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref><sp/>?<sp/>basename(call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref>)<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,</highlight><highlight class="stringliteral">&quot;%d\n&quot;</highlight><highlight class="normal">,call.<ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref><sp/>?<sp/>call.<ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref><sp/>:<sp/>0);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>memoriateruletet<sp/>dump<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dump_memory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>can_len,<sp/>FILE*<sp/>fp)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*m=(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*)<sp/>mem;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s,<sp/>o;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(can_len<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;Dump<sp/>(addr:<sp/>%p<sp/>kanari<sp/>hossz:<sp/>%d):\n&quot;</highlight><highlight class="normal">,<sp/>m+can_len,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)can_len);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;Dump:<sp/>(addr:<sp/>%p)<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>m);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>+=<sp/>2*can_len;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(s<sp/>=<sp/>0;<sp/>s<sp/>&lt;<sp/>(size+15)/16;<sp/>s++)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%04x:%c<sp/>&quot;</highlight><highlight class="normal">,<sp/>s*16,<sp/>s*16<sp/>&lt;<sp/>can_len<sp/>||<sp/>s*16<sp/>&gt;=<sp/>size-can_len<sp/>?<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="charliteral">&apos;*&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(o<sp/>=<sp/>0;<sp/>o<sp/>&lt;<sp/>16;<sp/>o++)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(o<sp/>==<sp/>8)<sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s*16+o<sp/>&lt;<sp/>size)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%02x<sp/>&quot;</highlight><highlight class="normal">,<sp/>m[s*16+o]);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(o<sp/>=<sp/>0;<sp/>o<sp/>&lt;<sp/>16;<sp/>o++)<sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s*16+o<sp/>&lt;<sp/>size)</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">,<sp/>isprint(m[s*16+o])<sp/>?<sp/>m[s*16+o]<sp/>:<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fp,<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="memtrace_8h_1a031b528c007e2e8ba5d814be13d3860c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a031b528c007e2e8ba5d814be13d3860c" kindref="member">mem_dump</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>*mem,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/>FILE*<sp/>fp)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dump_memory(mem,<sp/>size,<sp/>0,<sp/>fp);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref><sp/>dying;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>die(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>msg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>p,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>*<sp/>a,<sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>*<sp/>d)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_ERRFILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fperror<sp/>=<sp/>fopen(<ref refid="memtrace_8cpp_1a03943706e48069237cd57f2d35ca987e" kindref="member">XSTR</ref>(MEMTRACE_ERRFILE),<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,</highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,msg);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;\tPointer:\t%p&quot;</highlight><highlight class="normal">,<sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(p));</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size)<sp/>fprintf(fperror,</highlight><highlight class="stringliteral">&quot;<sp/>(%d<sp/>byte)&quot;</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)size);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a)<sp/>print_call(</highlight><highlight class="stringliteral">&quot;\tFoglalas:\t&quot;</highlight><highlight class="normal">,<sp/>*a);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(d)<sp/>print_call(</highlight><highlight class="stringliteral">&quot;\tFelszabaditas:\t&quot;</highlight><highlight class="normal">,<sp/>*d);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>dump_memory(p,<sp/>size,<sp/>CANARY_LEN,<sp/>fperror);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dying<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(120);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MEMTRACE_TO_MEMORY<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="192" refid="struct__registry__item" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__registry__item" kindref="compound">_registry_item</ref><sp/>{</highlight></codeline>
+<codeline lineno="193" refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>mem<sp/>pointer*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>;<sp/></highlight><highlight class="comment">/*<sp/>size*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/><ref refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" kindref="member">call</ref>;</highlight></codeline>
+<codeline lineno="196" refid="struct__registry__item_1aa659ff3f2fa74b37e31b0bd3948bbf7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__registry__item" kindref="compound">_registry_item</ref><sp/>*<sp/><ref refid="struct__registry__item_1aa659ff3f2fa74b37e31b0bd3948bbf7f" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>registry;<sp/></highlight><highlight class="comment">/*sentinel*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print_registry_item(<ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_registry_item(p-&gt;next);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;\t%p%5d<sp/>byte<sp/>&quot;</highlight><highlight class="normal">,p-&gt;p,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)p-&gt;size);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_call(NULL,<sp/>p-&gt;call);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p-&gt;call.par_txt)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(p-&gt;call.par_txt);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p-&gt;call.file)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(p-&gt;call.file);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(p);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ha<sp/>nincs<sp/>hiba,<sp/>akkor<sp/>0-val<sp/>tér<sp/>vissza<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="memtrace_8h_1ab531f5bcfca2f50b8c2a43f7bb96fc0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1ac6308f8e862dbc52b364a505483191a6" kindref="member">mem_check</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dying)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>2;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>címzési<sp/>hiba<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(registry.next)<sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*szivarog*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_ERRFILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fperror<sp/>=<sp/>fopen(<ref refid="memtrace_8cpp_1a03943706e48069237cd57f2d35ca987e" kindref="member">XSTR</ref>(MEMTRACE_ERRFILE),<sp/></highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(fperror,<sp/></highlight><highlight class="stringliteral">&quot;Szivargas:\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print_registry_item(registry.next);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>registry.next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>memória<sp/>fogyás<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="comment">/*MEMTRACE_TO_MEMORY*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>MEMTRACE_TO_FILE<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE_TO_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>FILE<sp/>*<sp/>trace_file;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>register/unregister<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>allocated_blks;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="memtrace_8h_1ab8ef9a94a4ba8246012e9bfeb5b0c589" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a4ec27aa588e69e834e293374f5c14e67" kindref="member">allocated_blocks</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allocated_blks;<sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref><sp/>register_memory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>call)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allocated_blks++;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,<sp/></highlight><highlight class="stringliteral">&quot;%p\t%d\t%s%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>),<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/>pretty[call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>],<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>?<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref><sp/>&lt;=<sp/>3)<sp/>fprintf(trace_file,<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,<sp/></highlight><highlight class="stringliteral">&quot;\t%d\t%s\n&quot;</highlight><highlight class="normal">,<sp/>call.<ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref>,<sp/>call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref><sp/>?<sp/>call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(trace_file);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*<sp/>n<sp/>=<sp/>(<ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref>*)<ref refid="memtrace_8h_1a2eb0b03d1a9de9615a291b1205969069" kindref="member">malloc</ref>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref>));</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n==NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;p<sp/>=<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;size<sp/>=<sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;call<sp/>=<sp/><ref refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" kindref="member">call</ref>;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;next<sp/>=<sp/>registry.next;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>registry.next<sp/>=<sp/>n;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*find_registry_item(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*n<sp/>=<sp/>&amp;registry;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(;<sp/>n-&gt;next<sp/>&amp;&amp;<sp/>n-&gt;next-&gt;p<sp/>!=<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref><sp/>;<sp/>n=n-&gt;next);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>n;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unregister_memory(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>call)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,<sp/></highlight><highlight class="stringliteral">&quot;%p\t%d\t%s%s&quot;</highlight><highlight class="normal">,<sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>),<sp/>-1,<sp/>pretty[call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>],<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>?<sp/>call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref><sp/>&lt;=<sp/>3)<sp/>fprintf(trace_file,<sp/></highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,</highlight><highlight class="stringliteral">&quot;\t%d\t%s\n&quot;</highlight><highlight class="normal">,call.<ref refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kindref="member">line</ref>,<sp/>call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref><sp/>?<sp/>call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(trace_file);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*<sp/>n<sp/>=<sp/>find_registry_item(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(n-&gt;next)<sp/>{</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allocated_blks--;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*<sp/>r<sp/>=<sp/>n-&gt;next;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n-&gt;next<sp/>=<sp/>r-&gt;next;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="memtrace_8cpp_1aaed1b7df4f99525f21eda754cf7fae05" kindref="member">COMP</ref>(r-&gt;call.f,call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>chk<sp/>=<sp/>chk_canary(r-&gt;p,<sp/>r-&gt;size);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chk<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die(</highlight><highlight class="stringliteral">&quot;Blokk<sp/>elott<sp/>serult<sp/>a<sp/>memoria:&quot;</highlight><highlight class="normal">,<sp/>r-&gt;p,r-&gt;size,&amp;r-&gt;call,&amp;call);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(chk<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die(</highlight><highlight class="stringliteral">&quot;Blokk<sp/>utan<sp/>serult<sp/>a<sp/>memoria&quot;</highlight><highlight class="normal">,<sp/>r-&gt;p,r-&gt;size,&amp;r-&gt;call,&amp;call);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*rendben<sp/>van<sp/>minden*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref>)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(call.<ref refid="structcall__t_1a24e185188a17e272396e118640672aba" kindref="member">par_txt</ref>);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r-&gt;call.par_txt)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(r-&gt;call.par_txt);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref>)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(call.<ref refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kindref="member">file</ref>);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(r-&gt;call.file)<sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(r-&gt;call.file);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memset(<ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(r-&gt;p),<sp/></highlight><highlight class="charliteral">&apos;f&apos;</highlight><highlight class="normal">,<sp/>r-&gt;size);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(r-&gt;p)[r-&gt;size-1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(r);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*hibas<sp/>felszabaditas*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die(</highlight><highlight class="stringliteral">&quot;Hibas<sp/>felszabaditas:&quot;</highlight><highlight class="normal">,r-&gt;p,r-&gt;size,&amp;r-&gt;call,&amp;call);</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die(</highlight><highlight class="stringliteral">&quot;Nem<sp/>letezo,<sp/>vagy<sp/>mar<sp/>felszabaditott<sp/>adat<sp/>felszabaditasa:&quot;</highlight><highlight class="normal">,<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<sp/>0,NULL,&amp;call);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>C-stílusú<sp/>memóriakezelés<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE_C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="330" refid="memtrace_8h_1a878d95f35f94bc40ca0f41d5630c10a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="memtrace_8cpp_1a30b6aa180e3214beb1f48c5a9381e5ac" kindref="member">traced_malloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>par_txt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>canary_malloc(size,<sp/>random_byte);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>{</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!register_memory(p,size,pack(<ref refid="memtrace_8cpp_1a8817d7ba90cf2e1ddd83f35dbb862542" kindref="member">FMALLOC</ref>,par_txt,line,file)))<sp/>{</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(p);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(p);</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="memtrace_8h_1a8d30ad82fb5ab2f070bb8552d5f71575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="memtrace_8cpp_1a68998093ee624349c5cab1aab7bc915f" kindref="member">traced_calloc</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>count,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>par_txt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>*=<sp/>count;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>canary_malloc(size,<sp/>0);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p)<sp/>{</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!register_memory(p,size,pack(<ref refid="memtrace_8cpp_1af6fff8cbc37157865d4b383dacfd947b" kindref="member">FCALLOC</ref>,par_txt,line,file)))<sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(p);</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(p);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="memtrace_8h_1a324b3ee7c799b67c4bae9dcdfa144dd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a1f2006cf357ea01179f18a5c965ff105" kindref="member">traced_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pu,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>par_txt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pu)<sp/>{</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unregister_memory(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(pu),<sp/>pack(<ref refid="memtrace_8cpp_1aa6b915326a446c2a67f05f5504d9bc30" kindref="member">FFREE</ref>,par_txt,line,file));</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(pu));</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*free(NULL)<sp/>eset*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,</highlight><highlight class="stringliteral">&quot;%s\t%d\t%10s\t&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;NULL&quot;</highlight><highlight class="normal">,-1,pretty[<ref refid="memtrace_8cpp_1aa6b915326a446c2a67f05f5504d9bc30" kindref="member">FFREE</ref>]);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fprintf(trace_file,</highlight><highlight class="stringliteral">&quot;%d\t%s\n&quot;</highlight><highlight class="normal">,line,file<sp/>?<sp/>file<sp/>:<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fflush(trace_file);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>ALLOW_FREE_NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/><ref refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" kindref="member">call</ref>;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>call<sp/>=<sp/>pack(FFREE,par_txt,line,file);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die(</highlight><highlight class="stringliteral">&quot;free(NULL)<sp/>hivasa:&quot;</highlight><highlight class="normal">,NULL,0,NULL,&amp;call);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">/*C-blokk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381" refid="memtrace_8h_1ad9b9f054074d56c2952702d341aba982" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="memtrace_8cpp_1aa9656d71bfbb848ef518892eb0e3909b" kindref="member">traced_realloc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>old,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>par_txt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>oldsize<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kindref="member">registry_item</ref><sp/>*<sp/>n;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n<sp/>=<sp/>find_registry_item(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(old));</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n)<sp/>oldsize<sp/>=<sp/>n-&gt;next-&gt;size;</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/>canary_malloc(size,<sp/>random_byte);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p<sp/>=<sp/><ref refid="memtrace_8h_1a2d566601d9a416502dd2fd2816678fed" kindref="member">realloc</ref>(old,<sp/>size);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p)<sp/>{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Ha<sp/>sikerult<sp/>a<sp/>foglalas,<sp/>regisztraljuk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_memory(p,size,pack(<ref refid="memtrace_8cpp_1afcc2cb9c3434359e629fdd446aab6175" kindref="member">FREALLOC</ref>,<sp/>par_txt,<sp/>line,file));</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(old)<sp/>{</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cpsize<sp/>=<sp/>2*CANARY_LEN;</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(oldsize<sp/>&lt;<sp/>size)<sp/>cpsize<sp/>+=<sp/>oldsize;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>cpsize<sp/>+=<sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(p,<sp/><ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(old),<sp/>cpsize);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unregister_memory(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(old),<sp/>pack(<ref refid="memtrace_8cpp_1afcc2cb9c3434359e629fdd446aab6175" kindref="member">FREALLOC</ref>,<sp/>par_txt,<sp/>line,<sp/>file));</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref><sp/><ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(old);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(p);</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="comment">/*MEMTRACE_C*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>C++-stílusú<sp/>memóriakezelés<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MEMTRACE_CPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>std::new_handler<sp/>_new_handler;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_set_new_handler(std::new_handler<sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_new_handler<sp/>=<sp/>h;</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"></highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structcall__t" kindref="compound">call_t</ref><sp/>delete_call;</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref><sp/>delete_called;</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_delete_call(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/>{</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete_call=pack(0,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,line,file);<sp/></highlight><highlight class="comment">/*func<sp/>értéke<sp/>lényegtelen,<sp/>majd<sp/>felülírjuk*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete_called<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"></highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>traced_new(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;;)<sp/>{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref><sp/>=<sp/>canary_malloc(<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/>random_byte);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p)<sp/>{</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>register_memory(p,<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,pack(func,</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,line,file));</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kindref="member">PU</ref>(p);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_new_handler<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::bad_alloc();</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_new_handler();</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>traced_delete(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/>pu,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>initialize();</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(pu)<sp/>{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*kiolvasom<sp/>call-t,<sp/>ha<sp/>van*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memtrace::call_t<sp/>call<sp/>=<sp/>delete_called<sp/>?<sp/>(delete_call.<ref refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kindref="member">f</ref>=func,<sp/>delete_call)<sp/>:<sp/>pack(func,NULL,0,NULL);</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memtrace::unregister_memory(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(pu),call);</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kindref="member">free</ref>(<ref refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kindref="member">P</ref>(pu));</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete_called=<ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/><ref refid="memtrace_8h_1ad51e1559346aea8b3493be2ecefaa09d" kindref="member">THROW_BADALLOC</ref><sp/>{</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memtrace::traced_new(<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,line,file,<ref refid="memtrace_8cpp_1a9f98c384938a2ff256aa6a0a6f8992dc" kindref="member">FNEW</ref>);</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>file)<sp/><ref refid="memtrace_8h_1ad51e1559346aea8b3493be2ecefaa09d" kindref="member">THROW_BADALLOC</ref><sp/>{</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memtrace::traced_new(<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,line,file,<ref refid="memtrace_8cpp_1afc0db05fd089296f53cc7e8441ebc565" kindref="member">FNEWARR</ref>);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>)<sp/><ref refid="memtrace_8h_1ad51e1559346aea8b3493be2ecefaa09d" kindref="member">THROW_BADALLOC</ref><sp/>{</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memtrace::traced_new(<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,0,NULL,<ref refid="memtrace_8cpp_1a9f98c384938a2ff256aa6a0a6f8992dc" kindref="member">FNEW</ref>);</highlight></codeline>
+<codeline lineno="478"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>)<sp/><ref refid="memtrace_8h_1ad51e1559346aea8b3493be2ecefaa09d" kindref="member">THROW_BADALLOC</ref><sp/>{</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>memtrace::traced_new(<ref refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kindref="member">size</ref>,0,NULL,<ref refid="memtrace_8cpp_1afc0db05fd089296f53cc7e8441ebc565" kindref="member">FNEWARR</ref>);</highlight></codeline>
+<codeline lineno="482"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>)<sp/><ref refid="memtrace_8h_1ab62d0ac94900b7586e89da2d6cedf008" kindref="member">THROW_NOTHING</ref><sp/>{</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/>memtrace::traced_delete(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<ref refid="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" kindref="member">FDELETE</ref>);</highlight></codeline>
+<codeline lineno="486"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>)<sp/><ref refid="memtrace_8h_1ab62d0ac94900b7586e89da2d6cedf008" kindref="member">THROW_NOTHING</ref><sp/>{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>memtrace::traced_delete(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<ref refid="memtrace_8cpp_1acd2bfc6563a2ac0ae741ee31dfbf1c92" kindref="member">FDELETEARR</ref>);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Visual<sp/>C++<sp/>2012<sp/>miatt<sp/>kell,<sp/>mert<sp/>háklis,<sp/>hogy<sp/>nincs<sp/>megfelelő<sp/>delete,<sp/>bár<sp/>senki<sp/>sem<sp/>használja<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<sp/>int,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/><ref refid="memtrace_8h_1ab62d0ac94900b7586e89da2d6cedf008" kindref="member">THROW_NOTHING</ref><sp/>{</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/>memtrace::traced_delete(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<ref refid="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" kindref="member">FDELETE</ref>);</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[](</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<sp/><ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<sp/>int,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/><ref refid="memtrace_8h_1ab62d0ac94900b7586e89da2d6cedf008" kindref="member">THROW_NOTHING</ref><sp/>{</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>memtrace::traced_delete(<ref refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kindref="member">p</ref>,<ref refid="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" kindref="member">FDELETE</ref>);</highlight></codeline>
+<codeline lineno="500"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="comment">/*MEMTRACE_CPP*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>initialize<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight><highlight class="comment">/*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><ref refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kindref="member">START_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initialize()<sp/>{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kindref="member">BOOL</ref><sp/>first<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kindref="member">TRUE</ref>;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(first)<sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fperror<sp/>=<sp/>stderr;</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>random_byte<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char)time(NULL);</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>first<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dying<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_MEMORY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>registry.next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#if<sp/>!defined(USE_ATEXIT_OBJECT)<sp/>&amp;&amp;<sp/>defined(MEMTRACE_AUTO)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>atexit((</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">))<ref refid="memtrace_8cpp_1ac6308f8e862dbc52b364a505483191a6" kindref="member">mem_check</ref>);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_TO_FILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>trace_file<sp/>=<sp/>fopen(</highlight><highlight class="stringliteral">&quot;memtrace.dump&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;w&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>MEMTRACE_CPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_new_handler<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete_called<sp/>=<sp/><ref refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kindref="member">FALSE</ref>;</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delete_call<sp/>=<sp/>pack(0,NULL,0,NULL);</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><ref refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kindref="member">END_NAMESPACE</ref></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="memtrace.cpp"/>
+  </compounddef>
+</doxygen>

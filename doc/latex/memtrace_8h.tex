@@ -1,0 +1,199 @@
+\section{memtrace.\+h File Reference}
+\label{memtrace_8h}\index{memtrace.\+h@{memtrace.\+h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for memtrace.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=148pt]{memtrace_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{memtrace_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ M\+E\+M\+T\+R\+A\+CE}
+\item 
+\#define \textbf{ M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY}
+\item 
+\#define \textbf{ M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO}
+\item 
+\#define \textbf{ M\+E\+M\+T\+R\+A\+C\+E\+\_\+C}
+\item 
+\#define \textbf{ A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL}
+\item 
+\#define \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+\item 
+\#define \textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+\item 
+\#define \textbf{ T\+R\+A\+C\+EC}(func)~func
+\item 
+\#define \textbf{ T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC}~throw (std\+::bad\+\_\+alloc)
+\item 
+\#define \textbf{ T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG}~throw ()
+\item 
+\#define \textbf{ malloc}(size)~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+malloc})(size,\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)
+\item 
+\#define \textbf{ calloc}(count,  size)~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+calloc})(count, size, \#count\char`\"{},\char`\"{}\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)
+\item 
+\#define \textbf{ free}(p)~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+free})(p, \#p,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)
+\item 
+\#define \textbf{ realloc}(old,  size)~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+realloc})(old,size,\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} int \textbf{ allocated\+\_\+blocks} ()
+\item 
+\textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} int \textbf{ mem\+\_\+check} (void)
+\item 
+void $\ast$ \textbf{ traced\+\_\+malloc} (size\+\_\+t size, const char $\ast$size\+\_\+txt, int line, const char $\ast$file)
+\item 
+void $\ast$ \textbf{ traced\+\_\+calloc} (size\+\_\+t count, size\+\_\+t size, const char $\ast$size\+\_\+txt, int line, const char $\ast$file)
+\item 
+void \textbf{ traced\+\_\+free} (void $\ast$p, const char $\ast$size\+\_\+txt, int line, const char $\ast$file)
+\item 
+void $\ast$ \textbf{ traced\+\_\+realloc} (void $\ast$old, size\+\_\+t size, const char $\ast$size\+\_\+txt, int line, const char $\ast$file)
+\item 
+void \textbf{ mem\+\_\+dump} (void const $\ast$mem, size\+\_\+t size, F\+I\+LE $\ast$fp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\label{memtrace_8h_af30a73f26c0085429afe8d13ccf255f5}} 
+\index{memtrace.\+h@{memtrace.\+h}!A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL@{A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL}}
+\index{A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL@{A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL}
+{\footnotesize\ttfamily \#define A\+L\+L\+O\+W\+\_\+\+F\+R\+E\+E\+\_\+\+N\+U\+LL}
+
+\mbox{\label{memtrace_8h_ab98a612296b79e3e44d41727977b07a5}} 
+\index{memtrace.\+h@{memtrace.\+h}!calloc@{calloc}}
+\index{calloc@{calloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{calloc}
+{\footnotesize\ttfamily \#define calloc(\begin{DoxyParamCaption}\item[{}]{count,  }\item[{}]{size }\end{DoxyParamCaption})~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+calloc})(count, size, \#count\char`\"{},\char`\"{}\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)}
+
+\mbox{\label{memtrace_8h_a28886d59fbdc2dccd82cc4887e967d0d}} 
+\index{memtrace.\+h@{memtrace.\+h}!E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+{\footnotesize\ttfamily \#define E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+
+\mbox{\label{memtrace_8h_a9d4b5df3530d1bc733070a4669ba6ebc}} 
+\index{memtrace.\+h@{memtrace.\+h}!free@{free}}
+\index{free@{free}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{free}
+{\footnotesize\ttfamily \#define free(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+free})(p, \#p,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)}
+
+\mbox{\label{memtrace_8h_a2eb0b03d1a9de9615a291b1205969069}} 
+\index{memtrace.\+h@{memtrace.\+h}!malloc@{malloc}}
+\index{malloc@{malloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{malloc}
+{\footnotesize\ttfamily \#define malloc(\begin{DoxyParamCaption}\item[{}]{size }\end{DoxyParamCaption})~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+malloc})(size,\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)}
+
+\mbox{\label{memtrace_8h_aa90f3e89fc3fe477370afb9f81975081}} 
+\index{memtrace.\+h@{memtrace.\+h}!M\+E\+M\+T\+R\+A\+CE@{M\+E\+M\+T\+R\+A\+CE}}
+\index{M\+E\+M\+T\+R\+A\+CE@{M\+E\+M\+T\+R\+A\+CE}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{M\+E\+M\+T\+R\+A\+CE}
+{\footnotesize\ttfamily \#define M\+E\+M\+T\+R\+A\+CE}
+
+\mbox{\label{memtrace_8h_ac7d83b17b55e7ca775a0127988f45c30}} 
+\index{memtrace.\+h@{memtrace.\+h}!M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO}}
+\index{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO}
+{\footnotesize\ttfamily \#define M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+A\+U\+TO}
+
+\mbox{\label{memtrace_8h_abd343745021a44232eb2808e547001d5}} 
+\index{memtrace.\+h@{memtrace.\+h}!M\+E\+M\+T\+R\+A\+C\+E\+\_\+C@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+C}}
+\index{M\+E\+M\+T\+R\+A\+C\+E\+\_\+C@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+C}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{M\+E\+M\+T\+R\+A\+C\+E\+\_\+C}
+{\footnotesize\ttfamily \#define M\+E\+M\+T\+R\+A\+C\+E\+\_\+C}
+
+\mbox{\label{memtrace_8h_ac089c2c8a58531c78e528190c18946b0}} 
+\index{memtrace.\+h@{memtrace.\+h}!M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY}}
+\index{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY@{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY}
+{\footnotesize\ttfamily \#define M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+T\+O\+\_\+\+M\+E\+M\+O\+RY}
+
+\mbox{\label{memtrace_8h_a2d566601d9a416502dd2fd2816678fed}} 
+\index{memtrace.\+h@{memtrace.\+h}!realloc@{realloc}}
+\index{realloc@{realloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{realloc}
+{\footnotesize\ttfamily \#define realloc(\begin{DoxyParamCaption}\item[{}]{old,  }\item[{}]{size }\end{DoxyParamCaption})~\textbf{ T\+R\+A\+C\+EC}(\textbf{ traced\+\_\+realloc})(old,size,\#size,\+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+,\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+)}
+
+\mbox{\label{memtrace_8h_aad4cd792b953244f20869915267ae837}} 
+\index{memtrace.\+h@{memtrace.\+h}!S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}}
+\index{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE@{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+{\footnotesize\ttfamily \#define S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE}
+
+\mbox{\label{memtrace_8h_ad51e1559346aea8b3493be2ecefaa09d}} 
+\index{memtrace.\+h@{memtrace.\+h}!T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC@{T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC}}
+\index{T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC@{T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC}
+{\footnotesize\ttfamily \#define T\+H\+R\+O\+W\+\_\+\+B\+A\+D\+A\+L\+L\+OC~throw (std\+::bad\+\_\+alloc)}
+
+\mbox{\label{memtrace_8h_ab62d0ac94900b7586e89da2d6cedf008}} 
+\index{memtrace.\+h@{memtrace.\+h}!T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG@{T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG}}
+\index{T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG@{T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG}
+{\footnotesize\ttfamily \#define T\+H\+R\+O\+W\+\_\+\+N\+O\+T\+H\+I\+NG~throw ()}
+
+\mbox{\label{memtrace_8h_a429dce7f3bb9a1335f0c7febd62938df}} 
+\index{memtrace.\+h@{memtrace.\+h}!T\+R\+A\+C\+EC@{T\+R\+A\+C\+EC}}
+\index{T\+R\+A\+C\+EC@{T\+R\+A\+C\+EC}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{T\+R\+A\+C\+EC}
+{\footnotesize\ttfamily \#define T\+R\+A\+C\+EC(\begin{DoxyParamCaption}\item[{}]{func }\end{DoxyParamCaption})~func}
+
+
+
+\subsection{Function Documentation}
+\mbox{\label{memtrace_8h_ab8ef9a94a4ba8246012e9bfeb5b0c589}} 
+\index{memtrace.\+h@{memtrace.\+h}!allocated\+\_\+blocks@{allocated\+\_\+blocks}}
+\index{allocated\+\_\+blocks@{allocated\+\_\+blocks}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{allocated\+\_\+blocks()}
+{\footnotesize\ttfamily \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} int allocated\+\_\+blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_ab531f5bcfca2f50b8c2a43f7bb96fc0e}} 
+\index{memtrace.\+h@{memtrace.\+h}!mem\+\_\+check@{mem\+\_\+check}}
+\index{mem\+\_\+check@{mem\+\_\+check}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{mem\+\_\+check()}
+{\footnotesize\ttfamily \textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} int mem\+\_\+check (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_a031b528c007e2e8ba5d814be13d3860c}} 
+\index{memtrace.\+h@{memtrace.\+h}!mem\+\_\+dump@{mem\+\_\+dump}}
+\index{mem\+\_\+dump@{mem\+\_\+dump}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{mem\+\_\+dump()}
+{\footnotesize\ttfamily void mem\+\_\+dump (\begin{DoxyParamCaption}\item[{void const $\ast$}]{mem,  }\item[{size\+\_\+t}]{size,  }\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_a8d30ad82fb5ab2f070bb8552d5f71575}} 
+\index{memtrace.\+h@{memtrace.\+h}!traced\+\_\+calloc@{traced\+\_\+calloc}}
+\index{traced\+\_\+calloc@{traced\+\_\+calloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{traced\+\_\+calloc()}
+{\footnotesize\ttfamily void$\ast$ traced\+\_\+calloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{size\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_a324b3ee7c799b67c4bae9dcdfa144dd3}} 
+\index{memtrace.\+h@{memtrace.\+h}!traced\+\_\+free@{traced\+\_\+free}}
+\index{traced\+\_\+free@{traced\+\_\+free}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{traced\+\_\+free()}
+{\footnotesize\ttfamily void traced\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{p,  }\item[{const char $\ast$}]{size\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_a878d95f35f94bc40ca0f41d5630c10a0}} 
+\index{memtrace.\+h@{memtrace.\+h}!traced\+\_\+malloc@{traced\+\_\+malloc}}
+\index{traced\+\_\+malloc@{traced\+\_\+malloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{traced\+\_\+malloc()}
+{\footnotesize\ttfamily void$\ast$ traced\+\_\+malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{size\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\label{memtrace_8h_ad9b9f054074d56c2952702d341aba982}} 
+\index{memtrace.\+h@{memtrace.\+h}!traced\+\_\+realloc@{traced\+\_\+realloc}}
+\index{traced\+\_\+realloc@{traced\+\_\+realloc}!memtrace.\+h@{memtrace.\+h}}
+\subsubsection{traced\+\_\+realloc()}
+{\footnotesize\ttfamily void$\ast$ traced\+\_\+realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{old,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{size\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+

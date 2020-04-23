@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="bitbuffer_8cpp" kind="file" language="C++">
+    <compoundname>bitbuffer.cpp</compoundname>
+    <includes refid="bitbuffer_8h" local="yes">bitbuffer.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>list.h</label>
+        <link refid="list_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fstream</label>
+      </node>
+      <node id="0">
+        <label>bitbuffer.cpp</label>
+        <link refid="bitbuffer_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="1">
+        <label>bitbuffer.h</label>
+        <link refid="bitbuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="bitbuffer_8h" kindref="compound">bitbuffer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" refkind="member"><highlight class="normal"><ref refid="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" kindref="member">BitBuffer::BitBuffer</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sizeOfChunk)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:data_(<ref refid="class_list" kindref="compound">List</ref>&lt;char&gt;()),<sp/>current_chunk_(0),<sp/>len_of_curr_chunk_b_(0),<sp/>size_of_chunk_b_(8*sizeOfChunk),<sp/>is_open_(true),<sp/>first_unpopped_bit_(0),<sp/>max_chunks_(50)<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_bit_buffer_1a9b24bd6c8a69edc84a4a6c405df6f77d" refkind="member"><highlight class="normal"><ref refid="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" kindref="member">BitBuffer::BitBuffer</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer" kindref="compound">BitBuffer</ref><sp/>&amp;bb)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:data_(<ref refid="class_list" kindref="compound">List</ref>&lt;char&gt;(bb.<ref refid="class_bit_buffer_1a2ef8ca85ce6f7a9d0523faf2e1f5873d" kindref="member">data_</ref>())),<sp/>size_of_chunk_b_(bb.<ref refid="class_bit_buffer_1ad161009c775d28495a6563202e4662c4" kindref="member">sizeOfChunk</ref>()),<sp/>current_chunk_(bb.<ref refid="class_bit_buffer_1ab8e00ba668ad600686550eaa5b51ae97" kindref="member">currentChunk</ref>()),<sp/>len_of_curr_chunk_b_(bb.<ref refid="class_bit_buffer_1ac5c3ff64e4c53cdd093bafd016b60804" kindref="member">count</ref>()),<sp/>is_open_(true),<sp/>first_unpopped_bit_(0),<sp/>max_chunks_(50)<sp/>{}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" kindref="member">BitBuffer::pop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data_.<ref refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kindref="member">count</ref>()<sp/>&lt;<sp/>1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>first<sp/>=<sp/>data_[0];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>data_.<ref refid="class_list_1a54fa90e725d350cd7bd41270ebdfe775" kindref="member">removeAt</ref>(0);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>first;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" kindref="member">BitBuffer::close</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!is_open_)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len_of_curr_chunk_b_<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>current_chunk_<sp/>&lt;&lt;=<sp/>(size_of_chunk_b_<sp/>-<sp/>len_of_curr_chunk_b_);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>data_.<ref refid="class_list_1a1a6b5ceed2cb6d432c0a5d9114e79e70" kindref="member">add</ref>(current_chunk_);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>is_open_<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_bit_buffer_1a9d330ed50862c915abb89eec7e8a3f18" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a9d330ed50862c915abb89eec7e8a3f18" kindref="member">BitBuffer::leak</ref>(std::ofstream<sp/>&amp;out)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data_.<ref refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kindref="member">count</ref>()<sp/>&gt;<sp/>max_chunks_)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(data_.<ref refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kindref="member">count</ref>()<sp/>&gt;<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out<sp/>&lt;&lt;<sp/><ref refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" kindref="member">pop</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" kindref="member">BitBuffer::leakAfter</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max_chunks_;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_bit_buffer_1a80afe4897d0c6094251aa0a0ac08f188" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" kindref="member">BitBuffer::leakAfter</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ls)<sp/>{<sp/>max_chunks_<sp/>=<sp/>ls;<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_bit_buffer_1ac5a8a3888797e97f131bf3a38a35c7a2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1ac5a8a3888797e97f131bf3a38a35c7a2" kindref="member">BitBuffer::fill</ref>(std::ifstream<sp/>&amp;in)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(data_.<ref refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kindref="member">count</ref>()<sp/>&lt;<sp/>3<sp/>&amp;&amp;<sp/>!in.eof())<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>input;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in.get(input);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bit_buffer_1a36ec4987fe9b4927bba7b63fab2971f8" kindref="member">push</ref>(input,<sp/>8*</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in.eof())<sp/><ref refid="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" kindref="member">close</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_bit_buffer_1a50d13861a778aff828e42e4f32371726" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bit_buffer_1a50d13861a778aff828e42e4f32371726" kindref="member">BitBuffer::bit</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size_of_chunk_b_<sp/>==<sp/>first_unpopped_bit_)<sp/>{<sp/><ref refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" kindref="member">pop</ref>();<sp/>first_unpopped_bit_<sp/>=<sp/>0;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data_.<ref refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kindref="member">count</ref>()<sp/>&lt;<sp/>1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1<sp/>==<sp/>((data_[0]<sp/>&gt;&gt;<sp/>(size_of_chunk_b_<sp/>-<sp/>first_unpopped_bit_++<sp/>-<sp/>1))<sp/>&amp;<sp/>1);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="bitbuffer.cpp"/>
+  </compounddef>
+</doxygen>

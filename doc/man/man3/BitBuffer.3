@@ -1,0 +1,184 @@
+.TH "BitBuffer" 3 "Thu Apr 16 2020" "Version 1.2" "Huffman" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+BitBuffer
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <bitbuffer\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBBitBuffer\fP (int \fBChunkSize\fP=sizeof(char))"
+.br
+.ti -1c
+.RI "\fBBitBuffer\fP (const \fBBitBuffer\fP &bb)"
+.br
+.ti -1c
+.RI "const \fBList\fP< char > & \fBData\fP () const"
+.br
+.ti -1c
+.RI "char \fBLastChunk\fP () const"
+.br
+.ti -1c
+.RI "int \fBCnt\fP () const"
+.br
+.ti -1c
+.RI "int \fBChunkSize\fP () const"
+.br
+.ti -1c
+.RI "int \fBSize\fP () const"
+.br
+.ti -1c
+.RI "bool \fBEmpty\fP ()"
+.br
+.ti -1c
+.RI "template<typename T > void \fBpush\fP (T bits, int count)"
+.br
+.ti -1c
+.RI "char \fBpop\fP ()"
+.br
+.ti -1c
+.RI "void \fBclose\fP ()"
+.br
+.ti -1c
+.RI "void \fBLeakSize\fP (int ls)"
+.br
+.ti -1c
+.RI "int \fBLeakSize\fP () const"
+.br
+.ti -1c
+.RI "void \fBleak\fP (std::ofstream &out)"
+.br
+.ti -1c
+.RI "void \fBfill\fP (std::ifstream &in)"
+.br
+.ti -1c
+.RI "bool \fBbit\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class can hold bits\&. Useful when size of values to be stored is not constant\&. 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "BitBuffer::BitBuffer (int ChunkSize = \fCsizeof(char)\fP)\fC [explicit]\fP"
+Buffer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIChunSize\fP Number of bits each chunk can store (character's size by default) 
+.RE
+.PP
+
+.SS "BitBuffer::BitBuffer (const \fBBitBuffer\fP & bb)"
+Buffer 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbb\fP A buffer to be copied (resulting Buffer is editable) 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "bool BitBuffer::bit ()"
+Returning the first (not yet returned) bit from buffer 
+.PP
+\fBReturns:\fP
+.RS 4
+True = 1, False = 0 bit 
+.RE
+.PP
+
+.SS "int BitBuffer::sizeOfChunk () const\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+Number of valuable bits in each chunk\&. 
+.RE
+.PP
+
+.SS "void BitBuffer::close ()"
+Closing the buffer This makes sure that all data_ is stored properly; using \fBpush()\fP will not be allowed anymore\&.
+.SS "int BitBuffer::count () const\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+Count of valuable bits in \fBLastChunk()\fP 
+.RE
+.PP
+
+.SS "const \fBList\fP<char>& BitBuffer::Data () const\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+data_ stored so far
+.RE
+.PP
+
+.SS "bool BitBuffer::isEmpty ()\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+true, if there is no \fBpop()\fP-able data_ in the buffer
+.RE
+.PP
+
+.SS "void BitBuffer::fill (std::ifstream & in)"
+Getting some data_ from file After call, at least 1 full character will be in the buffer\&.
+.SS "char BitBuffer::currentChunk () const\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+Last (not yet full) chunk of data_\&. The last \fBCnt()\fP bits are values\&.
+.RE
+.PP
+
+.SS "void BitBuffer::leak (std::ofstream & out)"
+Leaking data_ to a file When there'are more chunks than the leak-size, those all go to the file
+.SS "void BitBuffer::leakAfter (int ls)"
+Setting the leak-size 
+.SS "int BitBuffer::leakAfter () const"
+Get leak-size 
+.SS "char BitBuffer::pop ()"
+Returning the first chunk The returned chunk will be removed from buffer\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+The first chunk 
+.RE
+.PP
+
+.SS "template<typename T > void BitBuffer::push (T bits, int count)\fC [inline]\fP"
+Adding bits to the buffer Pushes the given bits into the buffer (current_chunk_)\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIbits\fP It contains the value-bits (fitted to the right_child_=LSB)\&.
+.br
+\fIcount\fP Number of significant bits\&. 
+.RE
+.PP
+
+.SS "int BitBuffer::countOfFullChunks () const\fC [inline]\fP"
+
+.PP
+\fBReturns:\fP
+.RS 4
+Number of full chunks\&. 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Huffman from the source code\&.

@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="struct___is___types" kind="struct"><name>_Is_Types</name>
+    <member refid="struct___is___types_1aef853f15f013611d0890cb6fc408ae47" kind="variable"><name>convertable</name></member>
+    <member refid="struct___is___types_1a56e08a2768c571caab81e9bc47d5acc6" kind="function"><name>f</name></member>
+    <member refid="struct___is___types_1a013da65c5a92e9bd02f5d361c10d376d" kind="function"><name>f</name></member>
+  </compound>
+  <compound refid="struct__registry__item" kind="struct"><name>_registry_item</name>
+    <member refid="struct__registry__item_1a7d2b50523d8801a40d30e17bfab37149" kind="variable"><name>p</name></member>
+    <member refid="struct__registry__item_1a98122f145c9d8ef6b8e34c534307423d" kind="variable"><name>size</name></member>
+    <member refid="struct__registry__item_1ae5167771e18dc20df38808a4dafa761f" kind="variable"><name>call</name></member>
+    <member refid="struct__registry__item_1aa659ff3f2fa74b37e31b0bd3948bbf7f" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="class_bit_buffer" kind="class"><name>BitBuffer</name>
+    <member refid="class_bit_buffer_1afe57f16d5f136b53999e4d39ca46183d" kind="variable"><name>is_open_</name></member>
+    <member refid="class_bit_buffer_1a07254851abc3d4567fd6b373ceb7dedd" kind="variable"><name>data_</name></member>
+    <member refid="class_bit_buffer_1aec6b6f4c300ad354851d52f91a1e4e86" kind="variable"><name>current_chunk_</name></member>
+    <member refid="class_bit_buffer_1a20996e3146c64966ace69e3cdfda240f" kind="variable"><name>len_of_curr_chunk_b_</name></member>
+    <member refid="class_bit_buffer_1ad8287d3f212569cbb24c41ff1fa177d9" kind="variable"><name>size_of_chunk_b_</name></member>
+    <member refid="class_bit_buffer_1ac3d8bea3b1dd5ff369eb83753de9a563" kind="variable"><name>max_chunks_</name></member>
+    <member refid="class_bit_buffer_1abc097cb23960eb60b5c94133e30b3cd0" kind="variable"><name>first_unpopped_bit_</name></member>
+    <member refid="class_bit_buffer_1ab446b3a2063adb3bb7ba1b8c9c471b6e" kind="function"><name>BitBuffer</name></member>
+    <member refid="class_bit_buffer_1a9b24bd6c8a69edc84a4a6c405df6f77d" kind="function"><name>BitBuffer</name></member>
+    <member refid="class_bit_buffer_1a2ef8ca85ce6f7a9d0523faf2e1f5873d" kind="function"><name>data_</name></member>
+    <member refid="class_bit_buffer_1ab8e00ba668ad600686550eaa5b51ae97" kind="function"><name>currentChunk</name></member>
+    <member refid="class_bit_buffer_1ac5c3ff64e4c53cdd093bafd016b60804" kind="function"><name>count</name></member>
+    <member refid="class_bit_buffer_1ad161009c775d28495a6563202e4662c4" kind="function"><name>sizeOfChunk</name></member>
+    <member refid="class_bit_buffer_1a6986fb3db8ebb8c0c1c88b3a9aecc295" kind="function"><name>countOfFullChunks</name></member>
+    <member refid="class_bit_buffer_1a660b36bf12303b2cbab0ba70b5967b86" kind="function"><name>isEmpty</name></member>
+    <member refid="class_bit_buffer_1a36ec4987fe9b4927bba7b63fab2971f8" kind="function"><name>push</name></member>
+    <member refid="class_bit_buffer_1a8f569dfa9535ac107c84846f22a45221" kind="function"><name>pop</name></member>
+    <member refid="class_bit_buffer_1a1075aee0daeee83dbe4908c325b6969f" kind="function"><name>close</name></member>
+    <member refid="class_bit_buffer_1a80afe4897d0c6094251aa0a0ac08f188" kind="function"><name>leakAfter</name></member>
+    <member refid="class_bit_buffer_1a024c5f60315eaf677c16c0e273271034" kind="function"><name>leakAfter</name></member>
+    <member refid="class_bit_buffer_1a9d330ed50862c915abb89eec7e8a3f18" kind="function"><name>leak</name></member>
+    <member refid="class_bit_buffer_1ac5a8a3888797e97f131bf3a38a35c7a2" kind="function"><name>fill</name></member>
+    <member refid="class_bit_buffer_1a50d13861a778aff828e42e4f32371726" kind="function"><name>bit</name></member>
+  </compound>
+  <compound refid="structcall__t" kind="struct"><name>call_t</name>
+    <member refid="structcall__t_1a59d4e803f2e254dc5ceeb9c1bfcc9355" kind="variable"><name>f</name></member>
+    <member refid="structcall__t_1aaa4f0e556289bbf4da414897b10e0916" kind="variable"><name>line</name></member>
+    <member refid="structcall__t_1a24e185188a17e272396e118640672aba" kind="variable"><name>par_txt</name></member>
+    <member refid="structcall__t_1a97629ec51d024396221fe7d48c84859a" kind="variable"><name>file</name></member>
+  </compound>
+  <compound refid="class_end" kind="class"><name>End</name>
+    <member refid="class_end_1a4243d6ed0711bbf64948454df0fb02a7" kind="variable"><name>letter_</name></member>
+    <member refid="class_end_1aec010332b2484030781dff4ab47156ce" kind="function"><name>End</name></member>
+    <member refid="class_end_1a9cdb20f0a78b188e13de7c4afc1a0bf4" kind="function"><name>End</name></member>
+    <member refid="class_end_1acd25fa8f481c50f5b8eaff4af1159942" kind="function"><name>End</name></member>
+    <member refid="class_end_1a965fceb8e50a82e43bafe25b46fff325" kind="function"><name>letter</name></member>
+    <member refid="class_end_1a4c27e829f73c99b0022b88c2c1730867" kind="function"><name>left</name></member>
+    <member refid="class_end_1a1e28f698b8995a75d14803b2db8466c1" kind="function"><name>right</name></member>
+    <member refid="class_end_1aacfada9eb004efb4d454b8357f3f8e1e" kind="function"><name>operator==</name></member>
+    <member refid="class_end_1aa1acae6e027fc01427b07afe58f44f09" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="class_huffman" kind="class"><name>Huffman</name>
+    <member refid="class_huffman_1af42de739fa07937ad46f07bfa5a757da" kind="variable"><name>in</name></member>
+    <member refid="class_huffman_1a0edc8fd8aa149cb823ffd6fb4205fc9a" kind="variable"><name>out</name></member>
+    <member refid="class_huffman_1ac29ca2db3c0fdfef8919e5938bc77625" kind="variable"><name>root_h_tree_</name></member>
+    <member refid="class_huffman_1a58af969e1cd59bd981f1461e8a51822c" kind="function"><name>Huffman</name></member>
+    <member refid="class_huffman_1a381daf47396ec56b139f5a80db01371a" kind="function"><name>Huffman</name></member>
+    <member refid="class_huffman_1a340d5fe63ee0b2e66319cfa2b3adf07e" kind="function"><name>Huffman</name></member>
+    <member refid="class_huffman_1a29b0ed4581235dae876fca58dd9bf06f" kind="function"><name>compress</name></member>
+    <member refid="class_huffman_1a7c0595055bea8a499d7750cbbd86e12d" kind="function"><name>extract</name></member>
+    <member refid="class_huffman_1a8ffa876d6b52ef4a06198dc4800bf2f3" kind="function"><name>source</name></member>
+    <member refid="class_huffman_1a155055b704bd1c800a23a3a19820e357" kind="function"><name>source</name></member>
+    <member refid="class_huffman_1a5daa104bd2cefb4be9befd6140428ba7" kind="function"><name>destiny</name></member>
+    <member refid="class_huffman_1ab6edbf4822379aaf27834c21b706405f" kind="function"><name>destiny</name></member>
+    <member refid="class_huffman_1ae994bcb0f59826793e2065b0fd9bd7fb" kind="function"><name>delRoot</name></member>
+    <member refid="class_huffman_1a641376a7cb5871a6a2c7b51afb05bfcc" kind="function"><name>~Huffman</name></member>
+    <member refid="class_huffman_1af87ec9554e4a062bb93439a539aa06da" kind="function"><name>genTree</name></member>
+    <member refid="class_huffman_1af6bfd15ef1b3ed6d9a8ebe29b05b9fd2" kind="function"><name>genCodes</name></member>
+    <member refid="class_huffman_1a594f0eab9fc8a1f8e21f596ccc968956" kind="function"><name>rebuildTree</name></member>
+  </compound>
+  <compound refid="class_letter" kind="class"><name>Letter</name>
+    <member refid="class_letter_1a09e85e61f84fd8254a6aa930a72e8bdc" kind="variable"><name>original_</name></member>
+    <member refid="class_letter_1a0fbbf244b4667f422ce99823d5dd3a2e" kind="variable"><name>huffman_code_</name></member>
+    <member refid="class_letter_1a576189a6bc0a2dbecb998d73f7b9d2b5" kind="variable"><name>len_of_code_b_</name></member>
+    <member refid="class_letter_1aa33f1a7d59948007cabb7cb3060fbbdd" kind="function"><name>Letter</name></member>
+    <member refid="class_letter_1aad5ec69b0312ac41d818337c5ff94e7e" kind="function"><name>Letter</name></member>
+    <member refid="class_letter_1ac390dd9bfbdd7a0965cd74b3eccee010" kind="function"><name>Letter</name></member>
+    <member refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" kind="function"><name>original</name></member>
+    <member refid="class_letter_1af6158c9bc58d3f4b77ee627807b87133" kind="function"><name>original</name></member>
+    <member refid="class_letter_1af52f553dafb323384339dcfaa1a7eaa6" kind="function"><name>huffman</name></member>
+    <member refid="class_letter_1ac345d7df6c98a9aea64f77d55267f820" kind="function"><name>huffman</name></member>
+    <member refid="class_letter_1a06c63721ba0b1c40ac7591835f2e6e43" kind="function"><name>length</name></member>
+    <member refid="class_letter_1a5bd34c7d6753f3a950cb3a3358945c1a" kind="function"><name>operator=</name></member>
+    <member refid="class_letter_1acadabf182742d730bcc61f052b29aad8" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="class_list" kind="class"><name>List</name>
+    <member refid="class_list_1add37b87d7a0aa4fc03c73afb71d80525" kind="variable"><name>data_</name></member>
+    <member refid="class_list_1a2c96b3000e57f165b6732fe740282a88" kind="variable"><name>len_of_code_b_</name></member>
+    <member refid="class_list_1a84508677ac6d557cdc896db2d148ea91" kind="variable"><name>cap_</name></member>
+    <member refid="class_list_1aca7f27a4898ebda783a3416cac0f75a8" kind="variable"><name>inc_size_</name></member>
+    <member refid="class_list_1a48ef6c59b00fd6c6bbf1604583113e42" kind="function"><name>List</name></member>
+    <member refid="class_list_1a3f8cda0e5a9b4912759e782994e57735" kind="function"><name>List</name></member>
+    <member refid="class_list_1a2b58189090f6e5ce52939c9195e59e85" kind="function"><name>~List</name></member>
+    <member refid="class_list_1a7a74fc01260437fac92355dc8d4e789c" kind="function"><name>count</name></member>
+    <member refid="class_list_1a1a6b5ceed2cb6d432c0a5d9114e79e70" kind="function"><name>add</name></member>
+    <member refid="class_list_1a54fa90e725d350cd7bd41270ebdfe775" kind="function"><name>removeAt</name></member>
+    <member refid="class_list_1ab20b18c4facb9c8ab89640c202057b80" kind="function"><name>remove</name></member>
+    <member refid="class_list_1ab3489ae135b990deedac885f8bd3030b" kind="function"><name>findFirst</name></member>
+    <member refid="class_list_1a80967ab44431031fb55fd2fe635b7b5e" kind="function"><name>operator[]</name></member>
+    <member refid="class_list_1a81a44c4aae9bb74b5166004cd28d9ac6" kind="function"><name>operator+=</name></member>
+  </compound>
+  <compound refid="class_node" kind="class"><name>Node</name>
+    <member refid="class_node_1ab8c667ac8fdb120ed4c031682a9cdaee" kind="variable"><name>left_child_</name></member>
+    <member refid="class_node_1a7328862eaa6dea28018326549b3294d3" kind="variable"><name>right_child_</name></member>
+    <member refid="class_node_1a3536573131e96ed591637abe7b532673" kind="variable"><name>len_of_curr_chunk_b_</name></member>
+    <member refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" kind="function"><name>Node</name></member>
+    <member refid="class_node_1a942858d25ccdfaf7e1d1f4ddbdf13831" kind="function"><name>Node</name></member>
+    <member refid="class_node_1a4b0ea9be15925bfa877cdac6923c275a" kind="function"><name>left</name></member>
+    <member refid="class_node_1af62ccd86ec2c1967b571faf948a964c4" kind="function"><name>left</name></member>
+    <member refid="class_node_1a73fffe3df2c9e7ac4ebf52d7c65e8e38" kind="function"><name>right</name></member>
+    <member refid="class_node_1a2b9e785c9b94b7bb0e4617403542207b" kind="function"><name>right</name></member>
+    <member refid="class_node_1a2c339e14824c1960e65c21b19eaad9a0" kind="function"><name>count</name></member>
+    <member refid="class_node_1a7a2fced8d12d4f75acb8a24fbd0467e2" kind="function"><name>count</name></member>
+  </compound>
+  <compound refid="class_path" kind="class"><name>Path</name>
+    <member refid="class_path_1ad508197ffa6676f3017299fab74f25b3" kind="function"><name>Path</name></member>
+  </compound>
+  <compound refid="structgtest__lite_1_1_test" kind="struct"><name>gtest_lite::Test</name>
+    <member refid="structgtest__lite_1_1_test_1a6da678d43b72b9e2bff1c99e1d3c48f5" kind="variable"><name>sum</name></member>
+    <member refid="structgtest__lite_1_1_test_1a4fb6ee7bd903717d970e3f0504cdeeab" kind="variable"><name>failed</name></member>
+    <member refid="structgtest__lite_1_1_test_1a91d9c63794d2b9b49e0c48d897208560" kind="variable"><name>ablocks</name></member>
+    <member refid="structgtest__lite_1_1_test_1a59a9a7f0ef7867af604ce5678f7a2c13" kind="variable"><name>status</name></member>
+    <member refid="structgtest__lite_1_1_test_1a1145ceb335a60a808b7b4d5d1624b2a5" kind="variable"><name>tmp</name></member>
+    <member refid="structgtest__lite_1_1_test_1a8d495a42580e3ae337f9c4982136b700" kind="variable"><name>name</name></member>
+    <member refid="structgtest__lite_1_1_test_1af4784302d78bb004bcb20b7f75ec06c3" kind="variable"><name>null</name></member>
+    <member refid="structgtest__lite_1_1_test_1a99fb3f2338e4e0512beb6e19c5409078" kind="function"><name>Test</name></member>
+    <member refid="structgtest__lite_1_1_test_1a2227b70fcc5dfb3c326bf117dd8f7e79" kind="function"><name>begin</name></member>
+    <member refid="structgtest__lite_1_1_test_1a658c1eee35f170294c354ebf4d3fc1ba" kind="function"><name>end</name></member>
+    <member refid="structgtest__lite_1_1_test_1aadbfd0f53c56d975f793602996631195" kind="function"><name>fail</name></member>
+    <member refid="structgtest__lite_1_1_test_1a0bca03315e5963f7fdfffd92d2daed6a" kind="function"><name>expect</name></member>
+    <member refid="structgtest__lite_1_1_test_1a5a879233c2aa110626668c06140f6e71" kind="function"><name>~Test</name></member>
+  </compound>
+  <compound refid="namespacegtest__lite" kind="namespace"><name>gtest_lite</name>
+    <member refid="namespacegtest__lite_1a449dfe317ef02561df75cf7fef1a86b1" kind="variable"><name>test</name></member>
+    <member refid="namespacegtest__lite_1ab358c162e1cedfc39abf5959417ffc1e" kind="function"><name>EXPECT_</name></member>
+    <member refid="namespacegtest__lite_1a8b21cff4e93dcacdd1b4fdb8b6b9c740" kind="function"><name>EXPECT_</name></member>
+    <member refid="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" kind="function"><name>EXPECTSTR</name></member>
+    <member refid="namespacegtest__lite_1aa7762f23094d59c699ec402e1a37640c" kind="function"><name>eq</name></member>
+    <member refid="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" kind="function"><name>eqstr</name></member>
+    <member refid="namespacegtest__lite_1a9a1485affebbed604f7cac69f70072dc" kind="function"><name>ne</name></member>
+    <member refid="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" kind="function"><name>nestr</name></member>
+    <member refid="namespacegtest__lite_1a92068d494867b61abeef5942eefac3a3" kind="function"><name>le</name></member>
+    <member refid="namespacegtest__lite_1acfefb55c5d3713c79b659bbd18d9423c" kind="function"><name>lt</name></member>
+    <member refid="namespacegtest__lite_1ae8c2517b99b688c6136d8c7c18551da5" kind="function"><name>ge</name></member>
+    <member refid="namespacegtest__lite_1a2075d101da98f80f569b0737c5185718" kind="function"><name>gt</name></member>
+    <member refid="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" kind="function"><name>almostEQ</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="bitbuffer_8cpp" kind="file"><name>bitbuffer.cpp</name>
+  </compound>
+  <compound refid="bitbuffer_8h" kind="file"><name>bitbuffer.h</name>
+  </compound>
+  <compound refid="gtest__lite_8h" kind="file"><name>gtest_lite.h</name>
+    <member refid="gtest__lite_8h_1a379a7b57e74521cb2c8e99f0e2779a72" kind="define"><name>TEST</name></member>
+    <member refid="gtest__lite_8h_1a29fd18bed01c4d836c7ebfe73a125c3f" kind="define"><name>END</name></member>
+    <member refid="gtest__lite_8h_1acc9065c889d0797062317b30fd8767d4" kind="define"><name>ENDM</name></member>
+    <member refid="gtest__lite_8h_1ad2e2f10cb2a494ff7ae23938dfdfc41a" kind="define"><name>ENDMsg</name></member>
+    <member refid="gtest__lite_8h_1a75adcdf89f69b0b615e395daafc315af" kind="define"><name>SUCCEED</name></member>
+    <member refid="gtest__lite_8h_1a3e26a8d27caa386ed0ea7ce9d5b7c4ed" kind="define"><name>FAIL</name></member>
+    <member refid="gtest__lite_8h_1aff8385840165a184edc29446aa51936f" kind="define"><name>EXPECT_EQ</name></member>
+    <member refid="gtest__lite_8h_1adb8a724f2c5c63ead11073c21fd51198" kind="define"><name>EXPECT_NE</name></member>
+    <member refid="gtest__lite_8h_1ac680be4a2404c20cae831740779d11cd" kind="define"><name>EXPECT_LE</name></member>
+    <member refid="gtest__lite_8h_1a46603095284e7bcd2f114cfdc7c79b4f" kind="define"><name>EXPECT_LT</name></member>
+    <member refid="gtest__lite_8h_1aad891c6b36689d35ee54de65351ab224" kind="define"><name>EXPECT_GE</name></member>
+    <member refid="gtest__lite_8h_1ac2262f96c4664cf3e170d2edaaba6c44" kind="define"><name>EXPECT_GT</name></member>
+    <member refid="gtest__lite_8h_1ab400890edc9f419e40c28a224e8ed79f" kind="define"><name>EXPECT_TRUE</name></member>
+    <member refid="gtest__lite_8h_1a58cae60fff88d713c4850b50d3e592a6" kind="define"><name>EXPECT_FALSE</name></member>
+    <member refid="gtest__lite_8h_1a5ce7d58df8cb696aa05e77c2370de7a8" kind="define"><name>EXPECT_FLOAT_EQ</name></member>
+    <member refid="gtest__lite_8h_1a6e6277442d96cd18300619c321614397" kind="define"><name>EXPECT_DOUBLE_EQ</name></member>
+    <member refid="gtest__lite_8h_1a5b4b193a92c39b99d7b9404c49feef0b" kind="define"><name>EXPECT_STREQ</name></member>
+    <member refid="gtest__lite_8h_1aa511aad7b6a6a8e8d0279f16d925b094" kind="define"><name>EXPECT_STRNE</name></member>
+    <member refid="gtest__lite_8h_1a4b4fe697f312ef7d2618905a9bc12f04" kind="define"><name>EXPECT_THROW</name></member>
+    <member refid="gtest__lite_8h_1a9be43f44d148e8a8d6a89c864bf4e461" kind="define"><name>EXPECT_ANY_THROW</name></member>
+    <member refid="gtest__lite_8h_1a2743a1438137ad857aa3f9fec3ff67ec" kind="define"><name>EXPECT_NO_THROW</name></member>
+    <member refid="gtest__lite_8h_1a5129ea3a961fbd7fe71e6621452047bf" kind="define"><name>EXPECT_THROW_THROW</name></member>
+    <member refid="gtest__lite_8h_1a34bf9a881eb6b2800b0e6cb0abdbd319" kind="define"><name>CREATE_Has_</name></member>
+    <member refid="gtest__lite_8h_1a59f6c1f1654aa9d5adf5c143efd1a454" kind="define"><name>EXPECTTHROW</name></member>
+    <member refid="gtest__lite_8h_1a428e5e5ea2b7f67a0b68fbf57ea0faa7" kind="define"><name>GTINIT</name></member>
+    <member refid="gtest__lite_8h_1a20ba54bca307f985eb448f71e6896dd5" kind="define"><name>GTEND</name></member>
+  </compound>
+  <compound refid="huffman_8cpp" kind="file"><name>huffman.cpp</name>
+  </compound>
+  <compound refid="huffman_8h" kind="file"><name>huffman.h</name>
+  </compound>
+  <compound refid="letter_8h" kind="file"><name>letter.h</name>
+  </compound>
+  <compound refid="list_8cpp" kind="file"><name>list.cpp</name>
+  </compound>
+  <compound refid="list_8h" kind="file"><name>list.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1aa90f3e89fc3fe477370afb9f81975081" kind="define"><name>MEMTRACE</name></member>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="memtrace_8cpp" kind="file"><name>memtrace.cpp</name>
+    <member refid="memtrace_8cpp_1aa90f3e89fc3fe477370afb9f81975081" kind="define"><name>MEMTRACE</name></member>
+    <member refid="memtrace_8cpp_1ab4e504c96e3c59936ff0a9f31573b1b0" kind="define"><name>FROM_MEMTRACE_CPP</name></member>
+    <member refid="memtrace_8cpp_1a8817d7ba90cf2e1ddd83f35dbb862542" kind="define"><name>FMALLOC</name></member>
+    <member refid="memtrace_8cpp_1af6fff8cbc37157865d4b383dacfd947b" kind="define"><name>FCALLOC</name></member>
+    <member refid="memtrace_8cpp_1afcc2cb9c3434359e629fdd446aab6175" kind="define"><name>FREALLOC</name></member>
+    <member refid="memtrace_8cpp_1aa6b915326a446c2a67f05f5504d9bc30" kind="define"><name>FFREE</name></member>
+    <member refid="memtrace_8cpp_1a9f98c384938a2ff256aa6a0a6f8992dc" kind="define"><name>FNEW</name></member>
+    <member refid="memtrace_8cpp_1a744b443f8bd1fad5895b111602c0ead9" kind="define"><name>FDELETE</name></member>
+    <member refid="memtrace_8cpp_1afc0db05fd089296f53cc7e8441ebc565" kind="define"><name>FNEWARR</name></member>
+    <member refid="memtrace_8cpp_1acd2bfc6563a2ac0ae741ee31dfbf1c92" kind="define"><name>FDELETEARR</name></member>
+    <member refid="memtrace_8cpp_1aaed1b7df4f99525f21eda754cf7fae05" kind="define"><name>COMP</name></member>
+    <member refid="memtrace_8cpp_1a5d3529a7e2c30650032e14a1dbc9aaac" kind="define"><name>PU</name></member>
+    <member refid="memtrace_8cpp_1a64bc26cf9b35a1dabeb2a58a96bc9b99" kind="define"><name>P</name></member>
+    <member refid="memtrace_8cpp_1a03943706e48069237cd57f2d35ca987e" kind="define"><name>XSTR</name></member>
+    <member refid="memtrace_8cpp_1a6388870e639eee9c0a69446876f1f8cc" kind="define"><name>STR</name></member>
+    <member refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18dd" kind="enum"><name>BOOL</name></member>
+    <member refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a" kind="enumvalue"><name>FALSE</name></member>
+    <member refid="memtrace_8cpp_1a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839" kind="enumvalue"><name>TRUE</name></member>
+    <member refid="memtrace_8cpp_1a70b3f3b7e889e715810f67307625db45" kind="typedef"><name>registry_item</name></member>
+    <member refid="memtrace_8cpp_1added011af203dbbb6273331eb3c2a7d1" kind="variable"><name>fperror</name></member>
+    <member refid="memtrace_8cpp_1ae8c91ba6f418493cfe57a86ca3106050" kind="variable"><name>CANARY_LEN</name></member>
+    <member refid="memtrace_8cpp_1a5a40aa3d57ab0dabf2c7001874292943" kind="variable"><name>canary_byte1</name></member>
+    <member refid="memtrace_8cpp_1a37403608e891f634c9bd1b151d99b025" kind="variable"><name>canary_byte2</name></member>
+    <member refid="memtrace_8cpp_1a527aaddadd0126673c18433bbea109f8" kind="variable"><name>random_byte</name></member>
+    <member refid="memtrace_8cpp_1aa2629093703d69f89233595a8aa3d187" kind="variable"><name>pretty</name></member>
+    <member refid="memtrace_8cpp_1a5c45de1ada7ae7260818ba753a49a346" kind="variable"><name>dying</name></member>
+    <member refid="memtrace_8cpp_1a8be42d2479a943983c9256a546edfd5c" kind="variable"><name>registry</name></member>
+    <member refid="memtrace_8cpp_1a72500e85e8772dbe52531aea101ba6a0" kind="variable"><name>allocated_blks</name></member>
+    <member refid="memtrace_8cpp_1ac4203c1cc02a8333e6395db74a48bbd9" kind="function"><name>basename</name></member>
+    <member refid="memtrace_8cpp_1af511b5c66e2190536be4ed0ec68b837b" kind="function"><name>StrCpy</name></member>
+    <member refid="memtrace_8cpp_1aefa8e6d5eefd74e917d7c0b8a717c563" kind="function"><name>canary_malloc</name></member>
+    <member refid="memtrace_8cpp_1a99c0a51a6e9eea3bfcac84d2bf8529d3" kind="function"><name>chk_canary</name></member>
+    <member refid="memtrace_8cpp_1a1430c5f6b303ddcfd9739cd798671c0f" kind="function"><name>pack</name></member>
+    <member refid="memtrace_8cpp_1a0a75acd3b2f91b0cf0d6d974d3f5c0d5" kind="function"><name>print_call</name></member>
+    <member refid="memtrace_8cpp_1a70add82f6430d0f82f393952422b8616" kind="function"><name>dump_memory</name></member>
+    <member refid="memtrace_8cpp_1a031b528c007e2e8ba5d814be13d3860c" kind="function"><name>mem_dump</name></member>
+    <member refid="memtrace_8cpp_1a18d75228d07b1a8bf622bd0f5d04f905" kind="function"><name>die</name></member>
+    <member refid="memtrace_8cpp_1a630e6bdcb520ffa9d889aea637ba8a05" kind="function"><name>initialize</name></member>
+    <member refid="memtrace_8cpp_1a6b70e798954c482ff1c903fa014ac591" kind="function"><name>print_registry_item</name></member>
+    <member refid="memtrace_8cpp_1ac6308f8e862dbc52b364a505483191a6" kind="function"><name>mem_check</name></member>
+    <member refid="memtrace_8cpp_1a4ec27aa588e69e834e293374f5c14e67" kind="function"><name>allocated_blocks</name></member>
+    <member refid="memtrace_8cpp_1a8896c1f0fc93e9e156b8a2b98397d8cb" kind="function"><name>register_memory</name></member>
+    <member refid="memtrace_8cpp_1a7b1f30a1548ac36e83d3f4eb23753600" kind="function"><name>find_registry_item</name></member>
+    <member refid="memtrace_8cpp_1a20f094ab711311204ae338632d0c323a" kind="function"><name>unregister_memory</name></member>
+    <member refid="memtrace_8cpp_1a30b6aa180e3214beb1f48c5a9381e5ac" kind="function"><name>traced_malloc</name></member>
+    <member refid="memtrace_8cpp_1a68998093ee624349c5cab1aab7bc915f" kind="function"><name>traced_calloc</name></member>
+    <member refid="memtrace_8cpp_1a1f2006cf357ea01179f18a5c965ff105" kind="function"><name>traced_free</name></member>
+    <member refid="memtrace_8cpp_1aa9656d71bfbb848ef518892eb0e3909b" kind="function"><name>traced_realloc</name></member>
+  </compound>
+  <compound refid="memtrace_8h" kind="file"><name>memtrace.h</name>
+    <member refid="memtrace_8h_1aa90f3e89fc3fe477370afb9f81975081" kind="define"><name>MEMTRACE</name></member>
+    <member refid="memtrace_8h_1ac089c2c8a58531c78e528190c18946b0" kind="define"><name>MEMTRACE_TO_MEMORY</name></member>
+    <member refid="memtrace_8h_1ac7d83b17b55e7ca775a0127988f45c30" kind="define"><name>MEMTRACE_AUTO</name></member>
+    <member refid="memtrace_8h_1abd343745021a44232eb2808e547001d5" kind="define"><name>MEMTRACE_C</name></member>
+    <member refid="memtrace_8h_1af30a73f26c0085429afe8d13ccf255f5" kind="define"><name>ALLOW_FREE_NULL</name></member>
+    <member refid="memtrace_8h_1aad4cd792b953244f20869915267ae837" kind="define"><name>START_NAMESPACE</name></member>
+    <member refid="memtrace_8h_1a28886d59fbdc2dccd82cc4887e967d0d" kind="define"><name>END_NAMESPACE</name></member>
+    <member refid="memtrace_8h_1a429dce7f3bb9a1335f0c7febd62938df" kind="define"><name>TRACEC</name></member>
+    <member refid="memtrace_8h_1ad51e1559346aea8b3493be2ecefaa09d" kind="define"><name>THROW_BADALLOC</name></member>
+    <member refid="memtrace_8h_1ab62d0ac94900b7586e89da2d6cedf008" kind="define"><name>THROW_NOTHING</name></member>
+    <member refid="memtrace_8h_1a2eb0b03d1a9de9615a291b1205969069" kind="define"><name>malloc</name></member>
+    <member refid="memtrace_8h_1ab98a612296b79e3e44d41727977b07a5" kind="define"><name>calloc</name></member>
+    <member refid="memtrace_8h_1a9d4b5df3530d1bc733070a4669ba6ebc" kind="define"><name>free</name></member>
+    <member refid="memtrace_8h_1a2d566601d9a416502dd2fd2816678fed" kind="define"><name>realloc</name></member>
+    <member refid="memtrace_8h_1ab8ef9a94a4ba8246012e9bfeb5b0c589" kind="function"><name>allocated_blocks</name></member>
+    <member refid="memtrace_8h_1ab531f5bcfca2f50b8c2a43f7bb96fc0e" kind="function"><name>mem_check</name></member>
+    <member refid="memtrace_8h_1a878d95f35f94bc40ca0f41d5630c10a0" kind="function"><name>traced_malloc</name></member>
+    <member refid="memtrace_8h_1a8d30ad82fb5ab2f070bb8552d5f71575" kind="function"><name>traced_calloc</name></member>
+    <member refid="memtrace_8h_1a324b3ee7c799b67c4bae9dcdfa144dd3" kind="function"><name>traced_free</name></member>
+    <member refid="memtrace_8h_1ad9b9f054074d56c2952702d341aba982" kind="function"><name>traced_realloc</name></member>
+    <member refid="memtrace_8h_1a031b528c007e2e8ba5d814be13d3860c" kind="function"><name>mem_dump</name></member>
+  </compound>
+  <compound refid="node_8cpp" kind="file"><name>node.cpp</name>
+  </compound>
+  <compound refid="node_8h" kind="file"><name>node.h</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,134 @@
+\section{Node Class Reference}
+\label{class_node}\index{Node@{Node}}
+
+
+{\ttfamily \#include $<$node.\+h$>$}
+
+
+
+Inheritance diagram for Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{class_node__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Node} ()
+\item 
+\textbf{ Node} (\textbf{ Node} $\ast$l, \textbf{ Node} $\ast$r, long count=0)
+\item 
+\textbf{ Node} $\ast$\& \textbf{ Left} ()
+\item 
+\textbf{ Node} $\ast$ \textbf{ Left} (\textbf{ Node} $\ast$l)
+\item 
+\textbf{ Node} $\ast$\& \textbf{ Right} ()
+\item 
+\textbf{ Node} $\ast$ \textbf{ Right} (\textbf{ Node} $\ast$r)
+\item 
+long \textbf{ Cnt} () const
+\item 
+void \textbf{ Cnt} (long val)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Node} $\ast$ \textbf{ left_child_}
+\item 
+\textbf{ Node} $\ast$ \textbf{ right_child_}
+\item 
+long \textbf{ len_of_curr_chunk_b_}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_node_ad7a34779cad45d997bfd6d3d8043c75f}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection{Node()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_a942858d25ccdfaf7e1d1f4ddbdf13831}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\subsubsection{Node()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{l,  }\item[{\textbf{ Node} $\ast$}]{r,  }\item[{long}]{count = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_node_a2c339e14824c1960e65c21b19eaad9a0}} 
+\index{Node@{Node}!Cnt@{Cnt}}
+\index{Cnt@{Cnt}!Node@{Node}}
+\subsubsection{Cnt()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily long Node\+::\+Cnt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_a7a2fced8d12d4f75acb8a24fbd0467e2}} 
+\index{Node@{Node}!Cnt@{count}}
+\index{count@{count}!Node@{Node}}
+\subsubsection{Cnt()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Node\+::\+Cnt (\begin{DoxyParamCaption}\item[{long}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_a4b0ea9be15925bfa877cdac6923c275a}} 
+\index{Node@{Node}!Left@{Left}}
+\index{Left@{Left}!Node@{Node}}
+\subsubsection{Left()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$\& Node\+::\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_af62ccd86ec2c1967b571faf948a964c4}} 
+\index{Node@{Node}!left@{Left}}
+\index{left@{Left}!Node@{Node}}
+\subsubsection{left()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$ Node\+::\+Left (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_a73fffe3df2c9e7ac4ebf52d7c65e8e38}} 
+\index{Node@{Node}!Right@{Right}}
+\index{Right@{Right}!Node@{Node}}
+\subsubsection{Right()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$\& Node\+::\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_node_a2b9e785c9b94b7bb0e4617403542207b}} 
+\index{Node@{Node}!Right@{right}}
+\index{right@{Right}!Node@{Node}}
+\subsubsection{right()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$ Node\+::\+Right (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member data_ Documentation}
+\mbox{\label{class_node_a3536573131e96ed591637abe7b532673}} 
+\index{Node@{Node}!len_of_curr_chunk_b_@{len_of_curr_chunk_b_}}
+\index{len_of_curr_chunk_b_@{len_of_curr_chunk_b_}!Node@{Node}}
+\subsubsection{len_of_curr_chunk_b_}
+{\footnotesize\ttfamily long Node\+::len_of_curr_chunk_b_\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_node_ab8c667ac8fdb120ed4c031682a9cdaee}} 
+\index{Node@{Node}!left_child_@{left_child_}}
+\index{left_child_@{left_child_}!Node@{Node}}
+\subsubsection{left_child_}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$ Node\+::left_child_\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\label{class_node_a7328862eaa6dea28018326549b3294d3}} 
+\index{Node@{Node}!right_child_@{right_child_}}
+\index{right_child_@{right_child_}!Node@{Node}}
+\subsubsection{right_child_}
+{\footnotesize\ttfamily \textbf{ Node}$\ast$ Node\+::right_child_\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ node.\+h}\end{DoxyCompactItemize}

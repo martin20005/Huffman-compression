@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="letter_8h" kind="file" language="C++">
+    <compoundname>letter.h</compoundname>
+    <includedby refid="node_8h" local="yes">node.h</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <invincdepgraph>
+      <node id="58">
+        <label>node.h</label>
+        <link refid="node_8h"/>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>node.cpp</label>
+        <link refid="node_8cpp"/>
+      </node>
+      <node id="60">
+        <label>huffman.cpp</label>
+        <link refid="huffman_8cpp"/>
+      </node>
+      <node id="57">
+        <label>letter.h</label>
+        <link refid="letter_8h"/>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>huffman.h</label>
+        <link refid="huffman_8h"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_letter" prot="public">Letter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>HUFFMAN_LETTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HUFFMAN_LETTER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="class_letter" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_letter" kindref="compound">Letter</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>original_;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>huffman_code_;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>len_of_code_b_;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9" refid="class_letter_1aa33f1a7d59948007cabb7cb3060fbbdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_letter_1aa33f1a7d59948007cabb7cb3060fbbdd" kindref="member">Letter</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>:original_(c),<sp/>huffman_code_(0),<sp/>len_of_code_b_(0)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="10" refid="class_letter_1aad5ec69b0312ac41d818337c5ff94e7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_letter_1aad5ec69b0312ac41d818337c5ff94e7e" kindref="member">Letter</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_letter" kindref="compound">Letter</ref>&amp;<sp/>l)<sp/>:original_(l.<ref refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" kindref="member">original</ref>()),<sp/>huffman_code_(l.<ref refid="class_letter_1af52f553dafb323384339dcfaa1a7eaa6" kindref="member">huffman</ref>()),<sp/>len_of_code_b_(l.<ref refid="class_letter_1a06c63721ba0b1c40ac7591835f2e6e43" kindref="member">length</ref>())<sp/>{}</highlight></codeline>
+<codeline lineno="11" refid="class_letter_1ac390dd9bfbdd7a0965cd74b3eccee010" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_letter_1ac390dd9bfbdd7a0965cd74b3eccee010" kindref="member">Letter</ref>()<sp/>:original_(0),<sp/>huffman_code_(0),<sp/>len_of_code_b_(0)<sp/>{<sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" kindref="member">original</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>original_;<sp/>}</highlight></codeline>
+<codeline lineno="14" refid="class_letter_1af6158c9bc58d3f4b77ee627807b87133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_letter_1af6158c9bc58d3f4b77ee627807b87133" kindref="member">original</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch)<sp/>{<sp/>original_<sp/>=<sp/>ch;<sp/>}</highlight></codeline>
+<codeline lineno="15" refid="class_letter_1af52f553dafb323384339dcfaa1a7eaa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_letter_1af52f553dafb323384339dcfaa1a7eaa6" kindref="member">huffman</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>huffman_code_;<sp/>}</highlight></codeline>
+<codeline lineno="16" refid="class_letter_1ac345d7df6c98a9aea64f77d55267f820" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_letter_1ac345d7df6c98a9aea64f77d55267f820" kindref="member">huffman</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>l)<sp/>{<sp/>huffman_code_<sp/>=<sp/>h;<sp/>len_of_code_b_<sp/>=<sp/>l;<sp/>}</highlight></codeline>
+<codeline lineno="17" refid="class_letter_1a06c63721ba0b1c40ac7591835f2e6e43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_letter_1a06c63721ba0b1c40ac7591835f2e6e43" kindref="member">length</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len_of_code_b_;<sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_letter_1a5bd34c7d6753f3a950cb3a3358945c1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_letter" kindref="compound">Letter</ref>&amp;<sp/><ref refid="class_letter_1a5bd34c7d6753f3a950cb3a3358945c1a" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_letter" kindref="compound">Letter</ref>&amp;<sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(&amp;l<sp/>==<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>original_<sp/>=<sp/>l.<ref refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" kindref="member">original</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>huffman_code_<sp/>=<sp/>l.<ref refid="class_letter_1af52f553dafb323384339dcfaa1a7eaa6" kindref="member">huffman</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len_of_code_b_<sp/>=<sp/>l.<ref refid="class_letter_1a06c63721ba0b1c40ac7591835f2e6e43" kindref="member">length</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26" refid="class_letter_1acadabf182742d730bcc61f052b29aad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_letter_1acadabf182742d730bcc61f052b29aad8" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_letter" kindref="compound">Letter</ref>&amp;<sp/>l)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l.<ref refid="class_letter_1a9ae0471d69dddf53a0a64219233d0c4a" kindref="member">original</ref>()<sp/>==<sp/>original_;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//HUFFMAN_LETTER_H</highlight></codeline>
+    </programlisting>
+    <location file="letter.h"/>
+  </compounddef>
+</doxygen>

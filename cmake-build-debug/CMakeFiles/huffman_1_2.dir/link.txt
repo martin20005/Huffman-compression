@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/huffman_1_2.dir/main.cpp.o CMakeFiles/huffman_1_2.dir/bitbuffer.cpp.o CMakeFiles/huffman_1_2.dir/huffman.cpp.o CMakeFiles/huffman_1_2.dir/memtrace.cpp.o CMakeFiles/huffman_1_2.dir/node.cpp.o  -o huffman_1_2 

@@ -1,0 +1,404 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegtest__lite" kind="namespace" language="C++">
+    <compoundname>gtest_lite</compoundname>
+    <innerclass refid="structgtest__lite_1_1_test" prot="public">gtest_lite::Test</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegtest__lite_1a449dfe317ef02561df75cf7fef1a86b1" prot="public" static="yes" mutable="no">
+        <type><ref refid="structgtest__lite_1_1_test" kindref="compound">Test</ref></type>
+        <definition>Test gtest_lite::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <briefdescription>
+<para>Egyetlen statikus példány. (singletonnal szebb lenne) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="259" column="1" bodyfile="gtest_lite.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegtest__lite_1ab358c162e1cedfc39abf5959417ffc1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gtest_lite::EXPECT_</definition>
+        <argsstring>(T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</argsstring>
+        <name>EXPECT_</name>
+        <param>
+          <type>T</type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>act</declname>
+        </param>
+        <param>
+          <type>bool(*)(T, T)</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>lhs</declname>
+          <defval>&quot;elvart&quot;</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+          <defval>&quot;aktual&quot;</defval>
+        </param>
+        <briefdescription>
+<para>általános sablon a várt értékhez. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="263" column="1" bodyfile="gtest_lite.h" bodystart="263" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a8b21cff4e93dcacdd1b4fdb8b6b9c740" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gtest_lite::EXPECT_</definition>
+        <argsstring>(T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</argsstring>
+        <name>EXPECT_</name>
+        <param>
+          <type>T *</type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>act</declname>
+        </param>
+        <param>
+          <type>bool(*)(T *, T *)</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>lhs</declname>
+          <defval>&quot;elvart&quot;</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+          <defval>&quot;aktual&quot;</defval>
+        </param>
+        <briefdescription>
+<para>pointerre specializált sablon a várt értékhez. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="272" column="1" bodyfile="gtest_lite.h" bodystart="272" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1aea477921e4c26d2a2806bc3011066270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; gtest_lite::EXPECTSTR</definition>
+        <argsstring>(const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</argsstring>
+        <name>EXPECTSTR</name>
+        <param>
+          <type>const char *</type>
+          <declname>exp</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>act</declname>
+        </param>
+        <param>
+          <type>bool(*)(const char *, const char *)</type>
+          <declname>pred</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>lhs</declname>
+          <defval>&quot;elvart&quot;</defval>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>rhs</declname>
+          <defval>&quot;aktual&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stringek összehasonlításához. azért nem spec. mert a sima EQ-ra másként kell működnie. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="282" column="1" bodyfile="gtest_lite.h" bodystart="282" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1aa7762f23094d59c699ec402e1a37640c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::eq</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>eq</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>segéd sablonok a relációkhoz. azért nem STL (algorithm), mert csak a függvény lehet, hogy menjen a deduckció </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="292" column="1" bodyfile="gtest_lite.h" bodystart="292" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a34055f353dabbe4ed9063f1d36af6022" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gtest_lite::eqstr</definition>
+        <argsstring>(const char *a, const char *b)</argsstring>
+        <name>eqstr</name>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="295" column="1" bodyfile="gtest_lite.h" bodystart="295" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a9a1485affebbed604f7cac69f70072dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::ne</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>ne</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="302" column="1" bodyfile="gtest_lite.h" bodystart="302" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a0a34b1bb0d55bc0c6a3e878ec2bcd49f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gtest_lite::nestr</definition>
+        <argsstring>(const char *a, const char *b)</argsstring>
+        <name>nestr</name>
+        <param>
+          <type>const char *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="305" column="1" bodyfile="gtest_lite.h" bodystart="305" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a92068d494867b61abeef5942eefac3a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::le</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>le</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="312" column="1" bodyfile="gtest_lite.h" bodystart="312" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1acfefb55c5d3713c79b659bbd18d9423c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::lt</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>lt</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="315" column="1" bodyfile="gtest_lite.h" bodystart="315" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1ae8c2517b99b688c6136d8c7c18551da5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::ge</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>ge</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="318" column="1" bodyfile="gtest_lite.h" bodystart="318" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1a2075d101da98f80f569b0737c5185718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::gt</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>gt</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="321" column="1" bodyfile="gtest_lite.h" bodystart="321" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegtest__lite_1affbf9748c4e4dec6db137f7c147fee61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>bool</type>
+        <definition>bool gtest_lite::almostEQ</definition>
+        <argsstring>(T a, T b)</argsstring>
+        <name>almostEQ</name>
+        <param>
+          <type>T</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Segédsablon valós számok összehasonlításához Nem bombabiztos, de nekünk most jó lesz Elméleti hátér: <ulink url="http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm">http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm</ulink> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="gtest_lite.h" line="328" column="1" bodyfile="gtest_lite.h" bodystart="328" bodyend="341"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespacegtest__lite" kindref="compound">gtest_lite</ref>: a keretrendszer függvényinek és objektumainak névtere </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="gtest_lite.h" line="187" column="1"/>
+  </compounddef>
+</doxygen>

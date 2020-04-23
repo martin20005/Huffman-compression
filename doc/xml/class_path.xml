@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_path" kind="class" language="C++" prot="public">
+    <compoundname>Path</compoundname>
+    <basecompoundref refid="class_node" prot="public" virt="non-virtual">Node</basecompoundref>
+    <includes refid="node_8h" local="no">node.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_path_1ad508197ffa6676f3017299fab74f25b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Path::Path</definition>
+        <argsstring>(Node *l, Node *r)</argsstring>
+        <name>Path</name>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type><ref refid="class_node" kindref="compound">Node</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="node.h" line="46" column="1" bodyfile="node.h" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="23">
+        <label>Path</label>
+        <link refid="class_path"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Node</label>
+        <link refid="class_node"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>Path</label>
+        <link refid="class_path"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Node</label>
+        <link refid="class_node"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>right_child_</edgelabel>
+          <edgelabel>left_child_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="node.h" line="44" column="1" bodyfile="node.h" bodystart="44" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_node_1a3536573131e96ed591637abe7b532673" prot="protected" virt="non-virtual"><scope>Path</scope><name>len_of_curr_chunk_b_</name></member>
+      <member refid="class_node_1a2c339e14824c1960e65c21b19eaad9a0" prot="public" virt="non-virtual"><scope>Path</scope><name>count</name></member>
+      <member refid="class_node_1a7a2fced8d12d4f75acb8a24fbd0467e2" prot="public" virt="non-virtual"><scope>Path</scope><name>count</name></member>
+      <member refid="class_node_1ab8c667ac8fdb120ed4c031682a9cdaee" prot="protected" virt="non-virtual"><scope>Path</scope><name>left_child_</name></member>
+      <member refid="class_node_1a4b0ea9be15925bfa877cdac6923c275a" prot="public" virt="non-virtual"><scope>Path</scope><name>left</name></member>
+      <member refid="class_node_1af62ccd86ec2c1967b571faf948a964c4" prot="public" virt="non-virtual"><scope>Path</scope><name>left</name></member>
+      <member refid="class_node_1ad7a34779cad45d997bfd6d3d8043c75f" prot="public" virt="non-virtual"><scope>Path</scope><name>Node</name></member>
+      <member refid="class_node_1a942858d25ccdfaf7e1d1f4ddbdf13831" prot="public" virt="non-virtual"><scope>Path</scope><name>Node</name></member>
+      <member refid="class_path_1ad508197ffa6676f3017299fab74f25b3" prot="public" virt="non-virtual"><scope>Path</scope><name>Path</name></member>
+      <member refid="class_node_1a7328862eaa6dea28018326549b3294d3" prot="protected" virt="non-virtual"><scope>Path</scope><name>right_child_</name></member>
+      <member refid="class_node_1a73fffe3df2c9e7ac4ebf52d7c65e8e38" prot="public" virt="non-virtual"><scope>Path</scope><name>right</name></member>
+      <member refid="class_node_1a2b9e785c9b94b7bb0e4617403542207b" prot="public" virt="non-virtual"><scope>Path</scope><name>right</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

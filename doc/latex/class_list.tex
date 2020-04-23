@@ -1,0 +1,110 @@
+\section{List$<$ T $>$ Class Template Reference}
+\label{class_list}\index{List$<$ T $>$@{List$<$ T $>$}}
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ List} (int Cap=10, int Incr=10)
+\item 
+\textbf{ List} (const \textbf{ List} \&l)
+\item 
+\textbf{ $\sim$\+List} ()
+\item 
+int \textbf{ count} () const
+\item 
+void \textbf{ add} (T \&element)
+\item 
+void \textbf{ remove\+At} (int idx)
+\item 
+void \textbf{ remove} (T \&element)
+\item 
+int \textbf{ find} (T \&element)
+\item 
+T \& \textbf{ operator[$\,$]} (int i) const
+\item 
+\textbf{ List} \& \textbf{ operator+=} (T element)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_list_a48ef6c59b00fd6c6bbf1604583113e42}} 
+\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\subsubsection{List()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ List}$<$ T $>$\+::\textbf{ List} (\begin{DoxyParamCaption}\item[{int}]{Cap = {\ttfamily 10},  }\item[{int}]{Incr = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\mbox{\label{class_list_a3f8cda0e5a9b4912759e782994e57735}} 
+\index{List@{List}!List@{List}}
+\index{List@{List}!List@{List}}
+\subsubsection{List()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ List}$<$ T $>$\+::\textbf{ List} (\begin{DoxyParamCaption}\item[{const \textbf{ List}$<$ T $>$ \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_list_a2b58189090f6e5ce52939c9195e59e85}} 
+\index{List@{List}!````~List@{$\sim$\+List}}
+\index{````~List@{$\sim$\+List}!List@{List}}
+\subsubsection{$\sim$\+List()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ List}$<$ T $>$\+::$\sim$\textbf{ List} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_list_a1a6b5ceed2cb6d432c0a5d9114e79e70}} 
+\index{List@{List}!add@{add}}
+\index{add@{add}!List@{List}}
+\subsubsection{add()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \textbf{ List}$<$ T $>$\+::add (\begin{DoxyParamCaption}\item[{T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_list_a7a74fc01260437fac92355dc8d4e789c}} 
+\index{List@{List}!count@{count}}
+\index{count@{count}!List@{List}}
+\subsubsection{count()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \textbf{ List}$<$ T $>$\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_list_ab3489ae135b990deedac885f8bd3030b}} 
+\index{List@{List}!find@{find}}
+\index{find@{find}!List@{List}}
+\subsubsection{find()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+int \textbf{ List}$<$ T $>$\+::findFirst (\begin{DoxyParamCaption}\item[{T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_list_a81a44c4aae9bb74b5166004cd28d9ac6}} 
+\index{List@{List}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!List@{List}}
+\subsubsection{operator+=()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\textbf{ List}\& \textbf{ List}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{T}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Bővítés \mbox{\label{class_list_a80967ab44431031fb55fd2fe635b7b5e}} 
+\index{List@{List}!operator[]@{operator[]}}
+\index{operator[]@{operator[]}!List@{List}}
+\subsubsection{operator[]()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \textbf{ List}$<$ T $>$\+::operator[$\,$] (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indexelő operátor \mbox{\label{class_list_ab20b18c4facb9c8ab89640c202057b80}} 
+\index{List@{List}!remove@{remove}}
+\index{remove@{remove}!List@{List}}
+\subsubsection{remove()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \textbf{ List}$<$ T $>$\+::remove (\begin{DoxyParamCaption}\item[{T \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{class_list_a54fa90e725d350cd7bd41270ebdfe775}} 
+\index{List@{List}!remove\+At@{remove\+At}}
+\index{remove\+At@{remove\+At}!List@{List}}
+\subsubsection{remove\+At()}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \textbf{ List}$<$ T $>$\+::remove\+At (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ list.\+h}\end{DoxyCompactItemize}
