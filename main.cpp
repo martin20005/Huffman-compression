@@ -1,4 +1,4 @@
-#define _HUFFMAN_TEST
+#define HUFFMAN_TEST
 
 #include <iostream>
 #define MEMTRACE
@@ -107,7 +107,7 @@ int main() {
     command_id = input_line.rfind("compress ", 0) == 0 ? 1 : -1;
     command_id = input_line.rfind("extract ", 0) == 0 ? 2 : command_id;
 
-    int path_start = input_line.find('\"', 7) + 1; //7, so command excluded
+    int path_start = input_line.find('\"', 7) + 1; //7, so command skipped
     int len = input_line.find('\"', path_start) - path_start;
     string input_path = input_line.substr(path_start, len);
 

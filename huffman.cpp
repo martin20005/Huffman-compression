@@ -3,6 +3,8 @@
 #include "node.h"
 
 Huffman::Huffman() : root_h_tree_(nullptr) { }
+#pragma clang diagnostic push
+#pragma ide diagnostic ignored "cppcoreguidelines-narrowing-conversions"
 // ----------------------------- Compression ------------------------------- //
 void Huffman::compress(istream &stream_in, ostream &stream_out) {
     List<End> freq_of_inputs;
@@ -27,16 +29,17 @@ void Huffman::compress(istream &stream_in, ostream &stream_out) {
     for (int i = 0; i < freq_of_inputs.count(); ++i) {
         stream_out << freq_of_inputs[i].letter().original();                    // Meta N 0: original character
         stream_out << freq_of_inputs[i].letter().length();                      // Meta N 2: valuable bits in H-code
-        long long int mask = 255;
-        for (int j = sizeof(mask) / sizeof(char); j > 0; j--) {                 // Meta N 1: huffman-code
+        long long int huffman = freq_of_inputs[i].letter().huffman();
+        /* bytes needed to store H-code: */
+        int cnt_B = (freq_of_inputs[i].letter().length() + 7) / (8 * sizeof(char));
+        for (int j = cnt_B; j > 0; j--) {                                       // Meta N 1: huffman-code
             /*this breaks the huffman-codes to 8bit pieces*/
-            stream_out << (char) (mask & (freq_of_inputs[i].letter().huffman() >> ((j - 1) * 8)));
+            stream_out << (char) (255 & (huffman >> ((j - 1) * 8)));
         }
     }
 
     stream_in.clear();                                              // Clearing flags, so input can be read again
     stream_in.seekg(0, stream_in.beg);
-    int wtf = stream_in.tellg();
     BitBuffer buffer = BitBuffer();
     buffer.leakAfter(50);                              // After every 50th byte, data_ leaks to stream_out
     while (!stream_in.eof()) {
@@ -58,6 +61,7 @@ void Huffman::compress(istream &stream_in, ostream &stream_out) {
     while (!buffer.isEmpty())  { stream_out << buffer.pop(); }      // Writing the not-yet-leaked (compressed) data_
     delRoot(root_h_tree_);                                          // Deleting the H-tree
 }
+#pragma clang diagnostic pop
 
 
 
@@ -119,11 +123,11 @@ void Huffman::extract(istream& stream_in, ostream& stream_out) {
         stream_in.get(input);                                               // Original character
         stream_in.get(hlen_b);                                              // Length of H-code (in bits)
         long long int full_hcode = 0;
-        int rel_size = sizeof(full_hcode) / sizeof(char);
+        int rel_size = (hlen_b + 7) / (8*sizeof(char));
         for (int which_byte = rel_size; which_byte > 0; which_byte--) {        // Getting H-code
             /*Getting bytes one by one*/
             stream_in.get(hcode);
-            full_hcode <<= sizeof(char);
+            full_hcode <<= 8*sizeof(char);
             full_hcode |= (unsigned char) hcode;
         }
         Letter tmp_letter(input);                                              // Adding data_ to list
