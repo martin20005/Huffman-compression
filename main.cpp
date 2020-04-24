@@ -72,9 +72,9 @@ int main() {
     // ------------------------------  Huffman  ------------------------------ //
 
     string HOME = std::getenv("HOME") ? std::getenv("HOME") : ".";
-    string source = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Test.txt";
-    string destiny = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Test.huffman_code_";
-    string extdest = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Test_ext.txt";
+    string source = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.txt";
+    string destiny = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.huff";
+    string extdest = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test_ext.txt";
     std::ifstream source_file;
     std::ofstream destiny_file;
 

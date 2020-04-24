@@ -3,8 +3,6 @@
 #include "node.h"
 
 Huffman::Huffman() : root_h_tree_(nullptr) { }
-#pragma clang diagnostic push
-#pragma ide diagnostic ignored "cppcoreguidelines-narrowing-conversions"
 // ----------------------------- Compression ------------------------------- //
 void Huffman::compress(istream &stream_in, ostream &stream_out) {
     List<End> freq_of_inputs;
@@ -61,7 +59,6 @@ void Huffman::compress(istream &stream_in, ostream &stream_out) {
     while (!buffer.isEmpty())  { stream_out << buffer.pop(); }      // Writing the not-yet-leaked (compressed) data_
     delRoot(root_h_tree_);                                          // Deleting the H-tree
 }
-#pragma clang diagnostic pop
 
 
 
