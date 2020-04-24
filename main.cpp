@@ -1,7 +1,9 @@
 #define HUFFMAN_TEST
 
 #include <iostream>
+#ifndef MEMTRACE
 #define MEMTRACE
+#endif
 #include "gtest_lite.h"
 #include "memtrace.h"
 using namespace gtest_lite;
@@ -23,7 +25,7 @@ int main() {
     } END
 
     TEST(Buffer, Push) {
-        BitBuffer test1(sizeof(char));
+        BitBuffer test1 = BitBuffer();
         test1.push('a' >> 4, 4);
         test1.push('a', 4);
         test1.close();
@@ -90,7 +92,6 @@ int main() {
         EXPECT_EQ(1, (int) end.weight());
         EXPECT_EQ('a', end.letter().original());
         node.left(&end);
-        const Node* endp = &end;
         EXPECT_TRUE(node.left() == &end);
         Path path = Path(&end, &end);
         EXPECT_EQ(2, (int) path.weight());

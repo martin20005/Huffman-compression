@@ -1,7 +1,7 @@
 #ifndef HUFFMAN_BITBUFFER_H
 #define HUFFMAN_BITBUFFER_H
 
-#include <fstream>
+#include <iostream>
 #include "list.h"
 /**@class BitBuffer
  * This class can hold bits. Useful when size of values to be stored is not constant. */
@@ -10,14 +10,14 @@ class BitBuffer {
     List<char> data_;           ///< All the chunks (if 'is_open_', it doesn't contain 'current_chunk_')
     char current_chunk_;        ///< The last chunk (maybe not full)
     int len_of_curr_chunk_b_;   ///< Count of pushed bits in 'current_chunk_'
-    int size_of_chunk_b_;       ///< countOfFullChunks of a single chunk
+    int size_of_chunk_b_;       ///< size of a single chunk
     int max_chunks_;            ///< If set, calling leak() empties some chunks (while weight_() >= max_chunks_)
     int first_unpopped_bit_;    ///< Shows which is the first not-yet-popped bit (calling bit() alters it)
 
 public:
     /**Buffer
      * @param size_of_chunk_b  Number of bits each chunk can store (character's size by default) */
-    explicit BitBuffer(int size_of_chunk_b = sizeof(char));
+    BitBuffer(int size_of_chunk_b = 8*sizeof(char));
     /**Buffer
      * @param buffer  A buffer to be copied (resulting Buffer is editable) */
     BitBuffer(const BitBuffer& buffer);

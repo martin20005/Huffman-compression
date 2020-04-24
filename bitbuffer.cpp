@@ -1,22 +1,22 @@
 #include "bitbuffer.h"
 
 BitBuffer::BitBuffer(int size_of_chunk_b):
+        is_open_(true),
         data_(List<char>()),
         current_chunk_(0),
         len_of_curr_chunk_b_(0),
-        size_of_chunk_b_(8 * size_of_chunk_b),
-        is_open_(true),
-        first_unpopped_bit_(0),
-        max_chunks_(50) {}
+        size_of_chunk_b_(size_of_chunk_b),
+        max_chunks_(50),
+        first_unpopped_bit_(0) {}
 
 BitBuffer::BitBuffer(const BitBuffer &buffer):
+        is_open_(true),
         data_(List<char>(buffer.data())),
-        size_of_chunk_b_(buffer.sizeOfChunk()),
         current_chunk_(buffer.currentChunk()),
         len_of_curr_chunk_b_(buffer.count()),
-        is_open_(true),
-        first_unpopped_bit_(0),
-        max_chunks_(50) {}
+        size_of_chunk_b_(buffer.sizeOfChunk()),
+        max_chunks_(50),
+        first_unpopped_bit_(0) {}
 
 char BitBuffer::pop() {
     if (data_.count() < 1) return -1;

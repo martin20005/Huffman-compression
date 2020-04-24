@@ -19,11 +19,11 @@ void Node::weight(long new_weight) { weight_ = new_weight; }
 
 // Class End
 End::End(Letter &letter, long frequency) :
-    letter_(letter),
-    Node(nullptr, nullptr, frequency) {}
+    Node(nullptr, nullptr, frequency),
+    letter_(letter) {}
 End::End(const End &end) :
-    letter_(end.letter_),
-    Node(end.left(), end.right(), end.weight()) {}
+    Node(end.left(), end.right(), end.weight()),
+    letter_(end.letter_) {}
 End::End() :
     Node(), letter_(Letter()) {}
 
