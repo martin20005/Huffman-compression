@@ -1,0 +1,2 @@
+compress "/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/O_Captain.txt"
+extract "/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/O_Captain.txt.huff"
