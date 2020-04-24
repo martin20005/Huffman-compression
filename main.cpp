@@ -1,4 +1,4 @@
-#define HUFFMAN_TEST
+#define _HUFFMAN_TEST
 
 #include <iostream>
 #ifndef MEMTRACE
@@ -125,60 +125,63 @@ int main() {
 }
 #else
 int main() {
-    /* The desired behaviour of the Huffman compression program ((Homework)) */
-    string input_line;
-    getline(cin, input_line);
     //examples:
     //compress "input/file/path" "output/file/path"
     //extract "input/file/path" "output/file/path"
 
-    int command_id;
-    command_id = input_line.rfind("compress ", 0) == 0 ? 1 : -1;
-    command_id = input_line.rfind("extract ", 0) == 0 ? 2 : command_id;
+    while (true) {
+        /* The desired behaviour of the Huffman compression program ((Homework)) */
+        string input_line;
+        getline(cin, input_line);
+        int command_id;
+        command_id = input_line.rfind("compress ", 0) == 0 ? 1 : -1;
+        command_id = input_line.rfind("extract ", 0) == 0 ? 2 : command_id;
+        command_id = input_line.rfind("exit", 0)     == 0 ? 0 : command_id;
 
-    int path_start = input_line.find('\"', 7) + 1; //7, so command skipped
-    int len = input_line.find('\"', path_start) - path_start;
-    string input_path = input_line.substr(path_start, len);
+        int path_start = input_line.find('\"', 7) + 1; //7, so command skipped
+        int len = input_line.find('\"', path_start) - path_start;
+        string input_path = input_line.substr(path_start, len);
 
-    string output_path;
-    path_start += len + 2;
-    path_start = input_line.find('\"', path_start) + 1;
-    if (path_start <= 0) {
-        output_path = input_path + ((command_id == 1) ? ".huff" : "_ext.txt");
-    } else {
-        len = input_line.find('\"', path_start) - path_start;
-        output_path = input_line.substr(path_start, len);
-    }
-    switch (command_id) {
-        case 1: {
+        string output_path;
+        path_start += len + 2;
+        path_start = input_line.find('\"', path_start) + 1;
+        if (path_start <= 0) {
+            output_path = input_path + ((command_id == 1) ? ".huff" : "_ext.txt");
+        } else {
+            len = input_line.find('\"', path_start) - path_start;
+            output_path = input_line.substr(path_start, len);
+        }
+        if (command_id == 1) {
             ifstream input_file;
             input_file.open(input_path);
             if (!input_file.is_open())
-                { std::cout << "No such file" << std::endl; break; }
+                { std::cout << "No such file, please use absolute path!" << std::endl; continue; }
             ofstream output_file;
             output_file.open(output_path);
             Huffman compressor = Huffman();
             compressor.compress(input_file, output_file);
             input_file.close();
             output_file.close();
-            break;
+            std::cout << "File compressed" << std::endl;
         }
-        case 2: {
+        else if (command_id == 2) {
             ifstream input_file;
             input_file.open(input_path);
             if (!input_file.is_open())
-                { std::cout << "No such file" << std::endl; break; }
+                { std::cout << "No such file, please use absolute path!" << std::endl; continue; }
             ofstream output_file;
             output_file.open(output_path);
             Huffman extractor = Huffman();
             extractor.extract(input_file, output_file);
             input_file.close();
             output_file.close();
+            std::cout << "File extracted" << std::endl;
+        }
+        else if (command_id == 0) {
             break;
         }
-        default: {
+        else {
             std::cout << "Invalid command" << std::endl;
-            break;
         }
     }
     return 0;
