@@ -69,28 +69,56 @@ int main() {
         EXPECT_TRUE(l0 == l1);
     } END
 
+    // -------------------------------- List -------------------------------- //
+    TEST(List, Ctor_Add_Count_Remove) {
+        List<int> tester = List<int>();
+        EXPECT_EQ(0, tester.count());
+        tester.add(1);
+        tester += 2;
+        EXPECT_EQ(2, tester.count());
+        EXPECT_EQ(1, tester[0]);
+        tester.removeAt(0);
+        EXPECT_EQ(2, tester[0]);
+    } END
+
+    // ------------------------------- Node ------------------------------- //
+    TEST(Node, General) {
+        Node node;
+        Letter letter = Letter('a');
+        End end = End(letter, 0);
+        end++;
+        EXPECT_EQ(1, (int) end.weight());
+        EXPECT_EQ('a', end.letter().original());
+        node.left(&end);
+        const Node* endp = &end;
+        EXPECT_TRUE(node.left() == &end);
+        Path path = Path(&end, &end);
+        EXPECT_EQ(2, (int) path.weight());
+    } END
+
     // ------------------------------  Huffman  ------------------------------ //
+    TEST(Huffman, Compress_Extract) {
+        string HOME = std::getenv("HOME") ? std::getenv("HOME") : ".";
+        string source = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.txt";
+        string destiny = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.huff";
+        string extdest = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test_ext.txt";
+        std::ifstream source_file;
+        std::ofstream destiny_file;
 
-    string HOME = std::getenv("HOME") ? std::getenv("HOME") : ".";
-    string source = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.txt";
-    string destiny = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test.huff";
-    string extdest = HOME + "/Prog/C++/Prog2/hf/huffman_1.2/Demonstration/Test_ext.txt";
-    std::ifstream source_file;
-    std::ofstream destiny_file;
+        Huffman h2 = Huffman();
 
-    Huffman h2 = Huffman();
+        source_file.open(source);
+        destiny_file.open(destiny);
+        h2.compress(source_file, destiny_file);
+        source_file.close();
+        destiny_file.close();
 
-    source_file.open(source);
-    destiny_file.open(destiny);
-    h2.compress(source_file, destiny_file);
-    source_file.close();
-    destiny_file.close();
-
-    source_file.open(destiny);
-    destiny_file.open(extdest);
-    h2.extract(source_file, destiny_file);
-    source_file.close();
-    destiny_file.close();
+        source_file.open(destiny);
+        destiny_file.open(extdest);
+        h2.extract(source_file, destiny_file);
+        source_file.close();
+        destiny_file.close();
+    } END
 
     return 0;
 }

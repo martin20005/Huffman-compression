@@ -27,7 +27,7 @@ public:
 
     // Common functions:
     int count() const { return len_; }
-    void add(T& element) {
+    void add(T element) {
         if (len_ >= cap_) {
             cap_ += inc_size_;
             T* new_data = new T[cap_];
