@@ -1,5 +1,5 @@
-\hypertarget{gtest__lite_8h}{}\section{gtest\+\_\+lite.\+h File Reference}
-\label{gtest__lite_8h}\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
+\hypertarget{gtest__lite_8h}{}\section{/home/ronaikovacs/\+Prog/\+C++/\+Prog2/hf/huffman\+\_\+1.2/gtest\+\_\+lite.h File Reference}
+\label{gtest__lite_8h}\index{/home/ronaikovacs/\+Prog/\+C++/\+Prog2/hf/huffman\+\_\+1.\+2/gtest\+\_\+lite.\+h@{/home/ronaikovacs/\+Prog/\+C++/\+Prog2/hf/huffman\+\_\+1.\+2/gtest\+\_\+lite.\+h}}
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$cassert$>$}\newline
 {\ttfamily \#include $<$cmath$>$}\newline
@@ -25,39 +25,54 @@ struct \hyperlink{structgtest__lite_1_1_test}{gtest\+\_\+lite\+::\+Test}
 \item 
 \#define \hyperlink{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}{T\+E\+ST}(C,  N)~\{ gtest\+\_\+lite\+::test.\+begin(\#C\char`\"{}/\char`\"{}\#N);
 \item 
+\mbox{\Hypertarget{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}\label{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}} 
 \#define \hyperlink{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}{E\+ND}~gtest\+\_\+lite\+::test.\+end(); \}
 \begin{DoxyCompactList}\small\item\em Teszteset vége. \end{DoxyCompactList}\item 
 \#define \hyperlink{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}{E\+N\+DM}~gtest\+\_\+lite\+::test.\+end(true); \}
 \item 
 \#define \hyperlink{gtest__lite_8h_ad2e2f10cb2a494ff7ae23938dfdfc41a}{E\+N\+D\+Msg}(t)~gtest\+\_\+lite\+::test.\+end(true) $<$$<$ t $<$$<$ std\+::endl; \}
 \item 
+\mbox{\Hypertarget{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}\label{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}} 
 \#define \hyperlink{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}{S\+U\+C\+C\+E\+ED}()~gtest\+\_\+lite\+::test.\+expect(true, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}S\+U\+C\+C\+E\+ED()\char`\"{}, true)
 \begin{DoxyCompactList}\small\item\em Sikeres teszt makrója. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}\label{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}} 
 \#define \hyperlink{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}{F\+A\+IL}()~gtest\+\_\+lite\+::test.\+expect(false, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}F\+A\+IL()\char`\"{}, true)
 \begin{DoxyCompactList}\small\item\em Sikertelen teszt makrója. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_aff8385840165a184edc29446aa51936f}\label{gtest__lite_8h_aff8385840165a184edc29446aa51936f}} 
 \#define \hyperlink{gtest__lite_8h_aff8385840165a184edc29446aa51936f}{E\+X\+P\+E\+C\+T\+\_\+\+EQ}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Azonosságot elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}{E\+X\+P\+E\+C\+T\+\_\+\+NE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a9a1485affebbed604f7cac69f70072dc}{gtest\+\_\+lite\+::ne}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}\label{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}} 
+\#define \hyperlink{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}{E\+X\+P\+E\+C\+T\+\_\+\+NE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, gtest\+\_\+lite\+::ne, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Eltérést elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}{E\+X\+P\+E\+C\+T\+\_\+\+LE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a92068d494867b61abeef5942eefac3a3}{gtest\+\_\+lite\+::le}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}\label{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}} 
+\#define \hyperlink{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}{E\+X\+P\+E\+C\+T\+\_\+\+LE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, gtest\+\_\+lite\+::le, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Kisebb, vagy egyenlő relációt elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}{E\+X\+P\+E\+C\+T\+\_\+\+LT}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_acfefb55c5d3713c79b659bbd18d9423c}{gtest\+\_\+lite\+::lt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}\label{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}} 
+\#define \hyperlink{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}{E\+X\+P\+E\+C\+T\+\_\+\+LT}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, gtest\+\_\+lite\+::lt, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Kisebb, mint relációt elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}{E\+X\+P\+E\+C\+T\+\_\+\+GE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_ae8c2517b99b688c6136d8c7c18551da5}{gtest\+\_\+lite\+::ge}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}\label{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}} 
+\#define \hyperlink{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}{E\+X\+P\+E\+C\+T\+\_\+\+GE}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, gtest\+\_\+lite\+::ge, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Nagyobb, vagy egyenlő relációt elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}{E\+X\+P\+E\+C\+T\+\_\+\+GT}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a2075d101da98f80f569b0737c5185718}{gtest\+\_\+lite\+::gt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}\label{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}} 
+\#define \hyperlink{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}{E\+X\+P\+E\+C\+T\+\_\+\+GT}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, gtest\+\_\+lite\+::gt, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Nagyobb, mint relációt elváró makró \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}\label{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}} 
 \#define \hyperlink{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}(actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(true, actual,  \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Igaz értéket elváró makró \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}\label{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}} 
 \#define \hyperlink{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}(actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(false, actual, \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Hamis értéket elváró makró \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}\label{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}} 
 \#define \hyperlink{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_affbf9748c4e4dec6db137f7c147fee61}{gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Valós számok azonosságát elváró makró \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gtest__lite_8h_a6e6277442d96cd18300619c321614397}\label{gtest__lite_8h_a6e6277442d96cd18300619c321614397}} 
 \#define \hyperlink{gtest__lite_8h_a6e6277442d96cd18300619c321614397}{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}(expected,  actual)~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_affbf9748c4e4dec6db137f7c147fee61}{gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em Valós számok azonosságát elváró makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}(expected,  actual)~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \hyperlink{namespacegtest__lite_a34055f353dabbe4ed9063f1d36af6022}{gtest\+\_\+lite\+::eqstr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}\label{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}} 
+\#define \hyperlink{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}(expected,  actual)~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, gtest\+\_\+lite\+::eqstr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )
 \begin{DoxyCompactList}\small\item\em C stringek (const char $\ast$) azonosságát tesztelő makró \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}(expected,  actual)~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \hyperlink{namespacegtest__lite_a0a34b1bb0d55bc0c6a3e878ec2bcd49f}{gtest\+\_\+lite\+::nestr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
+\mbox{\Hypertarget{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}\label{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}} 
+\#define \hyperlink{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}(expected,  actual)~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, gtest\+\_\+lite\+::nestr, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )
 \begin{DoxyCompactList}\small\item\em C stringek (const char $\ast$) eltéréset tesztelő makró \end{DoxyCompactList}\item 
 \#define \hyperlink{gtest__lite_8h_a4b4fe697f312ef7d2618905a9bc12f04}{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}(statement,  exception\+\_\+type)
 \begin{DoxyCompactList}\small\item\em Kivételt várunk. \end{DoxyCompactList}\item 
@@ -71,34 +86,45 @@ struct \hyperlink{structgtest__lite_1_1_test}{gtest\+\_\+lite\+::\+Test}
 \item 
 \#define \hyperlink{gtest__lite_8h_a59f6c1f1654aa9d5adf5c143efd1a454}{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}(statement,  exp,  act)
 \begin{DoxyCompactList}\small\item\em E\+X\+P\+E\+C\+T\+T\+H\+R\+OW\+: kivételkezelés. \end{DoxyCompactList}\item 
-\#define \hyperlink{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}{G\+T\+I\+N\+IT}(IS)
+\mbox{\Hypertarget{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}\label{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}} 
+\#define {\bfseries G\+T\+I\+N\+IT}(IS)
 \item 
-\#define \hyperlink{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}{G\+T\+E\+ND}(os)
+\mbox{\Hypertarget{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}\label{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}} 
+\#define {\bfseries G\+T\+E\+ND}(os)
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}\label{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}} 
 {\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+} (T exp, T act, bool($\ast$pred)(T, T), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
 \begin{DoxyCompactList}\small\item\em általános sablon a várt értékhez. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{namespacegtest__lite_a8b21cff4e93dcacdd1b4fdb8b6b9c740}\label{namespacegtest__lite_a8b21cff4e93dcacdd1b4fdb8b6b9c740}} 
 {\footnotesize template$<$typename T $>$ }\\std\+::ostream \& \hyperlink{namespacegtest__lite_a8b21cff4e93dcacdd1b4fdb8b6b9c740}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+} (T $\ast$exp, T $\ast$act, bool($\ast$pred)(T $\ast$, T $\ast$), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
 \begin{DoxyCompactList}\small\item\em pointerre specializált sablon a várt értékhez. \end{DoxyCompactList}\item 
 std\+::ostream \& \hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR} (const char $\ast$exp, const char $\ast$act, bool($\ast$pred)(const char $\ast$, const char $\ast$), const char $\ast$file, int line, const char $\ast$expr, const char $\ast$lhs=\char`\"{}elvart\char`\"{}, const char $\ast$rhs=\char`\"{}aktual\char`\"{})
 \item 
 {\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq} (T a, T b)
 \item 
-bool \hyperlink{namespacegtest__lite_a34055f353dabbe4ed9063f1d36af6022}{gtest\+\_\+lite\+::eqstr} (const char $\ast$a, const char $\ast$b)
+\mbox{\Hypertarget{namespacegtest__lite_a34055f353dabbe4ed9063f1d36af6022}\label{namespacegtest__lite_a34055f353dabbe4ed9063f1d36af6022}} 
+bool {\bfseries gtest\+\_\+lite\+::eqstr} (const char $\ast$a, const char $\ast$b)
 \item 
-{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_a9a1485affebbed604f7cac69f70072dc}{gtest\+\_\+lite\+::ne} (T a, T b)
+\mbox{\Hypertarget{namespacegtest__lite_a9a1485affebbed604f7cac69f70072dc}\label{namespacegtest__lite_a9a1485affebbed604f7cac69f70072dc}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries gtest\+\_\+lite\+::ne} (T a, T b)
 \item 
-bool \hyperlink{namespacegtest__lite_a0a34b1bb0d55bc0c6a3e878ec2bcd49f}{gtest\+\_\+lite\+::nestr} (const char $\ast$a, const char $\ast$b)
+\mbox{\Hypertarget{namespacegtest__lite_a0a34b1bb0d55bc0c6a3e878ec2bcd49f}\label{namespacegtest__lite_a0a34b1bb0d55bc0c6a3e878ec2bcd49f}} 
+bool {\bfseries gtest\+\_\+lite\+::nestr} (const char $\ast$a, const char $\ast$b)
 \item 
-{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_a92068d494867b61abeef5942eefac3a3}{gtest\+\_\+lite\+::le} (T a, T b)
+\mbox{\Hypertarget{namespacegtest__lite_a92068d494867b61abeef5942eefac3a3}\label{namespacegtest__lite_a92068d494867b61abeef5942eefac3a3}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries gtest\+\_\+lite\+::le} (T a, T b)
 \item 
-{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_acfefb55c5d3713c79b659bbd18d9423c}{gtest\+\_\+lite\+::lt} (T a, T b)
+\mbox{\Hypertarget{namespacegtest__lite_acfefb55c5d3713c79b659bbd18d9423c}\label{namespacegtest__lite_acfefb55c5d3713c79b659bbd18d9423c}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries gtest\+\_\+lite\+::lt} (T a, T b)
 \item 
-{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_ae8c2517b99b688c6136d8c7c18551da5}{gtest\+\_\+lite\+::ge} (T a, T b)
+\mbox{\Hypertarget{namespacegtest__lite_ae8c2517b99b688c6136d8c7c18551da5}\label{namespacegtest__lite_ae8c2517b99b688c6136d8c7c18551da5}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries gtest\+\_\+lite\+::ge} (T a, T b)
 \item 
-{\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_a2075d101da98f80f569b0737c5185718}{gtest\+\_\+lite\+::gt} (T a, T b)
+\mbox{\Hypertarget{namespacegtest__lite_a2075d101da98f80f569b0737c5185718}\label{namespacegtest__lite_a2075d101da98f80f569b0737c5185718}} 
+{\footnotesize template$<$typename T $>$ }\\bool {\bfseries gtest\+\_\+lite\+::gt} (T a, T b)
 \item 
 {\footnotesize template$<$typename T $>$ }\\bool \hyperlink{namespacegtest__lite_affbf9748c4e4dec6db137f7c147fee61}{gtest\+\_\+lite\+::almost\+EQ} (T a, T b)
 \end{DoxyCompactItemize}
@@ -117,7 +143,7 @@ Szabadon felhasználható, bővíthető.
 
 Használati példa\+: Teszteljük az f(x)=2$\ast$x függvényt\+: int f(int x) \{ return 2$\ast$x; \}
 
-int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} \{ \hyperlink{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}{T\+E\+S\+T(\+Tesz\+Eset\+Neve, Teszt\+Neve)} \hyperlink{gtest__lite_8h_aff8385840165a184edc29446aa51936f}{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(0, f(0))}; \hyperlink{gtest__lite_8h_aff8385840165a184edc29446aa51936f}{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(4, f(2))} $<$$<$ \char`\"{}\+A függvény hibás eredményt adott\char`\"{} $<$$<$ std\+::endl; ... E\+ND ...
+int main() \{ \hyperlink{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}{T\+E\+S\+T(\+Tesz\+Eset\+Neve, Teszt\+Neve)} \hyperlink{gtest__lite_8h_aff8385840165a184edc29446aa51936f}{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(0, f(0))}; \hyperlink{gtest__lite_8h_aff8385840165a184edc29446aa51936f}{E\+X\+P\+E\+C\+T\+\_\+\+E\+Q(4, f(2))} $<$$<$ \char`\"{}\+A függvény hibás eredményt adott\char`\"{} $<$$<$ std\+::endl; ... E\+ND ...
 
 A működés részleteinek megértése szorgalmi feladat. 
 
@@ -139,17 +165,7 @@ A működés részleteinek megértése szorgalmi feladat.
     static \textcolor{keywordtype}{bool} \textcolor{keyword}{const} member = \textcolor{keyword}{sizeof}(f<Derived>(0)) == 2; \(\backslash\)
 \};
 \end{DoxyCode}
-Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet\+: \href{https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2}{\tt https\+://cpptalk.\+wordpress.\+com/2009/09/12/substitution-\/failure-\/is-\/not-\/an-\/error-\/2} Használat\+: \hyperlink{gtest__lite_8h_a34bf9a881eb6b2800b0e6cb0abdbd319}{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+(size)} ... if (Has\+\_\+size$<$std\+::string$>$\+::member)... \mbox{\Hypertarget{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}\label{gtest__lite_8h_a29fd18bed01c4d836c7ebfe73a125c3f}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+ND@{E\+ND}}
-\index{E\+ND@{E\+ND}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+ND}{END}}
-{\footnotesize\ttfamily \#define E\+ND~gtest\+\_\+lite\+::test.\+end(); \}}
-
-
-
-Teszteset vége. 
-
-\mbox{\Hypertarget{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}\label{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}} 
+Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet\+: \href{https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2}{\tt https\+://cpptalk.\+wordpress.\+com/2009/09/12/substitution-\/failure-\/is-\/not-\/an-\/error-\/2} Használat\+: \hyperlink{gtest__lite_8h_a34bf9a881eb6b2800b0e6cb0abdbd319}{C\+R\+E\+A\+T\+E\+\_\+\+Has\+\_\+(size)} ... if (Has\+\_\+size$<$std\+::string$>$\+::member)... \mbox{\Hypertarget{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}\label{gtest__lite_8h_acc9065c889d0797062317b30fd8767d4}} 
 \index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+N\+DM@{E\+N\+DM}}
 \index{E\+N\+DM@{E\+N\+DM}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
 \subsubsection{\texorpdfstring{E\+N\+DM}{ENDM}}
@@ -177,96 +193,6 @@ Teszteset vége allokált blokkok számának összehasonlításával Ez az ellen
 
 Kivételt várunk. 
 
-\mbox{\Hypertarget{gtest__lite_8h_a6e6277442d96cd18300619c321614397}\label{gtest__lite_8h_a6e6277442d96cd18300619c321614397}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ}{EXPECT\_DOUBLE\_EQ}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_affbf9748c4e4dec6db137f7c147fee61}{gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+D\+O\+U\+B\+L\+E\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-Valós számok azonosságát elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_aff8385840165a184edc29446aa51936f}\label{gtest__lite_8h_aff8385840165a184edc29446aa51936f}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+EQ}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+EQ}{EXPECT\_EQ}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-Azonosságot elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}\label{gtest__lite_8h_a58cae60fff88d713c4850b50d3e592a6}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE@{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE@{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE}{EXPECT\_FALSE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\begin{DoxyParamCaption}\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(false, actual, \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+A\+L\+SE(\char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-Hamis értéket elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}\label{gtest__lite_8h_a5ce7d58df8cb696aa05e77c2370de7a8}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ}{EXPECT\_FLOAT\_EQ}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_affbf9748c4e4dec6db137f7c147fee61}{gtest\+\_\+lite\+::almost\+EQ}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+F\+L\+O\+A\+T\+\_\+\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-Valós számok azonosságát elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}\label{gtest__lite_8h_aad891c6b36689d35ee54de65351ab224}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+GE@{E\+X\+P\+E\+C\+T\+\_\+\+GE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+GE@{E\+X\+P\+E\+C\+T\+\_\+\+GE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+GE}{EXPECT\_GE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+GE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_ae8c2517b99b688c6136d8c7c18551da5}{gtest\+\_\+lite\+::ge}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-Nagyobb, vagy egyenlő relációt elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}\label{gtest__lite_8h_ac2262f96c4664cf3e170d2edaaba6c44}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+GT@{E\+X\+P\+E\+C\+T\+\_\+\+GT}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+GT@{E\+X\+P\+E\+C\+T\+\_\+\+GT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+GT}{EXPECT\_GT}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+GT(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a2075d101da98f80f569b0737c5185718}{gtest\+\_\+lite\+::gt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+GT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-Nagyobb, mint relációt elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}\label{gtest__lite_8h_ac680be4a2404c20cae831740779d11cd}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+LE@{E\+X\+P\+E\+C\+T\+\_\+\+LE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+LE@{E\+X\+P\+E\+C\+T\+\_\+\+LE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+LE}{EXPECT\_LE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+LE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a92068d494867b61abeef5942eefac3a3}{gtest\+\_\+lite\+::le}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-Kisebb, vagy egyenlő relációt elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}\label{gtest__lite_8h_a46603095284e7bcd2f114cfdc7c79b4f}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+LT@{E\+X\+P\+E\+C\+T\+\_\+\+LT}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+LT@{E\+X\+P\+E\+C\+T\+\_\+\+LT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+LT}{EXPECT\_LT}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+LT(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_acfefb55c5d3713c79b659bbd18d9423c}{gtest\+\_\+lite\+::lt}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+LT(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-Kisebb, mint relációt elváró makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}\label{gtest__lite_8h_adb8a724f2c5c63ead11073c21fd51198}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+NE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+NE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+NE}{EXPECT\_NE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+NE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(expected, actual, \hyperlink{namespacegtest__lite_a9a1485affebbed604f7cac69f70072dc}{gtest\+\_\+lite\+::ne}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-Eltérést elváró makró 
-
 \mbox{\Hypertarget{gtest__lite_8h_a2743a1438137ad857aa3f9fec3ff67ec}\label{gtest__lite_8h_a2743a1438137ad857aa3f9fec3ff67ec}} 
 \index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}}
 \index{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+N\+O\+\_\+\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
@@ -282,26 +208,6 @@ Eltérést elváró makró
 
 
 Nem várunk kivételt. 
-
-\mbox{\Hypertarget{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}\label{gtest__lite_8h_a5b4b193a92c39b99d7b9404c49feef0b}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ}{EXPECT\_STREQ}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \hyperlink{namespacegtest__lite_a34055f353dabbe4ed9063f1d36af6022}{gtest\+\_\+lite\+::eqstr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+EQ(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-C stringek (const char $\ast$) azonosságát tesztelő makró 
-
-\mbox{\Hypertarget{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}\label{gtest__lite_8h_aa511aad7b6a6a8e8d0279f16d925b094}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE@{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE}{EXPECT\_STRNE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\begin{DoxyParamCaption}\item[{}]{expected,  }\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_aea477921e4c26d2a2806bc3011066270}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+S\+TR}(expected, actual, \hyperlink{namespacegtest__lite_a0a34b1bb0d55bc0c6a3e878ec2bcd49f}{gtest\+\_\+lite\+::nestr}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+S\+T\+R\+NE(\char`\"{} \#expected \char`\"{}, \char`\"{} \#actual \char`\"{})\char`\"{}, \char`\"{}etalon\char`\"{} )}
-
-
-
-C stringek (const char $\ast$) eltéréset tesztelő makró 
 
 \mbox{\Hypertarget{gtest__lite_8h_a4b4fe697f312ef7d2618905a9bc12f04}\label{gtest__lite_8h_a4b4fe697f312ef7d2618905a9bc12f04}} 
 \index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+\_\+\+T\+H\+R\+OW}}
@@ -336,16 +242,6 @@ Kivételt várunk.
 
 Kivételt várunk és továbbdobjuk -- ilyen nincs a gtest-\/ben. 
 
-\mbox{\Hypertarget{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}\label{gtest__lite_8h_ab400890edc9f419e40c28a224e8ed79f}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE@{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}}
-\index{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE@{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE}{EXPECT\_TRUE}}
-{\footnotesize\ttfamily \#define E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\begin{DoxyParamCaption}\item[{}]{actual }\end{DoxyParamCaption})~\hyperlink{namespacegtest__lite_ab358c162e1cedfc39abf5959417ffc1e}{gtest\+\_\+lite\+::\+E\+X\+P\+E\+C\+T\+\_\+}(true, actual,  \hyperlink{namespacegtest__lite_aa7762f23094d59c699ec402e1a37640c}{gtest\+\_\+lite\+::eq}, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}E\+X\+P\+E\+C\+T\+\_\+\+T\+R\+UE(\char`\"{} \#actual \char`\"{})\char`\"{} )}
-
-
-
-Igaz értéket elváró makró 
-
 \mbox{\Hypertarget{gtest__lite_8h_a59f6c1f1654aa9d5adf5c143efd1a454}\label{gtest__lite_8h_a59f6c1f1654aa9d5adf5c143efd1a454}} 
 \index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!E\+X\+P\+E\+C\+T\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}}
 \index{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW@{E\+X\+P\+E\+C\+T\+T\+H\+R\+OW}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
@@ -364,39 +260,7 @@ E\+X\+P\+E\+C\+T\+T\+H\+R\+OW\+: kivételkezelés.
 
 
 
- Belső megvalósításhoz tartozó makrók, és osztályok. \subsubsection*{Nem célszerű közvetlenül használni, vagy módosítani }\mbox{\Hypertarget{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}\label{gtest__lite_8h_a3e26a8d27caa386ed0ea7ce9d5b7c4ed}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!F\+A\+IL@{F\+A\+IL}}
-\index{F\+A\+IL@{F\+A\+IL}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{F\+A\+IL}{FAIL}}
-{\footnotesize\ttfamily \#define F\+A\+IL(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~gtest\+\_\+lite\+::test.\+expect(false, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}F\+A\+IL()\char`\"{}, true)}
-
-
-
-Sikertelen teszt makrója. 
-
-\mbox{\Hypertarget{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}\label{gtest__lite_8h_a20ba54bca307f985eb448f71e6896dd5}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!G\+T\+E\+ND@{G\+T\+E\+ND}}
-\index{G\+T\+E\+ND@{G\+T\+E\+ND}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{G\+T\+E\+ND}{GTEND}}
-{\footnotesize\ttfamily \#define G\+T\+E\+ND(\begin{DoxyParamCaption}\item[{}]{os }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}\label{gtest__lite_8h_a428e5e5ea2b7f67a0b68fbf57ea0faa7}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!G\+T\+I\+N\+IT@{G\+T\+I\+N\+IT}}
-\index{G\+T\+I\+N\+IT@{G\+T\+I\+N\+IT}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{G\+T\+I\+N\+IT}{GTINIT}}
-{\footnotesize\ttfamily \#define G\+T\+I\+N\+IT(\begin{DoxyParamCaption}\item[{}]{IS }\end{DoxyParamCaption})}
-
-\mbox{\Hypertarget{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}\label{gtest__lite_8h_a75adcdf89f69b0b615e395daafc315af}} 
-\index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!S\+U\+C\+C\+E\+ED@{S\+U\+C\+C\+E\+ED}}
-\index{S\+U\+C\+C\+E\+ED@{S\+U\+C\+C\+E\+ED}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
-\subsubsection{\texorpdfstring{S\+U\+C\+C\+E\+ED}{SUCCEED}}
-{\footnotesize\ttfamily \#define S\+U\+C\+C\+E\+ED(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})~gtest\+\_\+lite\+::test.\+expect(true, \+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, \+\_\+\+\_\+\+L\+I\+N\+E\+\_\+\+\_\+, \char`\"{}S\+U\+C\+C\+E\+ED()\char`\"{}, true)}
-
-
-
-Sikeres teszt makrója. 
-
-\mbox{\Hypertarget{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}\label{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}} 
+ Belső megvalósításhoz tartozó makrók, és osztályok. \subsubsection*{Nem célszerű közvetlenül használni, vagy módosítani }\mbox{\Hypertarget{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}\label{gtest__lite_8h_a379a7b57e74521cb2c8e99f0e2779a72}} 
 \index{gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}!T\+E\+ST@{T\+E\+ST}}
 \index{T\+E\+ST@{T\+E\+ST}!gtest\+\_\+lite.\+h@{gtest\+\_\+lite.\+h}}
 \subsubsection{\texorpdfstring{T\+E\+ST}{TEST}}

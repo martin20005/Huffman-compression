@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['allow_5ffree_5fnull',['ALLOW_FREE_NULL',['../memtrace_8h.html#af30a73f26c0085429afe8d13ccf255f5',1,'memtrace.h']]]
+  ['create_5fhas_5f',['CREATE_Has_',['../gtest__lite_8h.html#a34bf9a881eb6b2800b0e6cb0abdbd319',1,'gtest_lite.h']]]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['path',['Path',['../class_path.html#aa28e6f758fda57b632d8e0aed4ded033',1,'Path']]],
-  ['pop',['pop',['../class_bit_buffer.html#a8f569dfa9535ac107c84846f22a45221',1,'BitBuffer']]],
-  ['push',['push',['../class_bit_buffer.html#a1998d0bdd95e025f39e81671f5a20106',1,'BitBuffer']]]
+  ['sizeofchunk',['sizeOfChunk',['../class_bit_buffer.html#adf758958884467e15cd018190178bf3d',1,'BitBuffer']]]
 ];

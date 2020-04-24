@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
-  ['mem_5fcheck',['mem_check',['../memtrace_8cpp.html#ac6308f8e862dbc52b364a505483191a6',1,'mem_check(void):&#160;memtrace.cpp'],['../memtrace_8h.html#ab531f5bcfca2f50b8c2a43f7bb96fc0e',1,'mem_check(void):&#160;memtrace.cpp']]],
-  ['mem_5fdump',['mem_dump',['../memtrace_8cpp.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp'],['../memtrace_8h.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp']]]
+  ['operator_2b_2b',['operator++',['../class_end.html#aa1acae6e027fc01427b07afe58f44f09',1,'End']]],
+  ['operator_2b_3d',['operator+=',['../class_list.html#a81a44c4aae9bb74b5166004cd28d9ac6',1,'List']]],
+  ['operator_3d',['operator=',['../class_letter.html#a9da69c0371f32304bbbe5c9b97160eef',1,'Letter']]],
+  ['operator_3d_3d',['operator==',['../class_letter.html#a5ed233b62c83d0a84cd40a42b9a90657',1,'Letter::operator==()'],['../class_end.html#a0be5ea8a94107bb8c3a0a2eb19d8188c',1,'End::operator==(End &amp;end)'],['../class_end.html#a0b3d32d1f08031447f6facf17ee17dff',1,'End::operator==(char ch)']]],
+  ['operator_5b_5d',['operator[]',['../class_list.html#af9d0336374aa0025662e16f2b087819c',1,'List']]],
+  ['original',['original',['../class_letter.html#a9ae0471d69dddf53a0a64219233d0c4a',1,'Letter::original() const'],['../class_letter.html#af6158c9bc58d3f4b77ee627807b87133',1,'Letter::original(char ch)']]]
 ];

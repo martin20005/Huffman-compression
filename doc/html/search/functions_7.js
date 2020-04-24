@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['huffman',['huffman',['../class_letter.html#af52f553dafb323384339dcfaa1a7eaa6',1,'Letter::huffman() const'],['../class_letter.html#ac345d7df6c98a9aea64f77d55267f820',1,'Letter::huffman(long long int h, unsigned char l)'],['../class_huffman.html#a58af969e1cd59bd981f1461e8a51822c',1,'Huffman::Huffman()']]]
+  ['isempty',['isEmpty',['../class_bit_buffer.html#aaec114c48d1b1be84a8178b6b956f3d0',1,'BitBuffer']]],
+  ['isopen',['isOpen',['../class_bit_buffer.html#ae70825daafd0a00625fbb6dfb9b83fba',1,'BitBuffer']]]
 ];

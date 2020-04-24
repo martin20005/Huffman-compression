@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['p',['p',['../struct__registry__item.html#a7d2b50523d8801a40d30e17bfab37149',1,'_registry_item']]],
-  ['par_5ftxt',['par_txt',['../structcall__t.html#a24e185188a17e272396e118640672aba',1,'call_t']]]
+  ['status',['status',['../structgtest__lite_1_1_test.html#a59a9a7f0ef7867af604ce5678f7a2c13',1,'gtest_lite::Test']]],
+  ['sum',['sum',['../structgtest__lite_1_1_test.html#a6da678d43b72b9e2bff1c99e1d3c48f5',1,'gtest_lite::Test']]]
 ];

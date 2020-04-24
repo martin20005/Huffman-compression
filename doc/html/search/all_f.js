@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['realloc',['realloc',['../memtrace_8h.html#a2d566601d9a416502dd2fd2816678fed',1,'memtrace.h']]],
-  ['registry_5fitem',['registry_item',['../memtrace_8cpp.html#a70b3f3b7e889e715810f67307625db45',1,'memtrace.cpp']]],
-  ['remove',['remove',['../class_list.html#ab20b18c4facb9c8ab89640c202057b80',1,'List']]],
-  ['removeat',['removeAt',['../class_list.html#a54fa90e725d350cd7bd41270ebdfe775',1,'List']]],
-  ['right',['right',['../class_node.html#a3eabc288cada601df9592ecf88d41220',1,'Node::right()'],['../class_node.html#a71398b57ef3f9a78cfd8ff455877731d',1,'Node::right(Node *r)'],['../class_end.html#ac8e651d50ce2b99256be11aa9b89ded4',1,'End::right()']]],
-  ['right_5fchild_5f',['right_child_',['../class_node.html#abf180145dff7ffce95b3b39bfe24d2f6',1,'Node']]]
+  ['sizeofchunk',['sizeOfChunk',['../class_bit_buffer.html#adf758958884467e15cd018190178bf3d',1,'BitBuffer']]],
+  ['status',['status',['../structgtest__lite_1_1_test.html#a59a9a7f0ef7867af604ce5678f7a2c13',1,'gtest_lite::Test']]],
+  ['succeed',['SUCCEED',['../gtest__lite_8h.html#a75adcdf89f69b0b615e395daafc315af',1,'gtest_lite.h']]],
+  ['sum',['sum',['../structgtest__lite_1_1_test.html#a6da678d43b72b9e2bff1c99e1d3c48f5',1,'gtest_lite::Test']]]
 ];

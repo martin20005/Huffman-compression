@@ -1,2 +1,4 @@
-compress "/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/O_Captain.txt"
-extract "/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/O_Captain.txt.huff"
+compress "../O_Captain.txt" "../O_Captain.huff"
+extract "../O_Captain.huff" "../O_Captain_extracted.txt"
+exit
+

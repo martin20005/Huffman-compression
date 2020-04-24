@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Huffman-compression: gtest_lite.h File Reference</title>
+<title>Huffman-compression: /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/gtest_lite.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +66,7 @@ $(function() {
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">gtest_lite.h File Reference</div>  </div>
+<div class="title">/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/gtest_lite.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
@@ -76,7 +76,7 @@ $(function() {
 <code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
-<code>#include &quot;<a class="el" href="memtrace_8h_source.html">memtrace.h</a>&quot;</code><br />
+<code>#include &quot;memtrace.h&quot;</code><br />
 </div>
 <p><a href="gtest__lite_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -98,54 +98,69 @@ Namespaces</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a379a7b57e74521cb2c8e99f0e2779a72"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a379a7b57e74521cb2c8e99f0e2779a72">TEST</a>(C,  N)&#160;&#160;&#160;{ gtest_lite::test.begin(#C&quot;/&quot;#N);</td></tr>
 <tr class="separator:a379a7b57e74521cb2c8e99f0e2779a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29fd18bed01c4d836c7ebfe73a125c3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a29fd18bed01c4d836c7ebfe73a125c3f">END</a>&#160;&#160;&#160;gtest_lite::test.end(); }</td></tr>
-<tr class="memdesc:a29fd18bed01c4d836c7ebfe73a125c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teszteset vége.  <a href="#a29fd18bed01c4d836c7ebfe73a125c3f">More...</a><br /></td></tr>
+<tr class="memitem:a29fd18bed01c4d836c7ebfe73a125c3f"><td class="memItemLeft" align="right" valign="top"><a id="a29fd18bed01c4d836c7ebfe73a125c3f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a29fd18bed01c4d836c7ebfe73a125c3f">END</a>&#160;&#160;&#160;gtest_lite::test.end(); }</td></tr>
+<tr class="memdesc:a29fd18bed01c4d836c7ebfe73a125c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Teszteset vége. <br /></td></tr>
 <tr class="separator:a29fd18bed01c4d836c7ebfe73a125c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc9065c889d0797062317b30fd8767d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#acc9065c889d0797062317b30fd8767d4">ENDM</a>&#160;&#160;&#160;gtest_lite::test.end(true); }</td></tr>
 <tr class="separator:acc9065c889d0797062317b30fd8767d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e2f10cb2a494ff7ae23938dfdfc41a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ad2e2f10cb2a494ff7ae23938dfdfc41a">ENDMsg</a>(t)&#160;&#160;&#160;gtest_lite::test.end(true) &lt;&lt; t &lt;&lt; std::endl; }</td></tr>
 <tr class="separator:ad2e2f10cb2a494ff7ae23938dfdfc41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75adcdf89f69b0b615e395daafc315af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a75adcdf89f69b0b615e395daafc315af">SUCCEED</a>()&#160;&#160;&#160;gtest_lite::test.expect(true, __FILE__, __LINE__, &quot;SUCCEED()&quot;, true)</td></tr>
-<tr class="memdesc:a75adcdf89f69b0b615e395daafc315af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sikeres teszt makrója.  <a href="#a75adcdf89f69b0b615e395daafc315af">More...</a><br /></td></tr>
+<tr class="memitem:a75adcdf89f69b0b615e395daafc315af"><td class="memItemLeft" align="right" valign="top"><a id="a75adcdf89f69b0b615e395daafc315af"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a75adcdf89f69b0b615e395daafc315af">SUCCEED</a>()&#160;&#160;&#160;gtest_lite::test.expect(true, __FILE__, __LINE__, &quot;SUCCEED()&quot;, true)</td></tr>
+<tr class="memdesc:a75adcdf89f69b0b615e395daafc315af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sikeres teszt makrója. <br /></td></tr>
 <tr class="separator:a75adcdf89f69b0b615e395daafc315af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">FAIL</a>()&#160;&#160;&#160;gtest_lite::test.expect(false, __FILE__, __LINE__, &quot;FAIL()&quot;, true)</td></tr>
-<tr class="memdesc:a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sikertelen teszt makrója.  <a href="#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">More...</a><br /></td></tr>
+<tr class="memitem:a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="memItemLeft" align="right" valign="top"><a id="a3e26a8d27caa386ed0ea7ce9d5b7c4ed"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">FAIL</a>()&#160;&#160;&#160;gtest_lite::test.expect(false, __FILE__, __LINE__, &quot;FAIL()&quot;, true)</td></tr>
+<tr class="memdesc:a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sikertelen teszt makrója. <br /></td></tr>
 <tr class="separator:a3e26a8d27caa386ed0ea7ce9d5b7c4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8385840165a184edc29446aa51936f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f">EXPECT_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:aff8385840165a184edc29446aa51936f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Azonosságot elváró makró  <a href="#aff8385840165a184edc29446aa51936f">More...</a><br /></td></tr>
+<tr class="memitem:aff8385840165a184edc29446aa51936f"><td class="memItemLeft" align="right" valign="top"><a id="aff8385840165a184edc29446aa51936f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f">EXPECT_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:aff8385840165a184edc29446aa51936f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Azonosságot elváró makró <br /></td></tr>
 <tr class="separator:aff8385840165a184edc29446aa51936f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8a724f2c5c63ead11073c21fd51198"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#adb8a724f2c5c63ead11073c21fd51198">EXPECT_NE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a9a1485affebbed604f7cac69f70072dc">gtest_lite::ne</a>, __FILE__, __LINE__, &quot;EXPECT_NE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:adb8a724f2c5c63ead11073c21fd51198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eltérést elváró makró  <a href="#adb8a724f2c5c63ead11073c21fd51198">More...</a><br /></td></tr>
+<tr class="memitem:adb8a724f2c5c63ead11073c21fd51198"><td class="memItemLeft" align="right" valign="top"><a id="adb8a724f2c5c63ead11073c21fd51198"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#adb8a724f2c5c63ead11073c21fd51198">EXPECT_NE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, gtest_lite::ne, __FILE__, __LINE__, &quot;EXPECT_NE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:adb8a724f2c5c63ead11073c21fd51198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Eltérést elváró makró <br /></td></tr>
 <tr class="separator:adb8a724f2c5c63ead11073c21fd51198"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac680be4a2404c20cae831740779d11cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ac680be4a2404c20cae831740779d11cd">EXPECT_LE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a92068d494867b61abeef5942eefac3a3">gtest_lite::le</a>, __FILE__, __LINE__, &quot;EXPECT_LE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:ac680be4a2404c20cae831740779d11cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kisebb, vagy egyenlő relációt elváró makró  <a href="#ac680be4a2404c20cae831740779d11cd">More...</a><br /></td></tr>
+<tr class="memitem:ac680be4a2404c20cae831740779d11cd"><td class="memItemLeft" align="right" valign="top"><a id="ac680be4a2404c20cae831740779d11cd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ac680be4a2404c20cae831740779d11cd">EXPECT_LE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, gtest_lite::le, __FILE__, __LINE__, &quot;EXPECT_LE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:ac680be4a2404c20cae831740779d11cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kisebb, vagy egyenlő relációt elváró makró <br /></td></tr>
 <tr class="separator:ac680be4a2404c20cae831740779d11cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46603095284e7bcd2f114cfdc7c79b4f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a46603095284e7bcd2f114cfdc7c79b4f">EXPECT_LT</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#acfefb55c5d3713c79b659bbd18d9423c">gtest_lite::lt</a>, __FILE__, __LINE__, &quot;EXPECT_LT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:a46603095284e7bcd2f114cfdc7c79b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kisebb, mint relációt elváró makró  <a href="#a46603095284e7bcd2f114cfdc7c79b4f">More...</a><br /></td></tr>
+<tr class="memitem:a46603095284e7bcd2f114cfdc7c79b4f"><td class="memItemLeft" align="right" valign="top"><a id="a46603095284e7bcd2f114cfdc7c79b4f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a46603095284e7bcd2f114cfdc7c79b4f">EXPECT_LT</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, gtest_lite::lt, __FILE__, __LINE__, &quot;EXPECT_LT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:a46603095284e7bcd2f114cfdc7c79b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kisebb, mint relációt elváró makró <br /></td></tr>
 <tr class="separator:a46603095284e7bcd2f114cfdc7c79b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad891c6b36689d35ee54de65351ab224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aad891c6b36689d35ee54de65351ab224">EXPECT_GE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#ae8c2517b99b688c6136d8c7c18551da5">gtest_lite::ge</a>, __FILE__, __LINE__, &quot;EXPECT_GE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:aad891c6b36689d35ee54de65351ab224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nagyobb, vagy egyenlő relációt elváró makró  <a href="#aad891c6b36689d35ee54de65351ab224">More...</a><br /></td></tr>
+<tr class="memitem:aad891c6b36689d35ee54de65351ab224"><td class="memItemLeft" align="right" valign="top"><a id="aad891c6b36689d35ee54de65351ab224"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aad891c6b36689d35ee54de65351ab224">EXPECT_GE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, gtest_lite::ge, __FILE__, __LINE__, &quot;EXPECT_GE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:aad891c6b36689d35ee54de65351ab224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nagyobb, vagy egyenlő relációt elváró makró <br /></td></tr>
 <tr class="separator:aad891c6b36689d35ee54de65351ab224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2262f96c4664cf3e170d2edaaba6c44"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ac2262f96c4664cf3e170d2edaaba6c44">EXPECT_GT</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a2075d101da98f80f569b0737c5185718">gtest_lite::gt</a>, __FILE__, __LINE__, &quot;EXPECT_GT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:ac2262f96c4664cf3e170d2edaaba6c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nagyobb, mint relációt elváró makró  <a href="#ac2262f96c4664cf3e170d2edaaba6c44">More...</a><br /></td></tr>
+<tr class="memitem:ac2262f96c4664cf3e170d2edaaba6c44"><td class="memItemLeft" align="right" valign="top"><a id="ac2262f96c4664cf3e170d2edaaba6c44"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ac2262f96c4664cf3e170d2edaaba6c44">EXPECT_GT</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, gtest_lite::gt, __FILE__, __LINE__, &quot;EXPECT_GT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:ac2262f96c4664cf3e170d2edaaba6c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nagyobb, mint relációt elváró makró <br /></td></tr>
 <tr class="separator:ac2262f96c4664cf3e170d2edaaba6c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab400890edc9f419e40c28a224e8ed79f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ab400890edc9f419e40c28a224e8ed79f">EXPECT_TRUE</a>(actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(true, actual,  <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_TRUE(&quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:ab400890edc9f419e40c28a224e8ed79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Igaz értéket elváró makró  <a href="#ab400890edc9f419e40c28a224e8ed79f">More...</a><br /></td></tr>
+<tr class="memitem:ab400890edc9f419e40c28a224e8ed79f"><td class="memItemLeft" align="right" valign="top"><a id="ab400890edc9f419e40c28a224e8ed79f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#ab400890edc9f419e40c28a224e8ed79f">EXPECT_TRUE</a>(actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(true, actual,  <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_TRUE(&quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:ab400890edc9f419e40c28a224e8ed79f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Igaz értéket elváró makró <br /></td></tr>
 <tr class="separator:ab400890edc9f419e40c28a224e8ed79f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58cae60fff88d713c4850b50d3e592a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a58cae60fff88d713c4850b50d3e592a6">EXPECT_FALSE</a>(actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(false, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_FALSE(&quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:a58cae60fff88d713c4850b50d3e592a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hamis értéket elváró makró  <a href="#a58cae60fff88d713c4850b50d3e592a6">More...</a><br /></td></tr>
+<tr class="memitem:a58cae60fff88d713c4850b50d3e592a6"><td class="memItemLeft" align="right" valign="top"><a id="a58cae60fff88d713c4850b50d3e592a6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a58cae60fff88d713c4850b50d3e592a6">EXPECT_FALSE</a>(actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(false, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_FALSE(&quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:a58cae60fff88d713c4850b50d3e592a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hamis értéket elváró makró <br /></td></tr>
 <tr class="separator:a58cae60fff88d713c4850b50d3e592a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ce7d58df8cb696aa05e77c2370de7a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a5ce7d58df8cb696aa05e77c2370de7a8">EXPECT_FLOAT_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_FLOAT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:a5ce7d58df8cb696aa05e77c2370de7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valós számok azonosságát elváró makró  <a href="#a5ce7d58df8cb696aa05e77c2370de7a8">More...</a><br /></td></tr>
+<tr class="memitem:a5ce7d58df8cb696aa05e77c2370de7a8"><td class="memItemLeft" align="right" valign="top"><a id="a5ce7d58df8cb696aa05e77c2370de7a8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a5ce7d58df8cb696aa05e77c2370de7a8">EXPECT_FLOAT_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_FLOAT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:a5ce7d58df8cb696aa05e77c2370de7a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valós számok azonosságát elváró makró <br /></td></tr>
 <tr class="separator:a5ce7d58df8cb696aa05e77c2370de7a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6277442d96cd18300619c321614397"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a6e6277442d96cd18300619c321614397">EXPECT_DOUBLE_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_DOUBLE_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:a6e6277442d96cd18300619c321614397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valós számok azonosságát elváró makró  <a href="#a6e6277442d96cd18300619c321614397">More...</a><br /></td></tr>
+<tr class="memitem:a6e6277442d96cd18300619c321614397"><td class="memItemLeft" align="right" valign="top"><a id="a6e6277442d96cd18300619c321614397"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a6e6277442d96cd18300619c321614397">EXPECT_DOUBLE_EQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_DOUBLE_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:a6e6277442d96cd18300619c321614397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Valós számok azonosságát elváró makró <br /></td></tr>
 <tr class="separator:a6e6277442d96cd18300619c321614397"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4b193a92c39b99d7b9404c49feef0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a5b4b193a92c39b99d7b9404c49feef0b">EXPECT_STREQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a34055f353dabbe4ed9063f1d36af6022">gtest_lite::eqstr</a>, __FILE__, __LINE__, &quot;EXPECT_STREQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
-<tr class="memdesc:a5b4b193a92c39b99d7b9404c49feef0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">C stringek (const char *) azonosságát tesztelő makró  <a href="#a5b4b193a92c39b99d7b9404c49feef0b">More...</a><br /></td></tr>
+<tr class="memitem:a5b4b193a92c39b99d7b9404c49feef0b"><td class="memItemLeft" align="right" valign="top"><a id="a5b4b193a92c39b99d7b9404c49feef0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a5b4b193a92c39b99d7b9404c49feef0b">EXPECT_STREQ</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, gtest_lite::eqstr, __FILE__, __LINE__, &quot;EXPECT_STREQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td></tr>
+<tr class="memdesc:a5b4b193a92c39b99d7b9404c49feef0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">C stringek (const char *) azonosságát tesztelő makró <br /></td></tr>
 <tr class="separator:a5b4b193a92c39b99d7b9404c49feef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa511aad7b6a6a8e8d0279f16d925b094"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aa511aad7b6a6a8e8d0279f16d925b094">EXPECT_STRNE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a0a34b1bb0d55bc0c6a3e878ec2bcd49f">gtest_lite::nestr</a>, __FILE__, __LINE__, &quot;EXPECT_STRNE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
-<tr class="memdesc:aa511aad7b6a6a8e8d0279f16d925b094"><td class="mdescLeft">&#160;</td><td class="mdescRight">C stringek (const char *) eltéréset tesztelő makró  <a href="#aa511aad7b6a6a8e8d0279f16d925b094">More...</a><br /></td></tr>
+<tr class="memitem:aa511aad7b6a6a8e8d0279f16d925b094"><td class="memItemLeft" align="right" valign="top"><a id="aa511aad7b6a6a8e8d0279f16d925b094"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#aa511aad7b6a6a8e8d0279f16d925b094">EXPECT_STRNE</a>(expected,  actual)&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, gtest_lite::nestr, __FILE__, __LINE__, &quot;EXPECT_STRNE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td></tr>
+<tr class="memdesc:aa511aad7b6a6a8e8d0279f16d925b094"><td class="mdescLeft">&#160;</td><td class="mdescRight">C stringek (const char *) eltéréset tesztelő makró <br /></td></tr>
 <tr class="separator:aa511aad7b6a6a8e8d0279f16d925b094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b4fe697f312ef7d2618905a9bc12f04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a4b4fe697f312ef7d2618905a9bc12f04">EXPECT_THROW</a>(statement,  exception_type)</td></tr>
 <tr class="memdesc:a4b4fe697f312ef7d2618905a9bc12f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kivételt várunk.  <a href="#a4b4fe697f312ef7d2618905a9bc12f04">More...</a><br /></td></tr>
@@ -164,44 +179,55 @@ Macros</h2></td></tr>
 <tr class="memitem:a59f6c1f1654aa9d5adf5c143efd1a454"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a59f6c1f1654aa9d5adf5c143efd1a454">EXPECTTHROW</a>(statement,  exp,  act)</td></tr>
 <tr class="memdesc:a59f6c1f1654aa9d5adf5c143efd1a454"><td class="mdescLeft">&#160;</td><td class="mdescRight">EXPECTTHROW: kivételkezelés.  <a href="#a59f6c1f1654aa9d5adf5c143efd1a454">More...</a><br /></td></tr>
 <tr class="separator:a59f6c1f1654aa9d5adf5c143efd1a454"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a428e5e5ea2b7f67a0b68fbf57ea0faa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a428e5e5ea2b7f67a0b68fbf57ea0faa7">GTINIT</a>(IS)</td></tr>
+<tr class="memitem:a428e5e5ea2b7f67a0b68fbf57ea0faa7"><td class="memItemLeft" align="right" valign="top"><a id="a428e5e5ea2b7f67a0b68fbf57ea0faa7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GTINIT</b>(IS)</td></tr>
 <tr class="separator:a428e5e5ea2b7f67a0b68fbf57ea0faa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20ba54bca307f985eb448f71e6896dd5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gtest__lite_8h.html#a20ba54bca307f985eb448f71e6896dd5">GTEND</a>(os)</td></tr>
+<tr class="memitem:a20ba54bca307f985eb448f71e6896dd5"><td class="memItemLeft" align="right" valign="top"><a id="a20ba54bca307f985eb448f71e6896dd5"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>GTEND</b>(os)</td></tr>
 <tr class="separator:a20ba54bca307f985eb448f71e6896dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab358c162e1cedfc39abf5959417ffc1e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab358c162e1cedfc39abf5959417ffc1e"><td class="memTemplParams" colspan="2"><a id="ab358c162e1cedfc39abf5959417ffc1e"></a>
+template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ab358c162e1cedfc39abf5959417ffc1e"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a> (T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</td></tr>
-<tr class="memdesc:ab358c162e1cedfc39abf5959417ffc1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">általános sablon a várt értékhez.  <a href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">More...</a><br /></td></tr>
+<tr class="memdesc:ab358c162e1cedfc39abf5959417ffc1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">általános sablon a várt értékhez. <br /></td></tr>
 <tr class="separator:ab358c162e1cedfc39abf5959417ffc1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="memTemplParams" colspan="2"><a id="a8b21cff4e93dcacdd1b4fdb8b6b9c740"></a>
+template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="memTemplItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a8b21cff4e93dcacdd1b4fdb8b6b9c740">gtest_lite::EXPECT_</a> (T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</td></tr>
-<tr class="memdesc:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointerre specializált sablon a várt értékhez.  <a href="namespacegtest__lite.html#a8b21cff4e93dcacdd1b4fdb8b6b9c740">More...</a><br /></td></tr>
+<tr class="memdesc:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointerre specializált sablon a várt értékhez. <br /></td></tr>
 <tr class="separator:a8b21cff4e93dcacdd1b4fdb8b6b9c740"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea477921e4c26d2a2806bc3011066270"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a> (const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs=&quot;elvart&quot;, const char *rhs=&quot;aktual&quot;)</td></tr>
 <tr class="separator:aea477921e4c26d2a2806bc3011066270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7762f23094d59c699ec402e1a37640c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa7762f23094d59c699ec402e1a37640c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a> (T a, T b)</td></tr>
 <tr class="separator:aa7762f23094d59c699ec402e1a37640c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34055f353dabbe4ed9063f1d36af6022"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a34055f353dabbe4ed9063f1d36af6022">gtest_lite::eqstr</a> (const char *a, const char *b)</td></tr>
+<tr class="memitem:a34055f353dabbe4ed9063f1d36af6022"><td class="memItemLeft" align="right" valign="top"><a id="a34055f353dabbe4ed9063f1d36af6022"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>gtest_lite::eqstr</b> (const char *a, const char *b)</td></tr>
 <tr class="separator:a34055f353dabbe4ed9063f1d36af6022"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a1485affebbed604f7cac69f70072dc"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a9a1485affebbed604f7cac69f70072dc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a9a1485affebbed604f7cac69f70072dc">gtest_lite::ne</a> (T a, T b)</td></tr>
+<tr class="memitem:a9a1485affebbed604f7cac69f70072dc"><td class="memTemplParams" colspan="2"><a id="a9a1485affebbed604f7cac69f70072dc"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9a1485affebbed604f7cac69f70072dc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gtest_lite::ne</b> (T a, T b)</td></tr>
 <tr class="separator:a9a1485affebbed604f7cac69f70072dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a34b1bb0d55bc0c6a3e878ec2bcd49f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a0a34b1bb0d55bc0c6a3e878ec2bcd49f">gtest_lite::nestr</a> (const char *a, const char *b)</td></tr>
+<tr class="memitem:a0a34b1bb0d55bc0c6a3e878ec2bcd49f"><td class="memItemLeft" align="right" valign="top"><a id="a0a34b1bb0d55bc0c6a3e878ec2bcd49f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>gtest_lite::nestr</b> (const char *a, const char *b)</td></tr>
 <tr class="separator:a0a34b1bb0d55bc0c6a3e878ec2bcd49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92068d494867b61abeef5942eefac3a3"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a92068d494867b61abeef5942eefac3a3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a92068d494867b61abeef5942eefac3a3">gtest_lite::le</a> (T a, T b)</td></tr>
+<tr class="memitem:a92068d494867b61abeef5942eefac3a3"><td class="memTemplParams" colspan="2"><a id="a92068d494867b61abeef5942eefac3a3"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a92068d494867b61abeef5942eefac3a3"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gtest_lite::le</b> (T a, T b)</td></tr>
 <tr class="separator:a92068d494867b61abeef5942eefac3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfefb55c5d3713c79b659bbd18d9423c"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:acfefb55c5d3713c79b659bbd18d9423c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#acfefb55c5d3713c79b659bbd18d9423c">gtest_lite::lt</a> (T a, T b)</td></tr>
+<tr class="memitem:acfefb55c5d3713c79b659bbd18d9423c"><td class="memTemplParams" colspan="2"><a id="acfefb55c5d3713c79b659bbd18d9423c"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:acfefb55c5d3713c79b659bbd18d9423c"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gtest_lite::lt</b> (T a, T b)</td></tr>
 <tr class="separator:acfefb55c5d3713c79b659bbd18d9423c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8c2517b99b688c6136d8c7c18551da5"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae8c2517b99b688c6136d8c7c18551da5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#ae8c2517b99b688c6136d8c7c18551da5">gtest_lite::ge</a> (T a, T b)</td></tr>
+<tr class="memitem:ae8c2517b99b688c6136d8c7c18551da5"><td class="memTemplParams" colspan="2"><a id="ae8c2517b99b688c6136d8c7c18551da5"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ae8c2517b99b688c6136d8c7c18551da5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gtest_lite::ge</b> (T a, T b)</td></tr>
 <tr class="separator:ae8c2517b99b688c6136d8c7c18551da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2075d101da98f80f569b0737c5185718"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a2075d101da98f80f569b0737c5185718"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#a2075d101da98f80f569b0737c5185718">gtest_lite::gt</a> (T a, T b)</td></tr>
+<tr class="memitem:a2075d101da98f80f569b0737c5185718"><td class="memTemplParams" colspan="2"><a id="a2075d101da98f80f569b0737c5185718"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a2075d101da98f80f569b0737c5185718"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>gtest_lite::gt</b> (T a, T b)</td></tr>
 <tr class="separator:a2075d101da98f80f569b0737c5185718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affbf9748c4e4dec6db137f7c147fee61"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:affbf9748c4e4dec6db137f7c147fee61"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a> (T a, T b)</td></tr>
@@ -214,7 +240,7 @@ Functions</h2></td></tr>
 <p>Egyetlen fájlban kell megvalósítani minden tesztesetet! Csak ebből include-olható a <a class="el" href="gtest__lite_8h.html">gtest_lite.h</a> Ezen korlátozás kiküszöböléséhez sigletonnal kellene rednesen megvalósítani. a test osztályt!</p>
 <p>Szabadon felhasználható, bővíthető.</p>
 <p>Használati példa: Teszteljük az f(x)=2*x függvényt: int f(int x) { return 2*x; }</p>
-<p>int <a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a> { <a class="el" href="gtest__lite_8h.html#a379a7b57e74521cb2c8e99f0e2779a72">TEST(TeszEsetNeve, TesztNeve)</a> <a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f" title="Azonosságot elváró makró ">EXPECT_EQ(0, f(0))</a>; <a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f" title="Azonosságot elváró makró ">EXPECT_EQ(4, f(2))</a> &lt;&lt; "A függvény hibás eredményt adott" &lt;&lt; std::endl; ... END ...</p>
+<p>int main() { <a class="el" href="gtest__lite_8h.html#a379a7b57e74521cb2c8e99f0e2779a72">TEST(TeszEsetNeve, TesztNeve)</a> <a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f" title="Azonosságot elváró makró ">EXPECT_EQ(0, f(0))</a>; <a class="el" href="gtest__lite_8h.html#aff8385840165a184edc29446aa51936f" title="Azonosságot elváró makró ">EXPECT_EQ(4, f(2))</a> &lt;&lt; "A függvény hibás eredményt adott" &lt;&lt; std::endl; ... END ...</p>
 <p>A működés részleteinek megértése szorgalmi feladat. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a34bf9a881eb6b2800b0e6cb0abdbd319"></a>
@@ -233,22 +259,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="keyword">struct </span>_Has_##X {  \</div><div class="line">    struct Fallback { <span class="keywordtype">int</span> X; };         \</div><div class="line">    struct Derived : T, Fallback {};    \</div><div class="line">    template&lt;typename C, C&gt; <span class="keyword">struct </span>ChT; \</div><div class="line">    template&lt;typename D&gt; <span class="keyword">static</span> char (&amp;f(ChT&lt;int Fallback::*, &amp;D::X&gt;*))[1]; \</div><div class="line">    template&lt;typename D&gt; <span class="keyword">static</span> char (&amp;f(...))[2]; \</div><div class="line">    static <span class="keywordtype">bool</span> <span class="keyword">const</span> member = <span class="keyword">sizeof</span>(f&lt;Derived&gt;(0)) == 2; \</div><div class="line">};</div></div><!-- fragment --><p>Segédmakró egy adattag, vagy tagfüggvény létezésének tesztelésére futási időben Ötlet: <a href="https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2">https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2</a> Használat: <a class="el" href="gtest__lite_8h.html#a34bf9a881eb6b2800b0e6cb0abdbd319">CREATE_Has_(size)</a> ... if (Has_size&lt;std::string&gt;::member)... </p>
-
-</div>
-</div>
-<a id="a29fd18bed01c4d836c7ebfe73a125c3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29fd18bed01c4d836c7ebfe73a125c3f">&#9670;&nbsp;</a></span>END</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define END&#160;&#160;&#160;gtest_lite::test.end(); }</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Teszteset vége. </p>
 
 </div>
 </div>
@@ -307,266 +317,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e6277442d96cd18300619c321614397"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e6277442d96cd18300619c321614397">&#9670;&nbsp;</a></span>EXPECT_DOUBLE_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_DOUBLE_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_DOUBLE_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Valós számok azonosságát elváró makró </p>
-
-</div>
-</div>
-<a id="aff8385840165a184edc29446aa51936f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff8385840165a184edc29446aa51936f">&#9670;&nbsp;</a></span>EXPECT_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Azonosságot elváró makró </p>
-
-</div>
-</div>
-<a id="a58cae60fff88d713c4850b50d3e592a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58cae60fff88d713c4850b50d3e592a6">&#9670;&nbsp;</a></span>EXPECT_FALSE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_FALSE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(false, actual, <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_FALSE(&quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Hamis értéket elváró makró </p>
-
-</div>
-</div>
-<a id="a5ce7d58df8cb696aa05e77c2370de7a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ce7d58df8cb696aa05e77c2370de7a8">&#9670;&nbsp;</a></span>EXPECT_FLOAT_EQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_FLOAT_EQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#affbf9748c4e4dec6db137f7c147fee61">gtest_lite::almostEQ</a>, __FILE__, __LINE__, &quot;EXPECT_FLOAT_EQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Valós számok azonosságát elváró makró </p>
-
-</div>
-</div>
-<a id="aad891c6b36689d35ee54de65351ab224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad891c6b36689d35ee54de65351ab224">&#9670;&nbsp;</a></span>EXPECT_GE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_GE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#ae8c2517b99b688c6136d8c7c18551da5">gtest_lite::ge</a>, __FILE__, __LINE__, &quot;EXPECT_GE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Nagyobb, vagy egyenlő relációt elváró makró </p>
-
-</div>
-</div>
-<a id="ac2262f96c4664cf3e170d2edaaba6c44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2262f96c4664cf3e170d2edaaba6c44">&#9670;&nbsp;</a></span>EXPECT_GT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_GT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a2075d101da98f80f569b0737c5185718">gtest_lite::gt</a>, __FILE__, __LINE__, &quot;EXPECT_GT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Nagyobb, mint relációt elváró makró </p>
-
-</div>
-</div>
-<a id="ac680be4a2404c20cae831740779d11cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac680be4a2404c20cae831740779d11cd">&#9670;&nbsp;</a></span>EXPECT_LE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_LE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a92068d494867b61abeef5942eefac3a3">gtest_lite::le</a>, __FILE__, __LINE__, &quot;EXPECT_LE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kisebb, vagy egyenlő relációt elváró makró </p>
-
-</div>
-</div>
-<a id="a46603095284e7bcd2f114cfdc7c79b4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46603095284e7bcd2f114cfdc7c79b4f">&#9670;&nbsp;</a></span>EXPECT_LT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_LT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#acfefb55c5d3713c79b659bbd18d9423c">gtest_lite::lt</a>, __FILE__, __LINE__, &quot;EXPECT_LT(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Kisebb, mint relációt elváró makró </p>
-
-</div>
-</div>
-<a id="adb8a724f2c5c63ead11073c21fd51198"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb8a724f2c5c63ead11073c21fd51198">&#9670;&nbsp;</a></span>EXPECT_NE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_NE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a9a1485affebbed604f7cac69f70072dc">gtest_lite::ne</a>, __FILE__, __LINE__, &quot;EXPECT_NE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Eltérést elváró makró </p>
-
-</div>
-</div>
 <a id="a2743a1438137ad857aa3f9fec3ff67ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2743a1438137ad857aa3f9fec3ff67ec">&#9670;&nbsp;</a></span>EXPECT_NO_THROW</h2>
 
@@ -585,66 +335,6 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">try</span> { gtest_lite::test.<a class="code" href="structgtest__lite_1_1_test.html#a1145ceb335a60a808b7b4d5d1624b2a5">tmp</a> = <span class="keyword">true</span>; statement; } \</div><div class="line">    catch (...) { gtest_lite::test.<a class="code" href="structgtest__lite_1_1_test.html#a1145ceb335a60a808b7b4d5d1624b2a5">tmp</a> = <span class="keyword">false</span>; }\</div><div class="line">    EXPECTTHROW(statement, <span class="stringliteral">&quot;nem dob kivetelt.&quot;</span>, <span class="stringliteral">&quot;kivetelt dobott.&quot;</span>)</div><div class="ttc" id="structgtest__lite_1_1_test_html_a1145ceb335a60a808b7b4d5d1624b2a5"><div class="ttname"><a href="structgtest__lite_1_1_test.html#a1145ceb335a60a808b7b4d5d1624b2a5">gtest_lite::Test::tmp</a></div><div class="ttdeci">bool tmp</div><div class="ttdoc">temp a kivételkezeléshez; </div><div class="ttdef"><b>Definition:</b> gtest_lite.h:197</div></div>
 </div><!-- fragment -->
 <p>Nem várunk kivételt. </p>
-
-</div>
-</div>
-<a id="a5b4b193a92c39b99d7b9404c49feef0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b4b193a92c39b99d7b9404c49feef0b">&#9670;&nbsp;</a></span>EXPECT_STREQ</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_STREQ</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a34055f353dabbe4ed9063f1d36af6022">gtest_lite::eqstr</a>, __FILE__, __LINE__, &quot;EXPECT_STREQ(&quot; #expected &quot;, &quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>C stringek (const char *) azonosságát tesztelő makró </p>
-
-</div>
-</div>
-<a id="aa511aad7b6a6a8e8d0279f16d925b094"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa511aad7b6a6a8e8d0279f16d925b094">&#9670;&nbsp;</a></span>EXPECT_STRNE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_STRNE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">expected, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270">gtest_lite::EXPECTSTR</a>(expected, actual, <a class="el" href="namespacegtest__lite.html#a0a34b1bb0d55bc0c6a3e878ec2bcd49f">gtest_lite::nestr</a>, __FILE__, __LINE__, &quot;EXPECT_STRNE(&quot; #expected &quot;, &quot; #actual &quot;)&quot;, &quot;etalon&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>C stringek (const char *) eltéréset tesztelő makró </p>
 
 </div>
 </div>
@@ -710,26 +400,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab400890edc9f419e40c28a224e8ed79f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab400890edc9f419e40c28a224e8ed79f">&#9670;&nbsp;</a></span>EXPECT_TRUE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define EXPECT_TRUE</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">actual</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="namespacegtest__lite.html#ab358c162e1cedfc39abf5959417ffc1e">gtest_lite::EXPECT_</a>(true, actual,  <a class="el" href="namespacegtest__lite.html#aa7762f23094d59c699ec402e1a37640c">gtest_lite::eq</a>, __FILE__, __LINE__, &quot;EXPECT_TRUE(&quot; #actual &quot;)&quot; )</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Igaz értéket elváró makró </p>
-
-</div>
-</div>
 <a id="a59f6c1f1654aa9d5adf5c143efd1a454"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59f6c1f1654aa9d5adf5c143efd1a454">&#9670;&nbsp;</a></span>EXPECTTHROW</h2>
 
@@ -766,80 +436,6 @@ Functions</h2></td></tr>
 <p>EXPECTTHROW: kivételkezelés. </p>
 <hr/>
 <p> Belső megvalósításhoz tartozó makrók, és osztályok. </p><h2>Nem célszerű közvetlenül használni, vagy módosítani </h2>
-
-</div>
-</div>
-<a id="a3e26a8d27caa386ed0ea7ce9d5b7c4ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e26a8d27caa386ed0ea7ce9d5b7c4ed">&#9670;&nbsp;</a></span>FAIL</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FAIL</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;gtest_lite::test.expect(false, __FILE__, __LINE__, &quot;FAIL()&quot;, true)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sikertelen teszt makrója. </p>
-
-</div>
-</div>
-<a id="a20ba54bca307f985eb448f71e6896dd5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20ba54bca307f985eb448f71e6896dd5">&#9670;&nbsp;</a></span>GTEND</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GTEND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">os</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a428e5e5ea2b7f67a0b68fbf57ea0faa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a428e5e5ea2b7f67a0b68fbf57ea0faa7">&#9670;&nbsp;</a></span>GTINIT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GTINIT</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">IS</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a75adcdf89f69b0b615e395daafc315af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75adcdf89f69b0b615e395daafc315af">&#9670;&nbsp;</a></span>SUCCEED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define SUCCEED</td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td>&#160;&#160;&#160;gtest_lite::test.expect(true, __FILE__, __LINE__, &quot;SUCCEED()&quot;, true)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sikeres teszt makrója. </p>
 
 </div>
 </div>

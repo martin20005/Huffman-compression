@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['f',['f',['../structcall__t.html#a59d4e803f2e254dc5ceeb9c1bfcc9355',1,'call_t::f()'],['../struct___is___types.html#a56e08a2768c571caab81e9bc47d5acc6',1,'_Is_Types::f(D))[1]'],['../struct___is___types.html#a013da65c5a92e9bd02f5d361c10d376d',1,'_Is_Types::f(...))[2]']]],
-  ['fail',['fail',['../structgtest__lite_1_1_test.html#aadbfd0f53c56d975f793602996631195',1,'gtest_lite::Test::fail()'],['../gtest__lite_8h.html#a3e26a8d27caa386ed0ea7ce9d5b7c4ed',1,'FAIL():&#160;gtest_lite.h']]],
+  ['fail',['FAIL',['../gtest__lite_8h.html#a3e26a8d27caa386ed0ea7ce9d5b7c4ed',1,'gtest_lite.h']]],
   ['failed',['failed',['../structgtest__lite_1_1_test.html#a4fb6ee7bd903717d970e3f0504cdeeab',1,'gtest_lite::Test']]],
-  ['false',['FALSE',['../memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a',1,'memtrace.cpp']]],
-  ['fcalloc',['FCALLOC',['../memtrace_8cpp.html#af6fff8cbc37157865d4b383dacfd947b',1,'memtrace.cpp']]],
-  ['fdelete',['FDELETE',['../memtrace_8cpp.html#a744b443f8bd1fad5895b111602c0ead9',1,'memtrace.cpp']]],
-  ['fdeletearr',['FDELETEARR',['../memtrace_8cpp.html#acd2bfc6563a2ac0ae741ee31dfbf1c92',1,'memtrace.cpp']]],
-  ['ffree',['FFREE',['../memtrace_8cpp.html#aa6b915326a446c2a67f05f5504d9bc30',1,'memtrace.cpp']]],
-  ['file',['file',['../structcall__t.html#a97629ec51d024396221fe7d48c84859a',1,'call_t']]],
-  ['fill',['fill',['../class_bit_buffer.html#a91b2bfeb34d3e2d01fd23f417928f261',1,'BitBuffer']]],
-  ['findfirst',['findFirst',['../class_list.html#aab90a0362da4ba513ac5460af21e1adb',1,'List']]],
-  ['fmalloc',['FMALLOC',['../memtrace_8cpp.html#a8817d7ba90cf2e1ddd83f35dbb862542',1,'memtrace.cpp']]],
-  ['fnew',['FNEW',['../memtrace_8cpp.html#a9f98c384938a2ff256aa6a0a6f8992dc',1,'memtrace.cpp']]],
-  ['fnewarr',['FNEWARR',['../memtrace_8cpp.html#afc0db05fd089296f53cc7e8441ebc565',1,'memtrace.cpp']]],
-  ['frealloc',['FREALLOC',['../memtrace_8cpp.html#afcc2cb9c3434359e629fdd446aab6175',1,'memtrace.cpp']]],
-  ['free',['free',['../memtrace_8h.html#a9d4b5df3530d1bc733070a4669ba6ebc',1,'memtrace.h']]],
-  ['from_5fmemtrace_5fcpp',['FROM_MEMTRACE_CPP',['../memtrace_8cpp.html#ab4e504c96e3c59936ff0a9f31573b1b0',1,'memtrace.cpp']]]
+  ['fill',['fill',['../class_bit_buffer.html#a91b2bfeb34d3e2d01fd23f417928f261',1,'BitBuffer']]]
 ];

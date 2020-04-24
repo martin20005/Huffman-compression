@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['left_5fchild_5f',['left_child_',['../class_node.html#a5ee0db484771d8654c32e7863fba292e',1,'Node']]],
-  ['line',['line',['../structcall__t.html#aaa4f0e556289bbf4da414897b10e0916',1,'call_t']]]
+  ['name',['name',['../structgtest__lite_1_1_test.html#a8d495a42580e3ae337f9c4982136b700',1,'gtest_lite::Test']]],
+  ['null',['null',['../structgtest__lite_1_1_test.html#af4784302d78bb004bcb20b7f75ec06c3',1,'gtest_lite::Test']]]
 ];
