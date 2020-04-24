@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['size',['Size',['../class_bit_buffer.html#a6986fb3db8ebb8c0c1c88b3a9aecc295',1,'BitBuffer']]],
-  ['source',['source',['../class_huffman.html#a8ffa876d6b52ef4a06198dc4800bf2f3',1,'Huffman::source(const string &amp;s)'],['../class_huffman.html#a155055b704bd1c800a23a3a19820e357',1,'Huffman::source() const']]]
+  ['remove',['remove',['../class_list.html#ab20b18c4facb9c8ab89640c202057b80',1,'List']]],
+  ['removeat',['removeAt',['../class_list.html#a54fa90e725d350cd7bd41270ebdfe775',1,'List']]],
+  ['right',['right',['../class_node.html#a3eabc288cada601df9592ecf88d41220',1,'Node::right()'],['../class_node.html#a71398b57ef3f9a78cfd8ff455877731d',1,'Node::right(Node *r)'],['../class_end.html#ac8e651d50ce2b99256be11aa9b89ded4',1,'End::right()']]]
 ];

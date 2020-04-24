@@ -1,4 +1,4 @@
-\section{Huffman Class Reference}
+\hypertarget{class_huffman}{}\section{Huffman Class Reference}
 \label{class_huffman}\index{Huffman@{Huffman}}
 
 
@@ -7,25 +7,13 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Huffman} (const string \&In)
+\hyperlink{class_huffman_a58af969e1cd59bd981f1461e8a51822c}{Huffman} ()
 \item 
-\textbf{ Huffman} (string In, string Out)
+void \hyperlink{class_huffman_a692805d2f9f60f0a4663ec027b6f196d}{compress} (istream \&stream\+\_\+in, ostream \&stream\+\_\+out)
 \item 
-void \textbf{ compress} ()
+void \hyperlink{class_huffman_aca6b32706e62035b9dd6d7c9edba745e}{extract} (istream \&stream\+\_\+in, ostream \&stream\+\_\+out)
 \item 
-void \textbf{ extract} ()
-\item 
-void \textbf{ source} (const string \&s)
-\item 
-string \textbf{ source} () const
-\item 
-void \textbf{ destiny} (const string \&d)
-\item 
-string \textbf{ destiny} () const
-\item 
-void \textbf{ del\+Root} (\textbf{ Node} $\ast$r)
-\item 
-\textbf{ $\sim$\+Huffman} ()
+\hyperlink{class_huffman_a641376a7cb5871a6a2c7b51afb05bfcc}{$\sim$\+Huffman} ()
 \end{DoxyCompactItemize}
 
 
@@ -33,89 +21,36 @@ void \textbf{ del\+Root} (\textbf{ Node} $\ast$r)
 Class able to execute Huffman-\/compression or extraction 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\label{class_huffman_a381daf47396ec56b139f5a80db01371a}} 
+\mbox{\Hypertarget{class_huffman_a58af969e1cd59bd981f1461e8a51822c}\label{class_huffman_a58af969e1cd59bd981f1461e8a51822c}} 
 \index{Huffman@{Huffman}!Huffman@{Huffman}}
 \index{Huffman@{Huffman}!Huffman@{Huffman}}
-\subsubsection{Huffman()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Huffman\+::\+Huffman (\begin{DoxyParamCaption}\item[{const string \&}]{In }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Huffman()}{Huffman()}}
+{\footnotesize\ttfamily Huffman\+::\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Constructor Resulting filepath is not given, it will have the same name with \char`\"{}.\+huffman_code_\char`\"{} extension
-\begin{DoxyParams}{Parameters}
-{\em In} & Source file\textquotesingle{}s path \\
-\hline
-\end{DoxyParams}
-\mbox{\label{class_huffman_a340d5fe63ee0b2e66319cfa2b3adf07e}} 
-\index{Huffman@{Huffman}!Huffman@{Huffman}}
-\index{Huffman@{Huffman}!Huffman@{Huffman}}
-\subsubsection{Huffman()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Huffman\+::\+Huffman (\begin{DoxyParamCaption}\item[{string}]{In,  }\item[{string}]{Out }\end{DoxyParamCaption})}
-
-Constructor 
-\begin{DoxyParams}{Parameters}
-{\em In} & Source file\textquotesingle{}s path \\
-\hline
-{\em Out} & Resulting filepath \\
-\hline
-\end{DoxyParams}
-\mbox{\label{class_huffman_a641376a7cb5871a6a2c7b51afb05bfcc}} 
+\mbox{\Hypertarget{class_huffman_a641376a7cb5871a6a2c7b51afb05bfcc}\label{class_huffman_a641376a7cb5871a6a2c7b51afb05bfcc}} 
 \index{Huffman@{Huffman}!````~Huffman@{$\sim$\+Huffman}}
 \index{````~Huffman@{$\sim$\+Huffman}!Huffman@{Huffman}}
-\subsubsection{$\sim$\+Huffman()}
+\subsubsection{\texorpdfstring{$\sim$\+Huffman()}{~Huffman()}}
 {\footnotesize\ttfamily Huffman\+::$\sim$\+Huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\label{class_huffman_a29b0ed4581235dae876fca58dd9bf06f}} 
+\mbox{\Hypertarget{class_huffman_a692805d2f9f60f0a4663ec027b6f196d}\label{class_huffman_a692805d2f9f60f0a4663ec027b6f196d}} 
 \index{Huffman@{Huffman}!compress@{compress}}
 \index{compress@{compress}!Huffman@{Huffman}}
-\subsubsection{compress()}
-{\footnotesize\ttfamily void Huffman\+::compress (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{compress()}{compress()}}
+{\footnotesize\ttfamily void Huffman\+::compress (\begin{DoxyParamCaption}\item[{istream \&}]{stream\+\_\+in,  }\item[{ostream \&}]{stream\+\_\+out }\end{DoxyParamCaption})}
 
-Compression of file When called, the resulting file is created \mbox{\label{class_huffman_ae994bcb0f59826793e2065b0fd9bd7fb}} 
-\index{Huffman@{Huffman}!del\+Root@{del\+Root}}
-\index{del\+Root@{del\+Root}!Huffman@{Huffman}}
-\subsubsection{del\+Root()}
-{\footnotesize\ttfamily void Huffman\+::del\+Root (\begin{DoxyParamCaption}\item[{\textbf{ Node} $\ast$}]{r }\end{DoxyParamCaption})}
-
-Deleting binary tree (Huffman-\/tree) 
-\begin{DoxyParams}{Parameters}
-{\em r} & Root of tree \\
-\hline
-\end{DoxyParams}
-\mbox{\label{class_huffman_a5daa104bd2cefb4be9befd6140428ba7}} 
-\index{Huffman@{Huffman}!destiny@{destiny}}
-\index{destiny@{destiny}!Huffman@{Huffman}}
-\subsubsection{destiny()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Huffman\+::destiny (\begin{DoxyParamCaption}\item[{const string \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set resulting file\textquotesingle{}s path \mbox{\label{class_huffman_ab6edbf4822379aaf27834c21b706405f}} 
-\index{Huffman@{Huffman}!destiny@{destiny}}
-\index{destiny@{destiny}!Huffman@{Huffman}}
-\subsubsection{destiny()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily string Huffman\+::destiny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get resulting file\textquotesingle{}s path \mbox{\label{class_huffman_a7c0595055bea8a499d7750cbbd86e12d}} 
+Compression of file \mbox{\Hypertarget{class_huffman_aca6b32706e62035b9dd6d7c9edba745e}\label{class_huffman_aca6b32706e62035b9dd6d7c9edba745e}} 
 \index{Huffman@{Huffman}!extract@{extract}}
 \index{extract@{extract}!Huffman@{Huffman}}
-\subsubsection{extract()}
-{\footnotesize\ttfamily void Huffman\+::extract (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{extract()}{extract()}}
+{\footnotesize\ttfamily void Huffman\+::extract (\begin{DoxyParamCaption}\item[{istream \&}]{stream\+\_\+in,  }\item[{ostream \&}]{stream\+\_\+out }\end{DoxyParamCaption})}
 
-Extraction of .huffman_code_ file \mbox{\label{class_huffman_a8ffa876d6b52ef4a06198dc4800bf2f3}}
-\index{Huffman@{Huffman}!source@{source}}
-\index{source@{source}!Huffman@{Huffman}}
-\subsubsection{source()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Huffman\+::source (\begin{DoxyParamCaption}\item[{const string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Set source file\textquotesingle{}s path \mbox{\label{class_huffman_a155055b704bd1c800a23a3a19820e357}} 
-\index{Huffman@{Huffman}!source@{source}}
-\index{source@{source}!Huffman@{Huffman}}
-\subsubsection{source()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily string Huffman\+::source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-Get source file\textquotesingle{}s path 
+Extraction of .huffman\+\_\+code\+\_\+ file 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\textbf{ huffman.\+h}\item 
-\textbf{ huffman.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{huffman_8h}{huffman.\+h}\item 
+\hyperlink{huffman_8cpp}{huffman.\+cpp}\end{DoxyCompactItemize}

@@ -6,29 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/bitbuffer.cpp
+bitbuffer.h
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/bitbuffer.h
+
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/bitbuffer.h
 fstream
 -
 list.h
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/list.h
 
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/gtest_lite.h
-iostream
--
-cassert
--
-cmath
--
-cstring
--
-limits
--
-string
--
-fstream
--
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/huffman.cpp
 memtrace.h
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/memtrace.h
+huffman.h
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/huffman.h
+node.h
+/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/node.h
 
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/huffman.h
 iostream
@@ -53,20 +47,6 @@ bitbuffer.h
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/list.h
 cstddef
 -
-
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/main.cpp
-iostream
--
-gtest_lite.h
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/gtest_lite.h
-memtrace.h
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/memtrace.h
-bitbuffer.h
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/bitbuffer.h
-letter.h
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/letter.h
-huffman.h
-/home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/huffman.h
 
 /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/memtrace.h
 new

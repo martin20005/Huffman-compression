@@ -1,4 +1,4 @@
-\section{memtrace.\+cpp File Reference}
+\hypertarget{memtrace_8cpp}{}\section{memtrace.\+cpp File Reference}
 \label{memtrace_8cpp}\index{memtrace.\+cpp@{memtrace.\+cpp}}
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$stdlib.\+h$>$}\newline
@@ -6,200 +6,192 @@
 {\ttfamily \#include $<$time.\+h$>$}\newline
 {\ttfamily \#include $<$ctype.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}memtrace.\+h\char`\"{}}\newline
-Include dependency graph for memtrace.\+cpp\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=350pt]{memtrace_8cpp__incl}
-\end{center}
-\end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \textbf{ call\+\_\+t}
+struct \hyperlink{structcall__t}{call\+\_\+t}
 \item 
-struct \textbf{ \+\_\+registry\+\_\+item}
+struct \hyperlink{struct__registry__item}{\+\_\+registry\+\_\+item}
 \end{DoxyCompactItemize}
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \textbf{ M\+E\+M\+T\+R\+A\+CE}
+\#define \hyperlink{memtrace_8cpp_aa90f3e89fc3fe477370afb9f81975081}{M\+E\+M\+T\+R\+A\+CE}
 \item 
-\#define \textbf{ F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}
+\#define \hyperlink{memtrace_8cpp_ab4e504c96e3c59936ff0a9f31573b1b0}{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}
 \item 
-\#define \textbf{ F\+M\+A\+L\+L\+OC}~0
+\#define \hyperlink{memtrace_8cpp_a8817d7ba90cf2e1ddd83f35dbb862542}{F\+M\+A\+L\+L\+OC}~0
 \item 
-\#define \textbf{ F\+C\+A\+L\+L\+OC}~1
+\#define \hyperlink{memtrace_8cpp_af6fff8cbc37157865d4b383dacfd947b}{F\+C\+A\+L\+L\+OC}~1
 \item 
-\#define \textbf{ F\+R\+E\+A\+L\+L\+OC}~2
+\#define \hyperlink{memtrace_8cpp_afcc2cb9c3434359e629fdd446aab6175}{F\+R\+E\+A\+L\+L\+OC}~2
 \item 
-\#define \textbf{ F\+F\+R\+EE}~3
+\#define \hyperlink{memtrace_8cpp_aa6b915326a446c2a67f05f5504d9bc30}{F\+F\+R\+EE}~3
 \item 
-\#define \textbf{ F\+N\+EW}~4
+\#define \hyperlink{memtrace_8cpp_a9f98c384938a2ff256aa6a0a6f8992dc}{F\+N\+EW}~4
 \item 
-\#define \textbf{ F\+D\+E\+L\+E\+TE}~5
+\#define \hyperlink{memtrace_8cpp_a744b443f8bd1fad5895b111602c0ead9}{F\+D\+E\+L\+E\+TE}~5
 \item 
-\#define \textbf{ F\+N\+E\+W\+A\+RR}~6
+\#define \hyperlink{memtrace_8cpp_afc0db05fd089296f53cc7e8441ebc565}{F\+N\+E\+W\+A\+RR}~6
 \item 
-\#define \textbf{ F\+D\+E\+L\+E\+T\+E\+A\+RR}~7
+\#define \hyperlink{memtrace_8cpp_acd2bfc6563a2ac0ae741ee31dfbf1c92}{F\+D\+E\+L\+E\+T\+E\+A\+RR}~7
 \item 
-\#define \textbf{ C\+O\+MP}(a,  d)~(((a)$<$=3 \&\& (d)$<$=3) $\vert$$\vert$ ((d)==(a)+1))
+\#define \hyperlink{memtrace_8cpp_aaed1b7df4f99525f21eda754cf7fae05}{C\+O\+MP}(a,  d)~(((a)$<$=3 \&\& (d)$<$=3) $\vert$$\vert$ ((d)==(a)+1))
 \item 
-\#define \textbf{ PU}(p)~((char$\ast$)p+C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)
+\#define \hyperlink{memtrace_8cpp_a5d3529a7e2c30650032e14a1dbc9aaac}{PU}(p)~((char$\ast$)p+C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)
 \item 
-\#define \textbf{ P}(pu)~((char$\ast$)pu-\/C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)
+\#define \hyperlink{memtrace_8cpp_a64bc26cf9b35a1dabeb2a58a96bc9b99}{P}(pu)~((char$\ast$)pu-\/C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)
 \item 
-\#define \textbf{ X\+S\+TR}(s)~\textbf{ S\+TR}(s)
+\#define \hyperlink{memtrace_8cpp_a03943706e48069237cd57f2d35ca987e}{X\+S\+TR}(s)~\hyperlink{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}{S\+TR}(s)
 \item 
-\#define \textbf{ S\+TR}(s)~\#s
+\#define \hyperlink{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}{S\+TR}(s)~\#s
 \end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
-typedef \textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} struct \textbf{ \+\_\+registry\+\_\+item} \textbf{ registry\+\_\+item}
+typedef \hyperlink{memtrace_8h_a28886d59fbdc2dccd82cc4887e967d0d}{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \hyperlink{memtrace_8h_aad4cd792b953244f20869915267ae837}{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} struct \hyperlink{struct__registry__item}{\+\_\+registry\+\_\+item} \hyperlink{memtrace_8cpp_a70b3f3b7e889e715810f67307625db45}{registry\+\_\+item}
 \end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
-enum \textbf{ B\+O\+OL} \{ \textbf{ F\+A\+L\+SE}, 
-\textbf{ T\+R\+UE}
+enum \hyperlink{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL} \{ \hyperlink{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a}{F\+A\+L\+SE}, 
+\hyperlink{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839}{T\+R\+UE}
  \}
 \end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \textbf{ mem\+\_\+dump} (void const $\ast$mem, size\+\_\+t size, F\+I\+LE $\ast$fp)
+void \hyperlink{memtrace_8cpp_a031b528c007e2e8ba5d814be13d3860c}{mem\+\_\+dump} (void const $\ast$mem, size\+\_\+t size, F\+I\+LE $\ast$fp)
 \item 
-int \textbf{ mem\+\_\+check} (void)
+int \hyperlink{memtrace_8cpp_ac6308f8e862dbc52b364a505483191a6}{mem\+\_\+check} (void)
 \item 
-int \textbf{ allocated\+\_\+blocks} ()
+int \hyperlink{memtrace_8cpp_a4ec27aa588e69e834e293374f5c14e67}{allocated\+\_\+blocks} ()
 \item 
-\textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} void $\ast$ \textbf{ traced\+\_\+malloc} (size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
+\hyperlink{memtrace_8h_a28886d59fbdc2dccd82cc4887e967d0d}{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \hyperlink{memtrace_8h_aad4cd792b953244f20869915267ae837}{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} void $\ast$ \hyperlink{memtrace_8cpp_a30b6aa180e3214beb1f48c5a9381e5ac}{traced\+\_\+malloc} (size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
 \item 
-void $\ast$ \textbf{ traced\+\_\+calloc} (size\+\_\+t count, size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
+void $\ast$ \hyperlink{memtrace_8cpp_a68998093ee624349c5cab1aab7bc915f}{traced\+\_\+calloc} (size\+\_\+t count, size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
 \item 
-void \textbf{ traced\+\_\+free} (void $\ast$pu, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
+void \hyperlink{memtrace_8cpp_a1f2006cf357ea01179f18a5c965ff105}{traced\+\_\+free} (void $\ast$pu, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
 \item 
-void $\ast$ \textbf{ traced\+\_\+realloc} (void $\ast$old, size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
+void $\ast$ \hyperlink{memtrace_8cpp_aa9656d71bfbb848ef518892eb0e3909b}{traced\+\_\+realloc} (void $\ast$old, size\+\_\+t size, const char $\ast$par\+\_\+txt, int line, const char $\ast$file)
 \end{DoxyCompactItemize}
 
 
 \subsection{Macro Definition Documentation}
-\mbox{\label{memtrace_8cpp_aaed1b7df4f99525f21eda754cf7fae05}} 
+\mbox{\Hypertarget{memtrace_8cpp_aaed1b7df4f99525f21eda754cf7fae05}\label{memtrace_8cpp_aaed1b7df4f99525f21eda754cf7fae05}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!C\+O\+MP@{C\+O\+MP}}
 \index{C\+O\+MP@{C\+O\+MP}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{C\+O\+MP}
+\subsubsection{\texorpdfstring{C\+O\+MP}{COMP}}
 {\footnotesize\ttfamily \#define C\+O\+MP(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{d }\end{DoxyParamCaption})~(((a)$<$=3 \&\& (d)$<$=3) $\vert$$\vert$ ((d)==(a)+1))}
 
-\mbox{\label{memtrace_8cpp_af6fff8cbc37157865d4b383dacfd947b}} 
+\mbox{\Hypertarget{memtrace_8cpp_af6fff8cbc37157865d4b383dacfd947b}\label{memtrace_8cpp_af6fff8cbc37157865d4b383dacfd947b}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+C\+A\+L\+L\+OC@{F\+C\+A\+L\+L\+OC}}
 \index{F\+C\+A\+L\+L\+OC@{F\+C\+A\+L\+L\+OC}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+C\+A\+L\+L\+OC}
+\subsubsection{\texorpdfstring{F\+C\+A\+L\+L\+OC}{FCALLOC}}
 {\footnotesize\ttfamily \#define F\+C\+A\+L\+L\+OC~1}
 
-\mbox{\label{memtrace_8cpp_a744b443f8bd1fad5895b111602c0ead9}} 
+\mbox{\Hypertarget{memtrace_8cpp_a744b443f8bd1fad5895b111602c0ead9}\label{memtrace_8cpp_a744b443f8bd1fad5895b111602c0ead9}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+D\+E\+L\+E\+TE@{F\+D\+E\+L\+E\+TE}}
 \index{F\+D\+E\+L\+E\+TE@{F\+D\+E\+L\+E\+TE}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+D\+E\+L\+E\+TE}
+\subsubsection{\texorpdfstring{F\+D\+E\+L\+E\+TE}{FDELETE}}
 {\footnotesize\ttfamily \#define F\+D\+E\+L\+E\+TE~5}
 
-\mbox{\label{memtrace_8cpp_acd2bfc6563a2ac0ae741ee31dfbf1c92}} 
+\mbox{\Hypertarget{memtrace_8cpp_acd2bfc6563a2ac0ae741ee31dfbf1c92}\label{memtrace_8cpp_acd2bfc6563a2ac0ae741ee31dfbf1c92}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+D\+E\+L\+E\+T\+E\+A\+RR@{F\+D\+E\+L\+E\+T\+E\+A\+RR}}
 \index{F\+D\+E\+L\+E\+T\+E\+A\+RR@{F\+D\+E\+L\+E\+T\+E\+A\+RR}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+D\+E\+L\+E\+T\+E\+A\+RR}
+\subsubsection{\texorpdfstring{F\+D\+E\+L\+E\+T\+E\+A\+RR}{FDELETEARR}}
 {\footnotesize\ttfamily \#define F\+D\+E\+L\+E\+T\+E\+A\+RR~7}
 
-\mbox{\label{memtrace_8cpp_aa6b915326a446c2a67f05f5504d9bc30}} 
+\mbox{\Hypertarget{memtrace_8cpp_aa6b915326a446c2a67f05f5504d9bc30}\label{memtrace_8cpp_aa6b915326a446c2a67f05f5504d9bc30}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+F\+R\+EE@{F\+F\+R\+EE}}
 \index{F\+F\+R\+EE@{F\+F\+R\+EE}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+F\+R\+EE}
+\subsubsection{\texorpdfstring{F\+F\+R\+EE}{FFREE}}
 {\footnotesize\ttfamily \#define F\+F\+R\+EE~3}
 
-\mbox{\label{memtrace_8cpp_a8817d7ba90cf2e1ddd83f35dbb862542}} 
+\mbox{\Hypertarget{memtrace_8cpp_a8817d7ba90cf2e1ddd83f35dbb862542}\label{memtrace_8cpp_a8817d7ba90cf2e1ddd83f35dbb862542}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+M\+A\+L\+L\+OC@{F\+M\+A\+L\+L\+OC}}
 \index{F\+M\+A\+L\+L\+OC@{F\+M\+A\+L\+L\+OC}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+M\+A\+L\+L\+OC}
+\subsubsection{\texorpdfstring{F\+M\+A\+L\+L\+OC}{FMALLOC}}
 {\footnotesize\ttfamily \#define F\+M\+A\+L\+L\+OC~0}
 
-\mbox{\label{memtrace_8cpp_a9f98c384938a2ff256aa6a0a6f8992dc}} 
+\mbox{\Hypertarget{memtrace_8cpp_a9f98c384938a2ff256aa6a0a6f8992dc}\label{memtrace_8cpp_a9f98c384938a2ff256aa6a0a6f8992dc}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+N\+EW@{F\+N\+EW}}
 \index{F\+N\+EW@{F\+N\+EW}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+N\+EW}
+\subsubsection{\texorpdfstring{F\+N\+EW}{FNEW}}
 {\footnotesize\ttfamily \#define F\+N\+EW~4}
 
-\mbox{\label{memtrace_8cpp_afc0db05fd089296f53cc7e8441ebc565}} 
+\mbox{\Hypertarget{memtrace_8cpp_afc0db05fd089296f53cc7e8441ebc565}\label{memtrace_8cpp_afc0db05fd089296f53cc7e8441ebc565}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+N\+E\+W\+A\+RR@{F\+N\+E\+W\+A\+RR}}
 \index{F\+N\+E\+W\+A\+RR@{F\+N\+E\+W\+A\+RR}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+N\+E\+W\+A\+RR}
+\subsubsection{\texorpdfstring{F\+N\+E\+W\+A\+RR}{FNEWARR}}
 {\footnotesize\ttfamily \#define F\+N\+E\+W\+A\+RR~6}
 
-\mbox{\label{memtrace_8cpp_afcc2cb9c3434359e629fdd446aab6175}} 
+\mbox{\Hypertarget{memtrace_8cpp_afcc2cb9c3434359e629fdd446aab6175}\label{memtrace_8cpp_afcc2cb9c3434359e629fdd446aab6175}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+R\+E\+A\+L\+L\+OC@{F\+R\+E\+A\+L\+L\+OC}}
 \index{F\+R\+E\+A\+L\+L\+OC@{F\+R\+E\+A\+L\+L\+OC}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+R\+E\+A\+L\+L\+OC}
+\subsubsection{\texorpdfstring{F\+R\+E\+A\+L\+L\+OC}{FREALLOC}}
 {\footnotesize\ttfamily \#define F\+R\+E\+A\+L\+L\+OC~2}
 
-\mbox{\label{memtrace_8cpp_ab4e504c96e3c59936ff0a9f31573b1b0}} 
+\mbox{\Hypertarget{memtrace_8cpp_ab4e504c96e3c59936ff0a9f31573b1b0}\label{memtrace_8cpp_ab4e504c96e3c59936ff0a9f31573b1b0}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP@{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}}
 \index{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP@{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}
+\subsubsection{\texorpdfstring{F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}{FROM\_MEMTRACE\_CPP}}
 {\footnotesize\ttfamily \#define F\+R\+O\+M\+\_\+\+M\+E\+M\+T\+R\+A\+C\+E\+\_\+\+C\+PP}
 
-\mbox{\label{memtrace_8cpp_aa90f3e89fc3fe477370afb9f81975081}} 
+\mbox{\Hypertarget{memtrace_8cpp_aa90f3e89fc3fe477370afb9f81975081}\label{memtrace_8cpp_aa90f3e89fc3fe477370afb9f81975081}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!M\+E\+M\+T\+R\+A\+CE@{M\+E\+M\+T\+R\+A\+CE}}
 \index{M\+E\+M\+T\+R\+A\+CE@{M\+E\+M\+T\+R\+A\+CE}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{M\+E\+M\+T\+R\+A\+CE}
+\subsubsection{\texorpdfstring{M\+E\+M\+T\+R\+A\+CE}{MEMTRACE}}
 {\footnotesize\ttfamily \#define M\+E\+M\+T\+R\+A\+CE}
 
-\mbox{\label{memtrace_8cpp_a64bc26cf9b35a1dabeb2a58a96bc9b99}} 
+\mbox{\Hypertarget{memtrace_8cpp_a64bc26cf9b35a1dabeb2a58a96bc9b99}\label{memtrace_8cpp_a64bc26cf9b35a1dabeb2a58a96bc9b99}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!P@{P}}
 \index{P@{P}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{P}
+\subsubsection{\texorpdfstring{P}{P}}
 {\footnotesize\ttfamily \#define P(\begin{DoxyParamCaption}\item[{}]{pu }\end{DoxyParamCaption})~((char$\ast$)pu-\/C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)}
 
-\mbox{\label{memtrace_8cpp_a5d3529a7e2c30650032e14a1dbc9aaac}} 
+\mbox{\Hypertarget{memtrace_8cpp_a5d3529a7e2c30650032e14a1dbc9aaac}\label{memtrace_8cpp_a5d3529a7e2c30650032e14a1dbc9aaac}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!PU@{PU}}
 \index{PU@{PU}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{PU}
+\subsubsection{\texorpdfstring{PU}{PU}}
 {\footnotesize\ttfamily \#define PU(\begin{DoxyParamCaption}\item[{}]{p }\end{DoxyParamCaption})~((char$\ast$)p+C\+A\+N\+A\+R\+Y\+\_\+\+L\+EN)}
 
-\mbox{\label{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}} 
+\mbox{\Hypertarget{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}\label{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!S\+TR@{S\+TR}}
 \index{S\+TR@{S\+TR}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{S\+TR}
+\subsubsection{\texorpdfstring{S\+TR}{STR}}
 {\footnotesize\ttfamily \#define S\+TR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\#s}
 
-\mbox{\label{memtrace_8cpp_a03943706e48069237cd57f2d35ca987e}} 
+\mbox{\Hypertarget{memtrace_8cpp_a03943706e48069237cd57f2d35ca987e}\label{memtrace_8cpp_a03943706e48069237cd57f2d35ca987e}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!X\+S\+TR@{X\+S\+TR}}
 \index{X\+S\+TR@{X\+S\+TR}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{X\+S\+TR}
-{\footnotesize\ttfamily \#define X\+S\+TR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\textbf{ S\+TR}(s)}
+\subsubsection{\texorpdfstring{X\+S\+TR}{XSTR}}
+{\footnotesize\ttfamily \#define X\+S\+TR(\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})~\hyperlink{memtrace_8cpp_a6388870e639eee9c0a69446876f1f8cc}{S\+TR}(s)}
 
 
 
 \subsection{Typedef Documentation}
-\mbox{\label{memtrace_8cpp_a70b3f3b7e889e715810f67307625db45}} 
+\mbox{\Hypertarget{memtrace_8cpp_a70b3f3b7e889e715810f67307625db45}\label{memtrace_8cpp_a70b3f3b7e889e715810f67307625db45}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!registry\+\_\+item@{registry\+\_\+item}}
 \index{registry\+\_\+item@{registry\+\_\+item}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{registry\+\_\+item}
-{\footnotesize\ttfamily typedef \textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} struct \textbf{ \+\_\+registry\+\_\+item}  \textbf{ registry\+\_\+item}}
+\subsubsection{\texorpdfstring{registry\+\_\+item}{registry\_item}}
+{\footnotesize\ttfamily typedef \hyperlink{memtrace_8h_a28886d59fbdc2dccd82cc4887e967d0d}{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \hyperlink{memtrace_8h_aad4cd792b953244f20869915267ae837}{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} struct \hyperlink{struct__registry__item}{\+\_\+registry\+\_\+item}  \hyperlink{memtrace_8cpp_a70b3f3b7e889e715810f67307625db45}{registry\+\_\+item}}
 
 
 
 \subsection{Enumeration Type Documentation}
-\mbox{\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18dd}} 
+\mbox{\Hypertarget{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18dd}\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18dd}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!B\+O\+OL@{B\+O\+OL}}
 \index{B\+O\+OL@{B\+O\+OL}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{B\+O\+OL}
-{\footnotesize\ttfamily enum \textbf{ B\+O\+OL}}
+\subsubsection{\texorpdfstring{B\+O\+OL}{BOOL}}
+{\footnotesize\ttfamily enum \hyperlink{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18dd}{B\+O\+OL}}
 
 \begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+L\+SE@{F\+A\+L\+SE}!memtrace.\+cpp@{memtrace.\+cpp}}\index{memtrace.\+cpp@{memtrace.\+cpp}!F\+A\+L\+SE@{F\+A\+L\+SE}}}\mbox{\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+A\+L\+SE@{F\+A\+L\+SE}!memtrace.\+cpp@{memtrace.\+cpp}}\index{memtrace.\+cpp@{memtrace.\+cpp}!F\+A\+L\+SE@{F\+A\+L\+SE}}}\mbox{\Hypertarget{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a}\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a}} 
 F\+A\+L\+SE&\\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+UE@{T\+R\+UE}!memtrace.\+cpp@{memtrace.\+cpp}}\index{memtrace.\+cpp@{memtrace.\+cpp}!T\+R\+UE@{T\+R\+UE}}}\mbox{\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+UE@{T\+R\+UE}!memtrace.\+cpp@{memtrace.\+cpp}}\index{memtrace.\+cpp@{memtrace.\+cpp}!T\+R\+UE@{T\+R\+UE}}}\mbox{\Hypertarget{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839}\label{memtrace_8cpp_a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839}} 
 T\+R\+UE&\\
 \hline
 
@@ -207,45 +199,45 @@ T\+R\+UE&\\
 
 
 \subsection{Function Documentation}
-\mbox{\label{memtrace_8cpp_a4ec27aa588e69e834e293374f5c14e67}} 
+\mbox{\Hypertarget{memtrace_8cpp_a4ec27aa588e69e834e293374f5c14e67}\label{memtrace_8cpp_a4ec27aa588e69e834e293374f5c14e67}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!allocated\+\_\+blocks@{allocated\+\_\+blocks}}
 \index{allocated\+\_\+blocks@{allocated\+\_\+blocks}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{allocated\+\_\+blocks()}
+\subsubsection{\texorpdfstring{allocated\+\_\+blocks()}{allocated\_blocks()}}
 {\footnotesize\ttfamily int allocated\+\_\+blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_ac6308f8e862dbc52b364a505483191a6}} 
+\mbox{\Hypertarget{memtrace_8cpp_ac6308f8e862dbc52b364a505483191a6}\label{memtrace_8cpp_ac6308f8e862dbc52b364a505483191a6}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!mem\+\_\+check@{mem\+\_\+check}}
 \index{mem\+\_\+check@{mem\+\_\+check}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{mem\+\_\+check()}
+\subsubsection{\texorpdfstring{mem\+\_\+check()}{mem\_check()}}
 {\footnotesize\ttfamily int mem\+\_\+check (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_a031b528c007e2e8ba5d814be13d3860c}} 
+\mbox{\Hypertarget{memtrace_8cpp_a031b528c007e2e8ba5d814be13d3860c}\label{memtrace_8cpp_a031b528c007e2e8ba5d814be13d3860c}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!mem\+\_\+dump@{mem\+\_\+dump}}
 \index{mem\+\_\+dump@{mem\+\_\+dump}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{mem\+\_\+dump()}
+\subsubsection{\texorpdfstring{mem\+\_\+dump()}{mem\_dump()}}
 {\footnotesize\ttfamily void mem\+\_\+dump (\begin{DoxyParamCaption}\item[{void const $\ast$}]{mem,  }\item[{size\+\_\+t}]{size,  }\item[{F\+I\+LE $\ast$}]{fp }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_a68998093ee624349c5cab1aab7bc915f}} 
+\mbox{\Hypertarget{memtrace_8cpp_a68998093ee624349c5cab1aab7bc915f}\label{memtrace_8cpp_a68998093ee624349c5cab1aab7bc915f}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!traced\+\_\+calloc@{traced\+\_\+calloc}}
 \index{traced\+\_\+calloc@{traced\+\_\+calloc}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{traced\+\_\+calloc()}
+\subsubsection{\texorpdfstring{traced\+\_\+calloc()}{traced\_calloc()}}
 {\footnotesize\ttfamily void$\ast$ traced\+\_\+calloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{count,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{par\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_a1f2006cf357ea01179f18a5c965ff105}} 
+\mbox{\Hypertarget{memtrace_8cpp_a1f2006cf357ea01179f18a5c965ff105}\label{memtrace_8cpp_a1f2006cf357ea01179f18a5c965ff105}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!traced\+\_\+free@{traced\+\_\+free}}
 \index{traced\+\_\+free@{traced\+\_\+free}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{traced\+\_\+free()}
+\subsubsection{\texorpdfstring{traced\+\_\+free()}{traced\_free()}}
 {\footnotesize\ttfamily void traced\+\_\+free (\begin{DoxyParamCaption}\item[{void $\ast$}]{pu,  }\item[{const char $\ast$}]{par\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_a30b6aa180e3214beb1f48c5a9381e5ac}} 
+\mbox{\Hypertarget{memtrace_8cpp_a30b6aa180e3214beb1f48c5a9381e5ac}\label{memtrace_8cpp_a30b6aa180e3214beb1f48c5a9381e5ac}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!traced\+\_\+malloc@{traced\+\_\+malloc}}
 \index{traced\+\_\+malloc@{traced\+\_\+malloc}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{traced\+\_\+malloc()}
-{\footnotesize\ttfamily \textbf{ E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \textbf{ S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} void$\ast$ traced\+\_\+malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{par\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{traced\+\_\+malloc()}{traced\_malloc()}}
+{\footnotesize\ttfamily \hyperlink{memtrace_8h_a28886d59fbdc2dccd82cc4887e967d0d}{E\+N\+D\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} \hyperlink{memtrace_8h_aad4cd792b953244f20869915267ae837}{S\+T\+A\+R\+T\+\_\+\+N\+A\+M\+E\+S\+P\+A\+CE} void$\ast$ traced\+\_\+malloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{par\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 
-\mbox{\label{memtrace_8cpp_aa9656d71bfbb848ef518892eb0e3909b}} 
+\mbox{\Hypertarget{memtrace_8cpp_aa9656d71bfbb848ef518892eb0e3909b}\label{memtrace_8cpp_aa9656d71bfbb848ef518892eb0e3909b}} 
 \index{memtrace.\+cpp@{memtrace.\+cpp}!traced\+\_\+realloc@{traced\+\_\+realloc}}
 \index{traced\+\_\+realloc@{traced\+\_\+realloc}!memtrace.\+cpp@{memtrace.\+cpp}}
-\subsubsection{traced\+\_\+realloc()}
+\subsubsection{\texorpdfstring{traced\+\_\+realloc()}{traced\_realloc()}}
 {\footnotesize\ttfamily void$\ast$ traced\+\_\+realloc (\begin{DoxyParamCaption}\item[{void $\ast$}]{old,  }\item[{size\+\_\+t}]{size,  }\item[{const char $\ast$}]{par\+\_\+txt,  }\item[{int}]{line,  }\item[{const char $\ast$}]{file }\end{DoxyParamCaption})}
 

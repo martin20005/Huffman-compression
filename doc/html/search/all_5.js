@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['empty',['Empty',['../class_bit_buffer.html#a660b36bf12303b2cbab0ba70b5967b86',1,'BitBuffer']]],
   ['end',['End',['../class_end.html',1,'End'],['../class_end.html#aec010332b2484030781dff4ab47156ce',1,'End::End(Letter &amp;letter, long frequency)'],['../class_end.html#a9cdb20f0a78b188e13de7c4afc1a0bf4',1,'End::End(const End &amp;end)'],['../class_end.html#acd25fa8f481c50f5b8eaff4af1159942',1,'End::End()'],['../structgtest__lite_1_1_test.html#a658c1eee35f170294c354ebf4d3fc1ba',1,'gtest_lite::Test::end()'],['../gtest__lite_8h.html#a29fd18bed01c4d836c7ebfe73a125c3f',1,'END():&#160;gtest_lite.h']]],
   ['end_5fnamespace',['END_NAMESPACE',['../memtrace_8h.html#a28886d59fbdc2dccd82cc4887e967d0d',1,'memtrace.h']]],
   ['endm',['ENDM',['../gtest__lite_8h.html#acc9065c889d0797062317b30fd8767d4',1,'gtest_lite.h']]],
@@ -27,5 +26,5 @@ var searchData=
   ['expect_5ftrue',['EXPECT_TRUE',['../gtest__lite_8h.html#ab400890edc9f419e40c28a224e8ed79f',1,'gtest_lite.h']]],
   ['expectstr',['EXPECTSTR',['../namespacegtest__lite.html#aea477921e4c26d2a2806bc3011066270',1,'gtest_lite']]],
   ['expectthrow',['EXPECTTHROW',['../gtest__lite_8h.html#a59f6c1f1654aa9d5adf5c143efd1a454',1,'gtest_lite.h']]],
-  ['extract',['extract',['../class_huffman.html#a7c0595055bea8a499d7750cbbd86e12d',1,'Huffman']]]
+  ['extract',['extract',['../class_huffman.html#aca6b32706e62035b9dd6d7c9edba745e',1,'Huffman']]]
 ];

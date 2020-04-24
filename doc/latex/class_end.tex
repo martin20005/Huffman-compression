@@ -1,4 +1,4 @@
-\section{End Class Reference}
+\hypertarget{class_end}{}\section{End Class Reference}
 \label{class_end}\index{End@{End}}
 
 
@@ -6,100 +6,103 @@
 
 
 
-Inheritance diagram for End\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=120pt]{class_end__inherit__graph}
-\end{center}
-\end{figure}
+Inherits \hyperlink{class_node}{Node}.
 
-
-Collaboration diagram for End\+:
-\nopagebreak
-\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[width=160pt]{class_end__coll__graph}
-\end{center}
-\end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ End} (\textbf{ Letter} \&\textbf{ letter}, long frequency)
+\hyperlink{class_end_aec010332b2484030781dff4ab47156ce}{End} (\hyperlink{class_letter}{Letter} \&\hyperlink{class_end_a8528f92e9da9ac41a938c559b50eb174}{letter}, long frequency)
 \item 
-\textbf{ End} (const \textbf{ End} \&end)
+\hyperlink{class_end_a9cdb20f0a78b188e13de7c4afc1a0bf4}{End} (const \hyperlink{class_end}{End} \&end)
 \item 
-\textbf{ End} ()
+\hyperlink{class_end_acd25fa8f481c50f5b8eaff4af1159942}{End} ()
 \item 
-\textbf{ Letter} \& \textbf{ letter} ()
+\hyperlink{class_letter}{Letter} \& \hyperlink{class_end_a8528f92e9da9ac41a938c559b50eb174}{letter} ()
 \item 
-\textbf{ Node} $\ast$ \textbf{ Left} () const
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_end_a812df7f23fffdb2274ca2003ebd8e884}{left} () const
 \item 
-\textbf{ Node} $\ast$ \textbf{ Right} () const
+\hyperlink{class_node}{Node} $\ast$ \hyperlink{class_end_ac8e651d50ce2b99256be11aa9b89ded4}{right} () const
 \item 
-bool \textbf{ operator==} (\textbf{ End} \&e)
+bool \hyperlink{class_end_a0be5ea8a94107bb8c3a0a2eb19d8188c}{operator==} (\hyperlink{class_end}{End} \&end)
 \item 
-void \textbf{ operator++} (int)
+bool \hyperlink{class_end_a0b3d32d1f08031447f6facf17ee17dff}{operator==} (char ch)
+\item 
+void \hyperlink{class_end_aa1acae6e027fc01427b07afe58f44f09}{operator++} (int)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+Represent a \hyperlink{class_node}{Node} of a binary (\hyperlink{class_huffman}{Huffman}) tree, which IS a leaf 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\label{class_end_aec010332b2484030781dff4ab47156ce}} 
+\mbox{\Hypertarget{class_end_aec010332b2484030781dff4ab47156ce}\label{class_end_aec010332b2484030781dff4ab47156ce}} 
 \index{End@{End}!End@{End}}
 \index{End@{End}!End@{End}}
-\subsubsection{End()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}\item[{\textbf{ Letter} \&}]{letter,  }\item[{long}]{frequency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{End()}{End()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}\item[{\hyperlink{class_letter}{Letter} \&}]{letter,  }\item[{long}]{frequency }\end{DoxyParamCaption})}
 
-\mbox{\label{class_end_a9cdb20f0a78b188e13de7c4afc1a0bf4}} 
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em letter} & The represented \hyperlink{class_letter}{Letter} \\
+\hline
+{\em frequency} & Frequency of the letter in input \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_end_a9cdb20f0a78b188e13de7c4afc1a0bf4}\label{class_end_a9cdb20f0a78b188e13de7c4afc1a0bf4}} 
 \index{End@{End}!End@{End}}
 \index{End@{End}!End@{End}}
-\subsubsection{End()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}\item[{const \textbf{ End} \&}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{End()}{End()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}\item[{const \hyperlink{class_end}{End} \&}]{end }\end{DoxyParamCaption})}
 
-\mbox{\label{class_end_acd25fa8f481c50f5b8eaff4af1159942}} 
+Copy constructor \mbox{\Hypertarget{class_end_acd25fa8f481c50f5b8eaff4af1159942}\label{class_end_acd25fa8f481c50f5b8eaff4af1159942}} 
 \index{End@{End}!End@{End}}
 \index{End@{End}!End@{End}}
-\subsubsection{End()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
-{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{End()}{End()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily End\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-
+is\+Empty end-\/node; useful for arrays 
 
 \subsection{Member Function Documentation}
-\mbox{\label{class_end_a4c27e829f73c99b0022b88c2c1730867}} 
-\index{End@{End}!Left@{Left}}
-\index{Left@{left}!End@{End}}
-\subsubsection{left()}
-{\footnotesize\ttfamily \textbf{ Node}$\ast$ End\+::\+left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_end_a812df7f23fffdb2274ca2003ebd8e884}\label{class_end_a812df7f23fffdb2274ca2003ebd8e884}} 
+\index{End@{End}!left@{left}}
+\index{left@{left}!End@{End}}
+\subsubsection{\texorpdfstring{left()}{left()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node} $\ast$ End\+::left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\label{class_end_a965fceb8e50a82e43bafe25b46fff325}} 
+left\+\_\+child\+\_\+ child \mbox{\Hypertarget{class_end_a8528f92e9da9ac41a938c559b50eb174}\label{class_end_a8528f92e9da9ac41a938c559b50eb174}} 
 \index{End@{End}!letter@{letter}}
 \index{letter@{letter}!End@{End}}
-\subsubsection{letter()}
-{\footnotesize\ttfamily \textbf{ Letter}\& End\+::letter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{letter()}{letter()}}
+{\footnotesize\ttfamily \hyperlink{class_letter}{Letter} \& End\+::letter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\label{class_end_aa1acae6e027fc01427b07afe58f44f09}} 
+Represented letter \mbox{\Hypertarget{class_end_aa1acae6e027fc01427b07afe58f44f09}\label{class_end_aa1acae6e027fc01427b07afe58f44f09}} 
 \index{End@{End}!operator++@{operator++}}
 \index{operator++@{operator++}!End@{End}}
-\subsubsection{operator++()}
-{\footnotesize\ttfamily void End\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily void End\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})}
 
-\mbox{\label{class_end_aacfada9eb004efb4d454b8357f3f8e1e}} 
+Incrementing the frequency \mbox{\Hypertarget{class_end_a0be5ea8a94107bb8c3a0a2eb19d8188c}\label{class_end_a0be5ea8a94107bb8c3a0a2eb19d8188c}} 
 \index{End@{End}!operator==@{operator==}}
 \index{operator==@{operator==}!End@{End}}
-\subsubsection{operator==()}
-{\footnotesize\ttfamily bool End\+::operator== (\begin{DoxyParamCaption}\item[{\textbf{ End} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool End\+::operator== (\begin{DoxyParamCaption}\item[{\hyperlink{class_end}{End} \&}]{end }\end{DoxyParamCaption})}
 
-\mbox{\label{class_end_a1e28f698b8995a75d14803b2db8466c1}} 
-\index{End@{End}!Right@{Right}}
-\index{Right@{right}!End@{End}}
-\subsubsection{right()}
-{\footnotesize\ttfamily \textbf{ Node}$\ast$ End\+::\+right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+Equality operator (true if the same letter is represented) \mbox{\Hypertarget{class_end_a0b3d32d1f08031447f6facf17ee17dff}\label{class_end_a0b3d32d1f08031447f6facf17ee17dff}} 
+\index{End@{End}!operator==@{operator==}}
+\index{operator==@{operator==}!End@{End}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool End\+::operator== (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})}
 
+True if \hyperlink{class_end}{End} represents this character \mbox{\Hypertarget{class_end_ac8e651d50ce2b99256be11aa9b89ded4}\label{class_end_ac8e651d50ce2b99256be11aa9b89ded4}} 
+\index{End@{End}!right@{right}}
+\index{right@{right}!End@{End}}
+\subsubsection{\texorpdfstring{right()}{right()}}
+{\footnotesize\ttfamily \hyperlink{class_node}{Node} $\ast$ End\+::right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+right\+\_\+child\+\_\+ child 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\textbf{ node.\+h}\end{DoxyCompactItemize}
+\hyperlink{node_8h}{node.\+h}\item 
+\hyperlink{node_8cpp}{node.\+cpp}\end{DoxyCompactItemize}

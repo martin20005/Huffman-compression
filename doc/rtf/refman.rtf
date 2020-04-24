@@ -1,0 +1,3984 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 9;}
+{\s50\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext51 List Continue 0;}
+{\s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext52 List Continue 1;}
+{\s52\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext53 List Continue 2;}
+{\s53\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext54 List Continue 3;}
+{\s54\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext55 List Continue 4;}
+{\s55\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext56 List Continue 5;}
+{\s56\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext57 List Continue 6;}
+{\s57\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext58 List Continue 7;}
+{\s58\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 8;}
+{\s59\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext59 List Continue 9;}
+{\s60\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext61 DescContinue 0;}
+{\s61\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext62 DescContinue 1;}
+{\s62\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext63 DescContinue 2;}
+{\s63\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext64 DescContinue 3;}
+{\s64\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext65 DescContinue 4;}
+{\s65\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext66 DescContinue 5;}
+{\s66\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext67 DescContinue 6;}
+{\s67\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext68 DescContinue 7;}
+{\s68\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 8;}
+{\s69\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext69 DescContinue 9;}
+{\s70\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext81 LatexTOC 0;}
+{\s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext82 LatexTOC 1;}
+{\s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext83 LatexTOC 2;}
+{\s73\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext84 LatexTOC 3;}
+{\s74\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext85 LatexTOC 4;}
+{\s75\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext86 LatexTOC 5;}
+{\s76\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext87 LatexTOC 6;}
+{\s77\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext88 LatexTOC 7;}
+{\s78\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 8;}
+{\s79\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext89 LatexTOC 9;}
+{\s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext81 \sautoupd List Bullet 0;}
+{\s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid \sbasedon0 \snext82 \sautoupd List Bullet 1;}
+{\s82\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls3\adjustright \fs20\cgrid \sbasedon0 \snext83 \sautoupd List Bullet 2;}
+{\s83\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls4\adjustright \fs20\cgrid \sbasedon0 \snext84 \sautoupd List Bullet 3;}
+{\s84\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls5\adjustright \fs20\cgrid \sbasedon0 \snext85 \sautoupd List Bullet 4;}
+{\s85\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls6\adjustright \fs20\cgrid \sbasedon0 \snext86 \sautoupd List Bullet 5;}
+{\s86\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls7\adjustright \fs20\cgrid \sbasedon0 \snext87 \sautoupd List Bullet 6;}
+{\s87\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls8\adjustright \fs20\cgrid \sbasedon0 \snext88 \sautoupd List Bullet 7;}
+{\s88\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls9\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 8;}
+{\s89\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls10\adjustright \fs20\cgrid \sbasedon0 \snext89 \sautoupd List Bullet 9;}
+{\s90\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext91 \sautoupd List Enum 0;}
+{\s91\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext92 \sautoupd List Enum 1;}
+{\s92\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext93 \sautoupd List Enum 2;}
+{\s93\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext94 \sautoupd List Enum 3;}
+{\s94\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext95 \sautoupd List Enum 4;}
+{\s95\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s96\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext96 \sautoupd List Enum 5;}
+{\s97\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext98 \sautoupd List Enum 7;}
+{\s98\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 8;}
+{\s99\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext99 \sautoupd List Enum 9;}
+}
+{\info 
+{\title {\comment Huffman-compression  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.3 \par
+}}Huffman-compression}
+{\comment Generated byDoxgyen. }
+{\creatim \yr2020\mo4\dy24\hr12\min35\sec6}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt Huffman-compression}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 1.3\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Fri Apr 24 2020 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table of Contents\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Huffman-compression{\tc \v Huffman-compression}\par \pard\plain 
+{\bkmkstart AAAAAAAAHR}
+{\bkmkend AAAAAAAAHR}
+\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This project includes an OOP modell for Huffman-compression, including a test program and documentation. Homework for Prog2.\par
+{
+\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Specification: NHF1.pdf\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Plan (class diagram): NHF2.pdf\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Documentation: doc/html/index.html (NHF3.pdf)\par}
+Please note, it's just my homework. \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b gtest_lite} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Gtest_lite: a keretrendszer f\'FCggv\'E9nyinek \'E9s objektumainak n\'E9vtere })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Hierarchical Index\par \pard\plain 
+{\tc \v Hierarchical Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class Hierarchy\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid This inheritance list is sorted roughly, but not completely, alphabetically:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+_Is_Types< F, T >\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+_registry_item\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+BitBuffer\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+call_t\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Huffman\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Letter\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+List< T >\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+List< char >\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Node\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s72\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+End\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAER \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+Path\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+gtest_lite::Test\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Index\par \pard\plain 
+{\tc \v Class Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Class List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here are the classes, structs, unions and interfaces with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b _Is_Types< F, T >} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'C3\'A9dsablon t\'C3\'ADpuskonverzi\'C3\'B3 fut\'C3\'A1s k\'C3\'B6zbeni ellen\'C5\'91rz\'C3\'A9sere })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b _registry_item} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b BitBuffer} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b call_t} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b End} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAER \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Huffman} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Letter} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b List< T >} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAFR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Node} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Path} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b gtest_lite::Test} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Index\par \pard\plain 
+{\tc \v File Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+File List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all files with brief descriptions:}
+{
+\par
+\pard\plain \s71\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b bitbuffer.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b bitbuffer.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b gtest_lite.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b huffman.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b huffman.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b letter.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b list.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b main.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b memtrace.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b memtrace.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAACM \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b node.cpp} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b node.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gtest_lite Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v gtest_lite}
+{\xe \v gtest_lite}
+{\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b gtest_lite}: a keretrendszer f\'FCggv\'E9nyinek \'E9s objektumainak n\'E9vtere }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b Test}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > std::ostream & {\b EXPECT_} (T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E1ltal\'E1nos sablon a v\'E1rt \'E9rt\'E9khez. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > std::ostream & {\b EXPECT_} (T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pointerre specializ\'E1lt sablon a v\'E1rt \'E9rt\'E9khez. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b EXPECTSTR} (const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b eq} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b eqstr} (const char *a, const char *b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b ne} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b nestr} (const char *a, const char *b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b le} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b lt} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b ge} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gt} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b almostEQ} (T a, T b)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b gtest_lite}: a keretrendszer f\'FCggv\'E9nyinek \'E9s objektumainak n\'E9vtere \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v almostEQ\:gtest_lite}
+{\xe \v gtest_lite\:almostEQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::almostEQ (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAGR}
+{\bkmkend AAAAAAAAGR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'E9dsablon val\'F3s sz\'E1mok \'F6sszehasonl\'EDt\'E1s\'E1hoz Nem bombabiztos, de nek\'FCnk most j\'F3 lesz Elm\'E9leti h\'E1t\'E9r: {\f2 http://www.cygnus-software.com/papers/comparingfloats/comparingfloats.htm} \par
+}}
+{\xe \v eq\:gtest_lite}
+{\xe \v gtest_lite\:eq}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::eq (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAGS}
+{\bkmkend AAAAAAAAGS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+seg\'E9d sablonok a rel\'E1ci\'F3khoz. az\'E9rt nem STL (algorithm), mert csak a f\'FCggv\'E9ny lehet, hogy menjen a deduckci\'F3 \par
+}}
+{\xe \v eqstr\:gtest_lite}
+{\xe \v gtest_lite\:eqstr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool gtest_lite::eqstr (const char *  {\i a}, const char *  {\i b}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGT}
+{\bkmkend AAAAAAAAGT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v EXPECT_\:gtest_lite}
+{\xe \v gtest_lite\:EXPECT_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > std::ostream& gtest_lite::EXPECT_ (T  {\i exp}, T  {\i act}, bool(*)(T, T)  {\i pred}, const char *  {\i file}, int  {\i line}, const char *  {\i expr}, const char *  {\i lhs} = {\f2 "elvart"}, const char *  {\i rhs} = {\f2 "aktual"})}}
+\par
+{\bkmkstart AAAAAAAAGU}
+{\bkmkend AAAAAAAAGU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E1ltal\'E1nos sablon a v\'E1rt \'E9rt\'E9khez. }}\par
+}
+{\xe \v EXPECT_\:gtest_lite}
+{\xe \v gtest_lite\:EXPECT_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > std::ostream& gtest_lite::EXPECT_ (T *  {\i exp}, T *  {\i act}, bool(*)(T *, T *)  {\i pred}, const char *  {\i file}, int  {\i line}, const char *  {\i expr}, const char *  {\i lhs} = {\f2 "elvart"}, const char *  {\i rhs} = {\f2 "aktual"})}}
+\par
+{\bkmkstart AAAAAAAAGV}
+{\bkmkend AAAAAAAAGV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pointerre specializ\'E1lt sablon a v\'E1rt \'E9rt\'E9khez. }}\par
+}
+{\xe \v EXPECTSTR\:gtest_lite}
+{\xe \v gtest_lite\:EXPECTSTR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream& gtest_lite::EXPECTSTR (const char *  {\i exp}, const char *  {\i act}, bool(*)(const char *, const char *)  {\i pred}, const char *  {\i file}, int  {\i line}, const char *  {\i expr}, const char *  {\i lhs} = {\f2 "elvart"}, const char *  {\i rhs} = {\f2 "aktual"}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGW}
+{\bkmkend AAAAAAAAGW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+stringek \'C3\'B6sszehasonl\'C3\'ADt\'C3\'A1s\'C3\'A1hoz. az\'C3\'A9rt nem spec. mert a sima EQ-ra m\'C3\'A1sk\'C3\'A9nt kell m\'C5\'B1k\'C3\'B6dnie. \par
+}}
+{\xe \v ge\:gtest_lite}
+{\xe \v gtest_lite\:ge}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::ge (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAGX}
+{\bkmkend AAAAAAAAGX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v gt\:gtest_lite}
+{\xe \v gtest_lite\:gt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::gt (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAGY}
+{\bkmkend AAAAAAAAGY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v le\:gtest_lite}
+{\xe \v gtest_lite\:le}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::le (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAGZ}
+{\bkmkend AAAAAAAAGZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v lt\:gtest_lite}
+{\xe \v gtest_lite\:lt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::lt (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAHA}
+{\bkmkend AAAAAAAAHA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ne\:gtest_lite}
+{\xe \v gtest_lite\:ne}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > bool gtest_lite::ne (T  {\i a}, T  {\i b})}}
+\par
+{\bkmkstart AAAAAAAAHB}
+{\bkmkend AAAAAAAAHB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v nestr\:gtest_lite}
+{\xe \v gtest_lite\:nestr}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool gtest_lite::nestr (const char *  {\i a}, const char *  {\i b}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHC}
+{\bkmkend AAAAAAAAHC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Class Documentation{\tc \v Class Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+_Is_Types< F, T > Struct Template Reference\par \pard\plain 
+{\tc\tcl2 \v _Is_Types< F, T >}
+{\xe \v _Is_Types< F, T >}
+{\bkmkstart AAAAAAAADL}
+{\bkmkend AAAAAAAADL}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'C3\'A9dsablon t\'C3\'ADpuskonverzi\'C3\'B3 fut\'C3\'A1s k\'C3\'B6zbeni ellen\'C5\'91rz\'C3\'A9sere. }}\par
+{
+{\f2 #include <gtest_lite.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename D > static char(& {\b f} (D))[1]\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename D > static char(& {\b f} (...))[2]\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static bool const {\b convertable} = sizeof({\b f}<T>(F())) == 1\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+template<typename F, typename T>\par
+struct _Is_Types< F, T >\par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'C3\'A9dsablon t\'C3\'ADpuskonverzi\'C3\'B3 fut\'C3\'A1s k\'C3\'B6zbeni ellen\'C5\'91rz\'C3\'A9sere. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v f\:_Is_Types}
+{\xe \v _Is_Types\:f}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename F , typename T > template<typename D > static char(& {\b _Is_Types}< F, T >::f (D ))[1]{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v f\:_Is_Types}
+{\xe \v _Is_Types\:f}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename F , typename T > template<typename D > static char(& {\b _Is_Types}< F, T >::f (  {\i ...}))[2]{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADN}
+{\bkmkend AAAAAAAADN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v convertable\:_Is_Types}
+{\xe \v _Is_Types\:convertable}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename F , typename T > bool const {\b _Is_Types}< F, T >::convertable = sizeof({\b f}<T>(F())) == 1{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAADO}
+{\bkmkend AAAAAAAADO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b gtest_lite.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+_registry_item Struct Reference\par \pard\plain 
+{\tc\tcl2 \v _registry_item}
+{\xe \v _registry_item}
+{\bkmkstart AAAAAAAADP}
+{\bkmkend AAAAAAAADP}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b p}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+size_t {\b size}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b call_t} {\b call}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b _registry_item} * {\b next}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v call\:_registry_item}
+{\xe \v _registry_item\:call}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b call_t} _registry_item::call}}
+\par
+{\bkmkstart AAAAAAAADQ}
+{\bkmkend AAAAAAAADQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v next\:_registry_item}
+{\xe \v _registry_item\:next}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+struct {\b _registry_item}* _registry_item::next}}
+\par
+{\bkmkstart AAAAAAAADR}
+{\bkmkend AAAAAAAADR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v p\:_registry_item}
+{\xe \v _registry_item\:p}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* _registry_item::p}}
+\par
+{\bkmkstart AAAAAAAADS}
+{\bkmkend AAAAAAAADS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v size\:_registry_item}
+{\xe \v _registry_item\:size}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+size_t _registry_item::size}}
+\par
+{\bkmkstart AAAAAAAADT}
+{\bkmkend AAAAAAAADT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b memtrace.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+BitBuffer Class Reference\par \pard\plain 
+{\tc\tcl2 \v BitBuffer}
+{\xe \v BitBuffer}
+{\bkmkstart AAAAAAAADU}
+{\bkmkend AAAAAAAADU}
+\par
+{
+{\f2 #include <bitbuffer.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b BitBuffer} (int size_of_chunk_b=sizeof(char))\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b BitBuffer} (const {\b BitBuffer} &buffer)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+const {\b List}< char > & {\b data} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b currentChunk} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b count} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b sizeOfChunk} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b countOfFullChunks} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isEmpty} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b isOpen} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > void {\b push} (T value_bit_container, int count_of_bits)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b pop} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b close} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b leakAfter} (int num_of_chunks)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b leakAfter} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b leak} (std::ostream &stream_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b fill} (std::istream &stream_in)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b bit} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+This class can hold bits. Useful when size of values to be stored is not constant. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v BitBuffer\:BitBuffer}
+{\xe \v BitBuffer\:BitBuffer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+BitBuffer::BitBuffer (int  {\i size_of_chunk_b} = {\f2 sizeof(char)}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAADV}
+{\bkmkend AAAAAAAADV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Buffer {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i size_of_chunk_b} \cell }{Number of bits each chunk can store (character's size by default) \cell }
+{\row }
+}
+}}
+{\xe \v BitBuffer\:BitBuffer}
+{\xe \v BitBuffer\:BitBuffer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+BitBuffer::BitBuffer (const {\b BitBuffer} &  {\i buffer})}}
+\par
+{\bkmkstart AAAAAAAADW}
+{\bkmkend AAAAAAAADW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Buffer {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i buffer} \cell }{A buffer to be copied (resulting Buffer is editable) \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v bit\:BitBuffer}
+{\xe \v BitBuffer\:bit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool BitBuffer::bit ()}}
+\par
+{\bkmkstart AAAAAAAADX}
+{\bkmkend AAAAAAAADX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returning the first (not yet returned) bit from buffer \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid True = 1, False = 0 bit \par
+}}}
+{\xe \v close\:BitBuffer}
+{\xe \v BitBuffer\:close}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void BitBuffer::close ()}}
+\par
+{\bkmkstart AAAAAAAADY}
+{\bkmkend AAAAAAAADY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Closing the buffer This makes sure that all data_ is stored properly; using {\b push()} will not be allowed anymore. \par
+}}
+{\xe \v count\:BitBuffer}
+{\xe \v BitBuffer\:count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int BitBuffer::count () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAADZ}
+{\bkmkend AAAAAAAADZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Count of valuable bits in {\b currentChunk()} \par
+}}}
+{\xe \v countOfFullChunks\:BitBuffer}
+{\xe \v BitBuffer\:countOfFullChunks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int BitBuffer::countOfFullChunks () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEA}
+{\bkmkend AAAAAAAAEA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Number of full chunks. \par
+}}}
+{\xe \v currentChunk\:BitBuffer}
+{\xe \v BitBuffer\:currentChunk}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char BitBuffer::currentChunk () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEB}
+{\bkmkend AAAAAAAAEB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Last (not yet full) chunk of data_. The last {\b count()} bits are values. \par
+}}}
+{\xe \v data\:BitBuffer}
+{\xe \v BitBuffer\:data}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+const {\b List}<char>& BitBuffer::data () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEC}
+{\bkmkend AAAAAAAAEC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid data_ stored so far \par
+}}}
+{\xe \v fill\:BitBuffer}
+{\xe \v BitBuffer\:fill}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void BitBuffer::fill (std::istream &  {\i stream_in})}}
+\par
+{\bkmkstart AAAAAAAAED}
+{\bkmkend AAAAAAAAED}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Getting some data_ from file After call, at least 1 full character will be stream_in the buffer. \par
+}}
+{\xe \v isEmpty\:BitBuffer}
+{\xe \v BitBuffer\:isEmpty}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool BitBuffer::isEmpty (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEE}
+{\bkmkend AAAAAAAAEE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid true, if there is no {\b pop()}-able data_ in the buffer \par
+}}}
+{\xe \v isOpen\:BitBuffer}
+{\xe \v BitBuffer\:isOpen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool BitBuffer::isOpen (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEF}
+{\bkmkend AAAAAAAAEF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Whether buffer is open (bits can be {\b push()}-ed) \par
+}}}
+{\xe \v leak\:BitBuffer}
+{\xe \v BitBuffer\:leak}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void BitBuffer::leak (std::ostream &  {\i stream_out})}}
+\par
+{\bkmkstart AAAAAAAAEG}
+{\bkmkend AAAAAAAAEG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Leaking data_ to a file When there'are more chunks than the leak-size, those all go to the file \par
+}}
+{\xe \v leakAfter\:BitBuffer}
+{\xe \v BitBuffer\:leakAfter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void BitBuffer::leakAfter (int  {\i num_of_chunks})}}
+\par
+{\bkmkstart AAAAAAAAEH}
+{\bkmkend AAAAAAAAEH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setting the leak-size \par
+}}
+{\xe \v leakAfter\:BitBuffer}
+{\xe \v BitBuffer\:leakAfter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int BitBuffer::leakAfter () const}}
+\par
+{\bkmkstart AAAAAAAAEI}
+{\bkmkend AAAAAAAAEI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Get leak-size \par
+}}
+{\xe \v pop\:BitBuffer}
+{\xe \v BitBuffer\:pop}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char BitBuffer::pop ()}}
+\par
+{\bkmkstart AAAAAAAAEJ}
+{\bkmkend AAAAAAAAEJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returning the first chunk The returned chunk will be removed from buffer. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The first chunk \par
+}}}
+{\xe \v push\:BitBuffer}
+{\xe \v BitBuffer\:push}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<typename T > void BitBuffer::push (T  {\i value_bit_container}, int  {\i count_of_bits}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEK}
+{\bkmkend AAAAAAAAEK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Adding bits to the buffer Pushes the given bits into the buffer (current_chunk_). {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i value_bit_container} \cell }{It contains the value-bits (fitted to the right_child_=LSB). \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i count_of_bits} \cell }{Number of significant bits. \cell }
+{\row }
+}
+}}
+{\xe \v sizeOfChunk\:BitBuffer}
+{\xe \v BitBuffer\:sizeOfChunk}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int BitBuffer::sizeOfChunk () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAEL}
+{\bkmkend AAAAAAAAEL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Count of bits in each chunk. \par
+}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b bitbuffer.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b bitbuffer.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+call_t Struct Reference\par \pard\plain 
+{\tc\tcl2 \v call_t}
+{\xe \v call_t}
+{\bkmkstart AAAAAAAAEM}
+{\bkmkend AAAAAAAAEM}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b f}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b line}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b par_txt}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char * {\b file}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v f\:call_t}
+{\xe \v call_t\:f}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int call_t::f}}
+\par
+{\bkmkstart AAAAAAAAEN}
+{\bkmkend AAAAAAAAEN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v file\:call_t}
+{\xe \v call_t\:file}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* call_t::file}}
+\par
+{\bkmkstart AAAAAAAAEO}
+{\bkmkend AAAAAAAAEO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v line\:call_t}
+{\xe \v call_t\:line}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int call_t::line}}
+\par
+{\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v par_txt\:call_t}
+{\xe \v call_t\:par_txt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char* call_t::par_txt}}
+\par
+{\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b memtrace.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+End Class Reference\par \pard\plain 
+{\tc\tcl2 \v End}
+{\xe \v End}
+{\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
+\par
+{
+{\f2 #include <node.h>}}\par
+{
+Inherits {\b Node}.}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b End} ({\b Letter} &{\b letter}, long frequency)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b End} (const {\b End} &end)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b End} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Letter} & {\b letter} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} * {\b left} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} * {\b right} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} ({\b End} &end)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (char ch)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b operator++} (int)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represent a {\b Node} of a binary ({\b Huffman}) tree, which IS a leaf \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v End\:End}
+{\xe \v End\:End}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+End::End ({\b Letter} &  {\i letter}, long  {\i frequency})}}
+\par
+{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i letter} \cell }{The represented {\b Letter} \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i frequency} \cell }{Frequency of the letter in input \cell }
+{\row }
+}
+}}
+{\xe \v End\:End}
+{\xe \v End\:End}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+End::End (const {\b End} &  {\i end})}}
+\par
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Copy constructor \par
+}}
+{\xe \v End\:End}
+{\xe \v End\:End}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+End::End ()}}
+\par
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+isEmpty end-node; useful for arrays \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v left\:End}
+{\xe \v End\:left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} * End::left () const}}
+\par
+{\bkmkstart AAAAAAAAEV}
+{\bkmkend AAAAAAAAEV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+left_child_ child \par
+}}
+{\xe \v letter\:End}
+{\xe \v End\:letter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Letter} & End::letter ()}}
+\par
+{\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represented letter \par
+}}
+{\xe \v operator++\:End}
+{\xe \v End\:operator++}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void End::operator++ (int )}}
+\par
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Incrementing the frequency \par
+}}
+{\xe \v operator==\:End}
+{\xe \v End\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool End::operator== ({\b End} &  {\i end})}}
+\par
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Equality operator (true if the same letter is represented) \par
+}}
+{\xe \v operator==\:End}
+{\xe \v End\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool End::operator== (char  {\i ch})}}
+\par
+{\bkmkstart AAAAAAAAEZ}
+{\bkmkend AAAAAAAAEZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+True if {\b End} represents this character \par
+}}
+{\xe \v right\:End}
+{\xe \v End\:right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} * End::right () const}}
+\par
+{\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+right_child_ child \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Huffman Class Reference\par \pard\plain 
+{\tc\tcl2 \v Huffman}
+{\xe \v Huffman}
+{\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+\par
+{
+{\f2 #include <huffman.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Huffman} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b compress} (istream &stream_in, ostream &stream_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b extract} (istream &stream_in, ostream &stream_out)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Huffman} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Class able to execute Huffman-compression or extraction \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Huffman\:Huffman}
+{\xe \v Huffman\:Huffman}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Huffman::Huffman ()}}
+\par
+{\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~Huffman\:Huffman}
+{\xe \v Huffman\:~Huffman}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Huffman::~Huffman ()}}
+\par
+{\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v compress\:Huffman}
+{\xe \v Huffman\:compress}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Huffman::compress (istream &  {\i stream_in}, ostream &  {\i stream_out})}}
+\par
+{\bkmkstart AAAAAAAAFE}
+{\bkmkend AAAAAAAAFE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Compression of file \par
+}}
+{\xe \v extract\:Huffman}
+{\xe \v Huffman\:extract}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Huffman::extract (istream &  {\i stream_in}, ostream &  {\i stream_out})}}
+\par
+{\bkmkstart AAAAAAAAFF}
+{\bkmkend AAAAAAAAFF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Extraction of .huffman_code_ file \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b huffman.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b huffman.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Letter Class Reference\par \pard\plain 
+{\tc\tcl2 \v Letter}
+{\xe \v Letter}
+{\bkmkstart AAAAAAAAFG}
+{\bkmkend AAAAAAAAFG}
+\par
+{
+{\f2 #include <letter.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Letter} (char ch)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Letter} (const {\b Letter} &letter)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Letter} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+char {\b original} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b original} (char ch)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long long int {\b huffman} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b huffman} (long long int h, unsigned char l)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+unsigned char {\b length} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Letter} & {\b operator=} (const {\b Letter} &letter)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b operator==} (const {\b Letter} &letter) const\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Bounds original character and Huffman-code together \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Letter\:Letter}
+{\xe \v Letter\:Letter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Letter::Letter (char  {\i ch}){\f2 [inline]}, {\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor Only the original character is set \par
+}}
+{\xe \v Letter\:Letter}
+{\xe \v Letter\:Letter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Letter::Letter (const {\b Letter} &  {\i letter}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Copy constructor \par
+}}
+{\xe \v Letter\:Letter}
+{\xe \v Letter\:Letter}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Letter::Letter (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+isEmpty {\b Letter} for creating arrays \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v huffman\:Letter}
+{\xe \v Letter\:huffman}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long long int Letter::huffman () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The Huffman-code of character \par
+}}}
+{\xe \v huffman\:Letter}
+{\xe \v Letter\:huffman}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Letter::huffman (long long int  {\i h}, unsigned char  {\i l}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFL}
+{\bkmkend AAAAAAAAFL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setting the Huffman-code (length of H-code always needed!) \par
+}}
+{\xe \v length\:Letter}
+{\xe \v Letter\:length}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+unsigned char Letter::length () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFM}
+{\bkmkend AAAAAAAAFM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The length of Huffman-code \par
+}}}
+{\xe \v operator=\:Letter}
+{\xe \v Letter\:operator=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Letter}& Letter::operator= (const {\b Letter} &  {\i letter}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFN}
+{\bkmkend AAAAAAAAFN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Assignment \par
+}}
+{\xe \v operator==\:Letter}
+{\xe \v Letter\:operator==}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool Letter::operator== (const {\b Letter} &  {\i letter}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFO}
+{\bkmkend AAAAAAAAFO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Equal if the original characters equal \par
+}}
+{\xe \v original\:Letter}
+{\xe \v Letter\:original}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+char Letter::original () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFP}
+{\bkmkend AAAAAAAAFP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The original character \par
+}}}
+{\xe \v original\:Letter}
+{\xe \v Letter\:original}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Letter::original (char  {\i ch}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFQ}
+{\bkmkend AAAAAAAAFQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setting the original character \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b letter.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+List< T > Class Template Reference\par \pard\plain 
+{\tc\tcl2 \v List< T >}
+{\xe \v List< T >}
+{\bkmkstart AAAAAAAAFR}
+{\bkmkend AAAAAAAAFR}
+\par
+{
+{\f2 #include <list.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b List} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b List} (const {\b List} &list)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~List} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b count} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b add} (T element)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b removeAt} (int idx)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b remove} (T &element)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b findFirst} (T &element)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+T & {\b operator[]} (int idx) const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b List} & {\b operator+=} (T element)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v List\:List}
+{\xe \v List\:List}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> {\b List}< T >::{\b List} (){\f2 [inline]}, {\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAFS}
+{\bkmkend AAAAAAAAFS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v List\:List}
+{\xe \v List\:List}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> {\b List}< T >::{\b List} (const {\b List}< T > &  {\i list}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFT}
+{\bkmkend AAAAAAAAFT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~List\:List}
+{\xe \v List\:~List}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> {\b List}< T >::~{\b List} (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFU}
+{\bkmkend AAAAAAAAFU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v add\:List}
+{\xe \v List\:add}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> void {\b List}< T >::add (T  {\i element}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFV}
+{\bkmkend AAAAAAAAFV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v count\:List}
+{\xe \v List\:count}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> int {\b List}< T >::count () const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFW}
+{\bkmkend AAAAAAAAFW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v findFirst\:List}
+{\xe \v List\:findFirst}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> int {\b List}< T >::findFirst (T &  {\i element}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFX}
+{\bkmkend AAAAAAAAFX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v operator+=\:List}
+{\xe \v List\:operator+=}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> {\b List}& {\b List}< T >::operator+= (T  {\i element}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFY}
+{\bkmkend AAAAAAAAFY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Addition of element with operator \par
+}}
+{\xe \v operator[]\:List}
+{\xe \v List\:operator[]}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> T& {\b List}< T >::operator[] (int  {\i idx}) const{\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAFZ}
+{\bkmkend AAAAAAAAFZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid Element with index 'idx' \par
+}}}
+{\xe \v remove\:List}
+{\xe \v List\:remove}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> void {\b List}< T >::remove (T &  {\i element}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGA}
+{\bkmkend AAAAAAAAGA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v removeAt\:List}
+{\xe \v List\:removeAt}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+template<class T> void {\b List}< T >::removeAt (int  {\i idx}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAGB}
+{\bkmkend AAAAAAAAGB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b list.h}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Node Class Reference\par \pard\plain 
+{\tc\tcl2 \v Node}
+{\xe \v Node}
+{\bkmkstart AAAAAAAAGC}
+{\bkmkend AAAAAAAAGC}
+\par
+{
+{\f2 #include <node.h>}}\par
+{
+Inherited by {\b End}, and {\b Path}.}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} ({\b Node} *{\b left}, {\b Node} *{\b right}, long {\b weight}=0)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} *& {\b left} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b left} ({\b Node} *l)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} *& {\b right} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b right} ({\b Node} *r)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b weight} () const\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b weight} (long new_weight)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Protected Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} * {\b left_child_}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pointer to left_child_ child. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Node} * {\b right_child_}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pointer to right_child_ child. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b weight_}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Weight of node. }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represents a {\b Node} of a binary ({\b Huffman}) tree \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Node\:Node}
+{\xe \v Node\:Node}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Node::Node ()}}
+\par
+{\bkmkstart AAAAAAAAGD}
+{\bkmkend AAAAAAAAGD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor Basically an empty node (useful for creating a list of '{\b Node}'-s) \par
+}}
+{\xe \v Node\:Node}
+{\xe \v Node\:Node}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Node::Node ({\b Node} *  {\i left}, {\b Node} *  {\i right}, long  {\i weight} = {\f2 0})}}
+\par
+{\bkmkstart AAAAAAAAGE}
+{\bkmkend AAAAAAAAGE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Constructor Making a parent for 2 children nodes \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v left\:Node}
+{\xe \v Node\:left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} *& Node::left ()}}
+\par
+{\bkmkstart AAAAAAAAGF}
+{\bkmkend AAAAAAAAGF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns left_child_ child's pointer's reference \par
+}}
+{\xe \v left\:Node}
+{\xe \v Node\:left}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Node::left ({\b Node} *  {\i l})}}
+\par
+{\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setter for the left_child_ child \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The new left_child_'s pointer \par
+}}}
+{\xe \v right\:Node}
+{\xe \v Node\:right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node} *& Node::right ()}}
+\par
+{\bkmkstart AAAAAAAAGH}
+{\bkmkend AAAAAAAAGH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns right_child_ child's pointer's reference \par
+}}
+{\xe \v right\:Node}
+{\xe \v Node\:right}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Node::right ({\b Node} *  {\i r})}}
+\par
+{\bkmkstart AAAAAAAAGI}
+{\bkmkend AAAAAAAAGI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setter for the right_child_ child \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Returns:\par}\pard\plain \s62\li720\widctlpar\ql\adjustright \fs20\cgrid The new right_child_'s pointer \par
+}}}
+{\xe \v weight\:Node}
+{\xe \v Node\:weight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long Node::weight () const}}
+\par
+{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Weight of node \par
+}}
+{\xe \v weight\:Node}
+{\xe \v Node\:weight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Node::weight (long  {\i new_weight})}}
+\par
+{\bkmkstart AAAAAAAAGK}
+{\bkmkend AAAAAAAAGK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Setting the weight of node \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v left_child_\:Node}
+{\xe \v Node\:left_child_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node}* Node::left_child_{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAGL}
+{\bkmkend AAAAAAAAGL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pointer to left_child_ child. }}\par
+}
+{\xe \v right_child_\:Node}
+{\xe \v Node\:right_child_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b Node}* Node::right_child_{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAGM}
+{\bkmkend AAAAAAAAGM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Pointer to right_child_ child. }}\par
+}
+{\xe \v weight_\:Node}
+{\xe \v Node\:weight_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long Node::weight_{\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAGN}
+{\bkmkend AAAAAAAAGN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Weight of node. }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Path Class Reference\par \pard\plain 
+{\tc\tcl2 \v Path}
+{\xe \v Path}
+{\bkmkstart AAAAAAAAGO}
+{\bkmkend AAAAAAAAGO}
+\par
+{
+{\f2 #include <node.h>}}\par
+{
+Inherits {\b Node}.}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Path} ({\b Node} *{\b left}, {\b Node} *{\b right})\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Additional Inherited Members\par
+\pard\plain 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Represents a {\b Node} of a binary ({\b Huffman}) tree, which is NOT a leaf \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Path\:Path}
+{\xe \v Path\:Path}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Path::Path ({\b Node} *  {\i left}, {\b Node} *  {\i right})}}
+\par
+{\bkmkstart AAAAAAAAGP}
+{\bkmkend AAAAAAAAGP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Merging 2 nodes The new (parent) {\b Node} has a count equal to the sum of the children's count \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following files:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.h}\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b node.cpp}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gtest_lite::Test Struct Reference\par \pard\plain 
+{\tc\tcl2 \v gtest_lite::Test}
+{\xe \v gtest_lite::Test}
+{\bkmkstart AAAAAAAAHD}
+{\bkmkend AAAAAAAAHD}
+\par
+{
+{\f2 #include <gtest_lite.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Test} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b begin} (const char *n)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszt kezdete. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b end} (bool memchk=false)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszt v\'E9ge. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b fail} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b expect} (bool st, const char *file, int line, const char *expr, bool pr=false)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Eredm\'E9nyt adminisztr\'E1l\'F3 tagf\'FCggv\'E9ny True a j\'F3 eset. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b ~Test} ()\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destruktor. }{
+}\par
+}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b sum}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+tesztek sz\'E1ml\'E1l\'F3ja }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b failed}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+hib\'E1s tesztek }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b ablocks}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+allok\'E1lt blokkok sz\'E1ma }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b status}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E9ppen fut\'F3 teszt st\'E1tusza. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b tmp}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+temp a kiv\'E9telkezel\'E9shez; }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::string {\b name}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E9ppen fut\'F3 teszt neve. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::fstream {\b null}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+nyel\'C5\'91, ha nem kell ki\'C3\'ADrni semmit }{
+}\par
+}}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Tesztek \'E1llapot\'E1t t\'E1rol\'F3 oszt\'E1ly. Egyetlen egy statikus p\'E9ld\'E1ny keletkezik, aminek a destruktora a fut\'E1s v\'E9g\'E9n h\'EDv\'F3dik meg. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v Test\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:Test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+gtest_lite::Test::Test (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHE}
+{\bkmkend AAAAAAAAHE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v ~Test\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:~Test}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+gtest_lite::Test::~Test (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHF}
+{\bkmkend AAAAAAAAHF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Destruktor. }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v begin\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:begin}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void gtest_lite::Test::begin (const char *  {\i n}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHG}
+{\bkmkend AAAAAAAAHG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszt kezdete. }}\par
+}
+{\xe \v end\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:end}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream& gtest_lite::Test::end (bool  {\i memchk} = {\f2 false}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHH}
+{\bkmkend AAAAAAAAHH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszt v\'E9ge. }}\par
+}
+{\xe \v expect\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:expect}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::ostream& gtest_lite::Test::expect (bool  {\i st}, const char *  {\i file}, int  {\i line}, const char *  {\i expr}, bool  {\i pr} = {\f2 false}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHI}
+{\bkmkend AAAAAAAAHI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Eredm\'E9nyt adminisztr\'E1l\'F3 tagf\'FCggv\'E9ny True a j\'F3 eset. }}\par
+}
+{\xe \v fail\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:fail}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool gtest_lite::Test::fail (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAHJ}
+{\bkmkend AAAAAAAAHJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Data Documentation\par
+\pard\plain 
+{\xe \v ablocks\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:ablocks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int gtest_lite::Test::ablocks}}
+\par
+{\bkmkstart AAAAAAAAHK}
+{\bkmkend AAAAAAAAHK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+allok\'E1lt blokkok sz\'E1ma }}\par
+}
+{\xe \v failed\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:failed}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int gtest_lite::Test::failed}}
+\par
+{\bkmkstart AAAAAAAAHL}
+{\bkmkend AAAAAAAAHL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+hib\'E1s tesztek }}\par
+}
+{\xe \v name\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:name}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::string gtest_lite::Test::name}}
+\par
+{\bkmkstart AAAAAAAAHM}
+{\bkmkend AAAAAAAAHM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E9ppen fut\'F3 teszt neve. }}\par
+}
+{\xe \v null\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:null}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+std::fstream gtest_lite::Test::null}}
+\par
+{\bkmkstart AAAAAAAAHN}
+{\bkmkend AAAAAAAAHN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+nyel\'C5\'91, ha nem kell ki\'C3\'ADrni semmit }}\par
+}
+{\xe \v status\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:status}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool gtest_lite::Test::status}}
+\par
+{\bkmkstart AAAAAAAAHO}
+{\bkmkend AAAAAAAAHO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E9ppen fut\'F3 teszt st\'E1tusza. }}\par
+}
+{\xe \v sum\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:sum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int gtest_lite::Test::sum}}
+\par
+{\bkmkstart AAAAAAAAHP}
+{\bkmkend AAAAAAAAHP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+tesztek sz\'E1ml\'E1l\'F3ja }}\par
+}
+{\xe \v tmp\:gtest_lite::Test}
+{\xe \v gtest_lite::Test\:tmp}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+bool gtest_lite::Test::tmp}}
+\par
+{\bkmkstart AAAAAAAAHQ}
+{\bkmkend AAAAAAAAHQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+temp a kiv\'E9telkezel\'E9shez; }}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this struct was generated from the following file:{\par
+\pard\plain \s81\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls2\adjustright \fs20\cgrid 
+{\b gtest_lite.h}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+File Documentation{\tc \v File Documentation}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bitbuffer.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v bitbuffer.cpp}
+{\xe \v bitbuffer.cpp}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "bitbuffer.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+bitbuffer.h File Reference\par \pard\plain 
+{\tc\tcl2 \v bitbuffer.h}
+{\xe \v bitbuffer.h}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <fstream>}\par
+{\f2 #include "list.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b BitBuffer}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+gtest_lite.h File Reference\par \pard\plain 
+{\tc\tcl2 \v gtest_lite.h}
+{\xe \v gtest_lite.h}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <cassert>}\par
+{\f2 #include <cmath>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include <limits>}\par
+{\f2 #include <string>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include "memtrace.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b _Is_Types< F, T >}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'C3\'A9dsablon t\'C3\'ADpuskonverzi\'C3\'B3 fut\'C3\'A1s k\'C3\'B6zbeni ellen\'C5\'91rz\'C3\'A9sere. }}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b gtest_lite::Test}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Namespaces\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ {\b gtest_lite}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b gtest_lite}: a keretrendszer f\'FCggv\'E9nyinek \'E9s objektumainak n\'E9vtere }}}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TEST}(C,  N)\~ \{ gtest_lite::test.begin(#C"/"#N);\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b END}\~ gtest_lite::test.end(); \}\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszteset v\'E9ge. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ENDM}\~ gtest_lite::test.end(true); \}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ENDMsg}(t)\~ gtest_lite::test.end(true) << t << std::endl; \}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b SUCCEED}()\~ gtest_lite::test.expect(true, __FILE__, __LINE__, "SUCCEED()", true)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sikeres teszt makr\'F3ja. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FAIL}()\~ gtest_lite::test.expect(false, __FILE__, __LINE__, "FAIL()", true)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sikertelen teszt makr\'F3ja. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_EQ}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_EQ(" #expected ", " #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Azonoss\'E1got elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_NE}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::ne}, __FILE__, __LINE__, "EXPECT_NE(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Elt\'E9r\'E9st elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_LE}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::le}, __FILE__, __LINE__, "EXPECT_LE(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kisebb, vagy egyenl\'C5\'91 rel\'C3\'A1ci\'C3\'B3t elv\'C3\'A1r\'C3\'B3 makr\'C3\'B3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_LT}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::lt}, __FILE__, __LINE__, "EXPECT_LT(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kisebb, mint rel\'E1ci\'F3t elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_GE}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::ge}, __FILE__, __LINE__, "EXPECT_GE(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nagyobb, vagy egyenl\'C5\'91 rel\'C3\'A1ci\'C3\'B3t elv\'C3\'A1r\'C3\'B3 makr\'C3\'B3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_GT}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::gt}, __FILE__, __LINE__, "EXPECT_GT(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nagyobb, mint rel\'E1ci\'F3t elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_TRUE}(actual)\~ {\b gtest_lite::EXPECT_}(true, actual,  {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_TRUE(" #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igaz \'E9rt\'E9ket elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_FALSE}(actual)\~ {\b gtest_lite::EXPECT_}(false, actual, {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_FALSE(" #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Hamis \'E9rt\'E9ket elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_FLOAT_EQ}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::almostEQ}, __FILE__, __LINE__, "EXPECT_FLOAT_EQ(" #expected ", " #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Val\'F3s sz\'E1mok azonoss\'E1g\'E1t elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_DOUBLE_EQ}(expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::almostEQ}, __FILE__, __LINE__, "EXPECT_DOUBLE_EQ(" #expected ", " #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Val\'F3s sz\'E1mok azonoss\'E1g\'E1t elv\'E1r\'F3 makr\'F3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_STREQ}(expected,  actual)\~ {\b gtest_lite::EXPECTSTR}(expected, actual, {\b gtest_lite::eqstr}, __FILE__, __LINE__, "EXPECT_STREQ(" #expected ", " #actual ")" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C stringek (const char *) azonoss\'C3\'A1g\'C3\'A1t tesztel\'C5\'91 makr\'C3\'B3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_STRNE}(expected,  actual)\~ {\b gtest_lite::EXPECTSTR}(expected, actual, {\b gtest_lite::nestr}, __FILE__, __LINE__, "EXPECT_STRNE(" #expected ", " #actual ")", "etalon" )\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C stringek (const char *) elt\'C3\'A9r\'C3\'A9set tesztel\'C5\'91 makr\'C3\'B3 }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_THROW}(statement,  exception_type)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_ANY_THROW}(statement)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_NO_THROW}(statement)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nem v\'E1runk kiv\'E9telt. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECT_THROW_THROW}(statement,  exception_type)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk \'E9s tov\'E1bbdobjuk \'96 ilyen nincs a gtest-ben. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b CREATE_Has_}(X)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b EXPECTTHROW}(statement,  exp,  act)\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+EXPECTTHROW: kiv\'E9telkezel\'E9s. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b GTINIT}(IS)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b GTEND}(os)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > std::ostream & {\b gtest_lite::EXPECT_} (T exp, T act, bool(*pred)(T, T), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E1ltal\'E1nos sablon a v\'E1rt \'E9rt\'E9khez. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > std::ostream & {\b gtest_lite::EXPECT_} (T *exp, T *act, bool(*pred)(T *, T *), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+pointerre specializ\'E1lt sablon a v\'E1rt \'E9rt\'E9khez. }{
+}\par
+}}
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+std::ostream & {\b gtest_lite::EXPECTSTR} (const char *exp, const char *act, bool(*pred)(const char *, const char *), const char *file, int line, const char *expr, const char *lhs="elvart", const char *rhs="aktual")\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::eq} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b gtest_lite::eqstr} (const char *a, const char *b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::ne} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+bool {\b gtest_lite::nestr} (const char *a, const char *b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::le} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::lt} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::ge} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::gt} (T a, T b)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+template<typename T > bool {\b gtest_lite::almostEQ} (T a, T b)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+(v2)\par
+Google gtest keretrendszerhez hasonl\'F3 rendszer. Sz.I. 2015., 2016., 2017. (_Has_X) Sz.I. 2018 (template), ENDM, ENDMsg\par
+A tesztel\'C3\'A9s legalapvet\'C5\'91bb funkci\'C3\'B3it t\'C3\'A1mogat\'C3\'B3 f\'C3\'BCggv\'C3\'A9nyek \'C3\'A9s makr\'C3\'B3k. Nem sz\'C3\'A1lbiztos megval\'C3\'B3s\'C3\'ADt\'C3\'A1s.\par
+Egyetlen f\'C3\'A1jlban kell megval\'C3\'B3s\'C3\'ADtani minden tesztesetet! Csak ebb\'C5\'91l include-olhat\'C3\'B3 a {\b gtest_lite.h} Ezen korl\'C3\'A1toz\'C3\'A1s kik\'C3\'BCsz\'C3\'B6b\'C3\'B6l\'C3\'A9s\'C3\'A9hez sigletonnal kellene rednesen megval\'C3\'B3s\'C3\'ADtani. a test oszt\'C3\'A1lyt!\par
+Szabadon felhaszn\'C3\'A1lhat\'C3\'B3, b\'C5\'91v\'C3\'ADthet\'C5\'91.\par
+Haszn\'E1lati p\'E9lda: Tesztelj\'FCk az f(x)=2*x f\'FCggv\'E9nyt: int f(int x) \{ return 2*x; \}\par
+int {\b main()} \{ {\b TEST(TeszEsetNeve, TesztNeve)} {\b EXPECT_EQ(0, f(0))}; {\b EXPECT_EQ(4, f(2))} << "A f\'FCggv\'E9ny hib\'E1s eredm\'E9nyt adott" << std::endl; ... END ...\par
+A m\'C5\'B1k\'C3\'B6d\'C3\'A9s r\'C3\'A9szleteinek meg\'C3\'A9rt\'C3\'A9se szorgalmi feladat. \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v CREATE_Has_\:gtest_lite.h}
+{\xe \v gtest_lite.h\:CREATE_Has_}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define CREATE_Has_( X)}}
+\par
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid template<typename T> struct _Has_##X \{  \\\par
+    struct Fallback \{ int X; \};         \\\par
+    struct Derived : T, Fallback \{\};    \\\par
+    template<typename C, C> struct ChT; \\\par
+    template<typename D> static char (&f(ChT<int Fallback::*, &D::X>*))[1]; \\\par
+    template<typename D> static char (&f(...))[2]; \\\par
+    static bool const member = sizeof(f<Derived>(0)) == 2; \\\par
+\};\par
+}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Seg\'C3\'A9dmakr\'C3\'B3 egy adattag, vagy tagf\'C3\'BCggv\'C3\'A9ny l\'C3\'A9tez\'C3\'A9s\'C3\'A9nek tesztel\'C3\'A9s\'C3\'A9re fut\'C3\'A1si id\'C5\'91ben \'C3\'96tlet: {\f2 https://cpptalk.wordpress.com/2009/09/12/substitution-failure-is-not-an-error-2} Haszn\'C3\'A1lat: {\b CREATE_Has_(size)} ... if (Has_size<std::string>::member)... \par
+}}
+{\xe \v END\:gtest_lite.h}
+{\xe \v gtest_lite.h\:END}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define END\~ gtest_lite::test.end(); \}}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszteset v\'E9ge. }}\par
+}
+{\xe \v ENDM\:gtest_lite.h}
+{\xe \v gtest_lite.h\:ENDM}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ENDM\~ gtest_lite::test.end(true); \}}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszteset v\'C3\'A9ge allok\'C3\'A1lt blokkok sz\'C3\'A1m\'C3\'A1nak \'C3\'B6sszehasonl\'C3\'ADt\'C3\'A1s\'C3\'A1val Ez az ellen\'C5\'91rz\'C3\'A9s nem bomba biztos. \par
+}}
+{\xe \v ENDMsg\:gtest_lite.h}
+{\xe \v gtest_lite.h\:ENDMsg}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ENDMsg( t)\~ gtest_lite::test.end(true) << t << std::endl; \}}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszteset v\'C3\'A9ge allok\'C3\'A1lt blokkok sz\'C3\'A1m\'C3\'A1nak \'C3\'B6sszehasonl\'C3\'ADt\'C3\'A1s\'C3\'A1val Ez az ellen\'C5\'91rz\'C3\'A9s nem bomba biztos. Ha hiba van ki\'C3\'ADrja az \'C3\'BCzenetet. \par
+}}
+{\xe \v EXPECT_ANY_THROW\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_ANY_THROW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_ANY_THROW( statement)}}
+\par
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid try \{ gtest_lite::test.tmp = false; statement; \} \\\par
+    catch (...) \{ gtest_lite::test.tmp = true; \} \\\par
+    EXPECTTHROW(statement, "kivetelt dob.", "nem dobott kivetelt.")\par
+}
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk. }}\par
+}
+{\xe \v EXPECT_DOUBLE_EQ\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_DOUBLE_EQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_DOUBLE_EQ( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::almostEQ}, __FILE__, __LINE__, "EXPECT_DOUBLE_EQ(" #expected ", " #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Val\'F3s sz\'E1mok azonoss\'E1g\'E1t elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_EQ\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_EQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_EQ( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_EQ(" #expected ", " #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Azonoss\'E1got elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_FALSE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_FALSE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_FALSE( actual)\~ {\b gtest_lite::EXPECT_}(false, actual, {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_FALSE(" #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Hamis \'E9rt\'E9ket elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_FLOAT_EQ\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_FLOAT_EQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_FLOAT_EQ( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::almostEQ}, __FILE__, __LINE__, "EXPECT_FLOAT_EQ(" #expected ", " #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Val\'F3s sz\'E1mok azonoss\'E1g\'E1t elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_GE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_GE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_GE( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::ge}, __FILE__, __LINE__, "EXPECT_GE(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nagyobb, vagy egyenl\'C5\'91 rel\'C3\'A1ci\'C3\'B3t elv\'C3\'A1r\'C3\'B3 makr\'C3\'B3 }}\par
+}
+{\xe \v EXPECT_GT\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_GT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_GT( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::gt}, __FILE__, __LINE__, "EXPECT_GT(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nagyobb, mint rel\'E1ci\'F3t elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_LE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_LE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_LE( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::le}, __FILE__, __LINE__, "EXPECT_LE(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kisebb, vagy egyenl\'C5\'91 rel\'C3\'A1ci\'C3\'B3t elv\'C3\'A1r\'C3\'B3 makr\'C3\'B3 }}\par
+}
+{\xe \v EXPECT_LT\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_LT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_LT( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::lt}, __FILE__, __LINE__, "EXPECT_LT(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kisebb, mint rel\'E1ci\'F3t elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_NE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_NE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_NE( expected,  actual)\~ {\b gtest_lite::EXPECT_}(expected, actual, {\b gtest_lite::ne}, __FILE__, __LINE__, "EXPECT_NE(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Elt\'E9r\'E9st elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECT_NO_THROW\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_NO_THROW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_NO_THROW( statement)}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid try \{ gtest_lite::test.tmp = true; statement; \} \\\par
+    catch (...) \{ gtest_lite::test.tmp = false; \}\\\par
+    EXPECTTHROW(statement, "nem dob kivetelt.", "kivetelt dobott.")\par
+}
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Nem v\'E1runk kiv\'E9telt. }}\par
+}
+{\xe \v EXPECT_STREQ\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_STREQ}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_STREQ( expected,  actual)\~ {\b gtest_lite::EXPECTSTR}(expected, actual, {\b gtest_lite::eqstr}, __FILE__, __LINE__, "EXPECT_STREQ(" #expected ", " #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C stringek (const char *) azonoss\'C3\'A1g\'C3\'A1t tesztel\'C5\'91 makr\'C3\'B3 }}\par
+}
+{\xe \v EXPECT_STRNE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_STRNE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_STRNE( expected,  actual)\~ {\b gtest_lite::EXPECTSTR}(expected, actual, {\b gtest_lite::nestr}, __FILE__, __LINE__, "EXPECT_STRNE(" #expected ", " #actual ")", "etalon" )}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+C stringek (const char *) elt\'C3\'A9r\'C3\'A9set tesztel\'C5\'91 makr\'C3\'B3 }}\par
+}
+{\xe \v EXPECT_THROW\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_THROW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_THROW( statement,  exception_type)}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid try \{ gtest_lite::test.tmp = false; statement; \} \\\par
+    catch (exception_type) \{ gtest_lite::test.tmp = true; \} \\\par
+    catch (...) \{ \} \\\par
+    EXPECTTHROW(statement, "kivetelt dob.", "nem dobott '"#exception_type"' kivetelt.")\par
+}
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk. }}\par
+}
+{\xe \v EXPECT_THROW_THROW\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_THROW_THROW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_THROW_THROW( statement,  exception_type)}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid try \{ gtest_lite::test.tmp = false; statement; \} \\\par
+    catch (exception_type) \{ gtest_lite::test.tmp = true; throw; \} \\\par
+    EXPECTTHROW(statement, "kivetelt dob.", "nem dobott '"#exception_type"' kivetelt.")\par
+}
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Kiv\'E9telt v\'E1runk \'E9s tov\'E1bbdobjuk \'96 ilyen nincs a gtest-ben. }}\par
+}
+{\xe \v EXPECT_TRUE\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECT_TRUE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECT_TRUE( actual)\~ {\b gtest_lite::EXPECT_}(true, actual,  {\b gtest_lite::eq}, __FILE__, __LINE__, "EXPECT_TRUE(" #actual ")" )}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Igaz \'E9rt\'E9ket elv\'E1r\'F3 makr\'F3 }}\par
+}
+{\xe \v EXPECTTHROW\:gtest_lite.h}
+{\xe \v gtest_lite.h\:EXPECTTHROW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define EXPECTTHROW( statement,  exp,  act)}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\b Value:}{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid gtest_lite::test.expect(gtest_lite::test.tmp, __FILE__, __LINE__, #statement) \\\par
+    << "** Az utasitas " << (act) \\\par
+    << "\\n** Azt vartuk, hogy " << (exp) << std::endl\par
+}
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+EXPECTTHROW: kiv\'E9telkezel\'E9s. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+ Bels\'C5\'91 megval\'C3\'B3s\'C3\'ADt\'C3\'A1shoz tartoz\'C3\'B3 makr\'C3\'B3k, \'C3\'A9s oszt\'C3\'A1lyok. {\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {\tc\tcl4 Nem c\'C3\'A9lszer\'C5\'B1 k\'C3\'B6zvetlen\'C3\'BCl haszn\'C3\'A1lni, vagy m\'C3\'B3dos\'C3\'ADtani } \par}
+}}
+{\xe \v FAIL\:gtest_lite.h}
+{\xe \v gtest_lite.h\:FAIL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FAIL()\~ gtest_lite::test.expect(false, __FILE__, __LINE__, "FAIL()", true)}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sikertelen teszt makr\'F3ja. }}\par
+}
+{\xe \v GTEND\:gtest_lite.h}
+{\xe \v gtest_lite.h\:GTEND}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define GTEND( os)}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v GTINIT\:gtest_lite.h}
+{\xe \v gtest_lite.h\:GTINIT}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define GTINIT( IS)}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v SUCCEED\:gtest_lite.h}
+{\xe \v gtest_lite.h\:SUCCEED}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define SUCCEED()\~ gtest_lite::test.expect(true, __FILE__, __LINE__, "SUCCEED()", true)}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Sikeres teszt makr\'F3ja. }}\par
+}
+{\xe \v TEST\:gtest_lite.h}
+{\xe \v gtest_lite.h\:TEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TEST( C,  N)\~ \{ gtest_lite::test.begin(#C"/"#N);}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Teszt kezdete. A makr\'C3\'B3 param\'C3\'A9terez\'C3\'A9se hasonl\'C3\'ADt a gtest param\'C3\'A9terez\'C3\'A9s\'C3\'A9hez. \'C3\'8Dgy az itt elk\'C3\'A9sz\'C3\'ADtett testek k\'C3\'B6nnyen \'C3\'A1temelhet\'C5\'91k a gtest keretrendszerbe. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Parameters:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i C} \cell }{- teszteset neve (csak a gtest kompatibilit\'E1s miatt van k\'FCl\'F6n neve az eseteknek) \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i N} \cell }{- teszt neve \cell }
+{\row }
+}
+}}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+huffman.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v huffman.cpp}
+{\xe \v huffman.cpp}
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "memtrace.h"}\par
+{\f2 #include "huffman.h"}\par
+{\f2 #include "node.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+huffman.h File Reference\par \pard\plain 
+{\tc\tcl2 \v huffman.h}
+{\xe \v huffman.h}
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include <fstream>}\par
+{\f2 #include <cstdlib>}\par
+{\f2 #include <cstring>}\par
+{\f2 #include <utility>}\par
+{\f2 #include "list.h"}\par
+{\f2 #include "node.h"}\par
+{\f2 #include "bitbuffer.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Huffman}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+letter.h File Reference\par \pard\plain 
+{\tc\tcl2 \v letter.h}
+{\xe \v letter.h}
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Letter}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+list.h File Reference\par \pard\plain 
+{\tc\tcl2 \v list.h}
+{\xe \v list.h}
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <cstddef>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b List< T >}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+main.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v main.cpp}
+{\xe \v main.cpp}
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <iostream>}\par
+{\f2 #include "gtest_lite.h"}\par
+{\f2 #include "memtrace.h"}\par
+{\f2 #include "bitbuffer.h"}\par
+{\f2 #include "letter.h"}\par
+{\f2 #include "huffman.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b HUFFMAN_TEST}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b main} ()\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v HUFFMAN_TEST\:main.cpp}
+{\xe \v main.cpp\:HUFFMAN_TEST}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define HUFFMAN_TEST}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE\:main.cpp}
+{\xe \v main.cpp\:MEMTRACE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v main\:main.cpp}
+{\xe \v main.cpp\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int main ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+memtrace.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v memtrace.cpp}
+{\xe \v memtrace.cpp}
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
+{\f2 #include <stdlib.h>}\par
+{\f2 #include <string.h>}\par
+{\f2 #include <time.h>}\par
+{\f2 #include <ctype.h>}\par
+{\f2 #include "memtrace.h"}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b call_t}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+struct {\b _registry_item}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FROM_MEMTRACE_CPP}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FMALLOC}\~ 0\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FCALLOC}\~ 1\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FREALLOC}\~ 2\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FFREE}\~ 3\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FNEW}\~ 4\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FDELETE}\~ 5\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FNEWARR}\~ 6\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b FDELETEARR}\~ 7\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b COMP}(a,  d)\~ (((a)<=3 && (d)<=3) || ((d)==(a)+1))\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b PU}(p)\~ ((char*)p+CANARY_LEN)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b P}(pu)\~ ((char*)pu-CANARY_LEN)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b XSTR}(s)\~ {\b STR}(s)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b STR}(s)\~ #s\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedefs\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+typedef {\b END_NAMESPACE} {\b START_NAMESPACE} struct {\b _registry_item} {\b registry_item}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumerations\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+enum {\b BOOL} \{ {\b FALSE}, 
+{\b TRUE}
+ \}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mem_dump} (void const *mem, size_t size, FILE *fp)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b mem_check} (void)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b allocated_blocks} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b END_NAMESPACE} {\b START_NAMESPACE} void * {\b traced_malloc} (size_t size, const char *par_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b traced_calloc} (size_t count, size_t size, const char *par_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b traced_free} (void *pu, const char *par_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b traced_realloc} (void *old, size_t size, const char *par_txt, int line, const char *file)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v COMP\:memtrace.cpp}
+{\xe \v memtrace.cpp\:COMP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define COMP( a,  d)\~ (((a)<=3 && (d)<=3) || ((d)==(a)+1))}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FCALLOC\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FCALLOC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FCALLOC\~ 1}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FDELETE\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FDELETE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FDELETE\~ 5}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FDELETEARR\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FDELETEARR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FDELETEARR\~ 7}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FFREE\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FFREE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FFREE\~ 3}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FMALLOC\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FMALLOC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FMALLOC\~ 0}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FNEW\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FNEW}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FNEW\~ 4}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FNEWARR\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FNEWARR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FNEWARR\~ 6}}
+\par
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FREALLOC\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FREALLOC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FREALLOC\~ 2}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v FROM_MEMTRACE_CPP\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FROM_MEMTRACE_CPP}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define FROM_MEMTRACE_CPP}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE\:memtrace.cpp}
+{\xe \v memtrace.cpp\:MEMTRACE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v P\:memtrace.cpp}
+{\xe \v memtrace.cpp\:P}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define P( pu)\~ ((char*)pu-CANARY_LEN)}}
+\par
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v PU\:memtrace.cpp}
+{\xe \v memtrace.cpp\:PU}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define PU( p)\~ ((char*)p+CANARY_LEN)}}
+\par
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v STR\:memtrace.cpp}
+{\xe \v memtrace.cpp\:STR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define STR( s)\~ #s}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v XSTR\:memtrace.cpp}
+{\xe \v memtrace.cpp\:XSTR}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define XSTR( s)\~ {\b STR}(s)}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Typedef Documentation\par
+\pard\plain 
+{\xe \v registry_item\:memtrace.cpp}
+{\xe \v memtrace.cpp\:registry_item}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+typedef {\b END_NAMESPACE} {\b START_NAMESPACE} struct {\b _registry_item}  {\b registry_item}}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Enumeration Type Documentation\par
+\pard\plain 
+{\xe \v BOOL\:memtrace.cpp}
+{\xe \v memtrace.cpp\:BOOL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+enum {\b BOOL}}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Enumerator:\par}
+\pard\plain \s61\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{\xe \v FALSE\:memtrace.cpp}
+{\xe \v memtrace.cpp\:FALSE}
+{\qr FALSE{\bkmkstart AAAAAAAACD}
+{\bkmkend AAAAAAAACD}
+\cell }{\cell }{\row }
+{\xe \v TRUE\:memtrace.cpp}
+{\xe \v memtrace.cpp\:TRUE}
+{\qr TRUE{\bkmkstart AAAAAAAACE}
+{\bkmkend AAAAAAAACE}
+\cell }{\cell }{\row }
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v allocated_blocks\:memtrace.cpp}
+{\xe \v memtrace.cpp\:allocated_blocks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int allocated_blocks ()}}
+\par
+{\bkmkstart AAAAAAAACF}
+{\bkmkend AAAAAAAACF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v mem_check\:memtrace.cpp}
+{\xe \v memtrace.cpp\:mem_check}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int mem_check (void )}}
+\par
+{\bkmkstart AAAAAAAACG}
+{\bkmkend AAAAAAAACG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v mem_dump\:memtrace.cpp}
+{\xe \v memtrace.cpp\:mem_dump}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void mem_dump (void const *  {\i mem}, size_t  {\i size}, FILE *  {\i fp})}}
+\par
+{\bkmkstart AAAAAAAACH}
+{\bkmkend AAAAAAAACH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_calloc\:memtrace.cpp}
+{\xe \v memtrace.cpp\:traced_calloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* traced_calloc (size_t  {\i count}, size_t  {\i size}, const char *  {\i par_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAACI}
+{\bkmkend AAAAAAAACI}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_free\:memtrace.cpp}
+{\xe \v memtrace.cpp\:traced_free}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void traced_free (void *  {\i pu}, const char *  {\i par_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAACJ}
+{\bkmkend AAAAAAAACJ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_malloc\:memtrace.cpp}
+{\xe \v memtrace.cpp\:traced_malloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b END_NAMESPACE} {\b START_NAMESPACE} void* traced_malloc (size_t  {\i size}, const char *  {\i par_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAACK}
+{\bkmkend AAAAAAAACK}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_realloc\:memtrace.cpp}
+{\xe \v memtrace.cpp\:traced_realloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* traced_realloc (void *  {\i old}, size_t  {\i size}, const char *  {\i par_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAACL}
+{\bkmkend AAAAAAAACL}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+memtrace.h File Reference\par \pard\plain 
+{\tc\tcl2 \v memtrace.h}
+{\xe \v memtrace.h}
+{\bkmkstart AAAAAAAACM}
+{\bkmkend AAAAAAAACM}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdlib.h>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macros\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE_TO_MEMORY}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE_AUTO}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b MEMTRACE_C}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b ALLOW_FREE_NULL}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b START_NAMESPACE}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b END_NAMESPACE}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b TRACEC}(func)\~ func\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b THROW_BADALLOC}\~ throw (std::bad_alloc)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b THROW_NOTHING}\~ throw ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b malloc}(size)\~ {\b TRACEC}({\b traced_malloc})(size,#size,__LINE__,__FILE__)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b calloc}(count,  size)\~ {\b TRACEC}({\b traced_calloc})(count, size, #count","#size,__LINE__,__FILE__)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b free}(p)\~ {\b TRACEC}({\b traced_free})(p, #p,__LINE__,__FILE__)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+#define {\b realloc}(old,  size)\~ {\b TRACEC}({\b traced_realloc})(old,size,#size,__LINE__,__FILE__)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b START_NAMESPACE} int {\b allocated_blocks} ()\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b END_NAMESPACE} {\b START_NAMESPACE} int {\b mem_check} (void)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b traced_malloc} (size_t size, const char *size_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b traced_calloc} (size_t count, size_t size, const char *size_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b traced_free} (void *p, const char *size_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void * {\b traced_realloc} (void *old, size_t size, const char *size_txt, int line, const char *file)\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mem_dump} (void const *mem, size_t size, FILE *fp)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Macro Definition Documentation\par
+\pard\plain 
+{\xe \v ALLOW_FREE_NULL\:memtrace.h}
+{\xe \v memtrace.h\:ALLOW_FREE_NULL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define ALLOW_FREE_NULL}}
+\par
+{\bkmkstart AAAAAAAACN}
+{\bkmkend AAAAAAAACN}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v calloc\:memtrace.h}
+{\xe \v memtrace.h\:calloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define calloc( count,  size)\~ {\b TRACEC}({\b traced_calloc})(count, size, #count","#size,__LINE__,__FILE__)}}
+\par
+{\bkmkstart AAAAAAAACO}
+{\bkmkend AAAAAAAACO}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v END_NAMESPACE\:memtrace.h}
+{\xe \v memtrace.h\:END_NAMESPACE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define END_NAMESPACE}}
+\par
+{\bkmkstart AAAAAAAACP}
+{\bkmkend AAAAAAAACP}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v free\:memtrace.h}
+{\xe \v memtrace.h\:free}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define free( p)\~ {\b TRACEC}({\b traced_free})(p, #p,__LINE__,__FILE__)}}
+\par
+{\bkmkstart AAAAAAAACQ}
+{\bkmkend AAAAAAAACQ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v malloc\:memtrace.h}
+{\xe \v memtrace.h\:malloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define malloc( size)\~ {\b TRACEC}({\b traced_malloc})(size,#size,__LINE__,__FILE__)}}
+\par
+{\bkmkstart AAAAAAAACR}
+{\bkmkend AAAAAAAACR}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE\:memtrace.h}
+{\xe \v memtrace.h\:MEMTRACE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE}}
+\par
+{\bkmkstart AAAAAAAACS}
+{\bkmkend AAAAAAAACS}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE_AUTO\:memtrace.h}
+{\xe \v memtrace.h\:MEMTRACE_AUTO}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE_AUTO}}
+\par
+{\bkmkstart AAAAAAAACT}
+{\bkmkend AAAAAAAACT}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE_C\:memtrace.h}
+{\xe \v memtrace.h\:MEMTRACE_C}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE_C}}
+\par
+{\bkmkstart AAAAAAAACU}
+{\bkmkend AAAAAAAACU}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v MEMTRACE_TO_MEMORY\:memtrace.h}
+{\xe \v memtrace.h\:MEMTRACE_TO_MEMORY}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define MEMTRACE_TO_MEMORY}}
+\par
+{\bkmkstart AAAAAAAACV}
+{\bkmkend AAAAAAAACV}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v realloc\:memtrace.h}
+{\xe \v memtrace.h\:realloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define realloc( old,  size)\~ {\b TRACEC}({\b traced_realloc})(old,size,#size,__LINE__,__FILE__)}}
+\par
+{\bkmkstart AAAAAAAACW}
+{\bkmkend AAAAAAAACW}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v START_NAMESPACE\:memtrace.h}
+{\xe \v memtrace.h\:START_NAMESPACE}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define START_NAMESPACE}}
+\par
+{\bkmkstart AAAAAAAACX}
+{\bkmkend AAAAAAAACX}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v THROW_BADALLOC\:memtrace.h}
+{\xe \v memtrace.h\:THROW_BADALLOC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define THROW_BADALLOC\~ throw (std::bad_alloc)}}
+\par
+{\bkmkstart AAAAAAAACY}
+{\bkmkend AAAAAAAACY}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v THROW_NOTHING\:memtrace.h}
+{\xe \v memtrace.h\:THROW_NOTHING}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define THROW_NOTHING\~ throw ()}}
+\par
+{\bkmkstart AAAAAAAACZ}
+{\bkmkend AAAAAAAACZ}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v TRACEC\:memtrace.h}
+{\xe \v memtrace.h\:TRACEC}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+#define TRACEC( func)\~ func}}
+\par
+{\bkmkstart AAAAAAAADA}
+{\bkmkend AAAAAAAADA}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v allocated_blocks\:memtrace.h}
+{\xe \v memtrace.h\:allocated_blocks}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b START_NAMESPACE} int allocated_blocks ()}}
+\par
+{\bkmkstart AAAAAAAADB}
+{\bkmkend AAAAAAAADB}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v mem_check\:memtrace.h}
+{\xe \v memtrace.h\:mem_check}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+{\b END_NAMESPACE} {\b START_NAMESPACE} int mem_check (void )}}
+\par
+{\bkmkstart AAAAAAAADC}
+{\bkmkend AAAAAAAADC}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v mem_dump\:memtrace.h}
+{\xe \v memtrace.h\:mem_dump}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void mem_dump (void const *  {\i mem}, size_t  {\i size}, FILE *  {\i fp})}}
+\par
+{\bkmkstart AAAAAAAADD}
+{\bkmkend AAAAAAAADD}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_calloc\:memtrace.h}
+{\xe \v memtrace.h\:traced_calloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* traced_calloc (size_t  {\i count}, size_t  {\i size}, const char *  {\i size_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAADE}
+{\bkmkend AAAAAAAADE}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_free\:memtrace.h}
+{\xe \v memtrace.h\:traced_free}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void traced_free (void *  {\i p}, const char *  {\i size_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAADF}
+{\bkmkend AAAAAAAADF}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_malloc\:memtrace.h}
+{\xe \v memtrace.h\:traced_malloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* traced_malloc (size_t  {\i size}, const char *  {\i size_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAADG}
+{\bkmkend AAAAAAAADG}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+{\xe \v traced_realloc\:memtrace.h}
+{\xe \v memtrace.h\:traced_realloc}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void* traced_realloc (void *  {\i old}, size_t  {\i size}, const char *  {\i size_txt}, int  {\i line}, const char *  {\i file})}}
+\par
+{\bkmkstart AAAAAAAADH}
+{\bkmkend AAAAAAAADH}
+{
+\pard\plain \s51\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+node.cpp File Reference\par \pard\plain 
+{\tc\tcl2 \v node.cpp}
+{\xe \v node.cpp}
+{\bkmkstart AAAAAAAADI}
+{\bkmkend AAAAAAAADI}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "node.h"}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+node.h File Reference\par \pard\plain 
+{\tc\tcl2 \v node.h}
+{\xe \v node.h}
+{\bkmkstart AAAAAAAADJ}
+{\bkmkend AAAAAAAADJ}
+{
+\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include "letter.h"}\par
+{\f2 #include <cstdlib>}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Node}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b End}\par
+\pard\plain \s80\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Path}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+README.md File Reference\par \pard\plain 
+{\tc\tcl2 \v README.md}
+{\xe \v README.md}
+{\bkmkstart AAAAAAAADK}
+{\bkmkend AAAAAAAADK}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

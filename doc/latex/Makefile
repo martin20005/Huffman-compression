@@ -7,7 +7,7 @@ refman.pdf: clean refman.tex
 	makeindex refman.idx
 	pdflatex refman
 	latex_count=8 ; \
-	while egrep -s 'Rerun (LaTeX|to get cross-references right_child_)' refman.log && [ $$latex_count -gt 0 ] ;\
+	while egrep -s 'Rerun (LaTeX|to get cross-references right)' refman.log && [ $$latex_count -gt 0 ] ;\
 	    do \
 	      echo "Rerunning latex...." ;\
 	      pdflatex refman ;\

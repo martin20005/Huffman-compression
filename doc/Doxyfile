@@ -32,13 +32,13 @@ DOXYFILE_ENCODING      = UTF-8
 # title of most generated pages and in a few other places.
 # The default value is: My Project.
 
-PROJECT_NAME           = Huffman
+PROJECT_NAME           = Huffman-compression
 
 # The PROJECT_NUMBER tag can be used to enter a project or revision number. This
 # could be handy for archiving the generated documentation or if some version
 # control system is used.
 
-PROJECT_NUMBER         = 1.2
+PROJECT_NUMBER         = 1.3
 
 # Using the PROJECT_BRIEF tag one can provide an optional one line description
 # for a project that appears at the top of each page and should give viewer a
@@ -51,12 +51,12 @@ PROJECT_BRIEF          =
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = 
+PROJECT_LOGO           = /home/ronaikovacs/Downloads/prog2/Huffman_logo.jpeg
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
 # entered, it will be relative to the location where doxygen was started. If
-# left_child_ blank the current directory will be used.
+# left blank the current directory will be used.
 
 OUTPUT_DIRECTORY       = /home/ronaikovacs/Prog/C++/Prog2/hf/huffman_1.2/doc
 
@@ -113,7 +113,7 @@ REPEAT_BRIEF           = YES
 # used to form the text in various listings. Each string in this list, if found
 # as the leading text of the brief description, will be stripped from the text
 # and the result, after processing the whole list, is used as the annotated
-# text. Otherwise, the brief description is used as-is. If left_child_ blank, the
+# text. Otherwise, the brief description is used as-is. If left blank, the
 # following values are used ($name is automatically replaced with the name of
 # the entity):The $name class, The $name widget, The $name file, is, provides,
 # specifies, contains, represents, a, an and the.
@@ -153,9 +153,9 @@ INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
 
 # The STRIP_FROM_PATH tag can be used to strip a user-defined part of the path.
-# Stripping is only done if one of the specified strings matches the left_child_-hand
+# Stripping is only done if one of the specified strings matches the left-hand
 # part of the path. The tag can be used to show relative paths in the file list.
-# If left_child_ blank the directory from which doxygen is run is used as the path to
+# If left blank the directory from which doxygen is run is used as the path to
 # strip.
 #
 # Note that you can specify absolute paths here, but also relative paths, which
@@ -166,7 +166,7 @@ STRIP_FROM_PATH        =
 
 # The STRIP_FROM_INC_PATH tag can be used to strip a user-defined part of the
 # path mentioned in the documentation of a class, which tells the reader which
-# header file to include in order to use a class. If left_child_ blank only the name of
+# header file to include in order to use a class. If left blank only the name of
 # the header file containing the class definition is used. Otherwise one should
 # specify the list of include paths that are normally passed to the compiler
 # using the -I flag.
@@ -283,8 +283,8 @@ OPTIMIZE_OUTPUT_VHDL   = NO
 # FortranFixed, free formatted Fortran: FortranFree, unknown formatted Fortran:
 # Fortran. In the later case the parser tries to guess whether the code is fixed
 # or free formatted code, this is the default for Fortran type files), VHDL. For
-# instance to make doxygen treat .inc_size_ files as Fortran files (default is PHP),
-# and .f files as C (default is Fortran), use: inc_size_=Fortran f=C.
+# instance to make doxygen treat .inc files as Fortran files (default is PHP),
+# and .f files as C (default is Fortran), use: inc=Fortran f=C.
 #
 # Note: For files without extension you can use no_extension as a placeholder.
 #
@@ -390,7 +390,7 @@ SUBGROUPING            = YES
 INLINE_GROUPED_CLASSES = NO
 
 # When the INLINE_SIMPLE_STRUCTS tag is set to YES, structs, classes, and unions
-# with only public data_ fields or simple typedef fields will be shown inline in
+# with only public data fields or simple typedef fields will be shown inline in
 # the documentation of the scope in which they are defined (i.e. file,
 # namespace, or group documentation), provided this scope is documented. If set
 # to NO, structs, classes, and unions are shown on a separate page (for HTML and
@@ -701,7 +701,7 @@ FILE_VERSION_FILTER    =
 #
 # Note that if you run doxygen from a directory containing a file called
 # DoxygenLayout.xml, doxygen will parse it automatically even if the LAYOUT_FILE
-# tag is left_child_ empty.
+# tag is left empty.
 
 LAYOUT_FILE            = 
 
@@ -775,7 +775,7 @@ WARN_AS_ERROR          = NO
 WARN_FORMAT            = "$file:$line: $text"
 
 # The WARN_LOGFILE tag can be used to specify a file to which warning and error
-# messages should be written. If left_child_ blank the output is written to standard
+# messages should be written. If left blank the output is written to standard
 # error (stderr).
 
 WARN_LOGFILE           = 
@@ -809,9 +809,9 @@ INPUT_ENCODING         = UTF-8
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # read by doxygen.
 #
-# If left_child_ blank the following patterns are tested:*.c, *.cc, *.cxx, *.cpp,
+# If left blank the following patterns are tested:*.c, *.cc, *.cxx, *.cpp,
 # *.c++, *.java, *.ii, *.ixx, *.ipp, *.i++, *.inl, *.idl, *.ddl, *.odl, *.h,
-# *.hh, *.hxx, *.hpp, *.h++, *.cs, *.d, *.php, *.php4, *.php5, *.phtml, *.inc_size_,
+# *.hh, *.hxx, *.hpp, *.h++, *.cs, *.d, *.php, *.php4, *.php5, *.phtml, *.inc,
 # *.m, *.markdown, *.md, *.mm, *.dox, *.py, *.pyw, *.f90, *.f95, *.f03, *.f08,
 # *.f, *.for, *.tcl, *.vhd, *.vhdl, *.ucf and *.qsf.
 
@@ -840,7 +840,7 @@ FILE_PATTERNS          = *.c \
                          *.php4 \
                          *.php5 \
                          *.phtml \
-                         *.inc_size_ \
+                         *.inc \
                          *.m \
                          *.markdown \
                          *.md \
@@ -868,7 +868,7 @@ RECURSIVE              = NO
 
 # The EXCLUDE tag can be used to specify files and/or directories that should be
 # excluded from the INPUT source files. This way you can easily exclude a
-# subdirectory from a directory tree whose root_h_tree_ is specified with the INPUT tag.
+# subdirectory from a directory tree whose root is specified with the INPUT tag.
 #
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
@@ -910,7 +910,7 @@ EXAMPLE_PATH           =
 
 # If the value of the EXAMPLE_PATH tag contains directories, you can use the
 # EXAMPLE_PATTERNS tag to specify one or more wildcard pattern (like *.cpp and
-# *.h) to filter out the source-files in the directories. If left_child_ blank all
+# *.h) to filter out the source-files in the directories. If left blank all
 # files are included.
 
 EXAMPLE_PATTERNS       = *
@@ -995,7 +995,7 @@ USE_MDFILE_AS_MAINPAGE =
 # also VERBATIM_HEADERS is set to NO.
 # The default value is: NO.
 
-SOURCE_BROWSER         = YES
+SOURCE_BROWSER         = NO
 
 # Setting the INLINE_SOURCES tag to YES will include the body of functions,
 # classes and enums directly into the documentation.
@@ -1049,7 +1049,7 @@ SOURCE_TOOLTIPS        = YES
 # To use it do the following:
 # - Install the latest version of global
 # - Enable SOURCE_BROWSER and USE_HTAGS in the config file
-# - Make sure the INPUT points to the root_h_tree_ of the source tree
+# - Make sure the INPUT points to the root of the source tree
 # - Run doxygen as normal
 #
 # Doxygen will invoke htags (and that will in turn invoke gtags), so these
@@ -1140,7 +1140,7 @@ HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
 
 # The HTML_HEADER tag can be used to specify a user-defined HTML header file for
-# each generated HTML page. If the tag is left_child_ blank doxygen will generate a
+# each generated HTML page. If the tag is left blank doxygen will generate a
 # standard header.
 #
 # To get valid HTML the header file that includes any scripts and style sheets
@@ -1160,7 +1160,7 @@ HTML_FILE_EXTENSION    = .html
 HTML_HEADER            = 
 
 # The HTML_FOOTER tag can be used to specify a user-defined HTML footer for each
-# generated HTML page. If the tag is left_child_ blank doxygen will generate a standard
+# generated HTML page. If the tag is left blank doxygen will generate a standard
 # footer. See HTML_HEADER for more information on how to generate a default
 # footer and what special commands can be used inside the footer. See also
 # section "Doxygen usage" for information on how to generate the default footer
@@ -1171,7 +1171,7 @@ HTML_FOOTER            =
 
 # The HTML_STYLESHEET tag can be used to specify a user-defined cascading style
 # sheet that is used by each HTML page. It can be used to fine-tune the look of
-# the HTML output. If left_child_ blank doxygen will generate a default style sheet.
+# the HTML output. If left blank doxygen will generate a default style sheet.
 # See also section "Doxygen usage" for information on how to generate the style
 # sheet that doxygen normally uses.
 # Note: It is recommended to use HTML_EXTRA_STYLESHEET instead of this tag, as
@@ -1348,7 +1348,7 @@ HHC_LOCATION           =
 
 GENERATE_CHI           = NO
 
-# The CHM_INDEX_ENCODING is used to genCodes HtmlHelp index (hhk), content (hhc)
+# The CHM_INDEX_ENCODING is used to encode HtmlHelp index (hhk), content (hhc)
 # and project file content.
 # This tag requires that the tag GENERATE_HTMLHELP is set to YES.
 
@@ -1472,7 +1472,7 @@ DISABLE_INDEX          = NO
 # HTML help feature. Via custom style sheets (see HTML_EXTRA_STYLESHEET) one can
 # further fine-tune the look of the index. As an example, the default style
 # sheet generated by doxygen has an example that shows how to put an image at
-# the root_h_tree_ of the tree instead of the PROJECT_NAME. Since the tree basically has
+# the root of the tree instead of the PROJECT_NAME. Since the tree basically has
 # the same information as the tab index, you could consider setting
 # DISABLE_INDEX to YES when enabling this option.
 # The default value is: NO.
@@ -1497,7 +1497,7 @@ ENUM_VALUES_PER_LINE   = 4
 
 TREEVIEW_WIDTH         = 250
 
-# If the EXT_LINKS_IN_WINDOW option is set to YES, doxygen will is_open_ links to
+# If the EXT_LINKS_IN_WINDOW option is set to YES, doxygen will open links to
 # external symbols imported via tag files in a separate window.
 # The default value is: NO.
 # This tag requires that the tag GENERATE_HTML is set to YES.
@@ -1613,7 +1613,7 @@ SERVER_BASED_SEARCH    = NO
 # search results.
 #
 # Doxygen ships with an example indexer (doxyindexer) and search engine
-# (doxysearch.cgi) which are based on the is_open_ source search engine library
+# (doxysearch.cgi) which are based on the open source search engine library
 # Xapian (see: http://xapian.org/).
 #
 # See the section "External Indexing and Searching" for details.
@@ -1626,7 +1626,7 @@ EXTERNAL_SEARCH        = NO
 # which will return the search results when EXTERNAL_SEARCH is enabled.
 #
 # Doxygen ships with an example indexer (doxyindexer) and search engine
-# (doxysearch.cgi) which are based on the is_open_ source search engine library
+# (doxysearch.cgi) which are based on the open source search engine library
 # Xapian (see: http://xapian.org/). See the section "External Indexing and
 # Searching" for details.
 # This tag requires that the tag SEARCHENGINE is set to YES.
@@ -1634,7 +1634,7 @@ EXTERNAL_SEARCH        = NO
 SEARCHENGINE_URL       = 
 
 # When SERVER_BASED_SEARCH and EXTERNAL_SEARCH are both enabled the unindexed
-# search data_ is written to a file for indexing by an external tool. With the
+# search data is written to a file for indexing by an external tool. With the
 # SEARCHDATA_FILE tag the name of this file can be specified.
 # The default file is: searchdata.xml.
 # This tag requires that the tag SEARCHENGINE is set to YES.
@@ -1644,7 +1644,7 @@ SEARCHDATA_FILE        = searchdata.xml
 # When SERVER_BASED_SEARCH and EXTERNAL_SEARCH are both enabled the
 # EXTERNAL_SEARCH_ID tag can be used as an identifier for the project. This is
 # useful in combination with EXTRA_SEARCH_MAPPINGS to search through multiple
-# projects and redirect the results back to the right_child_ project.
+# projects and redirect the results back to the right project.
 # This tag requires that the tag SEARCHENGINE is set to YES.
 
 EXTERNAL_SEARCH_ID     = 
@@ -1718,14 +1718,14 @@ PAPER_TYPE             = a4
 # EXTRA_PACKAGES=times or EXTRA_PACKAGES={times}
 # To use the option intlimits with the amsmath package you can specify:
 # EXTRA_PACKAGES=[intlimits]{amsmath}
-# If left_child_ blank no extra packages will be included.
+# If left blank no extra packages will be included.
 # This tag requires that the tag GENERATE_LATEX is set to YES.
 
 EXTRA_PACKAGES         = 
 
 # The LATEX_HEADER tag can be used to specify a personal LaTeX header for the
 # generated LaTeX document. The header should contain everything until the first
-# chapter. If it is left_child_ blank doxygen will generate a standard header. See
+# chapter. If it is left blank doxygen will generate a standard header. See
 # section "Doxygen usage" for information on how to let doxygen write the
 # default header to a separate file.
 #
@@ -1741,7 +1741,7 @@ LATEX_HEADER           =
 
 # The LATEX_FOOTER tag can be used to specify a personal LaTeX footer for the
 # generated LaTeX document. The footer should contain everything after the last
-# chapter. If it is left_child_ blank doxygen will generate a standard footer. See
+# chapter. If it is left blank doxygen will generate a standard footer. See
 # LATEX_HEADER for more information on how to generate a default footer and what
 # special commands can be used inside the footer.
 #
@@ -1837,7 +1837,7 @@ LATEX_TIMESTAMP        = NO
 # readers/editors.
 # The default value is: NO.
 
-GENERATE_RTF           = NO
+GENERATE_RTF           = YES
 
 # The RTF_OUTPUT tag is used to specify where the RTF docs will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -1946,7 +1946,7 @@ MAN_LINKS              = NO
 # captures the structure of the code including all documentation.
 # The default value is: NO.
 
-GENERATE_XML           = YES
+GENERATE_XML           = NO
 
 # The XML_OUTPUT tag is used to specify where the XML pages will be put. If a
 # relative path is entered the value of OUTPUT_DIRECTORY will be put in front of
@@ -2085,7 +2085,7 @@ INCLUDE_PATH           =
 
 # You can use the INCLUDE_FILE_PATTERNS tag to specify one or more wildcard
 # patterns (like *.h and *.hpp) to filter out the header-files in the
-# directories. If left_child_ blank, the patterns specified with FILE_PATTERNS will be
+# directories. If left blank, the patterns specified with FILE_PATTERNS will be
 # used.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
@@ -2183,13 +2183,13 @@ PERL_PATH              = /usr/bin/perl
 # powerful graphs.
 # The default value is: YES.
 
-CLASS_DIAGRAMS         = YES
+CLASS_DIAGRAMS         = NO
 
 # You can define message sequence charts within doxygen comments using the \msc
 # command. Doxygen will then run the mscgen tool (see:
 # http://www.mcternan.me.uk/mscgen/)) to produce the chart and insert it in the
 # documentation. The MSCGEN_PATH tag allows you to specify the directory where
-# the mscgen tool resides. If left_child_ empty the tool is assumed to be found in the
+# the mscgen tool resides. If left empty the tool is assumed to be found in the
 # default search path.
 
 MSCGEN_PATH            = 
@@ -2197,7 +2197,7 @@ MSCGEN_PATH            =
 # You can include diagrams made with dia in doxygen documentation. Doxygen will
 # then run dia to produce the diagram and insert it in the documentation. The
 # DIA_PATH tag allows you to specify the directory where the dia binary resides.
-# If left_child_ empty dia is assumed to be found in the default search path.
+# If left empty dia is assumed to be found in the default search path.
 
 DIA_PATH               = 
 
@@ -2391,7 +2391,7 @@ DOT_IMAGE_FORMAT       = png
 INTERACTIVE_SVG        = NO
 
 # The DOT_PATH tag can be used to specify the path where the dot tool can be
-# found. If left_child_ blank, it is assumed the dot tool can be found in the path.
+# found. If left blank, it is assumed the dot tool can be found in the path.
 # This tag requires that the tag HAVE_DOT is set to YES.
 
 DOT_PATH               = 
@@ -2416,7 +2416,7 @@ MSCFILE_DIRS           =
 DIAFILE_DIRS           = 
 
 # When using plantuml, the PLANTUML_JAR_PATH tag should be used to specify the
-# path where java can findFirst the plantuml.jar file. If left_child_ blank, it is assumed
+# path where java can find the plantuml.jar file. If left blank, it is assumed
 # PlantUML is not used or called during a preprocessing step. Doxygen will
 # generate a warning when it encounters a \startuml command in this case and
 # will not generate output for the diagram.
@@ -2437,7 +2437,7 @@ PLANTUML_INCLUDE_PATH  =
 # that will be shown in the graph. If the number of nodes in a graph becomes
 # larger than this value, doxygen will truncate the graph, which is visualized
 # by representing a node as a red box. Note that doxygen if the number of direct
-# children of the root_h_tree_ node in a graph is already larger than
+# children of the root node in a graph is already larger than
 # DOT_GRAPH_MAX_NODES then the graph will not be shown at all. Also note that
 # the size of a graph can be further restricted by MAX_DOT_GRAPH_DEPTH.
 # Minimum value: 0, maximum value: 10000, default value: 50.
@@ -2447,8 +2447,8 @@ DOT_GRAPH_MAX_NODES    = 50
 
 # The MAX_DOT_GRAPH_DEPTH tag can be used to set the maximum depth of the graphs
 # generated by dot. A depth value of 3 means that only nodes reachable from the
-# root_h_tree_ by following a path via at most 3 edges will be shown. Nodes that lay
-# further from the root_h_tree_ node will be omitted. Note that setting this option to 1
+# root by following a path via at most 3 edges will be shown. Nodes that lay
+# further from the root node will be omitted. Note that setting this option to 1
 # or 2 may greatly reduce the computation time needed for large code bases. Also
 # note that the size of a graph can be further restricted by
 # DOT_GRAPH_MAX_NODES. Using a depth of 0 means no depth restriction.

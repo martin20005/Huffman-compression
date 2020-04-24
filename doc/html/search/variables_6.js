@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['right',['right',['../class_node.html#a7328862eaa6dea28018326549b3294d3',1,'Node']]]
+  ['right_5fchild_5f',['right_child_',['../class_node.html#abf180145dff7ffce95b3b39bfe24d2f6',1,'Node']]]
 ];

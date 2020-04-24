@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ne',['ne',['../namespacegtest__lite.html#a9a1485affebbed604f7cac69f70072dc',1,'gtest_lite']]],
-  ['nestr',['nestr',['../namespacegtest__lite.html#a0a34b1bb0d55bc0c6a3e878ec2bcd49f',1,'gtest_lite']]],
-  ['node',['Node',['../class_node.html#ad7a34779cad45d997bfd6d3d8043c75f',1,'Node::Node()'],['../class_node.html#a942858d25ccdfaf7e1d1f4ddbdf13831',1,'Node::Node(Node *l, Node *r, long count=0)']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['mem_5fcheck',['mem_check',['../memtrace_8cpp.html#ac6308f8e862dbc52b364a505483191a6',1,'mem_check(void):&#160;memtrace.cpp'],['../memtrace_8h.html#ab531f5bcfca2f50b8c2a43f7bb96fc0e',1,'mem_check(void):&#160;memtrace.cpp']]],
+  ['mem_5fdump',['mem_dump',['../memtrace_8cpp.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp'],['../memtrace_8h.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp']]]
 ];

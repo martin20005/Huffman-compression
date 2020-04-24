@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['name',['name',['../structgtest__lite_1_1_test.html#a8d495a42580e3ae337f9c4982136b700',1,'gtest_lite::Test']]],
-  ['ne',['ne',['../namespacegtest__lite.html#a9a1485affebbed604f7cac69f70072dc',1,'gtest_lite']]],
-  ['nestr',['nestr',['../namespacegtest__lite.html#a0a34b1bb0d55bc0c6a3e878ec2bcd49f',1,'gtest_lite']]],
-  ['next',['next',['../struct__registry__item.html#aa659ff3f2fa74b37e31b0bd3948bbf7f',1,'_registry_item']]],
-  ['node',['Node',['../class_node.html',1,'Node'],['../class_node.html#ad7a34779cad45d997bfd6d3d8043c75f',1,'Node::Node()'],['../class_node.html#a942858d25ccdfaf7e1d1f4ddbdf13831',1,'Node::Node(Node *l, Node *r, long count=0)']]],
-  ['node_2ecpp',['node.cpp',['../node_8cpp.html',1,'']]],
-  ['node_2eh',['node.h',['../node_8h.html',1,'']]],
-  ['null',['null',['../structgtest__lite_1_1_test.html#af4784302d78bb004bcb20b7f75ec06c3',1,'gtest_lite::Test']]]
+  ['main',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['malloc',['malloc',['../memtrace_8h.html#a2eb0b03d1a9de9615a291b1205969069',1,'memtrace.h']]],
+  ['mem_5fcheck',['mem_check',['../memtrace_8cpp.html#ac6308f8e862dbc52b364a505483191a6',1,'mem_check(void):&#160;memtrace.cpp'],['../memtrace_8h.html#ab531f5bcfca2f50b8c2a43f7bb96fc0e',1,'mem_check(void):&#160;memtrace.cpp']]],
+  ['mem_5fdump',['mem_dump',['../memtrace_8cpp.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp'],['../memtrace_8h.html#a031b528c007e2e8ba5d814be13d3860c',1,'mem_dump(void const *mem, size_t size, FILE *fp):&#160;memtrace.cpp']]],
+  ['memtrace',['MEMTRACE',['../main_8cpp.html#aa90f3e89fc3fe477370afb9f81975081',1,'MEMTRACE():&#160;main.cpp'],['../memtrace_8cpp.html#aa90f3e89fc3fe477370afb9f81975081',1,'MEMTRACE():&#160;memtrace.cpp'],['../memtrace_8h.html#aa90f3e89fc3fe477370afb9f81975081',1,'MEMTRACE():&#160;memtrace.h']]],
+  ['memtrace_2ecpp',['memtrace.cpp',['../memtrace_8cpp.html',1,'']]],
+  ['memtrace_2eh',['memtrace.h',['../memtrace_8h.html',1,'']]],
+  ['memtrace_5fauto',['MEMTRACE_AUTO',['../memtrace_8h.html#ac7d83b17b55e7ca775a0127988f45c30',1,'memtrace.h']]],
+  ['memtrace_5fc',['MEMTRACE_C',['../memtrace_8h.html#abd343745021a44232eb2808e547001d5',1,'memtrace.h']]],
+  ['memtrace_5fto_5fmemory',['MEMTRACE_TO_MEMORY',['../memtrace_8h.html#ac089c2c8a58531c78e528190c18946b0',1,'memtrace.h']]]
 ];

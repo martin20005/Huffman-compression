@@ -1,4 +1,4 @@
-\section{Letter Class Reference}
+\hypertarget{class_letter}{}\section{Letter Class Reference}
 \label{class_letter}\index{Letter@{Letter}}
 
 
@@ -7,94 +7,106 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Letter} (char c)
+\hyperlink{class_letter_a9e19a8d3beff29261731496902b885bf}{Letter} (char ch)
 \item 
-\textbf{ Letter} (const \textbf{ Letter} \&l)
+\hyperlink{class_letter_a20efe02d84add2ca7b89e43f629bc128}{Letter} (const \hyperlink{class_letter}{Letter} \&letter)
 \item 
-\textbf{ Letter} ()
+\hyperlink{class_letter_ac390dd9bfbdd7a0965cd74b3eccee010}{Letter} ()
 \item 
-char \textbf{ original} () const
+char \hyperlink{class_letter_a9ae0471d69dddf53a0a64219233d0c4a}{original} () const
 \item 
-void \textbf{ original} (char ch)
+void \hyperlink{class_letter_af6158c9bc58d3f4b77ee627807b87133}{original} (char ch)
 \item 
-long long int \textbf{ huffman} () const
+long long int \hyperlink{class_letter_af52f553dafb323384339dcfaa1a7eaa6}{huffman} () const
 \item 
-void \textbf{ huffman} (long long int h, unsigned char l)
+void \hyperlink{class_letter_ac345d7df6c98a9aea64f77d55267f820}{huffman} (long long int h, unsigned char l)
 \item 
-unsigned char \textbf{ length} () const
+unsigned char \hyperlink{class_letter_a06c63721ba0b1c40ac7591835f2e6e43}{length} () const
 \item 
-\textbf{ Letter} \& \textbf{ operator=} (const \textbf{ Letter} \&l)
+\hyperlink{class_letter}{Letter} \& \hyperlink{class_letter_a9da69c0371f32304bbbe5c9b97160eef}{operator=} (const \hyperlink{class_letter}{Letter} \&letter)
 \item 
-bool \textbf{ operator==} (const \textbf{ Letter} \&l)
+bool \hyperlink{class_letter_a5ed233b62c83d0a84cd40a42b9a90657}{operator==} (const \hyperlink{class_letter}{Letter} \&letter) const
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+Bounds original character and Huffman-\/code together 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\label{class_letter_aa33f1a7d59948007cabb7cb3060fbbdd}} 
+\mbox{\Hypertarget{class_letter_a9e19a8d3beff29261731496902b885bf}\label{class_letter_a9e19a8d3beff29261731496902b885bf}} 
 \index{Letter@{Letter}!Letter@{Letter}}
 \index{Letter@{Letter}!Letter@{Letter}}
-\subsubsection{Letter()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
-{\footnotesize\ttfamily Letter\+::\+Letter (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Letter()}{Letter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Letter\+::\+Letter (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
 
-\mbox{\label{class_letter_aad5ec69b0312ac41d818337c5ff94e7e}} 
+Constructor Only the original character is set \mbox{\Hypertarget{class_letter_a20efe02d84add2ca7b89e43f629bc128}\label{class_letter_a20efe02d84add2ca7b89e43f629bc128}} 
 \index{Letter@{Letter}!Letter@{Letter}}
 \index{Letter@{Letter}!Letter@{Letter}}
-\subsubsection{Letter()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
-{\footnotesize\ttfamily Letter\+::\+Letter (\begin{DoxyParamCaption}\item[{const \textbf{ Letter} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{Letter()}{Letter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Letter\+::\+Letter (\begin{DoxyParamCaption}\item[{const \hyperlink{class_letter}{Letter} \&}]{letter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_ac390dd9bfbdd7a0965cd74b3eccee010}} 
+Copy constructor \mbox{\Hypertarget{class_letter_ac390dd9bfbdd7a0965cd74b3eccee010}\label{class_letter_ac390dd9bfbdd7a0965cd74b3eccee010}} 
 \index{Letter@{Letter}!Letter@{Letter}}
 \index{Letter@{Letter}!Letter@{Letter}}
-\subsubsection{Letter()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Letter()}{Letter()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Letter\+::\+Letter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-
+is\+Empty \hyperlink{class_letter}{Letter} for creating arrays 
 
 \subsection{Member Function Documentation}
-\mbox{\label{class_letter_af52f553dafb323384339dcfaa1a7eaa6}} 
+\mbox{\Hypertarget{class_letter_af52f553dafb323384339dcfaa1a7eaa6}\label{class_letter_af52f553dafb323384339dcfaa1a7eaa6}} 
 \index{Letter@{Letter}!huffman@{huffman}}
 \index{huffman@{huffman}!Letter@{Letter}}
-\subsubsection{huffman()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{huffman()}{huffman()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily long long int Letter\+::huffman (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_ac345d7df6c98a9aea64f77d55267f820}} 
+\begin{DoxyReturn}{Returns}
+The Huffman-\/code of character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_letter_ac345d7df6c98a9aea64f77d55267f820}\label{class_letter_ac345d7df6c98a9aea64f77d55267f820}} 
 \index{Letter@{Letter}!huffman@{huffman}}
 \index{huffman@{huffman}!Letter@{Letter}}
-\subsubsection{huffman()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{huffman()}{huffman()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Letter\+::huffman (\begin{DoxyParamCaption}\item[{long long int}]{h,  }\item[{unsigned char}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_a06c63721ba0b1c40ac7591835f2e6e43}} 
+Setting the Huffman-\/code (length of H-\/code always needed!) \mbox{\Hypertarget{class_letter_a06c63721ba0b1c40ac7591835f2e6e43}\label{class_letter_a06c63721ba0b1c40ac7591835f2e6e43}} 
 \index{Letter@{Letter}!length@{length}}
 \index{length@{length}!Letter@{Letter}}
-\subsubsection{length()}
+\subsubsection{\texorpdfstring{length()}{length()}}
 {\footnotesize\ttfamily unsigned char Letter\+::length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_a5bd34c7d6753f3a950cb3a3358945c1a}} 
+\begin{DoxyReturn}{Returns}
+The length of Huffman-\/code 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_letter_a9da69c0371f32304bbbe5c9b97160eef}\label{class_letter_a9da69c0371f32304bbbe5c9b97160eef}} 
 \index{Letter@{Letter}!operator=@{operator=}}
 \index{operator=@{operator=}!Letter@{Letter}}
-\subsubsection{operator=()}
-{\footnotesize\ttfamily \textbf{ Letter}\& Letter\+::operator= (\begin{DoxyParamCaption}\item[{const \textbf{ Letter} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{class_letter}{Letter}\& Letter\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{class_letter}{Letter} \&}]{letter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_acadabf182742d730bcc61f052b29aad8}} 
+Assignment \mbox{\Hypertarget{class_letter_a5ed233b62c83d0a84cd40a42b9a90657}\label{class_letter_a5ed233b62c83d0a84cd40a42b9a90657}} 
 \index{Letter@{Letter}!operator==@{operator==}}
 \index{operator==@{operator==}!Letter@{Letter}}
-\subsubsection{operator==()}
-{\footnotesize\ttfamily bool Letter\+::operator== (\begin{DoxyParamCaption}\item[{const \textbf{ Letter} \&}]{l }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Letter\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{class_letter}{Letter} \&}]{letter }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_a9ae0471d69dddf53a0a64219233d0c4a}} 
+Equal if the original characters equal \mbox{\Hypertarget{class_letter_a9ae0471d69dddf53a0a64219233d0c4a}\label{class_letter_a9ae0471d69dddf53a0a64219233d0c4a}} 
 \index{Letter@{Letter}!original@{original}}
 \index{original@{original}!Letter@{Letter}}
-\subsubsection{original()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{original()}{original()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily char Letter\+::original (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
-\mbox{\label{class_letter_af6158c9bc58d3f4b77ee627807b87133}} 
+\begin{DoxyReturn}{Returns}
+The original character 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_letter_af6158c9bc58d3f4b77ee627807b87133}\label{class_letter_af6158c9bc58d3f4b77ee627807b87133}} 
 \index{Letter@{Letter}!original@{original}}
 \index{original@{original}!Letter@{Letter}}
-\subsubsection{original()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{original()}{original()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Letter\+::original (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-
+Setting the original character 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\textbf{ letter.\+h}\end{DoxyCompactItemize}
+\hyperlink{letter_8h}{letter.\+h}\end{DoxyCompactItemize}

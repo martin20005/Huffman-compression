@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Huffman: memtrace.cpp File Reference</title>
+<title>Huffman-compression: memtrace.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -20,9 +20,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectalign" style="padding-left_child_: 0.5em;">
-   <div id="projectname">Huffman
-   &#160;<span id="projectnumber">1.2</span>
+  <td id="projectlogo"><img alt="Logo" src="Huffman_logo.jpeg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Huffman-compression
+   &#160;<span id="projectnumber">1.3</span>
    </div>
   </td>
  </tr>
@@ -75,76 +76,74 @@ $(function() {
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;ctype.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="memtrace_8h_source.html">memtrace.h</a>&quot;</code><br />
-</div>
-<p><a href="memtrace_8cpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right_child_" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcall__t.html">call_t</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcall__t.html">call_t</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right_child_" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__registry__item.html">_registry_item</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__registry__item.html">_registry_item</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa90f3e89fc3fe477370afb9f81975081"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa90f3e89fc3fe477370afb9f81975081">MEMTRACE</a></td></tr>
+<tr class="memitem:aa90f3e89fc3fe477370afb9f81975081"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa90f3e89fc3fe477370afb9f81975081">MEMTRACE</a></td></tr>
 <tr class="separator:aa90f3e89fc3fe477370afb9f81975081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e504c96e3c59936ff0a9f31573b1b0"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#ab4e504c96e3c59936ff0a9f31573b1b0">FROM_MEMTRACE_CPP</a></td></tr>
+<tr class="memitem:ab4e504c96e3c59936ff0a9f31573b1b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#ab4e504c96e3c59936ff0a9f31573b1b0">FROM_MEMTRACE_CPP</a></td></tr>
 <tr class="separator:ab4e504c96e3c59936ff0a9f31573b1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8817d7ba90cf2e1ddd83f35dbb862542"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a8817d7ba90cf2e1ddd83f35dbb862542">FMALLOC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memitem:a8817d7ba90cf2e1ddd83f35dbb862542"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a8817d7ba90cf2e1ddd83f35dbb862542">FMALLOC</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a8817d7ba90cf2e1ddd83f35dbb862542"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6fff8cbc37157865d4b383dacfd947b"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#af6fff8cbc37157865d4b383dacfd947b">FCALLOC</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:af6fff8cbc37157865d4b383dacfd947b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#af6fff8cbc37157865d4b383dacfd947b">FCALLOC</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:af6fff8cbc37157865d4b383dacfd947b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcc2cb9c3434359e629fdd446aab6175"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#afcc2cb9c3434359e629fdd446aab6175">FREALLOC</a>&#160;&#160;&#160;2</td></tr>
+<tr class="memitem:afcc2cb9c3434359e629fdd446aab6175"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#afcc2cb9c3434359e629fdd446aab6175">FREALLOC</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:afcc2cb9c3434359e629fdd446aab6175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b915326a446c2a67f05f5504d9bc30"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa6b915326a446c2a67f05f5504d9bc30">FFREE</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:aa6b915326a446c2a67f05f5504d9bc30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa6b915326a446c2a67f05f5504d9bc30">FFREE</a>&#160;&#160;&#160;3</td></tr>
 <tr class="separator:aa6b915326a446c2a67f05f5504d9bc30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f98c384938a2ff256aa6a0a6f8992dc"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a9f98c384938a2ff256aa6a0a6f8992dc">FNEW</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memitem:a9f98c384938a2ff256aa6a0a6f8992dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a9f98c384938a2ff256aa6a0a6f8992dc">FNEW</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:a9f98c384938a2ff256aa6a0a6f8992dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744b443f8bd1fad5895b111602c0ead9"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a744b443f8bd1fad5895b111602c0ead9">FDELETE</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memitem:a744b443f8bd1fad5895b111602c0ead9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a744b443f8bd1fad5895b111602c0ead9">FDELETE</a>&#160;&#160;&#160;5</td></tr>
 <tr class="separator:a744b443f8bd1fad5895b111602c0ead9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0db05fd089296f53cc7e8441ebc565"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#afc0db05fd089296f53cc7e8441ebc565">FNEWARR</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memitem:afc0db05fd089296f53cc7e8441ebc565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#afc0db05fd089296f53cc7e8441ebc565">FNEWARR</a>&#160;&#160;&#160;6</td></tr>
 <tr class="separator:afc0db05fd089296f53cc7e8441ebc565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd2bfc6563a2ac0ae741ee31dfbf1c92"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#acd2bfc6563a2ac0ae741ee31dfbf1c92">FDELETEARR</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memitem:acd2bfc6563a2ac0ae741ee31dfbf1c92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#acd2bfc6563a2ac0ae741ee31dfbf1c92">FDELETEARR</a>&#160;&#160;&#160;7</td></tr>
 <tr class="separator:acd2bfc6563a2ac0ae741ee31dfbf1c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaed1b7df4f99525f21eda754cf7fae05"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aaed1b7df4f99525f21eda754cf7fae05">COMP</a>(a,  d)&#160;&#160;&#160;(((a)&lt;=3 &amp;&amp; (d)&lt;=3) || ((d)==(a)+1))</td></tr>
+<tr class="memitem:aaed1b7df4f99525f21eda754cf7fae05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aaed1b7df4f99525f21eda754cf7fae05">COMP</a>(a,  d)&#160;&#160;&#160;(((a)&lt;=3 &amp;&amp; (d)&lt;=3) || ((d)==(a)+1))</td></tr>
 <tr class="separator:aaed1b7df4f99525f21eda754cf7fae05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d3529a7e2c30650032e14a1dbc9aaac"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a5d3529a7e2c30650032e14a1dbc9aaac">PU</a>(p)&#160;&#160;&#160;((char*)p+CANARY_LEN)</td></tr>
+<tr class="memitem:a5d3529a7e2c30650032e14a1dbc9aaac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a5d3529a7e2c30650032e14a1dbc9aaac">PU</a>(p)&#160;&#160;&#160;((char*)p+CANARY_LEN)</td></tr>
 <tr class="separator:a5d3529a7e2c30650032e14a1dbc9aaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64bc26cf9b35a1dabeb2a58a96bc9b99"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a64bc26cf9b35a1dabeb2a58a96bc9b99">P</a>(pu)&#160;&#160;&#160;((char*)pu-CANARY_LEN)</td></tr>
+<tr class="memitem:a64bc26cf9b35a1dabeb2a58a96bc9b99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a64bc26cf9b35a1dabeb2a58a96bc9b99">P</a>(pu)&#160;&#160;&#160;((char*)pu-CANARY_LEN)</td></tr>
 <tr class="separator:a64bc26cf9b35a1dabeb2a58a96bc9b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03943706e48069237cd57f2d35ca987e"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a03943706e48069237cd57f2d35ca987e">XSTR</a>(s)&#160;&#160;&#160;<a class="el" href="memtrace_8cpp.html#a6388870e639eee9c0a69446876f1f8cc">STR</a>(s)</td></tr>
+<tr class="memitem:a03943706e48069237cd57f2d35ca987e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a03943706e48069237cd57f2d35ca987e">XSTR</a>(s)&#160;&#160;&#160;<a class="el" href="memtrace_8cpp.html#a6388870e639eee9c0a69446876f1f8cc">STR</a>(s)</td></tr>
 <tr class="separator:a03943706e48069237cd57f2d35ca987e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6388870e639eee9c0a69446876f1f8cc"><td class="memItemLeft" align="right_child_" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a6388870e639eee9c0a69446876f1f8cc">STR</a>(s)&#160;&#160;&#160;#s</td></tr>
+<tr class="memitem:a6388870e639eee9c0a69446876f1f8cc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a6388870e639eee9c0a69446876f1f8cc">STR</a>(s)&#160;&#160;&#160;#s</td></tr>
 <tr class="separator:a6388870e639eee9c0a69446876f1f8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a70b3f3b7e889e715810f67307625db45"><td class="memItemLeft" align="right_child_" valign="top">typedef <a class="el" href="memtrace_8h.html#a28886d59fbdc2dccd82cc4887e967d0d">END_NAMESPACE</a> <a class="el" href="memtrace_8h.html#aad4cd792b953244f20869915267ae837">START_NAMESPACE</a> struct <a class="el" href="struct__registry__item.html">_registry_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a70b3f3b7e889e715810f67307625db45">registry_item</a></td></tr>
+<tr class="memitem:a70b3f3b7e889e715810f67307625db45"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="memtrace_8h.html#a28886d59fbdc2dccd82cc4887e967d0d">END_NAMESPACE</a> <a class="el" href="memtrace_8h.html#aad4cd792b953244f20869915267ae837">START_NAMESPACE</a> struct <a class="el" href="struct__registry__item.html">_registry_item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a70b3f3b7e889e715810f67307625db45">registry_item</a></td></tr>
 <tr class="separator:a70b3f3b7e889e715810f67307625db45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a3e5b8192e7d9ffaf3542f1210aec18dd"><td class="memItemLeft" align="right_child_" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18dd">BOOL</a> { <a class="el" href="memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>,
+<tr class="memitem:a3e5b8192e7d9ffaf3542f1210aec18dd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18dd">BOOL</a> { <a class="el" href="memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18ddaa1e095cc966dbecf6a0d8aad75348d1a">FALSE</a>, 
 <a class="el" href="memtrace_8cpp.html#a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839">TRUE</a>
  }</td></tr>
 <tr class="separator:a3e5b8192e7d9ffaf3542f1210aec18dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a031b528c007e2e8ba5d814be13d3860c"><td class="memItemLeft" align="right_child_" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a031b528c007e2e8ba5d814be13d3860c">mem_dump</a> (void const *mem, size_t size, FILE *fp)</td></tr>
+<tr class="memitem:a031b528c007e2e8ba5d814be13d3860c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a031b528c007e2e8ba5d814be13d3860c">mem_dump</a> (void const *mem, size_t size, FILE *fp)</td></tr>
 <tr class="separator:a031b528c007e2e8ba5d814be13d3860c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6308f8e862dbc52b364a505483191a6"><td class="memItemLeft" align="right_child_" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#ac6308f8e862dbc52b364a505483191a6">mem_check</a> (void)</td></tr>
+<tr class="memitem:ac6308f8e862dbc52b364a505483191a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#ac6308f8e862dbc52b364a505483191a6">mem_check</a> (void)</td></tr>
 <tr class="separator:ac6308f8e862dbc52b364a505483191a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ec27aa588e69e834e293374f5c14e67"><td class="memItemLeft" align="right_child_" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a4ec27aa588e69e834e293374f5c14e67">allocated_blocks</a> ()</td></tr>
+<tr class="memitem:a4ec27aa588e69e834e293374f5c14e67"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a4ec27aa588e69e834e293374f5c14e67">allocated_blocks</a> ()</td></tr>
 <tr class="separator:a4ec27aa588e69e834e293374f5c14e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30b6aa180e3214beb1f48c5a9381e5ac"><td class="memItemLeft" align="right_child_" valign="top"><a class="el" href="memtrace_8h.html#a28886d59fbdc2dccd82cc4887e967d0d">END_NAMESPACE</a> <a class="el" href="memtrace_8h.html#aad4cd792b953244f20869915267ae837">START_NAMESPACE</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a30b6aa180e3214beb1f48c5a9381e5ac">traced_malloc</a> (size_t size, const char *par_txt, int line, const char *file)</td></tr>
+<tr class="memitem:a30b6aa180e3214beb1f48c5a9381e5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="memtrace_8h.html#a28886d59fbdc2dccd82cc4887e967d0d">END_NAMESPACE</a> <a class="el" href="memtrace_8h.html#aad4cd792b953244f20869915267ae837">START_NAMESPACE</a> void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a30b6aa180e3214beb1f48c5a9381e5ac">traced_malloc</a> (size_t size, const char *par_txt, int line, const char *file)</td></tr>
 <tr class="separator:a30b6aa180e3214beb1f48c5a9381e5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68998093ee624349c5cab1aab7bc915f"><td class="memItemLeft" align="right_child_" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a68998093ee624349c5cab1aab7bc915f">traced_calloc</a> (size_t count, size_t size, const char *par_txt, int line, const char *file)</td></tr>
+<tr class="memitem:a68998093ee624349c5cab1aab7bc915f"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a68998093ee624349c5cab1aab7bc915f">traced_calloc</a> (size_t count, size_t size, const char *par_txt, int line, const char *file)</td></tr>
 <tr class="separator:a68998093ee624349c5cab1aab7bc915f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f2006cf357ea01179f18a5c965ff105"><td class="memItemLeft" align="right_child_" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a1f2006cf357ea01179f18a5c965ff105">traced_free</a> (void *pu, const char *par_txt, int line, const char *file)</td></tr>
+<tr class="memitem:a1f2006cf357ea01179f18a5c965ff105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#a1f2006cf357ea01179f18a5c965ff105">traced_free</a> (void *pu, const char *par_txt, int line, const char *file)</td></tr>
 <tr class="separator:a1f2006cf357ea01179f18a5c965ff105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9656d71bfbb848ef518892eb0e3909b"><td class="memItemLeft" align="right_child_" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa9656d71bfbb848ef518892eb0e3909b">traced_realloc</a> (void *old, size_t size, const char *par_txt, int line, const char *file)</td></tr>
+<tr class="memitem:aa9656d71bfbb848ef518892eb0e3909b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="memtrace_8cpp.html#aa9656d71bfbb848ef518892eb0e3909b">traced_realloc</a> (void *old, size_t size, const char *par_txt, int line, const char *file)</td></tr>
 <tr class="separator:aa9656d71bfbb848ef518892eb0e3909b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -174,8 +173,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00038">38</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="af6fff8cbc37157865d4b383dacfd947b"></a>
@@ -189,8 +186,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00031">31</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -206,8 +201,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00035">35</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="acd2bfc6563a2ac0ae741ee31dfbf1c92"></a>
@@ -221,8 +214,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00037">37</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -238,8 +229,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00033">33</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a8817d7ba90cf2e1ddd83f35dbb862542"></a>
@@ -253,8 +242,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00030">30</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -270,8 +257,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00034">34</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="afc0db05fd089296f53cc7e8441ebc565"></a>
@@ -285,8 +270,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00036">36</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -302,8 +285,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00032">32</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ab4e504c96e3c59936ff0a9f31573b1b0"></a>
@@ -318,8 +299,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00027">27</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="aa90f3e89fc3fe477370afb9f81975081"></a>
@@ -333,8 +312,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00025">25</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -354,8 +331,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00040">40</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a5d3529a7e2c30650032e14a1dbc9aaac"></a>
@@ -373,8 +348,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00039">39</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -394,8 +367,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00042">42</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a03943706e48069237cd57f2d35ca987e"></a>
@@ -413,8 +384,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00041">41</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -450,8 +419,6 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a3e5b8192e7d9ffaf3542f1210aec18ddaa82764c3079aea4e60c80e45befbb839"></a>TRUE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00057">57</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
@@ -470,8 +437,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00249">249</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="ac6308f8e862dbc52b364a505483191a6"></a>
@@ -489,8 +454,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00213">213</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -525,8 +488,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00159">159</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -574,8 +535,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00344">344</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a1f2006cf357ea01179f18a5c965ff105"></a>
@@ -616,8 +575,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00359">359</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
-
 </div>
 </div>
 <a id="a30b6aa180e3214beb1f48c5a9381e5ac"></a>
@@ -657,8 +614,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00330">330</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>
@@ -705,8 +660,6 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="memtrace_8cpp_source.html#l00381">381</a> of file <a class="el" href="memtrace_8cpp_source.html">memtrace.cpp</a>.</p>
 
 </div>
 </div>

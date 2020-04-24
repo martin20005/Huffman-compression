@@ -1,4 +1,4 @@
-\section{Bit\+Buffer Class Reference}
+\hypertarget{class_bit_buffer}{}\section{Bit\+Buffer Class Reference}
 \label{class_bit_buffer}\index{Bit\+Buffer@{Bit\+Buffer}}
 
 
@@ -7,37 +7,39 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\textbf{ Bit\+Buffer} (int \textbf{ Chunk\+Size}=sizeof(char))
+\hyperlink{class_bit_buffer_a9b9c57bd5827f631bb594476323eb861}{Bit\+Buffer} (int size\+\_\+of\+\_\+chunk\+\_\+b=sizeof(char))
 \item 
-\textbf{ Bit\+Buffer} (const \textbf{ Bit\+Buffer} \&bb)
+\hyperlink{class_bit_buffer_af78925f3b1d992d934545616c1d00dd2}{Bit\+Buffer} (const \hyperlink{class_bit_buffer}{Bit\+Buffer} \&buffer)
 \item 
-const \textbf{ List}$<$ char $>$ \& \textbf{ Data} () const
+const \hyperlink{class_list}{List}$<$ char $>$ \& \hyperlink{class_bit_buffer_ad56372e6eb410a195913a0cae28d7006}{data} () const
 \item 
-char \textbf{ Last\+Chunk} () const
+char \hyperlink{class_bit_buffer_a3f5383b7d9b27478f614cd8762a266a5}{current\+Chunk} () const
 \item 
-int \textbf{ Cnt} () const
+int \hyperlink{class_bit_buffer_a8c13b651d37586ec5c2d30f45ed89e53}{count} () const
 \item 
-int \textbf{ Chunk\+Size} () const
+int \hyperlink{class_bit_buffer_adf758958884467e15cd018190178bf3d}{size\+Of\+Chunk} () const
 \item 
-int \textbf{ Size} () const
+int \hyperlink{class_bit_buffer_ad473b6b2aedbb96198d57d5762c5c108}{count\+Of\+Full\+Chunks} () const
 \item 
-bool \textbf{ Empty} ()
+bool \hyperlink{class_bit_buffer_aaec114c48d1b1be84a8178b6b956f3d0}{is\+Empty} ()
 \item 
-{\footnotesize template$<$typename T $>$ }\\void \textbf{ push} (T bits, int count)
+bool \hyperlink{class_bit_buffer_ae70825daafd0a00625fbb6dfb9b83fba}{is\+Open} ()
 \item 
-char \textbf{ pop} ()
+{\footnotesize template$<$typename T $>$ }\\void \hyperlink{class_bit_buffer_a1998d0bdd95e025f39e81671f5a20106}{push} (T value\+\_\+bit\+\_\+container, int count\+\_\+of\+\_\+bits)
 \item 
-void \textbf{ close} ()
+char \hyperlink{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}{pop} ()
 \item 
-void \textbf{ Leak\+Size} (int ls)
+void \hyperlink{class_bit_buffer_a1075aee0daeee83dbe4908c325b6969f}{close} ()
 \item 
-int \textbf{ Leak\+Size} () const
+void \hyperlink{class_bit_buffer_a10df48560dfbdd304a4e05a610379dc8}{leak\+After} (int num\+\_\+of\+\_\+chunks)
 \item 
-void \textbf{ leak} (std\+::ofstream \&out)
+int \hyperlink{class_bit_buffer_a28c31e06cd23a8ab3f7276bbb2c64b39}{leak\+After} () const
 \item 
-void \textbf{ fill} (std\+::ifstream \&in)
+void \hyperlink{class_bit_buffer_a56d1e27a00a27e1ac95f2e03255081eb}{leak} (std\+::ostream \&stream\+\_\+out)
 \item 
-bool \textbf{ bit} ()
+void \hyperlink{class_bit_buffer_a91b2bfeb34d3e2d01fd23f417928f261}{fill} (std\+::istream \&stream\+\_\+in)
+\item 
+bool \hyperlink{class_bit_buffer_a50d13861a778aff828e42e4f32371726}{bit} ()
 \end{DoxyCompactItemize}
 
 
@@ -45,150 +47,159 @@ bool \textbf{ bit} ()
 This class can hold bits. Useful when size of values to be stored is not constant. 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\label{class_bit_buffer_ab446b3a2063adb3bb7ba1b8c9c471b6e}} 
+\mbox{\Hypertarget{class_bit_buffer_a9b9c57bd5827f631bb594476323eb861}\label{class_bit_buffer_a9b9c57bd5827f631bb594476323eb861}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
 \index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Bit\+Buffer()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{Chunk\+Size = {\ttfamily sizeof(char)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+\subsubsection{\texorpdfstring{Bit\+Buffer()}{BitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{int}]{size\+\_\+of\+\_\+chunk\+\_\+b = {\ttfamily sizeof(char)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Buffer 
 \begin{DoxyParams}{Parameters}
-{\em Chun\+Size} & Number of bits each chunk can store (character\textquotesingle{}s size by default) \\
+{\em size\+\_\+of\+\_\+chunk\+\_\+b} & Number of bits each chunk can store (character\textquotesingle{}s size by default) \\
 \hline
 \end{DoxyParams}
-\mbox{\label{class_bit_buffer_a9b24bd6c8a69edc84a4a6c405df6f77d}} 
+\mbox{\Hypertarget{class_bit_buffer_af78925f3b1d992d934545616c1d00dd2}\label{class_bit_buffer_af78925f3b1d992d934545616c1d00dd2}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
 \index{Bit\+Buffer@{Bit\+Buffer}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Bit\+Buffer()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{const \textbf{ Bit\+Buffer} \&}]{bb }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{Bit\+Buffer()}{BitBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bit\+Buffer\+::\+Bit\+Buffer (\begin{DoxyParamCaption}\item[{const \hyperlink{class_bit_buffer}{Bit\+Buffer} \&}]{buffer }\end{DoxyParamCaption})}
 
 Buffer 
 \begin{DoxyParams}{Parameters}
-{\em bb} & A buffer to be copied (resulting Buffer is editable) \\
+{\em buffer} & A buffer to be copied (resulting Buffer is editable) \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\mbox{\label{class_bit_buffer_a50d13861a778aff828e42e4f32371726}} 
+\mbox{\Hypertarget{class_bit_buffer_a50d13861a778aff828e42e4f32371726}\label{class_bit_buffer_a50d13861a778aff828e42e4f32371726}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!bit@{bit}}
 \index{bit@{bit}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{bit()}
+\subsubsection{\texorpdfstring{bit()}{bit()}}
 {\footnotesize\ttfamily bool Bit\+Buffer\+::bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returning the first (not yet returned) bit from buffer \begin{DoxyReturn}{Returns}
 True = 1, False = 0 bit 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_ad161009c775d28495a6563202e4662c4}} 
-\index{Bit\+Buffer@{Bit\+Buffer}!Chunk\+Size@{Chunk\+Size}}
-\index{Chunk\+Size@{Chunk\+Size}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Chunk\+Size()}
-{\footnotesize\ttfamily int Bit\+Buffer\+::\+Chunk\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
-
-\begin{DoxyReturn}{Returns}
-Number of valuable bits in each chunk. 
-\end{DoxyReturn}
-\mbox{\label{class_bit_buffer_a1075aee0daeee83dbe4908c325b6969f}} 
+\mbox{\Hypertarget{class_bit_buffer_a1075aee0daeee83dbe4908c325b6969f}\label{class_bit_buffer_a1075aee0daeee83dbe4908c325b6969f}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!close@{close}}
 \index{close@{close}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{close()}
+\subsubsection{\texorpdfstring{close()}{close()}}
 {\footnotesize\ttfamily void Bit\+Buffer\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Closing the buffer This makes sure that all data_ is stored properly; using \doxyref{push()}{p.}{class_bit_buffer_a36ec4987fe9b4927bba7b63fab2971f8} will not be allowed anymore. \mbox{\label{class_bit_buffer_ac5c3ff64e4c53cdd093bafd016b60804}}
-\index{Bit\+Buffer@{Bit\+Buffer}!Cnt@{Cnt}}
-\index{Cnt@{Cnt}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{count()}
-{\footnotesize\ttfamily int Bit\+Buffer\+::\+count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+Closing the buffer This makes sure that all data\+\_\+ is stored properly; using \hyperlink{class_bit_buffer_a1998d0bdd95e025f39e81671f5a20106}{push()} will not be allowed anymore. \mbox{\Hypertarget{class_bit_buffer_a8c13b651d37586ec5c2d30f45ed89e53}\label{class_bit_buffer_a8c13b651d37586ec5c2d30f45ed89e53}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!count@{count}}
+\index{count@{count}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily int Bit\+Buffer\+::count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
-Count of valuable bits in \doxyref{Last\+Chunk()}{p.}{class_bit_buffer_ab8e00ba668ad600686550eaa5b51ae97} 
+Count of valuable bits in \hyperlink{class_bit_buffer_a3f5383b7d9b27478f614cd8762a266a5}{current\+Chunk()} 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_a2ef8ca85ce6f7a9d0523faf2e1f5873d}} 
-\index{Bit\+Buffer@{Bit\+Buffer}!Data@{Data}}
-\index{Data@{Data}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Data()}
-{\footnotesize\ttfamily const \textbf{ List}$<$char$>$\& Bit\+Buffer\+::\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_bit_buffer_ad473b6b2aedbb96198d57d5762c5c108}\label{class_bit_buffer_ad473b6b2aedbb96198d57d5762c5c108}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!count\+Of\+Full\+Chunks@{count\+Of\+Full\+Chunks}}
+\index{count\+Of\+Full\+Chunks@{count\+Of\+Full\+Chunks}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{count\+Of\+Full\+Chunks()}{countOfFullChunks()}}
+{\footnotesize\ttfamily int Bit\+Buffer\+::count\+Of\+Full\+Chunks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
-data_ stored so far
+Number of full chunks. 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_a660b36bf12303b2cbab0ba70b5967b86}} 
-\index{Bit\+Buffer@{Bit\+Buffer}!Empty@{Empty}}
-\index{Empty@{Empty}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Empty()}
-{\footnotesize\ttfamily bool Bit\+Buffer\+::\+isEmpty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_bit_buffer_a3f5383b7d9b27478f614cd8762a266a5}\label{class_bit_buffer_a3f5383b7d9b27478f614cd8762a266a5}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!current\+Chunk@{current\+Chunk}}
+\index{current\+Chunk@{current\+Chunk}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{current\+Chunk()}{currentChunk()}}
+{\footnotesize\ttfamily char Bit\+Buffer\+::current\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
-true, if there is no \doxyref{pop()}{p.}{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}-\/able data_ in the buffer
+Last (not yet full) chunk of data\+\_\+. The last \hyperlink{class_bit_buffer_a8c13b651d37586ec5c2d30f45ed89e53}{count()} bits are values. 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_ac5a8a3888797e97f131bf3a38a35c7a2}} 
+\mbox{\Hypertarget{class_bit_buffer_ad56372e6eb410a195913a0cae28d7006}\label{class_bit_buffer_ad56372e6eb410a195913a0cae28d7006}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!data@{data}}
+\index{data@{data}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily const \hyperlink{class_list}{List}$<$char$>$\& Bit\+Buffer\+::data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+data\+\_\+ stored so far 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_buffer_a91b2bfeb34d3e2d01fd23f417928f261}\label{class_bit_buffer_a91b2bfeb34d3e2d01fd23f417928f261}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!fill@{fill}}
 \index{fill@{fill}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{fill()}
-{\footnotesize\ttfamily void Bit\+Buffer\+::fill (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{in }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily void Bit\+Buffer\+::fill (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream\+\_\+in }\end{DoxyParamCaption})}
 
-Getting some data_ from file After call, at least 1 full character will be in the buffer. \mbox{\label{class_bit_buffer_ab8e00ba668ad600686550eaa5b51ae97}}
-\index{Bit\+Buffer@{Bit\+Buffer}!Last\+Chunk@{Last\+Chunk}}
-\index{Last\+Chunk@{Last\+Chunk}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Last\+Chunk()}
-{\footnotesize\ttfamily char Bit\+Buffer\+::\+Last\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+Getting some data\+\_\+ from file After call, at least 1 full character will be stream\+\_\+in the buffer. \mbox{\Hypertarget{class_bit_buffer_aaec114c48d1b1be84a8178b6b956f3d0}\label{class_bit_buffer_aaec114c48d1b1be84a8178b6b956f3d0}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Bit\+Buffer\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
-Last (not yet full) chunk of data_. The last \doxyref{count()}{p.}{class_bit_buffer_ac5c3ff64e4c53cdd093bafd016b60804} bits are values.
+true, if there is no \hyperlink{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}{pop()}-\/able data\+\_\+ in the buffer 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_a9d330ed50862c915abb89eec7e8a3f18}} 
+\mbox{\Hypertarget{class_bit_buffer_ae70825daafd0a00625fbb6dfb9b83fba}\label{class_bit_buffer_ae70825daafd0a00625fbb6dfb9b83fba}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{is\+Open()}{isOpen()}}
+{\footnotesize\ttfamily bool Bit\+Buffer\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+Whether buffer is open (bits can be \hyperlink{class_bit_buffer_a1998d0bdd95e025f39e81671f5a20106}{push()}-\/ed) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bit_buffer_a56d1e27a00a27e1ac95f2e03255081eb}\label{class_bit_buffer_a56d1e27a00a27e1ac95f2e03255081eb}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!leak@{leak}}
 \index{leak@{leak}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{leak()}
-{\footnotesize\ttfamily void Bit\+Buffer\+::leak (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{out }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{leak()}{leak()}}
+{\footnotesize\ttfamily void Bit\+Buffer\+::leak (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream\+\_\+out }\end{DoxyParamCaption})}
 
-Leaking data_ to a file When there\textquotesingle{}are more chunks than the leak-\/size, those all go to the file \mbox{\label{class_bit_buffer_a80afe4897d0c6094251aa0a0ac08f188}}
-\index{Bit\+Buffer@{Bit\+Buffer}!Leak\+Size@{Leak\+Size}}
-\index{Leak\+Size@{Leak\+Size}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Leak\+Size()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void Bit\+Buffer\+::\+Leak\+countOfFullChunks (\begin{DoxyParamCaption}\item[{int}]{ls }\end{DoxyParamCaption})}
+Leaking data\+\_\+ to a file When there\textquotesingle{}are more chunks than the leak-\/size, those all go to the file \mbox{\Hypertarget{class_bit_buffer_a10df48560dfbdd304a4e05a610379dc8}\label{class_bit_buffer_a10df48560dfbdd304a4e05a610379dc8}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!leak\+After@{leak\+After}}
+\index{leak\+After@{leak\+After}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{leak\+After()}{leakAfter()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bit\+Buffer\+::leak\+After (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+of\+\_\+chunks }\end{DoxyParamCaption})}
 
-Setting the leak-\/size \mbox{\label{class_bit_buffer_a024c5f60315eaf677c16c0e273271034}} 
-\index{Bit\+Buffer@{Bit\+Buffer}!Leak\+Size@{Leak\+Size}}
-\index{Leak\+Size@{Leak\+Size}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Leak\+Size()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Bit\+Buffer\+::\+Leak\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+Setting the leak-\/size \mbox{\Hypertarget{class_bit_buffer_a28c31e06cd23a8ab3f7276bbb2c64b39}\label{class_bit_buffer_a28c31e06cd23a8ab3f7276bbb2c64b39}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!leak\+After@{leak\+After}}
+\index{leak\+After@{leak\+After}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{leak\+After()}{leakAfter()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Bit\+Buffer\+::leak\+After (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get leak-\/size \mbox{\label{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}} 
+Get leak-\/size \mbox{\Hypertarget{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}\label{class_bit_buffer_a8f569dfa9535ac107c84846f22a45221}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!pop@{pop}}
 \index{pop@{pop}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{pop()}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
 {\footnotesize\ttfamily char Bit\+Buffer\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 Returning the first chunk The returned chunk will be removed from buffer. \begin{DoxyReturn}{Returns}
 The first chunk 
 \end{DoxyReturn}
-\mbox{\label{class_bit_buffer_a36ec4987fe9b4927bba7b63fab2971f8}} 
+\mbox{\Hypertarget{class_bit_buffer_a1998d0bdd95e025f39e81671f5a20106}\label{class_bit_buffer_a1998d0bdd95e025f39e81671f5a20106}} 
 \index{Bit\+Buffer@{Bit\+Buffer}!push@{push}}
 \index{push@{push}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{push()}
+\subsubsection{\texorpdfstring{push()}{push()}}
 {\footnotesize\ttfamily template$<$typename T $>$ \\
-void Bit\+Buffer\+::push (\begin{DoxyParamCaption}\item[{T}]{bits,  }\item[{int}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void Bit\+Buffer\+::push (\begin{DoxyParamCaption}\item[{T}]{value\+\_\+bit\+\_\+container,  }\item[{int}]{count\+\_\+of\+\_\+bits }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Adding bits to the buffer Pushes the given bits into the buffer (current_chunk_).
+Adding bits to the buffer Pushes the given bits into the buffer (current\+\_\+chunk\+\_\+). 
 \begin{DoxyParams}{Parameters}
-{\em bits} & It contains the value-\/bits (fitted to the right_child_=L\+SB). \\
+{\em value\+\_\+bit\+\_\+container} & It contains the value-\/bits (fitted to the right\+\_\+child\+\_\+=L\+SB). \\
 \hline
-{\em count} & Number of significant bits. \\
+{\em count\+\_\+of\+\_\+bits} & Number of significant bits. \\
 \hline
 \end{DoxyParams}
-\mbox{\label{class_bit_buffer_a6986fb3db8ebb8c0c1c88b3a9aecc295}} 
-\index{Bit\+Buffer@{Bit\+Buffer}!Size@{Size}}
-\index{Size@{Size}!Bit\+Buffer@{Bit\+Buffer}}
-\subsubsection{Size()}
-{\footnotesize\ttfamily int Bit\+Buffer\+::\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+\mbox{\Hypertarget{class_bit_buffer_adf758958884467e15cd018190178bf3d}\label{class_bit_buffer_adf758958884467e15cd018190178bf3d}} 
+\index{Bit\+Buffer@{Bit\+Buffer}!size\+Of\+Chunk@{size\+Of\+Chunk}}
+\index{size\+Of\+Chunk@{size\+Of\+Chunk}!Bit\+Buffer@{Bit\+Buffer}}
+\subsubsection{\texorpdfstring{size\+Of\+Chunk()}{sizeOfChunk()}}
+{\footnotesize\ttfamily int Bit\+Buffer\+::size\+Of\+Chunk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
 \begin{DoxyReturn}{Returns}
-Number of full chunks. 
+Count of bits in each chunk. 
 \end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\textbf{ bitbuffer.\+h}\item 
-\textbf{ bitbuffer.\+cpp}\end{DoxyCompactItemize}
+\hyperlink{bitbuffer_8h}{bitbuffer.\+h}\item 
+\hyperlink{bitbuffer_8cpp}{bitbuffer.\+cpp}\end{DoxyCompactItemize}
