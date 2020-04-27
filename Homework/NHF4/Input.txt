@@ -1,4 +1,4 @@
-compress "../O_Captain.txt" "../O_Captain.huff"
-extract "../O_Captain.huff" "../O_Captain_extracted.txt"
+compress "O_Captain.txt" "O_Captain.huff"
+extract "O_Captain.huff" "O_Captain_extracted.txt"
 exit
 
